@@ -15,6 +15,7 @@ import LoginPage from "@/pages/LoginPage";
 import RegisterPage from "@/pages/RegisterPage";
 import TermsPage from "@/pages/TermsPage";
 import PrivacyPage from "@/pages/PrivacyPage";
+import DeletionPolicyPage from "@/pages/DeletionPolicyPage";
 import DashboardOverview from "@/pages/dashboard/DashboardOverview";
 import DashboardPlaceholder from "@/pages/dashboard/DashboardPlaceholder";
 import NotFound from "@/pages/NotFound";
@@ -41,6 +42,7 @@ const App = () => (
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/terms" element={<TermsPage />} />
             <Route path="/privacy" element={<PrivacyPage />} />
+            <Route path="/deletion-policy" element={<DeletionPolicyPage />} />
           </Route>
 
           {/* Auth pages (no layout) */}

@@ -1279,16 +1279,15 @@ export const docsContent = [
                 slug: "sections", title: "Sections", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Sections</h3>
+                         <img src="/Eskooly/sections.png" alt="Add Section" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Add Section</span>
                         <p class="mt-1 mb-3">To add section, the section name should be added.</p>
-                         <img src="/Eskooly/sections.png" alt="Add Section" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Select Section</span>
                         <p class="mt-1 mb-3">Section list can be edited and deleted by the super admin.</p>
-                        <img src="/Eskooly/sections.png" alt="Select Section" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                 </ol>
             </div>` },
@@ -1296,16 +1295,15 @@ export const docsContent = [
                 slug: "class-room", title: "Class Room", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Class Room</h3>
+                         <img src="/Eskooly/class-room.png" alt="Add Class Room" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Add Class Room</span>
                         <p class="mt-1 mb-3">To add class room, room number and capacity should be added.</p>
-                        <img src="/Eskooly/class-room.png" alt="Add Class Room" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Select Section</span>
                         <p class="mt-1 mb-3">Class room list can be edited and deleted by the super admin.</p>
-                        <img src="/Eskooly/class-room.png" alt="Select Section" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                 </ol>
             </div>` },
@@ -1313,16 +1311,15 @@ export const docsContent = [
                 slug: "class-exam-time-setup", title: "Class & Exam Time Setup", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Class & Exam Time Setup</h3>
+                        <img src="/Eskooly/add-time.png" alt="Add Time" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Add Time</span>
                         <p class="mt-1 mb-3">To add time, time type, period, start and ending time should be added.</p>
-                        <img src="/Eskooly/add-time.png" alt="Add Time" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Select Section</span>
                         <p class="mt-1 mb-3">Time list can be edited and deleted by the super admin.</p>
-                         <img src="/Eskooly/add-time.png" alt="Select Section" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                 </ol>
             </div>` }
@@ -1335,16 +1332,15 @@ export const docsContent = [
                 slug: "add-exam", title: "Add Exam", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Add Exam</h3>
+                        <img src="/Eskooly/add-exam.png" alt="Add Examination Name" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Add Examination Name</span>
                         <p class="mt-1 mb-3">Super admin can add examination name. He has been allowed to edit and delete the examination name.</p>
-                        <img src="/Eskooly/add-exam.png" alt="Add Examination Name" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Exam Setup</span>
                         <p class="mt-1 mb-3">By clicking the Exam Setup button super admin can enter the exam setup page.</p>
-                        <img src="/Eskooly/exam-setup1.png" alt="Exam Setup" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                 </ol>
             </div>` },
@@ -1352,11 +1348,13 @@ export const docsContent = [
                 slug: "exam", title: "Exam", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Exam</h3>
+                        <img src="/Eskooly/exam-setup1.png" alt="Add Exam" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <img src="/Eskooly/exam-setup2.png" alt="Add Exam" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <img src="/Eskooly/exam-setup3.png" alt="Add Exam" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Add Exam</span>
-                        <p class="mt-1 mb-3">To exam setup, firstly select the class or classes then select the corresponding section or sections,secondly select the particular subjects or subject then select the exam type. Total mark of the particular exam should have to setup in the exam mark field. To distribute the exam marks, We have to identify the how much marks in which exam category, like written exam has 70, class test has 20, homework has 10 and the total marks will show in Total field. The marks can't cross the exam marks.</p>
-                        <img src="/Eskooly/exam-setup1.png" alt="Add Exam" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <p class="mt-1 mb-3">To exam setup, firstly select the class or classes then select the corresponding section or sections,secondly select the particular subjects or subject then select the exam type. Total mark of the particular exam should have to setup in the exam mark field. <br>To distribute the exam marks, We have to identify the how much marks in which exam category, like written exam has 70, class test has 20, homework has 10 and the total marks will show in Total field. The marks can't cross the exam marks.</p>
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Exam List</span>

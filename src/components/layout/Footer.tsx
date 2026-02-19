@@ -22,6 +22,7 @@ const footerLinks = {
   ],
   "Legal": [
     { label: "Privacy Policy", href: "/privacy" },
+    { label: "Deletion Policy", href: "/deletion-policy" },
     { label: "Terms & Conditions", href: "/terms" },
     { label: "Refund Policy", href: "/pricing" },
     { label: "Support Policy", href: "/contact" },
