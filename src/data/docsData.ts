@@ -817,13 +817,7 @@ export const docsContent = [
                 slug: "student-transport-report", title: "Student Transport Report", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Transport Report</h3>
-                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
-                    <li>
-                        <span class="font-bold text-slate-700">Student Transport Report</span>
-                        <p class="mt-1 mb-3">Go to Student Information > Student Transport Report here you can view all students list who has availed transport facility.</p>
-                        <img src="/Eskooly/student-transport-report.png" alt="Student Transport Report" class="w-full rounded-lg shadow-md border border-slate-200" />
-                    </li>
-                </ol>
+                <img src="/Eskooly/student-transport-report (1).png" alt="Student Transport Report" class="w-full rounded-lg shadow-md border border-slate-200" />
             </div>` }
         ]
     },
@@ -834,11 +828,11 @@ export const docsContent = [
                 slug: "item-category", title: "Item Category", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Item Category</h3>
+                <img src="/Eskooly/item-category-list.png" alt="Add Item Category" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Add Item Category</span>
                         <p class="mt-1 mb-3">To add item category super admin should add category name. By Clicking Select in action column super admin can get the option of delete and edit.</p>
-                        <img src="/Eskooly/item-category-list.png" alt="Add Item Category" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                 </ol>
             </div>` },
@@ -846,16 +840,15 @@ export const docsContent = [
                 slug: "item-list", title: "Item List", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Item List</h3>
+                <img src="/Eskooly/item.png" alt="Add Item List" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Add Item List</span>
                         <p class="mt-1 mb-3">In Item List Submodule, to submit an item need to add item name, select an item category which is added in item category submodule.</p>
-                        <img src="/Eskooly/item.png" alt="Add Item List" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Select action</span>
                         <p class="mt-1 mb-3">Super admin can edit and delete the item list.</p>
-                        <img src="/Eskooly/item.png" alt="Select action" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                 </ol>
             </div>` },
@@ -863,16 +856,15 @@ export const docsContent = [
                 slug: "item-store", title: "Item Store", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Item Store</h3>
+                <img src="/Eskooly/item-store.png" alt="Add Item Store" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Add Item Store</span>
                         <p class="mt-1 mb-3">Store name is essential for adding item store and store number is the identity of the store.</p>
-                        <img src="/Eskooly/item-store.png" alt="Add Item Store" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Select action</span>
                         <p class="mt-1 mb-3">Super admin can edit and delete the item store.</p>
-                        <img src="/Eskooly/item-store.png" alt="Select action" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                 </ol>
             </div>` },
@@ -880,16 +872,15 @@ export const docsContent = [
                 slug: "supplier", title: "Supplier", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Supplier</h3>
+                <img src="/Eskooly/supplier.png" alt="Add Supplier" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Add Supplier</span>
                         <p class="mt-1 mb-3">For adding supplier, supplier's company name, name, mobile number, email address is needed to submit.</p>
-                        <img src="/Eskooly/supplier.png" alt="Add Supplier" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Select Action</span>
                         <p class="mt-1 mb-3">Super admin can edit and delete the supplier list.</p>
-                        <img src="/Eskooly/supplier.png" alt="Select Action" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                 </ol>
             </div>` },
@@ -897,16 +888,15 @@ export const docsContent = [
                 slug: "item-receive", title: "Item Receive", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Item Receive</h3>
+                <img src="/Eskooly/item-receive.png" alt="Receive Details" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Receive Details</span>
-                        <p class="mt-1 mb-3">At first select supplier which is come from the supplier list that is added by super admin. Select the available store or warehouse which also added by super admin in the item store submodule. Then need to add the reference number, receive date. After that select the item from the item list which is listed in item list submodule, put it's unit price, quantity. Sub total will show the individual item's total price. After adding all sub total the final result will be shown. If check the full paid option no due will be shown. If not, then put the amount in total paid field. If it's meet up the total due will zero, if not then due or surplus amount will show in the total due field. Payment method can also be selected in this operation.</p>
-                        <img src="/Eskooly/item-receive.png" alt="Receive Details" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <p class="mt-1 mb-3">At first select supplier which is come from the supplier list that is added by super admin. Select the available store or warehouse which also added by super admin in the item store submodule. Then need to add the reference number, receive date.<br> After that select the item from the item list which is listed in item list submodule, put it's unit price, quantity. Sub total will show the individual item's total price. After adding all sub total the final result will be shown. <br>If check the full paid option no due will be shown. If not, then put the amount in total paid field. If it's meet up the total due will zero, if not then due or surplus amount will show in the total due field. Payment method can also be selected in this operation.</p>
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Add Item</span>
                         <p class="mt-1 mb-3">By just clicking the add button, new item will be added in the calculation process.</p>
-                        <img src="/Eskooly/item-receive.png" alt="Add Item" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                 </ol>
             </div>` },
@@ -914,31 +904,29 @@ export const docsContent = [
                 slug: "item-receive-list", title: "Item Receive List", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Item Receive List</h3>
+                        <img src="/Eskooly/item-receive-list.png" alt="Paid and Unpaid Status" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <img src="/Eskooly/purchase-details.png" alt="Purchase Details" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <img src="/Eskooly/add-payment.png" alt="Purchase Details" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Paid and Unpaid Status</span>
                         <p class="mt-1 mb-3">In the item receive list paid or unpaid status is shown. If payment is complete then the status show paid, if not then show unpaid</p>
-                        <img src="/Eskooly/item-receive-list.png" alt="Paid and Unpaid Status" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Select Actions</span>
                         <p class="mt-1 mb-3">In this list, view purchase details, edit and delete the list, if unpaid then add payment and view payment are included in action.</p>
-                        <img src="/Eskooly/item-receive-list.png" alt="Select Actions" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">New Item Receive</span>
                         <p class="mt-1 mb-3">By clicking the new item receive button, easily can add a new item receive.</p>
-                        <img src="/Eskooly/item-receive.png" alt="New Item Receive" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Purchase Receipt</span>
                         <p class="mt-1 mb-3">To see the purchase receipt, just click the view option in the action column for individual item receive then can possible to see the purchase detail information.</p>
-                        <img src="/Eskooly/item-receive-list.png" alt="Purchase Receipt" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Add Payment</span>
                         <p class="mt-1 mb-3">If any amount of due remains then we can complete the payment by clicking the add payment in the action column. After that we can fill up the payment through a particular payment method.In this case of operation reference number should be added.</p>
-                        <img src="/Eskooly/add-payment.png" alt="Add Payment" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                 </ol>
             </div>` },
@@ -946,26 +934,24 @@ export const docsContent = [
                 slug: "item-sell-list", title: "Item Sell List", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Item Sell List</h3>
+                        <img src="/Eskooly/item-sell.png" alt="Paid and Unpaid Status" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <img src="/Eskooly/item-sell1.png" alt="Paid and Unpaid Status" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Paid and Unpaid Status</span>
                         <p class="mt-1 mb-3">In the item sell list paid or unpaid status is shown. If payment is complete then the status show paid, if not then show unpaid</p>
-                        <img src="/Eskooly/item-sell.png" alt="Paid and Unpaid Status" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Select Actions</span>
                         <p class="mt-1 mb-3">Action column in this list, super admin can able to see sell details in view option, edit and delete the list and if unpaid then able to add payment and view payment.</p>
-                        <img src="/Eskooly/item-sell.png" alt="Select Actions" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">New Item Sell</span>
                         <p class="mt-1 mb-3">By clicking the new item sell button, easily can add a new item's sell information.</p>
-                         <img src="/Eskooly/item-sell.png" alt="New Item Sell" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Item Sell</span>
-                        <p class="mt-1 mb-3">At first select the person who buy the item, whom are added by super admin. Then need to add the reference number, receive date of selling. After that select the item from the item list which is listed in item list submodule, put it's unit price, quantity. Sub total will show the individual item's total price. After adding all sub total the final result will be shown. If check the full paid option no due will be shown. If not, then put the amount in total paid field. If it's meet up the total due will zero, if not then due or surplus amount will show in the total due field. Payment method can also be selected in this operation. After done the submission the sell information will be listed in item sell list.</p>
-                        <img src="/Eskooly/item-sell.png" alt="Item Sell" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <p class="mt-1 mb-3">At first select the person who buy the item, whom are added by super admin. Then need to add the reference number, receive date of selling.<br> After that select the item from the item list which is listed in item list submodule, put it's unit price, quantity. Sub total will show the individual item's total price. After adding all sub total the final result will be shown. <br>If check the full paid option no due will be shown. If not, then put the amount in total paid field. If it's meet up the total due will zero, if not then due or surplus amount will show in the total due field. Payment method can also be selected in this operation. After done the submission the sell information will be listed in item sell list.</p>
                     </li>
                 </ol>
             </div>` },
@@ -973,11 +959,11 @@ export const docsContent = [
                 slug: "issue-item", title: "Issue Item", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Issue Item</h3>
+                        <img src="/Eskooly/issue-a-item.png" alt="Issue a Item" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Issue a Item</span>
-                        <p class="mt-1 mb-3">Which item is issued for which person should have to add in the begin of the form. For Submission which kind of user,his name and if he is studentthen his class,section also mandatory. Issue and return date, item category, item name and it's quantity should have to submit before final submission. After submission the issued item list is shown here. If super admin wants, he can return the issued item. Status will show which item is issued and return.</p>
-                        <img src="/Eskooly/issue-a-item.png" alt="Issue a Item" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <p class="mt-1 mb-3">Which item is issued for which person should have to add in the begin of the form. For Submission which kind of user,his name and if he is studentthen his class,section also mandatory. Issue and return date, item category, item name and it's quantity should have to submit before final submission.<br> After submission the issued item list is shown here. If super admin wants, he can return the issued item. Status will show which item is issued and return.</p>
                     </li>
                 </ol>
             </div>` }
@@ -990,11 +976,11 @@ export const docsContent = [
                 slug: "add-book", title: "Add Book", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Add Book</h3>
+                        <img src="/Eskooly/add-book.png" alt="Add Book" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Add Book</span>
                         <p class="mt-1 mb-3">Super admin can add book which is available in the library. For adding book, book title, category, subject is mandatory. For proper book details information need to fill up all the field in this form.</p>
-                        <img src="/Eskooly/add-book.png" alt="Add Book" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                 </ol>
             </div>` },
@@ -1002,11 +988,11 @@ export const docsContent = [
                 slug: "book-list", title: "Book List", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Book List</h3>
+                        <img src="/Eskooly/book-list.png" alt="Book List" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Book List</span>
                         <p class="mt-1 mb-3">All the books which are available in the library are shown in this book list.Super Admin can edit and delete the book information if he wants.</p>
-                        <img src="/Eskooly/book-list.png" alt="Book List" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                 </ol>
             </div>` },
@@ -1014,11 +1000,11 @@ export const docsContent = [
                 slug: "book-categories", title: "Book Categories", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Book Categories</h3>
+                        <img src="/Eskooly/book-categories.png" alt="Book Categories" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Book Categories</span>
                         <p class="mt-1 mb-3">If Super admin wants he can add new book category in this submodule. All the book category list is shown in Category list.</p>
-                        <img src="/Eskooly/book-categories.png" alt="Book Categories" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                 </ol>
             </div>` },
@@ -1026,16 +1012,15 @@ export const docsContent = [
                 slug: "add-member", title: "Add Member", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Add Member</h3>
+                        <img src="/Eskooly/add-member.png" alt="Add Member" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Add Member</span>
                         <p class="mt-1 mb-3">Super admin can add new library member. In this case member type and member id is necessary to fill up.</p>
-                        <img src="/Eskooly/add-member.png" alt="Add Member" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Cancel member list</span>
                         <p class="mt-1 mb-3">Library member lists are shown in member list. Super admin can cancel the member if he wants.</p>
-                        <img src="/Eskooly/add-member.png" alt="Cancel member list" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                 </ol>
             </div>` },
@@ -1043,16 +1028,16 @@ export const docsContent = [
                 slug: "issue-books", title: "Issue Books", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Issue Books</h3>
+                        <img src="/Eskooly/issue-books.png" alt="Issue Books" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <img src="/Eskooly/issued-books.png" alt="Issue Books" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Issue Books</span>
                         <p class="mt-1 mb-3">All the members of the library are shown in this list. Where super admin can issue or return book/books to him.</p>
-                        <img src="/Eskooly/issue-books.png" alt="Issue Books" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Issue or Return Books</span>
                         <p class="mt-1 mb-3">By clicking the Issue/Return Books super admin can able to issue book to the library member and if want he can return book.</p>
-                        <img src="/Eskooly/issue-books.png" alt="Issue or Return Books" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                 </ol>
             </div>` },
@@ -1060,11 +1045,11 @@ export const docsContent = [
                 slug: "issued-book-list", title: "Issued Book List", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Issued Book List</h3>
+                        <img src="/Eskooly/issued-book-list.png" alt="Issued Book List" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Search Issued books</span>
                         <p class="mt-1 mb-3">By selecting book name or book id or subject super admin can see the issued book list.</p>
-                        <img src="/Eskooly/issued-book-list.png" alt="Search Issued books" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                 </ol>
             </div>` }
@@ -1077,16 +1062,15 @@ export const docsContent = [
                 slug: "notice-board", title: "Notice Board", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Notice Board</h3>
+                        <img src="/Eskooly/notice-board.png" alt="Notice Board" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">All notices</span>
                         <p class="mt-1 mb-3">Super admin can see all the notices which is select for.</p>
-                        <img src="/Eskooly/notice_board.png" alt="All notices" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Add notice</span>
                         <p class="mt-1 mb-3">super admin can add new notice by clicking the add notice button.</p>
-                        <img src="/Eskooly/add_notice.png" alt="Add notice" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                 </ol>
             </div>` },
@@ -1094,11 +1078,11 @@ export const docsContent = [
                 slug: "send-message", title: "Send Message", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Send Message</h3>
+                <img src="/Eskooly/add_notice.png" alt="Add notices" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Add notices</span>
-                        <p class="mt-1 mb-3">To add new notice at first type the notice title, then write the message content. Notice date and publication date should have to select. Select the notice viewer in the message to section. By clicking the Notice board button in the top-right then can able to go notice board list.</p>
-                        <img src="/Eskooly/add_notice.png" alt="Add notices" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <p class="mt-1 mb-3">To add new notice at first type the notice title, then write the message content. Notice date and publication date should have to select. Select the notice viewer in the message to section. <br>By clicking the Notice board button in the top-right then can able to go notice board list.</p>
                     </li>
                 </ol>
             </div>` },
@@ -1106,21 +1090,21 @@ export const docsContent = [
                 slug: "send-email", title: "Send Email", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Send Email</h3>
+                <img src="/Eskooly/send-email1.png" alt="Send email or SMS (Group)" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <img src="/Eskooly/send-email2.png" alt="Send email or SMS (Individual)" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <img src="/Eskooly/send-email3.png" alt="Send email or SMS (Class)" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Send email or SMS (Group)</span>
-                        <p class="mt-1 mb-3">Super admin can send email or sms by checking in send through check box. Title and description is also mandatory field. If he wants to send this to several receiver then he can select several receiver in the group section.</p>
-                        <img src="/Eskooly/send-email1.png" alt="Send email or SMS (Group)" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <p class="mt-1 mb-3">Super admin can send email or sms by checking in send through check box. Title and description is also mandatory field.<br> If he wants to send this to several receiver then he can select several receiver in the group section.</p>
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Send email or SMS (Individual)</span>
                         <p class="mt-1 mb-3">If he wants to send this to individual receiver or certain role receiver then he can select role of the receiver and select the name or names in the individual section.</p>
-                        <img src="/Eskooly/send-email2.png" alt="Send email or SMS (Individual)" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Send email or SMS (Class)</span>
                         <p class="mt-1 mb-3">If he wants to send this to particular class students then he can select a class and certain section in the class section.</p>
-                        <img src="/Eskooly/send-email3.png" alt="Send email or SMS (Class)" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                 </ol>
             </div>` },
@@ -1128,11 +1112,11 @@ export const docsContent = [
                 slug: "email-sms-log-list", title: "Email / Sms Log List", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Email / Sms Log List</h3>
+                <img src="/Eskooly/log.png" alt="Email / Sms Log List" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Email / Sms Log List</span>
-                        <p class="mt-1 mb-3">All the email and sms which is send that are listed here. If wants to send new email or sms then just click the Send Email/Sms button. In the list, email or sms receiver list are shown. This are group, individual and class.</p>
-                        <img src="/Eskooly/email-setting.png" alt="Email / Sms Log List" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <p class="mt-1 mb-3">All the email and sms which is send that are listed here. If wants to send new email or sms then just click the Send Email/Sms button.<br> In the list, email or sms receiver list are shown. This are group, individual and class.</p>
                     </li>
                 </ol>
             </div>` },
@@ -1140,11 +1124,11 @@ export const docsContent = [
                 slug: "event-list", title: "Event List", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Event List</h3>
+                <img src="/Eskooly/event.png" alt="Add Event" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Add Event</span>
                         <p class="mt-1 mb-3">To add event, event title, start date, end date and description are needed. The event list will show all the event which are added.In the list, event can be edit and delete are possible.</p>
-                        <img src="/Eskooly/event.png" alt="Add Event" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                 </ol>
             </div>` }
@@ -1157,36 +1141,33 @@ export const docsContent = [
                 slug: "add-homework", title: "Add Homework", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Add Homework</h3>
+                <img src="/Eskooly/add-homework.png" alt="Add Homework" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <img src="/Eskooly/homework-list.png" alt="Select Action" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <img src="/Eskooly/evaluation.png" alt="Search Homework list" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Add Homework</span>
                         <p class="mt-1 mb-3">To add homework, class, section, subjects, date, submission date, marks and description are needed to submit.</p>
-                        <img src="/Eskooly/add-homework.png" alt="Add Homework" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Select Action</span>
                         <p class="mt-1 mb-3">In the action column, evaluation, edit and delete options are include.</p>
-                        <img src="/Eskooly/homework-list.png" alt="Select Action" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Search Homework list</span>
                         <p class="mt-1 mb-3">To search homework list, class, section, subject are needed to select.</p>
-                        <img src="/Eskooly/homework-list.png" alt="Search Homework list" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Add homework</span>
                         <p class="mt-1 mb-3">By clicking the add homework super admin can add new homework.</p>
-                        <img src="/Eskooly/add-homework.png" alt="Add homework" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Evaluation homework</span>
                         <p class="mt-1 mb-3">Super admin can evaluate the homework by clicking the evaluation option in action column.In evaluation homework, students are evaluated by marks, comments, homework status.</p>
-                        <img src="/Eskooly/homework-evaluation-report.png" alt="Evaluation homework" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Evaluation Date</span>
                         <p class="mt-1 mb-3">Evaluation date should have to select before evaluation page submit.</p>
-                        <img src="/Eskooly/homework-evaluation-report.png" alt="Evaluation Date" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                 </ol>
             </div>` },
@@ -1194,16 +1175,16 @@ export const docsContent = [
                 slug: "homework-evaluation-report", title: "Homework Evaluation Report", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Homework Evaluation Report</h3>
+                        <img src="/Eskooly/homework-evaluation-report.png" alt="Search Homework Evaluation Report" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <img src="/Eskooly/view.png" alt="Search Homework Evaluation Report" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Search Homework Evaluation Report</span>
                         <p class="mt-1 mb-3">To search homework evaluation report, class, section, subjects should have to select.</p>
-                        <img src="/Eskooly/homework-evaluation-report.png" alt="Search Homework Evaluation Report" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Select Action</span>
                         <p class="mt-1 mb-3">Homework evaluation report list are show the search result. By clicking view option full evaluation of a particular home can be seen.</p>
-                        <img src="/Eskooly/homework-evaluation-report.png" alt="Select Action" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                 </ol>
             </div>` }
@@ -1216,21 +1197,20 @@ export const docsContent = [
                 slug: "class-routine", title: "Class Routine", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Class Routine</h3>
+                        <img src="/Eskooly/class-routine.png" alt="Add Class routine" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <img src="/Eskooly/create-class-routine.png" alt="Add Class routine" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Add Class routine</span>
                         <p class="mt-1 mb-3">In the class routine submodule, by selecting the class and section super admin can see the particular class routine. Where by clicking on the (+) symbol admin can assign the class routine.</p>
-                        <img src="/Eskooly/class-routine.png" alt="Add Class routine" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Assigned Class routine</span>
                         <p class="mt-1 mb-3">Assigned class for particular day and period are shown on the class routine list.</p>
-                        <img src="/Eskooly/class-routine.png" alt="Assigned Class routine" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Create Class routine</span>
                         <p class="mt-1 mb-3">To create class routine just click on the particular period of a day. Here have to select subject, teacher and class room.</p>
-                        <img src="/Eskooly/create-class-routine.png" alt="Create Class routine" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                 </ol>
             </div>` },
@@ -1238,26 +1218,24 @@ export const docsContent = [
                 slug: "assign-subject", title: "Assign Subject", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Assign Subject</h3>
+                        <img src="/Eskooly/assign-subject.png" alt="Search Assigned Subject" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <img src="/Eskooly/add-assign-subject.png" alt="Search Assign Subject Create" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Search Assigned Subject</span>
                         <p class="mt-1 mb-3">Select class and section for searching assigned subjects for particular class and it's individual section.</p>
-                        <img src="/Eskooly/assign-subject.png" alt="Search Assigned Subject" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Assigned Subject List</span>
                         <p class="mt-1 mb-3">In this list, particular subjects and it's assigned course teachers are shown. If assign new subjects just click the right-top assign Subject button.</p>
-                        <img src="/Eskooly/assign-subject.png" alt="Assigned Subject List" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Search Assign Subject Create</span>
                         <p class="mt-1 mb-3">For assign subjects list, search by selecting the class and section.</p>
-                        <img src="/Eskooly/add-assign-subject.png" alt="Search Assign Subject Create" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Assign Subject Create</span>
                         <p class="mt-1 mb-3">For assign subject select the teacher in the teacher section.By clicking the delete button, subject will be deleted.By clicking the save button the subjects will assigned.</p>
-                        <img src="/Eskooly/add-assign-subject.png" alt="Assign Subject Create" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                 </ol>
             </div>` },
@@ -1265,11 +1243,11 @@ export const docsContent = [
                 slug: "assign-class-teacher", title: "Assign Class Teacher", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Assign Class Teacher</h3>
+                        <img src="/Eskooly/assign-class-teacher.png" alt="Assign Class Teacher" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Assign Class Teacher</span>
                         <p class="mt-1 mb-3">For assigning class routine, class, section and teachers should have to select. The Assigned class teacher list will show in the Class Teacher List. Here teacher list can be edited and deleted.</p>
-                        <img src="/Eskooly/assign-class-teacher.png" alt="Assign Class Teacher" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                 </ol>
             </div>` },
@@ -1277,11 +1255,11 @@ export const docsContent = [
                 slug: "subject", title: "Subject", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Subject</h3>
+                        <img src="/Eskooly/add-subjects.png" alt="Add Subject" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Add Subject</span>
-                        <p class="mt-1 mb-3">To add subject, the subject name,the subject code should be added and check the theory or practical which type of subject is it. Subject list can be edited and deleted by the super admin.</p>
-                        <img src="/Eskooly/subjects.png" alt="Add Subject" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <p class="mt-1 mb-3">To add subject, the subject name,the subject code should be added and check the theory or practical which type of subject is it. <br>Subject list can be edited and deleted by the super admin.</p>
                     </li>
                 </ol>
             </div>` },
@@ -1289,11 +1267,11 @@ export const docsContent = [
                 slug: "class", title: "Class", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Class</h3>
+                        <img src="/Eskooly/class.png" alt="Add Class" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Add Class</span>
-                        <p class="mt-1 mb-3">To add Class, the class name and section or sections should be added. Class list can be edited and deleted by the super admin.</p>
-                        <img src="/Eskooly/class.png" alt="Add Class" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <p class="mt-1 mb-3">To add Class, the class name and section or sections should be added. <br>Class list can be edited and deleted by the super admin.</p>
                     </li>
                 </ol>
             </div>` },

@@ -1,5 +1,5 @@
 import PageHeader from "@/components/layout/PageHeader";
-import { Shield, Lock, Eye, CheckCircle, Database, Server, Menu } from "lucide-react";
+import { Shield, Lock, Eye, CheckCircle, Database, Server, Menu, Trash2 } from "lucide-react";
 import { useState, useEffect } from "react";
 
 export default function PrivacyPage() {
@@ -41,6 +41,48 @@ export default function PrivacyPage() {
       title: "Your Rights",
       icon: Shield,
       content: "You have the right to access, correct, or delete your personal information. You can manage your account settings or contact us directly to exercise these rights. Additionally, you can opt-out of receiving marketing communications from us at any time."
+    },
+    {
+      id: "deletion",
+      title: "Account Deletion",
+      icon: Trash2,
+      content: (
+        <div className="space-y-4">
+          <p>eSkoolia provides users with the ability to request deletion of their account and associated personal data.</p>
+
+          <div className="bg-slate-50 p-4 rounded-lg border border-slate-200">
+            <p className="font-bold text-slate-800 mb-2">To request account deletion, please follow the steps below:</p>
+            <ul className="list-decimal pl-5 space-y-2 text-base">
+              <li>Send an email to: <a href="mailto:support@eskooly.com" className="text-[#483285] font-bold hover:underline">support@eskooly.com</a></li>
+              <li>Use the subject line: <span className="font-bold text-slate-800">"Account Deletion Request"</span></li>
+              <li>Include your <span className="font-semibold">Registered Email ID / Phone Number</span> and <span className="font-semibold">User Role</span> (Admin / Teacher / Student / Parent)</li>
+            </ul>
+            <p className="mt-4 text-sm font-medium text-slate-500">Once the request is received, our support team will process the account deletion within 5-7 working days.</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-4 mt-2">
+            <div className="bg-red-50 p-5 rounded-xl border border-red-100">
+              <h4 className="font-bold text-red-700 mb-3 text-base flex items-center gap-2"><Trash2 className="h-4 w-4" /> Data Deleted</h4>
+              <ul className="list-disc pl-5 text-sm space-y-1.5 text-red-800/80 font-medium">
+                <li>Personal Profile Information</li>
+                <li>Academic Records</li>
+                <li>Attendance Data</li>
+                <li>Homework & Exam Records</li>
+                <li>Fee & Financial Records</li>
+                <li>Login Credentials</li>
+              </ul>
+            </div>
+
+            <div className="bg-blue-50 p-5 rounded-xl border border-blue-100">
+              <h4 className="font-bold text-blue-700 mb-3 text-base flex items-center gap-2"><Database className="h-4 w-4" /> Data Retained</h4>
+              <p className="text-sm text-blue-800/80 mb-3 font-medium">Some financial transaction records may be retained for up to 90 days for legal and auditing purposes.</p>
+              <div className="text-xs text-blue-600 bg-blue-100 p-2 rounded border border-blue-200">
+                <strong>Note:</strong> After the retention period, all associated data will be permanently deleted from our servers.
+              </div>
+            </div>
+          </div>
+        </div>
+      )
     },
     {
       id: "changes",
@@ -131,7 +173,7 @@ export default function PrivacyPage() {
                   </div>
                   <div>
                     <h2 className="text-2xl font-bold text-slate-800 mb-4 font-display group-hover:text-[#483285] transition-colors">{section.title}</h2>
-                    <p className="text-slate-600 leading-relaxed text-lg">{section.content}</p>
+                    <div className="text-slate-600 leading-relaxed text-lg">{section.content}</div>
                   </div>
                 </div>
                 <hr className="mt-12 border-slate-200 last:hidden" />
