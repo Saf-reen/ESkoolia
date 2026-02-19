@@ -18,6 +18,7 @@ import PrivacyPage from "@/pages/PrivacyPage";
 import DashboardOverview from "@/pages/dashboard/DashboardOverview";
 import DashboardPlaceholder from "@/pages/dashboard/DashboardPlaceholder";
 import NotFound from "@/pages/NotFound";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +28,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           {/* Public pages */}
           <Route element={<PublicLayout />}>
