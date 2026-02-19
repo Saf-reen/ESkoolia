@@ -1,85 +1,151 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { CheckCircle2, Code2, Building2, DollarSign, Server, ArrowRight } from "lucide-react";
+import { CheckCircle2, Code2, Building2, DollarSign, Server, ArrowRight, TrendingUp, ShieldCheck, Rocket } from "lucide-react";
+import PageHeader from "@/components/layout/PageHeader";
 
 export default function BusinessPage() {
   return (
     <div>
-      <section className="bg-subtle-grid py-16">
-        <div className="container text-center">
-          <h1 className="mb-4 font-display text-4xl font-extrabold text-foreground">White Label & Business</h1>
-          <p className="mx-auto max-w-2xl text-muted-foreground">Launch your own branded School ERP platform. Own the product, own the revenue.</p>
-        </div>
-      </section>
+      <PageHeader
+        title="White Label & Business"
+        breadcrumbs={[
+          { label: "Business" },
+          { label: "White Label" }
+        ]}
+      />
 
-      <section className="py-16">
+      <section className="py-20 -mt-10 relative z-20">
         <div className="container">
-          <div className="mx-auto max-w-3xl space-y-16">
-            <div>
-              <h2 className="mb-4 font-display text-2xl font-bold text-foreground">Your Brand, Your Platform</h2>
-              <p className="text-muted-foreground">Get full ownership of Eskoolia Pro with your own branding, domain, and complete customization capabilities. Sell it as your own SaaS product to schools.</p>
+          <div className="mx-auto max-w-5xl space-y-20">
+
+            {/* Intro Card */}
+            <div className="bg-white p-10 rounded-3xl shadow-xl border border-slate-100 text-center relative overflow-hidden group hover:shadow-2xl transition-all duration-500">
+              <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-500 to-purple-600"></div>
+              <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-100 text-blue-600">
+                <Rocket className="h-8 w-8" />
+              </div>
+              <h2 className="mb-4 font-display text-3xl font-bold text-slate-800">Your Brand, Your Platform</h2>
+              <p className="text-slate-600 max-w-2xl mx-auto leading-relaxed text-lg">
+                Get full ownership of Eskoolia Pro with your own branding, domain, and complete customization capabilities.
+                Launch your own EdTech SaaS business and sell it to schools under your name.
+              </p>
             </div>
 
+            {/* Features Grid */}
             <div>
-              <h2 className="mb-6 font-display text-2xl font-bold text-foreground">What You Get</h2>
-              <div className="grid gap-4 sm:grid-cols-2">
+              <div className="text-center mb-10">
+                <h2 className="font-display text-3xl font-bold text-[#483285]">Why Choose White Label?</h2>
+                <p className="text-slate-500 mt-2">Everything you need to run a successful software business</p>
+              </div>
+
+              <div className="grid gap-6 sm:grid-cols-2">
                 {[
-                  { icon: Code2, title: "Full Source Code", desc: "Complete access to the entire codebase for customization." },
-                  { icon: Building2, title: "Multi Branch System", desc: "Manage unlimited school branches from one dashboard." },
-                  { icon: DollarSign, title: "Revenue Control", desc: "Set your own pricing and collect payments directly." },
-                  { icon: Server, title: "Self-Hosted", desc: "Deploy on your own servers with full data control." },
+                  { icon: Code2, title: "Full Source Code", desc: "Complete access to the entire codebase. Modify, extend, and customize without limits.", color: "text-blue-500", bg: "bg-blue-50" },
+                  { icon: Building2, title: "Multi Branch System", desc: "Manage unlimited schools and branches from a single super-admin dashboard.", color: "text-purple-500", bg: "bg-purple-50" },
+                  { icon: DollarSign, title: "100% Revenue", desc: "Set your own pricing plans. Keep 100% of the profits. No revenue sharing.", color: "text-green-500", bg: "bg-green-50" },
+                  { icon: Server, title: "Self-Hosted Control", desc: "Deploy on your own servers (AWS, DigitalOcean, etc). You own your data.", color: "text-orange-500", bg: "bg-orange-50" },
                 ].map((item) => (
-                  <div key={item.title} className="rounded-lg border border-border bg-card p-5 shadow-card">
-                    <item.icon className="mb-3 h-8 w-8 text-primary" />
-                    <h3 className="mb-1 font-display font-semibold text-foreground">{item.title}</h3>
-                    <p className="text-sm text-muted-foreground">{item.desc}</p>
+                  <div key={item.title} className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm hover:shadow-md transition-all duration-300 group">
+                    <div className={`mb-4 inline-flex p-3 rounded-xl ${item.bg} ${item.color} group-hover:scale-110 transition-transform`}>
+                      <item.icon className="h-6 w-6" />
+                    </div>
+                    <h3 className="mb-2 font-display text-xl font-bold text-slate-800">{item.title}</h3>
+                    <p className="text-slate-600 leading-relaxed">{item.desc}</p>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div>
-              <h2 className="mb-4 font-display text-2xl font-bold text-foreground">Technical Requirements</h2>
-              <ul className="space-y-2">
-                {["VPS or Dedicated Server (2GB RAM minimum)", "cPanel or SSH Access", "Node.js 18+ Runtime", "PostgreSQL Database", "SSL Certificate"].map((r) => (
-                  <li key={r} className="flex items-center gap-2 text-sm text-foreground">
-                    <CheckCircle2 className="h-4 w-4 shrink-0 text-primary" /> {r}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <h2 className="mb-4 font-display text-2xl font-bold text-foreground">Revenue Model</h2>
-              <p className="mb-4 text-muted-foreground">Build a sustainable SaaS business by selling subscriptions to schools in your region.</p>
-              <div className="rounded-lg border border-border bg-secondary/50 p-6">
-                <div className="grid gap-4 sm:grid-cols-3 text-center">
-                  <div>
-                    <div className="font-display text-2xl font-bold text-primary">$50-200</div>
-                    <div className="text-sm text-muted-foreground">Per school / month</div>
-                  </div>
-                  <div>
-                    <div className="font-display text-2xl font-bold text-primary">100+</div>
-                    <div className="text-sm text-muted-foreground">Potential clients</div>
-                  </div>
-                  <div>
-                    <div className="font-display text-2xl font-bold text-primary">$60K+</div>
-                    <div className="text-sm text-muted-foreground">Annual revenue</div>
+            {/* Tech Requirements */}
+            <div className="bg-slate-50 rounded-3xl p-10 border border-slate-100">
+              <div className="flex flex-col md:flex-row gap-10 items-center">
+                <div className="flex-1">
+                  <h2 className="mb-6 font-display text-2xl font-bold text-[#483285]">Technical Requirements</h2>
+                  <ul className="space-y-4">
+                    {[
+                      "VPS or Dedicated Server (2GB RAM minimum)",
+                      "cPanel or SSH Access",
+                      "Node.js 18+ Runtime Environment",
+                      "PostgreSQL or MySQL Database",
+                      "SSL Certificate (HTTPS)"
+                    ].map((r) => (
+                      <li key={r} className="flex items-center gap-3 text-slate-700 font-medium">
+                        <div className="h-6 w-6 rounded-full bg-green-100 flex items-center justify-center shrink-0">
+                          <CheckCircle2 className="h-3.5 w-3.5 text-green-600" />
+                        </div>
+                        {r}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="flex-1 w-full relative">
+                  {/* Abstract Visual Representation */}
+                  <div className="absolute inset-0 bg-blue-500 blur-3xl opacity-10 rounded-full"></div>
+                  <div className="relative bg-white p-6 rounded-2xl shadow-lg border border-slate-100">
+                    <div className="flex items-center gap-4 mb-4 border-b border-slate-100 pb-4">
+                      <Server className="h-10 w-10 text-slate-400" />
+                      <div>
+                        <div className="font-bold text-slate-800">Server Status</div>
+                        <div className="text-xs text-green-500 font-bold flex items-center gap-1"><span className="h-2 w-2 bg-green-500 rounded-full animate-pulse"></span> Online</div>
+                      </div>
+                    </div>
+                    <div className="space-y-2">
+                      <div className="h-2 w-3/4 bg-slate-100 rounded"></div>
+                      <div className="h-2 w-1/2 bg-slate-100 rounded"></div>
+                      <div className="h-2 w-5/6 bg-slate-100 rounded"></div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="rounded-xl border border-primary bg-card p-8 text-center shadow-card-xl">
-              <h2 className="mb-2 font-display text-2xl font-bold text-foreground">One-Time License</h2>
-              <div className="mb-4">
-                <span className="font-display text-5xl font-extrabold text-foreground">$2,499</span>
+            {/* Revenue Model */}
+            <div>
+              <div className="text-center mb-8">
+                <h2 className="font-display text-3xl font-bold text-[#483285]">Revenue Potential</h2>
+                <p className="text-slate-500 mt-2">Build a sustainable recurring revenue stream</p>
               </div>
-              <p className="mb-6 text-muted-foreground">Lifetime license with free updates for 1 year.</p>
-              <Button variant="hero" size="lg" asChild>
-                <Link to="/contact">Contact Sales <ArrowRight className="ml-1 h-4 w-4" /></Link>
-              </Button>
+
+              <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-lg">
+                <div className="grid gap-8 sm:grid-cols-3 text-center divide-y sm:divide-y-0 sm:divide-x divide-slate-100">
+                  <div className="pt-4 sm:pt-0">
+                    <TrendingUp className="h-8 w-8 text-green-500 mx-auto mb-3" />
+                    <div className="font-display text-3xl font-bold text-slate-800">$50-200</div>
+                    <div className="text-sm text-slate-500 font-medium mt-1">Per school / month</div>
+                  </div>
+                  <div className="pt-8 sm:pt-0 px-4">
+                    <ShieldCheck className="h-8 w-8 text-blue-500 mx-auto mb-3" />
+                    <div className="font-display text-3xl font-bold text-slate-800">100+</div>
+                    <div className="text-sm text-slate-500 font-medium mt-1">Potential client base</div>
+                  </div>
+                  <div className="pt-8 sm:pt-0">
+                    <DollarSign className="h-8 w-8 text-orange-500 mx-auto mb-3" />
+                    <div className="font-display text-3xl font-bold text-slate-800">$60K+</div>
+                    <div className="text-sm text-slate-500 font-medium mt-1">Annual revenue</div>
+                  </div>
+                </div>
+              </div>
             </div>
+
+            {/* Pricing Card */}
+            <div className="relative rounded-3xl border-2 border-[#483285] bg-white p-12 text-center shadow-2xl overflow-hidden group">
+              <div className="absolute top-0 right-0 p-16 bg-[#483285]/5 rounded-bl-full -mr-10 -mt-10 transition-transform group-hover:scale-110"></div>
+
+              <h2 className="mb-2 font-display text-3xl font-bold text-[#483285]">One-Time License</h2>
+              <p className="text-slate-500 mb-8">Lifetime license with free updates for 1 year. No recurring fees.</p>
+
+              <div className="mb-8">
+                <span className="font-display text-6xl font-extrabold text-slate-800 tracking-tight">$2,499</span>
+                <span className="text-slate-400 font-medium text-xl block mt-2 line-through opacity-70">$4,999</span>
+              </div>
+
+              <Button size="lg" className="h-14 px-8 text-lg font-bold bg-gradient-to-r from-orange-400 to-orange-600 hover:from-orange-500 hover:to-orange-700 border-none shadow-lg hover:shadow-xl transition-all" asChild>
+                <Link to="/contact">Contact Sales Team <ArrowRight className="ml-2 h-5 w-5" /></Link>
+              </Button>
+
+              <p className="mt-6 text-xs text-slate-400">Limited time offer. Terms and conditions apply.</p>
+            </div>
+
           </div>
         </div>
       </section>

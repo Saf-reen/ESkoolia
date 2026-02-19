@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { CheckCircle2, X } from "lucide-react";
+import PageHeader from "@/components/layout/PageHeader";
 
 const plans = [
   {
@@ -89,50 +90,70 @@ export default function PricingPage() {
 
   return (
     <div>
-      <section className="bg-subtle-grid py-16">
-        <div className="container text-center">
-          <h1 className="mb-4 font-display text-4xl font-extrabold text-foreground">Pricing</h1>
-          <p className="mb-8 text-muted-foreground">Choose the plan that fits your institution.</p>
-          <div className="inline-flex items-center gap-3 rounded-full border border-border bg-card p-1">
-            <button onClick={() => setYearly(false)} className={`rounded-full px-4 py-1.5 text-sm font-medium transition-colors ${!yearly ? "bg-primary text-primary-foreground" : "text-muted-foreground"}`}>Monthly</button>
-            <button onClick={() => setYearly(true)} className={`rounded-full px-4 py-1.5 text-sm font-medium transition-colors ${yearly ? "bg-primary text-primary-foreground" : "text-muted-foreground"}`}>
-              Yearly <span className="text-xs opacity-75">(Save 17%)</span>
-            </button>
-          </div>
-        </div>
-      </section>
+      <PageHeader
+        title="Pricing"
+        breadcrumbs={[
+          { label: "Pricing" },
+          { label: "Plans" }
+        ]}
+      />
 
       <section className="py-16">
         <div className="container">
-          <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-3">
+
+          <div className="text-center mb-12">
+            <h2 className="mb-4 font-display text-3xl font-bold text-[#483285]">Choose the plan that fits your institution</h2>
+            <div className="inline-flex items-center gap-1 rounded-full border border-slate-200 bg-white p-1 shadow-sm">
+              <button
+                onClick={() => setYearly(false)}
+                className={`rounded-full px-6 py-2 text-sm font-bold transition-all ${!yearly ? "bg-[#483285] text-white shadow-md" : "text-slate-500 hover:text-slate-800"}`}
+              >
+                Monthly
+              </button>
+              <button
+                onClick={() => setYearly(true)}
+                className={`rounded-full px-6 py-2 text-sm font-bold transition-all ${yearly ? "bg-[#483285] text-white shadow-md" : "text-slate-500 hover:text-slate-800"}`}
+              >
+                Yearly <span className={`text-[10px] ml-1 uppercase tracking-wide px-1.5 py-0.5 rounded ${yearly ? "bg-white/20" : "bg-green-100 text-green-700"}`}>Save 17%</span>
+              </button>
+            </div>
+          </div>
+
+          <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-3">
             {plans.map((plan) => (
-              <div key={plan.name} className={`relative rounded-xl border p-6 ${plan.highlighted ? "border-primary bg-card shadow-card-xl ring-2 ring-primary/20" : "border-border bg-card shadow-card"}`}>
+              <div key={plan.name} className={`relative rounded-3xl p-8 flex flex-col transition-all duration-300 ${plan.highlighted ? "bg-white border-2 border-[#483285] shadow-2xl scale-105 z-10" : "bg-white border border-slate-200 shadow-lg hover:shadow-xl"}`}>
+
                 {plan.highlighted && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-hero-gradient px-3 py-0.5 text-xs font-semibold text-primary-foreground">Most Popular</div>
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-[#f97316] px-4 py-1 text-xs font-bold uppercase tracking-wider text-white shadow-md">Most Popular</div>
                 )}
-                <h3 className="font-display text-lg font-bold text-foreground">{plan.name}</h3>
-                <p className="mb-4 text-sm text-muted-foreground">{plan.desc}</p>
-                <div className="mb-6">
-                  <span className="font-display text-4xl font-extrabold text-foreground">${yearly ? plan.yearly : plan.monthly}</span>
-                  <span className="text-muted-foreground">/{yearly ? "year" : "month"}</span>
+
+                <h3 className="font-display text-2xl font-bold text-slate-800 mb-2">{plan.name}</h3>
+                <p className="text-slate-500 text-sm mb-6">{plan.desc}</p>
+
+                <div className="mb-8 flex items-baseline">
+                  <span className="font-display text-5xl font-extrabold text-[#483285]">${yearly ? plan.yearly : plan.monthly}</span>
+                  <span className="text-slate-400 font-medium ml-2">/{yearly ? "year" : "month"}</span>
                 </div>
-                <Button variant={plan.highlighted ? "hero" : "outline"} className="mb-6 w-full" asChild>
+
+                <Button className={`mb-8 w-full font-bold h-12 text-md shadow-lg ${plan.highlighted ? "bg-gradient-to-r from-orange-400 to-orange-600 hover:from-orange-500 hover:to-orange-700 text-white border-0" : "bg-slate-50 hover:bg-slate-100 text-slate-700 border border-slate-200 shadow-none hover:shadow-sm"}`} asChild>
                   <Link to="/register">Get Started</Link>
                 </Button>
-                <ul className="space-y-2">
+
+                <div className="space-y-4 flex-1">
+                  <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">Features</p>
                   {Object.entries(plan.features).map(([key, val]) => (
-                    <li key={key} className="flex items-center justify-between text-sm">
-                      <span className="text-muted-foreground">{key}</span>
+                    <div key={key} className="flex items-center justify-between text-sm py-1">
+                      <span className="text-slate-600 font-medium">{key}</span>
                       {val === true ? (
-                        <CheckCircle2 className="h-4 w-4 text-primary" />
+                        <CheckCircle2 className="h-5 w-5 text-green-500" />
                       ) : val === false ? (
-                        <X className="h-4 w-4 text-muted-foreground/40" />
+                        <X className="h-5 w-5 text-slate-300" />
                       ) : (
-                        <span className="text-xs font-medium text-foreground">{val}</span>
+                        <span className="text-xs font-bold px-2 py-1 bg-slate-100 text-slate-700 rounded-md">{val}</span>
                       )}
-                    </li>
+                    </div>
                   ))}
-                </ul>
+                </div>
               </div>
             ))}
           </div>

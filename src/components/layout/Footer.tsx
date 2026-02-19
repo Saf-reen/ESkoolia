@@ -3,10 +3,10 @@ import { GraduationCap, Facebook, Twitter, Linkedin, Instagram, CreditCard, Shie
 
 const footerLinks = {
   "Our Products": [
-    { label: "eSkooly SaaS - FREE", href: "https://eskooly.com" },
-    { label: "eSkooly Desktop", href: "https://desktop.eskooly.com" },
-    { label: "eSkooly Pro", href: "https://pro.eskooly.com" },
-    { label: "eSkooly LMS", href: "https://lms.eskooly.com" },
+    { label: "eSkoolia SaaS - FREE", href: "https://eskooly.com" },
+    { label: "eSkoolia Desktop", href: "https://desktop.eskooly.com" },
+    { label: "eSkoolia Pro", href: "https://pro.eskooly.com" },
+    { label: "eSkoolia LMS", href: "https://lms.eskooly.com" },
   ],
   "Versions": [
     { label: "Latest", href: "https://eskooly.pro/login" },
@@ -53,8 +53,7 @@ export default function Footer() {
         <div className="flex flex-col items-center justify-center mb-16 text-center">
           <Link to="/" className="flex flex-col items-center gap-2 group">
             <div className="flex items-center gap-2">
-              <span className="font-display text-4xl font-black tracking-tight italic">ESKOOLY</span>
-              <span className="bg-orange-500 text-white text-[10px] font-bold px-1 py-0.5 rounded uppercase tracking-wider -mt-4">Pro</span>
+              <span className="font-display text-4xl font-black tracking-tight italic">ESKOOLIA</span>
             </div>
             <span className="text-white/60 text-sm tracking-widest uppercase mt-1">Ultimate Education Management ERP</span>
           </Link>
@@ -124,7 +123,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="mt-16 text-center text-white/40 text-sm flex flex-col sm:flex-row justify-between items-center border-t border-white/5 pt-6">
-          <div>Copyright © 2026. All Rights Reserved By <a href="https://eskooly.com" className="hover:text-white transition-colors">eSkooly Inc.</a></div>
+          <div>Copyright © 2026. All Rights Reserved By <a href="https://eskooly.com" className="hover:text-white transition-colors">eSkoolia Inc.</a></div>
           <div className="mt-2 sm:mt-0">Prices are listed without VAT</div>
         </div>
       </div>

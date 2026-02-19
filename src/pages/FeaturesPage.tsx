@@ -5,6 +5,7 @@ import {
   BarChart3, Briefcase, Bus, BedDouble, Bell, CalendarDays,
   Building2, Shield, Monitor, Package, Clock, Layers, CheckCircle2
 } from "lucide-react";
+import PageHeader from "@/components/layout/PageHeader";
 
 const moduleGroups = [
   {
@@ -50,39 +51,40 @@ const moduleGroups = [
 export default function FeaturesPage() {
   return (
     <div>
-      <section className="bg-subtle-grid py-16">
-        <div className="container text-center">
-          <h1 className="mb-4 font-display text-4xl font-extrabold text-foreground">All Features</h1>
-          <p className="mx-auto max-w-2xl text-muted-foreground">
-            Explore every module built into Eskoolia Pro — designed for schools of all sizes.
-          </p>
-        </div>
-      </section>
+      <PageHeader
+        title="All Features"
+        breadcrumbs={[
+          { label: "Features" },
+          { label: "All Features" }
+        ]}
+      />
+
+      <div className="py-8"></div> {/* Spacer */}
 
       {moduleGroups.map((group) => (
-        <section key={group.title} className="border-b border-border py-16 last:border-b-0">
+        <section key={group.title} className="py-12 border-b border-gray-100 last:border-0">
           <div className="container">
-            <h2 className="mb-8 font-display text-2xl font-bold text-foreground">{group.title}</h2>
-            <div className="space-y-8">
+            <h2 className="mb-12 font-display text-3xl font-bold text-[#483285] text-center">{group.title}</h2>
+
+            <div className="grid gap-8">
               {group.modules.map((mod, i) => (
-                <div key={mod.title} className={`grid items-center gap-8 lg:grid-cols-2 ${i % 2 === 1 ? "lg:direction-rtl" : ""}`}>
-                  <div className={i % 2 === 1 ? "lg:order-2" : ""}>
-                    <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
-                      <mod.icon className="h-6 w-6" />
+                <div key={mod.title} className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-md transition-shadow group">
+                  <div className="flex flex-col md:flex-row gap-6">
+                    <div className="shrink-0">
+                      <div className="h-14 w-14 rounded-xl bg-[#483285]/5 text-[#483285] flex items-center justify-center group-hover:bg-[#483285] group-hover:text-white transition-colors duration-300">
+                        <mod.icon className="h-7 w-7" />
+                      </div>
                     </div>
-                    <h3 className="mb-2 font-display text-xl font-bold text-foreground">{mod.title}</h3>
-                    <p className="mb-4 text-muted-foreground">{mod.desc}</p>
-                    <ul className="space-y-2">
-                      {mod.bullets.map((b) => (
-                        <li key={b} className="flex items-center gap-2 text-sm text-foreground">
-                          <CheckCircle2 className="h-4 w-4 shrink-0 text-primary" /> {b}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div className={`rounded-xl border border-border bg-secondary/50 p-8 ${i % 2 === 1 ? "lg:order-1" : ""}`}>
-                    <div className="flex h-48 items-center justify-center">
-                      <mod.icon className="h-20 w-20 text-primary/20" />
+                    <div className="flex-1">
+                      <h3 className="font-display text-xl font-bold text-slate-800 mb-2">{mod.title}</h3>
+                      <p className="text-slate-600 mb-4 leading-relaxed">{mod.desc}</p>
+                      <div className="flex flex-wrap gap-x-6 gap-y-2">
+                        {mod.bullets.map((b) => (
+                          <div key={b} className="flex items-center gap-2 text-sm text-slate-500 font-medium">
+                            <CheckCircle2 className="h-4 w-4 shrink-0 text-orange-400" /> {b}
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -92,10 +94,11 @@ export default function FeaturesPage() {
         </section>
       ))}
 
-      <section className="bg-hero-gradient py-16">
-        <div className="container text-center">
-          <h2 className="mb-4 font-display text-2xl font-bold text-primary-foreground">Ready to Explore?</h2>
-          <Button size="lg" variant="secondary" asChild>
+      <section className="bg-[#483285] py-20 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20"></div>
+        <div className="container text-center relative z-10">
+          <h2 className="mb-6 font-display text-3xl font-bold text-white">Ready to Explore?</h2>
+          <Button size="lg" className="bg-white text-[#483285] hover:bg-slate-100 font-bold border-none" asChild>
             <Link to="/register">Start Free Trial</Link>
           </Button>
         </div>

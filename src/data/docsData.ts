@@ -234,6 +234,10 @@ export const docsContent = [
                              <p class="mt-1 mb-6 text-slate-600">The user can see their profile, change their existing password. Logout button at the bottom of this profile section.</p>
                              <img src="/Eskooly/dashboard2.png" alt="Number of students" class="w-full rounded-lg shadow-md border border-slate-200" />
                              <img src="/Eskooly/dashboard3.png" alt="Number of students" class="w-full rounded-lg shadow-md border border-slate-200" />
+                    </li>                    
+                    <li>
+                             <h4 class="font-bold text-xl text-slate-800 mb-4">1. Dashboard</h4>
+                             <p class="mt-1 mb-6 text-slate-600">At the top menu of left sidebar is Dashboard. There are several view port in dashboard. we can see the number of students, teachers and staff etc. at a glance. Summary of the Income and Expenses is very important for ERP system. After login a user can see the update for that day.</p>
                     </li>
                 </ol>
             </div>`
@@ -247,6 +251,9 @@ export const docsContent = [
                 slug: "admission-query", title: "Admission Query", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Admission Query</h3>
+                <img src="/Eskooly/admission_query.png" alt="Admission Query" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <img src="/Eskooly/admission_query0.1.png" alt="Admission Query" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <img src="/Eskooly/admission_query1.png" alt="Admission Query" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-4 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Add Admission Query</span>
@@ -270,6 +277,7 @@ export const docsContent = [
                 slug: "visitor-book", title: "Visitor Book", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Visitor Book</h3>
+                <img src="/Eskooly/visitor_book.png" alt="Visitor Book" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-4 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Add Visitor</span>
@@ -285,6 +293,7 @@ export const docsContent = [
                 slug: "complaint", title: "Complaint", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Complaint</h3>
+                <img src="/Eskooly/complaint.png" alt="Complaint" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-4 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Add Complaint</span>
@@ -300,6 +309,7 @@ export const docsContent = [
                 slug: "postal-receive", title: "Postal Receive", content: `
              <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Postal Receive</h3>
+                <img src="/Eskooly/postal_receive.png" alt="Postal Receive" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-4 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Add Postal Receive</span>
@@ -315,6 +325,7 @@ export const docsContent = [
                 slug: "postal-dispatch", title: "Postal Dispatch", content: `
             <div class="space-y-6">
                  <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Postal Dispatch</h3>
+                 <img src="/Eskooly/postal_dispatch.png" alt="Postal Dispatch" class="w-full rounded-lg shadow-md border border-slate-200" />
                  <ol class="list-decimal pl-5 space-y-4 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Add Postal Dispatch</span>
@@ -330,6 +341,7 @@ export const docsContent = [
                 slug: "phone-call-log", title: "Phone Call Log", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Phone Call Log</h3>
+                <img src="/Eskooly/phone_log.png" alt="Phone Call Log" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-4 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Add Phone Call</span>
@@ -345,6 +357,7 @@ export const docsContent = [
                 slug: "admin-setup", title: "Admin Setup", content: `
             <div class="space-y-6">
                  <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Admin Setup</h3>
+                 <img src="/Eskooly/admin_setup.png" alt="Admin Setup" class="w-full rounded-lg shadow-md border border-slate-200" />
                  <ol class="list-decimal pl-5 space-y-4 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Add Admin Setup</span>
@@ -360,6 +373,7 @@ export const docsContent = [
                 slug: "student-certificate", title: "Student Certificate", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Certificate</h3>
+                <img src="/Eskooly/student_certificate.png" alt="Student Certificate" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-4 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Add Student Certificate</span>
@@ -375,6 +389,7 @@ export const docsContent = [
                 slug: "generate-certificate", title: "Generate Certificate", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Generate Certificate</h3>
+                <img src="/Eskooly/generate_certificate.png" alt="Generate Certificate" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-4 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Search Generate Certificate</span>
@@ -389,6 +404,7 @@ export const docsContent = [
                 slug: "student-id-card", title: "Student ID Card", content: `
              <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student ID Card</h3>
+                <img src="/Eskooly/student_id_card.png" alt="Student ID Card" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-4 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Add Student ID Card</span>
@@ -404,6 +420,7 @@ export const docsContent = [
                 slug: "generate-id-card", title: "Generate ID Card", content: `
              <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Generate ID Card</h3>
+                <img src="/Eskooly/generate_id_card.png" alt="Generate ID Card" class="w-full rounded-lg shadow-md border border-slate-200" />
                  <ol class="list-decimal pl-5 space-y-4 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Search Generate ID Card</span>
@@ -423,6 +440,7 @@ export const docsContent = [
                 slug: "general-setting", title: "General Setting", content: `
              <div class="space-y-6">
                  <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly General Setting</h3>
+                 <img src="/Eskooly/general-setting.png" alt="General Setting" class="w-full rounded-lg shadow-md border border-slate-200" />
                  <ol class="list-decimal pl-5 space-y-4 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Upload Logo</span> 
@@ -435,6 +453,7 @@ export const docsContent = [
                     <li>
                         <span class="font-bold text-slate-700">General Settings View</span> 
                         <p class="mt-1">Summary of General Settings View</p>
+                        <img src="/Eskooly/general-setting2.png" alt="General Settings View" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Upload Form of General Settings</span> 
@@ -454,12 +473,14 @@ export const docsContent = [
                 slug: "email-setting", title: "Email Setting", content: `
              <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Email Setting</h3>
+                <img src="/Eskooly/email-setting.png" alt="Email Setting" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <p>You have to configuration email.</p>
             </div>` },
             {
                 slug: "payment-method-settings", title: "Payment Method Settings", content: `
              <div class="space-y-6">
                   <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Payment Method Settings</h3>
+                  <img src="/Eskooly/payment-paypal.png" alt="Payment Method Settings" class="w-full rounded-lg shadow-md border border-slate-200" />
                   <ol class="list-decimal pl-5 space-y-4 marker:text-slate-700 marker:font-bold">
                      <li>
                          <span class="font-bold text-slate-700">Select Payment Method</span>
@@ -472,10 +493,37 @@ export const docsContent = [
                      <li>
                          <span class="font-bold text-slate-700">Switch Payment Method</span>
                          <p class="mt-1">The administrator can switch within payment method</p>
+                         <img src="/Eskooly/payment-stripe.png" alt="Payment Method Settings" class="w-full rounded-lg shadow-md border border-slate-200" />
                      </li>
                      <li>
                          <span class="font-bold text-slate-700">Stripe Payment Method</span>
                          <p class="mt-1">Stripe is the premier option for online credit card processing; it’s also the most popular premium payment gateway for Easy Digital Downloads – and it’s our preferred option!</p>
+
+                         <h5 class="font-bold text-slate-700 mt-4 mb-2">Adding Stripe To Your Create Account</h5>
+                         <p class="mt-1 mb-2">You will need to add Stripe as a payment gateway option to your Create account.</p>
+
+                         <p class="mt-2 font-semibold text-slate-700">To do this, please follow the steps below:</p>
+                         <ul class="list-disc pl-5 mt-2 space-y-1 text-slate-600">
+                             <li>Log in to your Create account</li>
+                             <li>Click "Shop" from the Top menu</li>
+                             <li>Click "Shop Settings" from the left-hand menu</li>
+                             <li>Click "Payment Gateways"</li>
+                             <li>Click "Add New Gateway"</li>
+                             <li>Choose "Stripe"</li>
+                             <li>Click "Save Changes" to add the gateway</li>
+                         </ul>
+
+                         <h5 class="font-bold text-slate-700 mt-6 mb-2">Testing Stripe With Your Create Website</h5>
+
+                         <p class="mt-2 font-semibold text-slate-700">To get these, please follow the steps below:</p>
+                         <ul class="list-disc pl-5 mt-2 space-y-1 text-slate-600">
+                             <li>Log in to your Stripe account</li>
+                             <li>Click "Account" from the top right hand of the page</li>
+                             <li>Click "Account Settings"</li>
+                             <li>Click the "API Keys" from the top tabs</li>
+                             <li>Here, you will need the "Test Secret Key" and "Test Publishable Key"</li>
+                         </ul>
+                         <img src="/Eskooly/stripe_configuration_screen.png" alt="Payment Method Settings" class="w-full rounded-lg shadow-md border border-slate-200" />
                      </li>
                   </ol>
              </div>` },
@@ -483,6 +531,7 @@ export const docsContent = [
                 slug: "role-permission", title: "Role Permission", content: `
               <div class="space-y-6">
                   <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Role Permission</h3>
+                  <img src="/Eskooly/role-permission.png" alt="Role Permission" class="w-full rounded-lg shadow-md border border-slate-200" />
                    <ol class="list-decimal pl-5 space-y-4 marker:text-slate-700 marker:font-bold">
                       <li>
                          <span class="font-bold text-slate-700">Role Permission</span>
@@ -491,6 +540,7 @@ export const docsContent = [
                       <li>
                          <span class="font-bold text-slate-700">Select</span>
                          <p class="mt-1">The administrator can edit or delete role and assign their permission</p>
+                         <img src="/Eskooly/assign-permission.png" alt="Role Permission" class="w-full rounded-lg shadow-md border border-slate-200" />
                       </li>
                       <li>
                          <span class="font-bold text-slate-700">Role Permission Assign</span>
@@ -505,6 +555,7 @@ export const docsContent = [
                 slug: "base-setup", title: "Base Setup", content: `
               <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Base Setup</h3>
+                <img src="/Eskooly/base-setup.png" alt="Base Setup" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-4 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Base Setup</span>
@@ -517,6 +568,7 @@ export const docsContent = [
                 slug: "academic-year", title: "Academic Year", content: `
               <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Academic Year</h3>
+                <img src="/Eskooly/academic-year.png" alt="Academic Year" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-4 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Academic Year</span>
@@ -529,6 +581,7 @@ export const docsContent = [
                 slug: "session", title: "Session", content: `
               <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Session</h3>
+                <img src="/Eskooly/session.png" alt="Session" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-4 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Session</span>
@@ -541,6 +594,7 @@ export const docsContent = [
                 slug: "holiday", title: "Holiday", content: `
               <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Holiday</h3>
+                <img src="/Eskooly/holiday.png" alt="Holiday" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-4 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Holiday</span>
@@ -557,15 +611,18 @@ export const docsContent = [
                 slug: "sms-settings", title: "Sms Settings", content: `
               <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">Sms Settings</h3>
+                <img src="/Eskooly/sms-settings.png" alt="Sms Settings" class="w-full rounded-lg shadow-md border border-slate-200" />
                  <ol class="list-decimal pl-5 space-y-4 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Sms Settings</span>
                         <p class="mt-1">You can seletect sms sender service provider</p>
-                        <p class="mt-1">Clickatell SMS Platform is a powerful, fully scalable communication system that enables you to manage your business communication more effectively.</p>
+                        <p class="mt-1">Clickatell SMS Platform is a powerful, fully scalable communication system that enables you to manage your business communication more effectively. With an infrastructure covering over 220 territories and 1 000+ networks, your business can now connect with customers in every corner of the world.</p>
+                        <img src="/Eskooly/sms-settings2.png" alt="Sms Settings" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Sms Configuration</span>
                         <p class="mt-1">You can send sms to the students, teachers, & parents. You have to purchase package for sending message. There are two already implemented.</p>
+                        <img src="/Eskooly/sms-settings3.png" alt="Sms Settings" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                 </ol>
               </div>`
@@ -574,6 +631,7 @@ export const docsContent = [
                 slug: "weekend", title: "Weekend", content: `
               <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">Weekend</h3>
+                <img src="/Eskooly/weekend.png" alt="Weekend" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-4 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Weekend</span>
@@ -590,6 +648,7 @@ export const docsContent = [
                 slug: "language-settings", title: "Language Settings", content: `
               <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">Language Settings</h3>
+                <img src="/Eskooly/language-settings.png" alt="Language Settings" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-4 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Language</span>
@@ -602,7 +661,10 @@ export const docsContent = [
                     <li>
                         <span class="font-bold text-slate-700">Language Setup</span>
                         <p class="mt-1">You can setup your custom language</p>
+                        <img src="/Eskooly/language-setup.png" alt="Language Settings" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
+                        <span class="font-bold text-slate-700">1. Chnage language Phrases</span>
+                        <p class="mt-1">You can change phrases according to your language</p>
                 </ol>
               </div>`
             },
@@ -610,6 +672,7 @@ export const docsContent = [
                 slug: "backup", title: "Backup", content: `
               <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">Backup</h3>
+                <img src="/Eskooly/backup.png" alt="Backup" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-4 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Backup</span>
@@ -634,6 +697,7 @@ export const docsContent = [
                 slug: "update-system", title: "Update System", content: `
               <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">Update System</h3>
+                <img src="/Eskooly/update-system.png" alt="Update System" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-4 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Update System</span>
@@ -651,16 +715,15 @@ export const docsContent = [
                 slug: "dormitory-rooms", title: "Dormitory Rooms", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Dormitory Rooms</h3>
+                        <img src="/Eskooly/dormitory-rooms.png" alt="Add Dormitory Rooms" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Add Dormitory Rooms</span>
                         <p class="mt-1 mb-3">Super admin can add dormitory Rooms which should have to include dormitory name, room number, room type, bed number and it's cost.</p>
-                        <img src="/Eskooly/dormitory-rooms.png" alt="Add Dormitory Rooms" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Select Action</span>
                         <p class="mt-1 mb-3">In the dormitory room list, super admin can able to edit and delete the dormitory room information.</p>
-                        <img src="/Eskooly/dormitory-rooms.png" alt="Select Action" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                 </ol>
             </div>` },
@@ -668,16 +731,15 @@ export const docsContent = [
                 slug: "dormitory-list", title: "Dormitory List", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Dormitory List</h3>
+                        <img src="/Eskooly/dormitory-list.png" alt="Add Dormitory" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Add Dormitory</span>
                         <p class="mt-1 mb-3">For adding dormitory super admin need to add dormitory name,type and how much allotment are possible in this dormitory.</p>
-                        <img src="/Eskooly/dormitory-list.png" alt="Add Dormitory" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Select Actions</span>
                         <p class="mt-1 mb-3">Edit and delete option are permitted for super admin.</p>
-                        <img src="/Eskooly/dormitory-list.png" alt="Select Actions" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                 </ol>
             </div>` },
@@ -685,16 +747,15 @@ export const docsContent = [
                 slug: "room-type", title: "Room Type", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Room Type</h3>
+                        <img src="/Eskooly/room-type.png" alt="Add Room Type" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Add Room Type</span>
                         <p class="mt-1 mb-3">Which kinds of rooms are available in the dormitory, super admin can add this.</p>
-                        <img src="/Eskooly/room-type.png" alt="Add Room Type" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Select Actions</span>
                         <p class="mt-1 mb-3">Super admin can edit and delete the room type list.</p>
-                        <img src="/Eskooly/room-type.png" alt="Select Actions" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                 </ol>
             </div>` },
@@ -702,11 +763,11 @@ export const docsContent = [
                 slug: "student-dormitory-report", title: "Student Dormitory Report", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Dormitory Report</h3>
+                <img src="/Eskooly/student-transport-report.png" alt="Search Student Dormitory Report" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Search Student Dormitory Report</span>
                         <p class="mt-1 mb-3">For searching student dormitory list class, section and dormitory name should have to select.</p>
-                        <img src="/Eskooly/dormitory.png" alt="Search Student Dormitory Report" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                 </ol>
             </div>` }
@@ -719,37 +780,38 @@ export const docsContent = [
                 slug: "transport-route", title: "Transport Route", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Transport Route</h3>
-                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
-                    <li>
-                        <span class="font-bold text-slate-700">Routes</span>
-                        <p class="mt-1 mb-3">Go to Transport > Routes enter Route Title, Fare & click Save button. All the routes can be see right side at this page.</p>
-                        <img src="/Eskooly/add-route.png" alt="Routes" class="w-full rounded-lg shadow-md border border-slate-200" />
-                    </li>
-                </ol>
+                <img src="/Eskooly/add-route.png" alt="Routes" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <div class="space-y-4">
+                <h1 class="text-lg font-bold text-slate-700">Transport Route</h1>
+                    <p class="font-bold text-slate-700">This module has 3 sections -</p>
+                    <ul class="list-disc pl-5 space-y-1 text-slate-600">
+                        <li>Routes</li>
+                        <li>Vehicles</li>
+                        <li>Assign Vehicle</li>
+                        <li>Student Transport Report</li>
+                    </ul>
+                    <p class="text-slate-600">First we will add Routes then add Vehicles then Assign Vehicle on Routes then check Student Transport Report.</p>
+                    
+                    <div class="space-y-4 mt-4 text-slate-600">
+                        <p><span class="font-bold text-slate-700">Routes -</span> Go to Transport > Routes enter Route Title, Fare & click Save button. All the routes can be see right side at this page.</p>
+                        
+                        <p>Go to Transport > Vehicles enter Vehicle No, Vehicle Model, Year Made, Driver Name, Driver License, Driver Contact, Note & click Save button. All the vehicles can be see right side at this page.</p>
+                        
+                        <p><span class="font-bold text-slate-700">Student Transport Report -</span> Go to Student Information > Student Transport Report here you can view all students list who has availed transport facility.</p>
+                    </div>
+                </div>
             </div>` },
             {
                 slug: "vehicle", title: "Vehicle", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Vehicle</h3>
-                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
-                    <li>
-                        <span class="font-bold text-slate-700">Add Vehicle</span>
-                        <p class="mt-1 mb-3">Go to Transport > Vehicles enter Vehicle No, Vehicle Model, Year Made, Driver Name, Driver License, Driver Contact, Note & click Save button. All the vehicles can be see right side at this page.</p>
-                        <img src="/Eskooly/vehicle.png" alt="Add Vehicle" class="w-full rounded-lg shadow-md border border-slate-200" />
-                    </li>
-                </ol>
+                <img src="/Eskooly/vehicle.png" alt="Add Vehicle" class="w-full rounded-lg shadow-md border border-slate-200" />
             </div>` },
             {
                 slug: "assign-vehicle", title: "Assign Vehicle", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Assign Vehicle</h3>
-                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
-                    <li>
-                        <span class="font-bold text-slate-700">Assign Vehicle</span>
-                        <p class="mt-1 mb-3">Assign Vehicle on Routes then check Student Transport Report.</p>
-                        <img src="/Eskooly/assign-vehicle.png" alt="Assign Vehicle" class="w-full rounded-lg shadow-md border border-slate-200" />
-                    </li>
-                </ol>
+                <img src="/Eskooly/assign-vehicle.png" alt="Assign Vehicle" class="w-full rounded-lg shadow-md border border-slate-200" />
             </div>` },
             {
                 slug: "student-transport-report", title: "Student Transport Report", content: `
