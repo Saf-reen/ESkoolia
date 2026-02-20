@@ -19,11 +19,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b border-transparent bg-[#483285] text-white shadow-md">
       <div className="container flex h-20 items-center justify-between relative">
         <Link to="/" className="flex items-center gap-2 font-display text-xl font-bold text-white group">
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 shadow-sm group-hover:bg-white/20 transition-colors">
-            <GraduationCap className="h-5 w-5 text-white" />
-          </div>
-          <span className="font-extrabold tracking-tight text-2xl italic">ESKOOLIA</span>
-          {/* <span className="bg-orange-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded ml-1 uppercase tracking-wider -translate-y-2">Pro</span> */}
+          <img src="/eskoolia_logo_.png" alt="Eskooly" className="h-24 w-auto" />
         </Link>
 
         {/* Desktop nav centered */}

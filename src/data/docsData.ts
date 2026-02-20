@@ -1,4 +1,4 @@
-import {
+﻿import {
     Menu, Cloud, Server, BookOpen, Info, LayoutDashboard,
     Users, Settings, Home, Bus, Package, Library,
     MessageSquare, Book, GraduationCap, ClipboardList,
@@ -497,7 +497,7 @@ export const docsContent = [
                      </li>
                      <li>
                          <span class="font-bold text-slate-700">Stripe Payment Method</span>
-                         <p class="mt-1">Stripe is the premier option for online credit card processing; it’s also the most popular premium payment gateway for Easy Digital Downloads – and it’s our preferred option!</p>
+                         <p class="mt-1">Stripe is the premier option for online credit card processing; itâ€™s also the most popular premium payment gateway for Easy Digital Downloads â€“ and itâ€™s our preferred option!</p>
 
                          <h5 class="font-bold text-slate-700 mt-4 mb-2">Adding Stripe To Your Create Account</h5>
                          <p class="mt-1 mb-2">You will need to add Stripe as a payment gateway option to your Create account.</p>
@@ -1359,7 +1359,6 @@ export const docsContent = [
                     <li>
                         <span class="font-bold text-slate-700">Exam List</span>
                         <p class="mt-1 mb-3">In the exam list, exam's all information are shown in details. Super admin can delete the exam list.</p>
-                        <img src="/Eskooly/examinations1.png" alt="Exam List" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                 </ol>
             </div>` },
@@ -1367,36 +1366,33 @@ export const docsContent = [
                 slug: "exam-schedule", title: "Exam Schedule", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Exam Schedule</h3>
+                        <img src="/Eskooly/exam-schedule.png" alt="Add Exam Schedule" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Add Exam Schedule</span>
                         <p class="mt-1 mb-3">By Clicking the right-top button add exam schedule super admin enter the exam setup schedule page.</p>
-                        <img src="/Eskooly/exam-schedule.png" alt="Add Exam Schedule" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Search Exam Schedule</span>
                         <p class="mt-1 mb-3">To search the exam schedule super admin have to select the exam name, class and section. The assigned exam routine is shown in the exam schedule section.</p>
-                        <img src="/Eskooly/exam-schedule.png" alt="Search Exam Schedule" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <img src="/Eskooly/exam-schedule2.png" alt="Search for Set Exam Schedule" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Search for Set Exam Schedule</span>
                         <p class="mt-1 mb-3">After clicking the add exam schedule button super will enter Exam Schedule create page. In this page, by selecting the exam name, class and section super admin will get the set exam schedule section.</p>
-                        <img src="/Eskooly/exam-schedule2.png" alt="Search for Set Exam Schedule" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Assign Exam Schedule</span>
                         <p class="mt-1 mb-3">To assign exam schedule just click the (+) symbol, then super admin will get the create exam routine modal.</p>
-                        <img src="/Eskooly/exam-schedule3.png" alt="Assign Exam Schedule" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Assigned exam Schedule</span>
                         <p class="mt-1 mb-3">If any exam schedule is assigned then the assigned exam schedule is shown in this list.</p>
-                        <img src="/Eskooly/exam-schedule.png" alt="Assigned exam Schedule" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <img src="/Eskooly/exam-schedule3.png" alt="Assign Exam Schedule" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Create Exam Routine</span>
                         <p class="mt-1 mb-3">just select the date and the room number super admin can setup the exam routine for particular subject in particular date and time.</p>
-                        <img src="/Eskooly/exam-schedule.png" alt="Create Exam Routine" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                 </ol>
             </div>` },
@@ -1404,16 +1400,15 @@ export const docsContent = [
                 slug: "marks-register", title: "Marks Register", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Marks Register</h3>
+                        <img src="/Eskooly/mark-register.png" alt="Mark Register" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Mark Register</span>
                         <p class="mt-1 mb-3">In the mark register submodule, super admin can see the mark registered list by searching through selecting the exam name,class and section. By clicking the right-top button add button super admin can enter the fills marks page. To search the certain fill up marks list, super admin have to select exam name, class, section and subject.</p>
-                        <img src="/Eskooly/mark-register.png" alt="Mark Register" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">fill up the Marks</span>
                         <p class="mt-1 mb-3">In the Fill up marks lists, All the particular mark sections are included like class test marks, homework marks, written exam etc. If anyone was absent in the examination then just check the is absent. After distribute all marks by submit the save button then marks will be registered.</p>
-                        <img src="/Eskooly/mark-grade.png" alt="fill up the Marks" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                 </ol>
             </div>` },
@@ -1421,26 +1416,120 @@ export const docsContent = [
                 slug: "exam-attendance", title: "Exam Attendance", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Exam Attendance</h3>
+                        <img src="/Eskooly/exam-attendance.png" alt="Attendance Create" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <img src="/Eskooly/exam-attendance1.png" alt="Attendance Status" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Attendance Create</span>
                         <p class="mt-1 mb-3">By clicking the exam attendance button, super admin can able to enter the exam attendance setup page.</p>
-                        <img src="/Eskooly/exam-attendance.png" alt="Attendance Create" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Search Exam Attendance</span>
                         <p class="mt-1 mb-3">To search the certain exam attendance have to select the exam name, class, section and subject.</p>
-                        <img src="/Eskooly/exam-attendance.png" alt="Search Exam Attendance" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Attendance Status</span>
                         <p class="mt-1 mb-3">Exam attendance list will show the the search result. in this list, attendance column will show which student was present or absent in this particular exam.</p>
-                        <img src="/Eskooly/exam-attendance1.png" alt="Attendance Status" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Setup Exam Attendance</span>
                         <p class="mt-1 mb-3">To get the desire exams attendance setup section just select the exam name, class, section and subject. in this attendance setup section, super admin can check the absent or present option button.</p>
-                        <img src="/Eskooly/exam-attendance.png" alt="Setup Exam Attendance" class="w-full rounded-lg shadow-md border border-slate-200" />
+                    </li>
+                </ol>
+            </div>` },
+            {
+                slug: "marks-grade", title: "Marks Grade", content: `
+            <div class="space-y-6">
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Marks Grade</h3>
+                <img src="/Eskooly/mark-grade.png" alt="Marks Grade" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
+                    <li>
+                        <span class="font-bold text-slate-700">Add Grade</span>
+                        <p class="mt-1 mb-3">To add certain mark's grade,super admin need to add grade name,it's GPA, percentage range etc.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Select Section</span>
+                        <p class="mt-1 mb-3">Super admin can edit and delete the grade list.</p>
+                    </li>
+                </ol>
+            </div>` },
+            {
+                slug: "question-group", title: "Question Group", content: `
+            <div class="space-y-6">
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Question Group</h3>
+                <img src="/Eskooly/question-group.png" alt="Question Group" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
+                    <li>
+                        <span class="font-bold text-slate-700">Add Question Group</span>
+                        <p class="mt-1 mb-3">To add question, super admin have to include the question group name.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Select Section</span>
+                        <p class="mt-1 mb-3">Super admin can edit and delete the question group list.</p>
+                    </li>
+                </ol>
+            </div>` },
+            {
+                slug: "question-bank", title: "Question Bank", content: `
+            <div class="space-y-6">
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Question Bank</h3>
+                <img src="/Eskooly/question-bank.png" alt="Question Bank" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
+                    <li>
+                        <span class="font-bold text-slate-700">Question Bank</span>
+                        <p class="mt-1 mb-3">To add question bank,super admin need to select question group,class, section, question type, question name and it's marks.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Select Section</span>
+                        <p class="mt-1 mb-3">Super admin can edit and delete the question bank list.</p>
+                    </li>
+                </ol>
+            </div>` },
+            {
+                slug: "online-exam", title: "Online Exam", content: `
+            <div class="space-y-6">
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Online Exam</h3>
+                <img src="/Eskooly/online-exam.png" alt="Online Exam" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <img src="/Eskooly/question-list.png" alt="Online Exam" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <img src="/Eskooly/view-question.png" alt="Online Exam" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <img src="/Eskooly/marking.png" alt="Online Exam" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <img src="/Eskooly/result-view.png" alt="Online Exam" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
+                    <li>
+                        <span class="font-bold text-slate-700">Add Online Exam</span>
+                        <p class="mt-1 mb-3">To add online exam, exam title, class, section, subjects, date, start and end time, minimum percentage and the exam's instruction.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Publication status</span>
+                        <p class="mt-1 mb-3">In the online exam list, publication status will show the examination is published or pending</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Select Action</span>
+                        <p class="mt-1 mb-3">Manage question, mark register, edit and delete can allow for super admin in the action column.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">View Result</span>
+                        <p class="mt-1 mb-3">By just clicking the view result, result will be shown.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Save question</span>
+                        <p class="mt-1 mb-3">After clicking the manage question option,super admin can enter the question list page where admin can save the question for particular online examination.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">view Question</span>
+                        <p class="mt-1 mb-3">Super admin can see the details of the selected question.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">View question Modal</span>
+                        <p class="mt-1 mb-3">In this modal,Super admin can see the details of the selected question.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Marking</span>
+                        <p class="mt-1 mb-3">Super admin can see the marks setup list of the participant, super admin can add exam mark of the individual.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Result View</span>
+                        <p class="mt-1 mb-3">By clicking the view result button, super admin can see the full result sheet.</p>
                     </li>
                 </ol>
             </div>` }
@@ -1453,11 +1542,20 @@ export const docsContent = [
                 slug: "approve-leave-request", title: "Approve Leave Request", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Approve Leave Request</h3>
+                        <img src="/Eskooly/Approve-Leave-Request.png" alt="Approve Leave Request" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <img src="/Eskooly/view (1).png" alt="Approve Leave Request" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Approve Leave Request</span>
                         <p class="mt-1 mb-3">Super admin can approve the leave request on this page. By clicking the view icon he can approve the request from the leave request list.</p>
-                        <img src="/Eskooly/Approve-Leave-Request.png" alt="Approve Leave Request" class="w-full rounded-lg shadow-md border border-slate-200" />
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Select Action</span>
+                        <p class="mt-1 mb-3">In this Action column, view/edit and delete options are includes.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">View or Edit Leave Details</span>
+                        <p class="mt-1 mb-3">In this modal, super admin can see the detail and he change the approve status if he wants.</p>
                     </li>
                 </ol>
             </div>` },
@@ -1465,16 +1563,20 @@ export const docsContent = [
                 slug: "apply-leave", title: "Apply Leave", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Apply Leave</h3>
+                        <img src="/Eskooly/apply-leave.png" alt="Apply Leave" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <img src="/Eskooly/view-leave-details.png" alt="Leave List" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
-                        <span class="font-bold text-slate-700">Apply Leave</span>
-                        <p class="mt-1 mb-3">Super admin can apply for leave on this page. Apply date, leave type, leave from date, leave to date, reason and attachment are needed to submit.</p>
-                        <img src="/Eskooly/apply-leave.png" alt="Apply Leave" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <span class="font-bold text-slate-700">My remaining leave</span>
+                        <p class="mt-1 mb-3">In this list, super admin can see his remaining days of leave, extra taken leave and the total days for a particular leave type.</p>
                     </li>
                     <li>
-                        <span class="font-bold text-slate-700">Leave List</span>
-                        <p class="mt-1 mb-3">Super admin can see the leave list. He can edit and delete the leave list.</p>
-                        <img src="/Eskooly/view-leave-details.png" alt="Leave List" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <span class="font-bold text-slate-700">Add Apply leave</span>
+                        <p class="mt-1 mb-3">Super admin can the apply leave, by adding the date, leave type, which date to which date, the reason etc.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Select Action</span>
+                        <p class="mt-1 mb-3">The leave list will show all the leaves which is available.In this list, view/edit and delete options are includes in action column.</p>
                     </li>
                 </ol>
             </div>` },
@@ -1482,16 +1584,15 @@ export const docsContent = [
                 slug: "leave-define", title: "Leave Define", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Leave Define</h3>
+                        <img src="/Eskooly/leave-define.png" alt="Add Leave Define" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Add Leave Define</span>
                         <p class="mt-1 mb-3">Super admin can add leave define. He has to select the role and leave type. Then he has to put the days of leave.</p>
-                        <img src="/Eskooly/leave-define.png" alt="Add Leave Define" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Select Action</span>
                         <p class="mt-1 mb-3">Super admin can edit and delete the leave define information.</p>
-                        <img src="/Eskooly/leave-define.png" alt="Select Action" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                 </ol>
             </div>` },
@@ -1499,16 +1600,15 @@ export const docsContent = [
                 slug: "leave-type", title: "Leave Type", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Leave Type</h3>
+                        <img src="/Eskooly/leave-type.png" alt="Add Leave Type" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Add Leave Type</span>
-                        <p class="mt-1 mb-3">Super admin can add leave type.</p>
-                        <img src="/Eskooly/leave-type.png" alt="Add Leave Type" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <p class="mt-1 mb-3">By adding the Type name and the total days super admin can able to add the leave type.</p>
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Select Action</span>
-                        <p class="mt-1 mb-3">Super admin can edit and delete the leave type information.</p>
-                        <img src="/Eskooly/leave-type.png" alt="Select Action" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <p class="mt-1 mb-3">The leave type list is shown all the leaves type.In this list, edit and delete options are includes in action column.</p>
                     </li>
                 </ol>
             </div>` }
@@ -1521,21 +1621,39 @@ export const docsContent = [
                 slug: "staff-list", title: "Staff List", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Staff List</h3>
+                        <img src="/Eskooly/staff_directory.png" alt="Search Staff List" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Search Staff List</span>
-                        <p class="mt-1 mb-3">For searching staff list user has to select the role or by searching with key word.</p>
-                        <img src="/Eskooly/staff_directory.png" alt="Search Staff List" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <p class="mt-1 mb-3">To search the staff list,staff roles or staff id or staff name have to select.<br>In the action column in this list, super admin can view staff details, edit and delete the records.</p>
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Add Staff</span>
-                        <p class="mt-1 mb-3">For adding staff user has to fill up the basic information, academic information, social links and document info. In basic info, staff ID, role, designation, department, first name, last name, father name, mother name, email, gender, date of birth, date of joining, mobile, emergency contact, marital status, photo, current address, permanent address, qualification, work experience, note are needed to submit.</p>
+                        <p class="mt-1 mb-3">By clicking the add staff button, super can enter the add staff page.</p>
+                        <p class="mt-1 mb-3">To add a staff, basic info, payroll, bank info, social links and necessary documents have to include.</p>
                         <img src="/Eskooly/add_staff1.png" alt="Add Staff" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <img src="/Eskooly/add_staff2.png" alt="Add Staff" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Profile</span>
-                        <p class="mt-1 mb-3">Here staff's personal profile, payroll, documents, timeline are shown.</p>
-                        <img src="/Eskooly/profile.png" alt="Profile" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <p class="mt-1 mb-3">Staff has several types of information. His profile is one of them. In his profile all the personal information are shown.</p>
+                        <p class="mt-1 mb-3">By Clicking the right-top button edit, possible to enter in edit staff details page.If wants can easily edit the staff records.</p>
+                        <img src="/Eskooly/profile.png" alt="Edit Staff" class="w-full rounded-lg shadow-md border border-slate-200" />
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Payroll</span>
+                        <p class="mt-1 mb-3">Payroll information of a particular staff are shown in this page.</p>
+                        <img src="/Eskooly/payroll.png" alt="Payroll" class="w-full rounded-lg shadow-md border border-slate-200" />
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Documents</span>
+                        <p class="mt-1 mb-3">How much and which documents are downloaded in his profile are shown here.</p>
+                        <img src="/Eskooly/documents.png" alt="Documents" class="w-full rounded-lg shadow-md border border-slate-200" />
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Timeline</span>
+                        <p class="mt-1 mb-3">Timeline information of a particular staff are shown in this page.</p>
+                        <img src="/Eskooly/timeline.png" alt="Timeline" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                 </ol>
             </div>` },
@@ -1543,21 +1661,19 @@ export const docsContent = [
                 slug: "staff-attendance", title: "Staff Attendance", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Staff Attendance</h3>
+                        <img src="/Eskooly/staff_attendance.png" alt="Search" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
-                        <span class="font-bold text-slate-700">Search</span>
+                        <span class="font-bold text-slate-700">Search Staff Attendance</span>
                         <p class="mt-1 mb-3">To search staff attendance, user needs to select the role and attendance date.</p>
-                        <img src="/Eskooly/staff_attendance.png" alt="Search" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Mark Holiday</span>
-                        <p class="mt-1 mb-3">Super admin can mark holiday for all staff by clicking the mark holiday button.</p>
-                        <img src="/Eskooly/staff_attendance.png" alt="Mark Holiday" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <p class="mt-1 mb-3">If the selected day is holiday,then by checking the mark holiday button, the day will be marked as holiday.</p>
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Save Attendance</span>
-                        <p class="mt-1 mb-3">Super admin can save the attendance by clicking the save attendance button. In the attendance list, he can check the present, late, absent, half day option.</p>
-                        <img src="/Eskooly/staff_attendance.png" alt="Save Attendance" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <p class="mt-1 mb-3">After selecting the all the functionalities, just click the save attendance button and the attendance will be recorded.</p>
                     </li>
                 </ol>
             </div>` },
@@ -1565,11 +1681,11 @@ export const docsContent = [
                 slug: "staff-attendance-report", title: "Staff Attendance Report", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Staff Attendance Report</h3>
+                        <img src="/Eskooly/staff_attendance-report.png" alt="Search" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
-                        <span class="font-bold text-slate-700">Search</span>
-                        <p class="mt-1 mb-3">To search staff attendance report, user needs to select the role, month and year. The report will show the present, late, absent, half day, holiday status for the particular month.</p>
-                        <img src="/Eskooly/staff_attendance-report.png" alt="Search" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <span class="font-bold text-slate-700">Search Staff Attendance Report</span>
+                        <p class="mt-1 mb-3">To search the staff attendance report,select the role, month and the year. In this list full month attendance record of a particular staff are shown.</p>
                     </li>
                 </ol>
             </div>` },
@@ -1577,21 +1693,21 @@ export const docsContent = [
                 slug: "payroll", title: "Payroll", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Payroll</h3>
+                        <img src="/Eskooly/payroll_page.png" alt="Salary Template" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
-                        <span class="font-bold text-slate-700">Salary Template</span>
-                        <p class="mt-1 mb-3">Super admin can add salary template. He has to add salary grade, basic salary, overtime rate per hour. In the allowance section, he can add allowance label and amount. In the deduction section, he can add deduction label and amount. Net salary will be calculated automatically.</p>
-                        <img src="/Eskooly/payroll.png" alt="Salary Template" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <span class="font-bold text-slate-700">Payroll Search</span>
+                        <p class="mt-1 mb-3">For searching the staff payroll list, just select the role,month and the year.</p>
                     </li>
                     <li>
-                        <span class="font-bold text-slate-700">Salary Assign</span>
-                        <p class="mt-1 mb-3">Super admin can assign salary to the staff. He has to select the role and staff. Then he can select the salary template.</p>
+                        <span class="font-bold text-slate-700">Staff List</span>
+                        <p class="mt-1 mb-3">Staff payroll list show the search result. In this list, payroll status show payroll is generated or not. If not then just clicking the generate payroll super admin can enter the generate payroll page.</p>
                         <img src="/Eskooly/generate_payroll.png" alt="Salary Assign" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <img src="/Eskooly/generate_payroll1.png" alt="Salary Payment" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                     <li>
-                        <span class="font-bold text-slate-700">Salary Payment</span>
-                        <p class="mt-1 mb-3">Super admin can pay the salary to the staff. He has to select the role and month-year. Then he can pay the salary.</p>
-                        <img src="/Eskooly/generate_payroll1.png" alt="Salary Payment" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <span class="font-bold text-slate-700">Generate Payroll</span>
+                        <p class="mt-1 mb-3">In the generate payroll page, earning, deductions, payroll summary should have to full up when generate payroll.</p>
                     </li>
                 </ol>
             </div>` },
@@ -1599,16 +1715,68 @@ export const docsContent = [
                 slug: "payroll-report", title: "Payroll Report", content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Payroll Report</h3>
+                        <img src="/Eskooly/payroll_report.png" alt="Search Payroll" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
-                        <span class="font-bold text-slate-700">Search Payroll</span>
-                        <p class="mt-1 mb-3">To search payroll report, user needs to select the role, month and year.</p>
-                        <img src="/Eskooly/payroll_report.png" alt="Search Payroll" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <span class="font-bold text-slate-700">Search payroll Report</span>
+                        <p class="mt-1 mb-3">For searching the staff payroll report list, just select the role, month and the year.</p>
                     </li>
                     <li>
-                        <span class="font-bold text-slate-700">Payroll Report List</span>
-                        <p class="mt-1 mb-3">The payroll report list will show the staff name, role, department, designation, basic salary, allowance, deduction, net salary, payment date, status.</p>
-                        <img src="/Eskooly/payroll_report.png" alt="Payroll Report List" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <span class="font-bold text-slate-700">Staff List</span>
+                        <p class="mt-1 mb-3">Staff payroll report list show the search result. In this list, payroll's all the information of staff are shown.</p>
+                    </li>
+                </ol>
+            </div>` }
+        ]
+    },
+    {
+        category: "Profit",
+        items: [
+            {
+                slug: "profit", title: "Profit", content: `
+            <div class="space-y-6">
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Profit</h3>
+                        <img src="/Eskooly/profit.png" alt="Profit" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
+                    <li>
+                        <span class="font-bold text-slate-700">Search Profit</span>
+                        <p class="mt-1 mb-3">For searching the Profit list, select the certain date range means which date to date wants to see the profit list.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Profit List</span>
+                        <p class="mt-1 mb-3">Profit list show the searched time's income, expense and profit list.</p>
+                    </li>
+                </ol>
+            </div>` },
+            {
+                slug: "income", title: "Income", content: `
+            <div class="space-y-6">
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Income</h3>
+                        <img src="/Eskooly/income.png" alt="Add Income" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
+                    <li>
+                        <span class="font-bold text-slate-700">Add Income</span>
+                        <p class="mt-1 mb-3">To add income information income source name, account head, payment method, date and amount should have to include.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Select Actions</span>
+                        <p class="mt-1 mb-3">Edit and delete are includes in the action column in this list.</p>
+                    </li>
+                </ol>
+            </div>` },
+            {
+                slug: "expense", title: "Expense", content: `
+            <div class="space-y-6">
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Expense</h3>
+                        <img src="/Eskooly/expense.png" alt="Add Expense" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
+                    <li>
+                        <span class="font-bold text-slate-700">Add Expense</span>
+                        <p class="mt-1 mb-3">To add expense information, expense source name, account head, payment method, date and amount should have to include.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Select Actions</span>
+                        <p class="mt-1 mb-3">Edit and delete are includes in the action column in this list.</p>
                     </li>
                 </ol>
             </div>` }
@@ -1618,757 +1786,1546 @@ export const docsContent = [
         category: "Accounts",
         items: [
             {
-                slug: "accounts-head", title: "Account's Head", content: `
+                slug: "search-income-expense", 
+                title: "Search Income/Expense", 
+                content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Account's Head</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Search Income/Expense</h3>
+                <img src="/Eskooly/search.png" alt="Search Income/Expense" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
-                        <span class="font-bold text-slate-700">Account's head</span>
-                        <p class="mt-1 mb-3">Super admin can add account's head. By clicking the select action he has been allowed to edit and delete the account's head.</p>
-                        <img src="/Eskooly/chart-of-account.png" alt="Account's head" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <span class="font-bold text-slate-700">Search Income/Expense</span>
+                        <p class="mt-1 mb-3">To search the income or expense select certain date,select income or expense and select the income/expense name.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Income/Expense Result</span>
+                        <p class="mt-1 mb-3">Search result are shown in this list. Where individual information and grand total are shown.</p>
                     </li>
                 </ol>
-            </div>` },
+            </div>` 
+            },
             {
-                slug: "income", title: "Income", content: `
+                slug: "chart-of-account", 
+                title: "Chart Of Account", 
+                content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Income</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Chart Of Account</h3>
+                <img src="/Eskooly/chart-of-account.png" alt="Chart Of Account" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
-                        <span class="font-bold text-slate-700">Add Income</span>
-                        <p class="mt-1 mb-3">To add income information, Income head, Name, Invoice number, Date, Amount, Document and Description are needed to submit.</p>
-                        <img src="/Eskooly/income.png" alt="Add Income" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <span class="font-bold text-slate-700">Add Chart Of Account</span>
+                        <p class="mt-1 mb-3">To add chart of account, account head and account type should have to include.</p>
                     </li>
                     <li>
-                        <span class="font-bold text-slate-700">Select Action</span>
-                        <p class="mt-1 mb-3">Super admin can edit and delete the income list.</p>
-                        <img src="/Eskooly/income.png" alt="Select Action" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <span class="font-bold text-slate-700">Select Actions</span>
+                        <p class="mt-1 mb-3">Edit and delete are includes in the action column in this list.</p>
                     </li>
                 </ol>
-            </div>` },
+            </div>` 
+            },
             {
-                slug: "expense", title: "Expense", content: `
+                slug: "payment-method", 
+                title: "Payment Method", 
+                content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Expense</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Payment Method</h3>
+                <img src="/Eskooly/payment_method.png" alt="Payment Method" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
-                        <span class="font-bold text-slate-700">Add Expense</span>
-                        <p class="mt-1 mb-3">To add expense information, Expense head, Name, Invoice number, Date, Amount, Document and Description are needed to submit.</p>
-                        <img src="/Eskooly/expense.png" alt="Add Expense" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <span class="font-bold text-slate-700">Add Payment Method</span>
+                        <p class="mt-1 mb-3">To add payment method, method name should have to include.</p>
                     </li>
                     <li>
-                        <span class="font-bold text-slate-700">Select Action</span>
-                        <p class="mt-1 mb-3">Super admin can edit and delete the expense list.</p>
-                        <img src="/Eskooly/expense.png" alt="Select Action" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <span class="font-bold text-slate-700">Select Actions</span>
+                        <p class="mt-1 mb-3">Edit and delete are includes in the action column in this list.</p>
                     </li>
                 </ol>
-            </div>` }
-        ]
-    },
-    {
-        category: "Fees Collection",
-        items: [
+            </div>` 
+            },
             {
-                slug: "fees-reminder", title: "Fees Reminder", content: `
+                slug: "bank-account", 
+                title: "Bank Account", 
+                content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Fees Reminder</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Bank Account</h3>
+                <img src="/Eskooly/add_account.png" alt="Bank Account" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
-                        <span class="font-bold text-slate-700">Fees Reminder</span>
-                        <p class="mt-1 mb-3">Super admin can set the fees reminder status as active or inactive. He needs to select the reminder type and days.</p>
-                        <img src="/Eskooly/sms-settings.png" alt="Fees Reminder" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <span class="font-bold text-slate-700">Add Bank Account</span>
+                        <p class="mt-1 mb-3">To add bank account, account name, opening balance should have to include.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Select Actions</span>
+                        <p class="mt-1 mb-3">Edit and delete are includes in the action column in this list.</p>
                     </li>
                 </ol>
-            </div>` },
+            </div>` 
+            },
             {
-                slug: "fees-type", title: "Fees Type", content: `
-            <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Fees Type</h3>
-                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
-                    <li>
-                        <span class="font-bold text-slate-700">Add Fees Type</span>
-                        <p class="mt-1 mb-3">To add fees type, name, fees code and description are needed to submit.</p>
-                        <img src="/Eskooly/fees_type.png" alt="Add Fees Type" class="w-full rounded-lg shadow-md border border-slate-200" />
-                    </li>
-                    <li>
-                        <span class="font-bold text-slate-700">Select Action</span>
-                        <p class="mt-1 mb-3">Super admin can edit and delete the fees type list.</p>
-                        <img src="/Eskooly/fees_type.png" alt="Select Action" class="w-full rounded-lg shadow-md border border-slate-200" />
-                    </li>
-                </ol>
-            </div>` },
-            {
-                slug: "fees-group", title: "Fees Group", content: `
-            <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Fees Group</h3>
-                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
-                    <li>
-                        <span class="font-bold text-slate-700">Add Fees Group</span>
-                        <p class="mt-1 mb-3">To add fees group, name and description are needed to submit.</p>
-                        <img src="/Eskooly/fees_group.png" alt="Add Fees Group" class="w-full rounded-lg shadow-md border border-slate-200" />
-                    </li>
-                    <li>
-                        <span class="font-bold text-slate-700">Select Action</span>
-                        <p class="mt-1 mb-3">Super admin can edit and delete the fees group list.</p>
-                        <img src="/Eskooly/fees_group.png" alt="Select Action" class="w-full rounded-lg shadow-md border border-slate-200" />
-                    </li>
-                </ol>
-            </div>` },
-            {
-                slug: "fees-master", title: "Fees Master", content: `
-            <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Fees Master</h3>
-                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
-                    <li>
-                        <span class="font-bold text-slate-700">Add Fees Master</span>
-                        <p class="mt-1 mb-3">To add fees master, fees group, fees type, due date and amount, fine type, percentage, fine amount are needed to submit.</p>
-                        <img src="/Eskooly/fees_master.png" alt="Add Fees Master" class="w-full rounded-lg shadow-md border border-slate-200" />
-                    </li>
-                    <li>
-                        <span class="font-bold text-slate-700">Select Action</span>
-                        <p class="mt-1 mb-3">Super admin can edit and delete the fees master list. By clicking the assign button he can assign the fees master to the student.</p>
-                        <img src="/Eskooly/fees_master.png" alt="Select Action" class="w-full rounded-lg shadow-md border border-slate-200" />
-                    </li>
-                </ol>
-            </div>` },
-            {
-                slug: "fees-discount", title: "Fees Discount", content: `
-            <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Fees Discount</h3>
-                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
-                    <li>
-                        <span class="font-bold text-slate-700">Add Fees Discount</span>
-                        <p class="mt-1 mb-3">To add fees discount, name, discount code, amount and description are needed to submit.</p>
-                        <img src="/Eskooly/fees_discount.png" alt="Add Fees Discount" class="w-full rounded-lg shadow-md border border-slate-200" />
-                    </li>
-                    <li>
-                        <span class="font-bold text-slate-700">Select Action</span>
-                        <p class="mt-1 mb-3">Super admin can edit and delete the fees discount list. By clicking the assign button he can assign the fees discount to the student.</p>
-                        <img src="/Eskooly/fees_discount.png" alt="Select Action" class="w-full rounded-lg shadow-md border border-slate-200" />
-                    </li>
-                </ol>
-            </div>` },
-            {
-                slug: "collect-fees", title: "Collect Fees", content: `
+                slug: "collect-fees", 
+                title: "Collect Fees", 
+                content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Collect Fees</h3>
+                <img src="/Eskooly/collect_fees.png" alt="Collect Fees" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Search Collect Fees</span>
-                        <p class="mt-1 mb-3">For Searching the fees collection list, user has to select class and section.</p>
-                        <img src="/Eskooly/collect_fees.png" alt="Search Collect Fees" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <p class="mt-1 mb-3">For Searching the fees collection list, have to select the class and for specific search can possible to select the section and individual information.</p>
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Collect Fees</span>
-                        <p class="mt-1 mb-3">By clicking the collect fees button, user can collect the fees from the student. He can see the student details and fees details. He can pay the fees by clicking the pay button. He can add discount and fine in the payment section.</p>
-                        <img src="/Eskooly/collect_fees.png" alt="Collect Fees" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <p class="mt-1 mb-3">Search results are shown in the fees collection list. In this list, by clicking the collect fees button, super admin can enter the add fees page.</p>
+                        <img src="/Eskooly/collect_fees_action.png" alt="Collect Fees Action" class="w-full rounded-lg shadow-md border border-slate-200" />
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Select Actions</span>
+                        <p class="mt-1 mb-3">Through student information, all the unpaid fees are listed here. In the action column add fees and print options are available.</p>
+                        <img src="/Eskooly/add_fees.png" alt="Add Fees" class="w-full rounded-lg shadow-md border border-slate-200" />
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Add Fees</span>
+                        <p class="mt-1 mb-3">By clicking the add fees option, super admin will get the add fees page. Where date, amount, discount group, discount, fine and payment mode is required.</p>
                     </li>
                 </ol>
-            </div>` },
+            </div>` 
+            },
             {
-                slug: "search-fees-payment", title: "Search Fees Payment", content: `
+                slug: "search-fees-payment", 
+                title: "Search Fees Payment", 
+                content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Search Fees Payment</h3>
+                <img src="/Eskooly/search_fees_payments.png" alt="Search Fees Payment" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Search Fees Payment</span>
-                        <p class="mt-1 mb-3">To search fees payment, user has to search by payment ID.</p>
-                        <img src="/Eskooly/search_fees_payments.png" alt="Search Fees Payment" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <p class="mt-1 mb-3">To search fees payment, have to select the payment id.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Select Actions</span>
+                        <p class="mt-1 mb-3">Search result will show the selected payment id's all payment information. User can view the details information by clicking the view option in action column.</p>
+                        <img src="/Eskooly/view (3).png" alt="Search Fees Payment View" class="w-full rounded-lg shadow-md border border-slate-200" />
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Print</span>
+                        <p class="mt-1 mb-3">In view page, the payment details are shown in the list. Print option is available in this list.</p>
                     </li>
                 </ol>
-            </div>` }
+            </div>` 
+            },
+            {
+                slug: "fees-master", 
+                title: "Fees Master", 
+                content: `
+            <div class="space-y-6">
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Fees Master</h3>
+                <img src="/Eskooly/fees_master.png" alt="Fees Master" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
+                    <li>
+                        <span class="font-bold text-slate-700">Add Fees Master</span>
+                        <p class="mt-1 mb-3">To add fees master, fees group, fees type, date and amount are required.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Select Actions</span>
+                        <p class="mt-1 mb-3">In the action column, assign/view and delete options are available.</p>
+                        <img src="/Eskooly/assign.png" alt="Fees Master Action" class="w-full rounded-lg shadow-md border border-slate-200" />
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Search Fees Assign</span>
+                        <p class="mt-1 mb-3">By clicking the assign/view, super admin can enter the fees master assign page. Where super admin can able to assign the fees group.</p>
+                    </li>
+                </ol>
+            </div>` 
+            },
+            {
+                slug: "fees-group", 
+                title: "Fees Group", 
+                content: `
+            <div class="space-y-6">
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Fees Group</h3>
+                <img src="/Eskooly/fees_group.png" alt="Fees Group" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
+                    <li>
+                        <span class="font-bold text-slate-700">Add Fees Group</span>
+                        <p class="mt-1 mb-3">To add fees group, name is required. The fees group represents which kinds of fees should have to pay by students.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Select Actions</span>
+                        <p class="mt-1 mb-3">In the fees group list, edit and delete is available.</p>
+                    </li>
+                </ol>
+            </div>` 
+            },
+            {
+                slug: "fees-type", 
+                title: "Fees Type", 
+                content: `
+            <div class="space-y-6">
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Fees Type</h3>
+                <img src="/Eskooly/fees_type.png" alt="Fees Type" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
+                    <li>
+                        <span class="font-bold text-slate-700">Add Fees Type</span>
+                        <p class="mt-1 mb-3">To add fees type, name and fees code are required. The fees group represents which types of fees should have to pay by students.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Select Actions</span>
+                        <p class="mt-1 mb-3">In the fees discount list, edit and delete is available.</p>
+                    </li>
+                </ol>
+            </div>` 
+            },
+            {
+                slug: "fees-discount", 
+                title: "Fees Discount", 
+                content: `
+            <div class="space-y-6">
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Fees Discount</h3>
+                <img src="/Eskooly/fees_discount.png" alt="Fees Discount" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
+                    <li>
+                        <span class="font-bold text-slate-700">Add Fees Discount</span>
+                        <p class="mt-1 mb-3">To add fees discount, name, discount code, type and amount are required. The fees discount represents how much discount will be provided for student in which purpose.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Select Actions</span>
+                        <p class="mt-1 mb-3">In the fees discount list, assign fees discount, edit and delete is available.</p>
+                        <img src="/Eskooly/assign_fees_discount.png" alt="Fees Discount Action" class="w-full rounded-lg shadow-md border border-slate-200" />
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Search Fees Discount For Assign</span>
+                        <p class="mt-1 mb-3">By clicking the assign, super admin can enter the fees discount assign page. Where super admin can able to assign the fees discount.</p>
+                    </li>
+                </ol>
+            </div>` 
+            },
+            {
+                slug: "fees-carry-forward", 
+                title: "Fees Carry Forward", 
+                content: `
+            <div class="space-y-6">
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Fees Carry Forward</h3>
+                <img src="/Eskooly/carry.png" alt="Fees Carry Forward" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
+                    <li>
+                        <span class="font-bold text-slate-700">Search Fees Carry Forward</span>
+                        <p class="mt-1 mb-3">To search the fees carry forward, super admin have to select class name and section.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Previous Session Balance Fees</span>
+                        <p class="mt-1 mb-3">Search result will show the previous session balance fees. In this list particular student's balance are shown. Here, super admin can add balance for students.</p>
+                    </li>
+                </ol>
+            </div>` 
+            }
+        ]
+    },
+    {
+        category: "Download Center",
+        items: [
+            {
+                slug: "upload-content", 
+                title: "Upload Content", 
+                content: `
+            <div class="space-y-6">
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Upload Content</h3>
+                <img src="/Eskooly/upload_content.png" alt="Upload Content" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
+                    <li>
+                        <span class="font-bold text-slate-700">Upload content</span>
+                        <p class="mt-1 mb-3">To upload content, content type, available for which kinds of person, date the file you want to upload.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Select Actions</span>
+                        <p class="mt-1 mb-3">The uploaded content are listed in upload content list. In this list, user can delete and download the content.</p>
+                    </li>
+                </ol>
+            </div>` 
+            },
+            {
+                slug: "assignment", 
+                title: "Assignment", 
+                content: `
+            <div class="space-y-6">
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Assignment</h3>
+                <img src="/Eskooly/assignment.png" alt="Assignment" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
+                    <li>
+                        <span class="font-bold text-slate-700">Assignment List</span>
+                        <p class="mt-1 mb-3">The uploaded assignment will be shown in the assignment list.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Select Actions</span>
+                        <p class="mt-1 mb-3">Delete and download options are available in the action column.</p>
+                    </li>
+                </ol>
+            </div>` 
+            },
+            {
+                slug: "study-material", 
+                title: "Study Material", 
+                content: `
+            <div class="space-y-6">
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Study Material</h3>
+                <img src="/Eskooly/study_material.png" alt="Study Material" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
+                    <li>
+                        <span class="font-bold text-slate-700">Study Material List</span>
+                        <p class="mt-1 mb-3">The uploaded study material will be shown in the study material list.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Select Actions</span>
+                        <p class="mt-1 mb-3">Delete and download options are available in the action column.</p>
+                    </li>
+                </ol>
+            </div>` 
+            },
+            {
+                slug: "syllabus", 
+                title: "Syllabus", 
+                content: `
+            <div class="space-y-6">
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Syllabus</h3>
+                <img src="/Eskooly/syllabus.png" alt="Syllabus" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
+                    <li>
+                        <span class="font-bold text-slate-700">Syllabus List</span>
+                        <p class="mt-1 mb-3">The uploaded syllabus will be shown in the syllabus list.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Select Actions</span>
+                        <p class="mt-1 mb-3">Delete and download options are available in the action column.</p>
+                    </li>
+                </ol>
+            </div>` 
+            },
+            {
+                slug: "other-downloads", 
+                title: "Other Downloads", 
+                content: `
+            <div class="space-y-6">
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Other Downloads</h3>
+                <img src="/Eskooly/other_download.png" alt="Other Downloads" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
+                    <li>
+                        <span class="font-bold text-slate-700">Other Downloads List</span>
+                        <p class="mt-1 mb-3">The uploaded other download materials will be shown in the other download list.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Select Actions</span>
+                        <p class="mt-1 mb-3">Delete and download options are available in the action column.</p>
+                    </li>
+                </ol>
+            </div>` 
+            }
         ]
     },
     {
         category: "Student Information",
         items: [
             {
-                slug: "student-category", title: "Student Category", content: `
+                slug: "student-admission", 
+                title: "Student Admission", 
+                content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Category</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Admission</h3>
+                <img src="/Eskooly/student_admission1.png" alt="Student Admission" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <img src="/Eskooly/student_admission2.png" alt="Student Admission" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <img src="/Eskooly/student_admission3.png" alt="Student Admission" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
-                        <span class="font-bold text-slate-700">Add Student Category</span>
-                        <p class="mt-1 mb-3">To add student category, super admin needs to add category name.</p>
-                        <img src="/Eskooly/student_category.png" alt="Add Student Category" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <span class="font-bold text-slate-700">Import Student</span>
+                        <p class="mt-1 mb-3">For importing new student, super admin have to click the import student button.</p>
                     </li>
                     <li>
-                        <span class="font-bold text-slate-700">Select Action</span>
-                        <p class="mt-1 mb-3">Super admin can edit and delete the student category list.</p>
-                        <img src="/Eskooly/student_category.png" alt="Select Action" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <span class="font-bold text-slate-700">Add Parents</span>
+                        <p class="mt-1 mb-3">For adding new student, super admin have to fill up all the major and pros and cons information. In this case, if new student has any sibling then super admin can able to add the sibling by clicking Add Parents button.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Relation With Guardian</span>
+                        <p class="mt-1 mb-3">Who will take the responsibility that have to include in this form. Before admin super admin have to specify the relation with the student.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Add Student</span>
+                        <p class="mt-1 mb-3">After adding all the information correctly then super admin can able to add the new student by clicking the save student button.</p>
+                        <img src="/Eskooly/student_import.png" alt="Student Admission" class="w-full rounded-lg shadow-md border border-slate-200" />
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Download Sample File</span>
+                        <p class="mt-1 mb-3">Before import new student information, by clicking the download sample file, super admin can download the sample student information excel file.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Student Import</span>
+                        <p class="mt-1 mb-3">For import external information file, super admin have to select the class, section and attach the excel file.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Bulk Import of Students</span>
+                        <p class="mt-1 mb-3">Students can be imported from a csv file for adding multiple students at a time. Form the admin panel, under the menu student information, you can get a sub menu 'Student Admission'.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Add Parents</span>
+                        <p class="mt-1 mb-3">3. Relation With Guardian 4. Add Student/ Admission Admitting new students to the school can be done from â€˜admit studentâ€™ submenu under â€˜studentâ€™ in the navigation. For adding a student, admin will need to fill up the information required and provided by the admission form. It should be kept in mind that, admitting new student will automatically create an enrollment in the running session for the selected class. Check and recheck the information you have inserted while adding student because once you admit him/her to a class, you will not be able to change his/her class without promoting him/her to the next session.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Download Sample File</span>
+                        <p class="mt-1 mb-3">4.Student Import Clicking there will lead you to a new page. The method of importing is cited on that page. Follow those to successfully import students using a csv file.</p>
                     </li>
                 </ol>
-            </div>` },
+            </div>` 
+            },
             {
-                slug: "add-student", title: "Add Student", content: `
+                slug: "student-list", 
+                title: "Student List", 
+                content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Add Student</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student List</h3>
+                <img src="/Eskooly/student_list.png" alt="Student List" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Add Student</span>
-                        <p class="mt-1 mb-3">To add student, admission number, roll number, class, section, first name, last name, gender, date of birth, religion, mobile number, email, admission date, blood group, student photo are needed to submit. User can also add parent details, bank details and hostel details.</p>
-                        <img src="/Eskooly/student_admission1.png" alt="Add Student" class="w-full rounded-lg shadow-md border border-slate-200" />
-                    </li>
-                </ol>
-            </div>` },
-            {
-                slug: "student-list", title: "Student List", content: `
-            <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student List</h3>
-                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
-                    <li>
-                        <span class="font-bold text-slate-700">Search Student List</span>
-                        <p class="mt-1 mb-3">To search student list, user has to select class and section or by searching with key word.</p>
-                        <img src="/Eskooly/student-list.png" alt="Search Student List" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <p class="mt-1 mb-3">To add a new student, just click the right-top add click button.</p>
                     </li>
                     <li>
-                        <span class="font-bold text-slate-700">Select Action</span>
-                        <p class="mt-1 mb-3">In the student list, user can view the student details, edit and delete the student. He can also add fees payment in the action column.</p>
-                        <img src="/Eskooly/student-list.png" alt="Select Action" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <span class="font-bold text-slate-700">Search Student</span>
+                        <p class="mt-1 mb-3">For searching the individual student have to select the class, section, student name or student roll id. By selecting the class and it's section can able to see the particular section's student list.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Select Student</span>
+                        <p class="mt-1 mb-3">In the list, view student's detail information,edit and delete are included in action column.</p>
+                        <img src="/Eskooly/student_list2.png" alt="Student List" class="w-full rounded-lg shadow-md border border-slate-200" />
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Student Details</span>
+                        <p class="mt-1 mb-3">By clicking the view option in action column, super admin can enter the student's details information page. Where he can able to see the student's details information in different classification.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Sibling Information</span>
+                        <p class="mt-1 mb-3">Sibling information is also included in this student detail information page.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Student Profile</span>
+                        <p class="mt-1 mb-3">Student information is classified in different section, student profile is one of them. All the personal information are shown in this student profile section.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Edit Student</span>
+                        <p class="mt-1 mb-3">If wants, it's possible to edit the student information by clicking the top-rightedit button.</p>
+                        <img src="/Eskooly/student_list3.png" alt="Student List" class="w-full rounded-lg shadow-md border border-slate-200" />
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Student Fees</span>
+                        <p class="mt-1 mb-3">All the particular student fees information are shown in this portion.</p>
+                        <img src="/Eskooly/student_list4.png" alt="Student List" class="w-full rounded-lg shadow-md border border-slate-200" />
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Document</span>
+                        <p class="mt-1 mb-3">All the particular student all the document information are shown in this document portion.</p>
+                        <img src="/Eskooly/student_list5.png" alt="Student List" class="w-full rounded-lg shadow-md border border-slate-200" />
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Timeline</span>
+                        <p class="mt-1 mb-3">All the particular student's timeline information are shown in this timeline portion.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Add Timeline</span>
+                        <p class="mt-1 mb-3">Add timeline option is available in the timeline page.</p>
                     </li>
                 </ol>
-            </div>` },
+            </div>` 
+            },
             {
-                slug: "student-attendance", title: "Student Attendance", content: `
+                slug: "student-attendance", 
+                title: "Student Attendance", 
+                content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Attendance</h3>
+                <img src="/Eskooly/student_attendance.png" alt="Student Attendance" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Search Student Attendance</span>
-                        <p class="mt-1 mb-3">To search the student attendance, user has to select class, section and date.</p>
-                        <img src="/Eskooly/student_attendance.png" alt="Search Student Attendance" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <p class="mt-1 mb-3">To search the student attendance, class, section and the attendance date. Daily attendance is shown on the menu class wise. For taking or viewing attendance for a particular class, firstly admin will need to select the date and the section which will bring the attendance managing form for that class section for that particular date.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Mark Holiday</span>
+                        <p class="mt-1 mb-3">If the searched day is holiday then super admin can able to mark the day as holiday by check the mark holiday button.</p>
                     </li>
                     <li>
                         <span class="font-bold text-slate-700">Save Attendance</span>
-                        <p class="mt-1 mb-3">User can mark holiday for all student. He can save the attendance by clicking the save attendance button. In the attendance list, he can check the present, late, absent, half day option.</p>
-                        <img src="/Eskooly/student_attendance.png" alt="Save Attendance" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <p class="mt-1 mb-3">Super admin can able to add attendance students. If anyone absent then check the absent, if present then check the present. Late and half day also can be checked.</p>
                     </li>
                 </ol>
-            </div>` },
+            </div>` 
+            },
             {
-                slug: "student-attendance-report", title: "Student Attendance Report", content: `
+                slug: "student-attendance-report", 
+                title: "Student Attendance Report", 
+                content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Attendance Report</h3>
+                <img src="/Eskooly/student_attendance-report.png" alt="Student Attendance Report" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Search Student Attendance Report</span>
-                        <p class="mt-1 mb-3">To search the student attendance report, user has to select class, section, month and year. The report will show the present, late, absent, half day, holiday status for the particular month.</p>
-                        <img src="/Eskooly/student_attendance-report.png" alt="Search Student Attendance Report" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <p class="mt-1 mb-3">To search the student attendance report, class, section, month and year should have to select.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Select Student for Report showing</span>
+                        <p class="mt-1 mb-3">The search result will show in this report. If wants to see the individual students attendance then just click on the '+' symbolic button then see the all the days of a month report.</p>
                     </li>
                 </ol>
-            </div>` },
+            </div>` 
+            },
             {
-                slug: "subject-wise-attendance", title: "Subject Wise Attendance", content: `
+                slug: "student-category", 
+                title: "Student Category", 
+                content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Subject Wise Attendance</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Category</h3>
+                <img src="/Eskooly/student_category.png" alt="Student Category" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
-                        <span class="font-bold text-slate-700">Search Subject Wise Attendance</span>
-                        <p class="mt-1 mb-3">To search the subject wise attendance, user has to select class, section, subject and date.</p>
-                        <img src="/Eskooly/student_attendance.png" alt="Search Subject Wise Attendance" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <span class="font-bold text-slate-700">Add Student Category</span>
+                        <p class="mt-1 mb-3">For adding student category, student type have to added.</p>
                     </li>
                     <li>
-                        <span class="font-bold text-slate-700">Save Attendance</span>
-                        <p class="mt-1 mb-3">User can save the subject wise attendance by clicking the save attendance button. In the attendance list, he can check the present, late, absent, half day option.</p>
-                        <img src="/Eskooly/student_attendance.png" alt="Save Attendance" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <span class="font-bold text-slate-700">Select Actions</span>
+                        <p class="mt-1 mb-3">super admin can able to edit and delete the student category list.</p>
                     </li>
                 </ol>
-            </div>` },
+            </div>` 
+            },
             {
-                slug: "subject-wise-attendance-report", title: "Subject Wise Attendance Report", content: `
+                slug: "student-group", 
+                title: "Student Group", 
+                content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Subject Wise Attendance Report</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Group</h3>
+                <img src="/Eskooly/student_group.png" alt="Student Group" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
-                        <span class="font-bold text-slate-700">Search Subject Wise Attendance Report</span>
-                        <p class="mt-1 mb-3">To search the subject wise attendance report, user has to select class, section, subject, month and year.</p>
-                        <img src="/Eskooly/student_attendance-report.png" alt="Search Subject Wise Attendance Report" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <span class="font-bold text-slate-700">Add Student Group</span>
+                        <p class="mt-1 mb-3">For adding student group, student group name have to added.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Select Actions</span>
+                        <p class="mt-1 mb-3">super admin can able to edit and delete the student group list.</p>
                     </li>
                 </ol>
-            </div>` },
+            </div>` 
+            },
             {
-                slug: "promote-students", title: "Promote Students", content: `
+                slug: "student-promote", 
+                title: "Student Promote", 
+                content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Promote Students</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Promote</h3>
+                <img src="/Eskooly/student_promote.png" alt="Student Promote" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <img src="/Eskooly/student_promote2.png" alt="Student Promote" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
-                        <span class="font-bold text-slate-700">Search Promote Students</span>
-                        <p class="mt-1 mb-3">To promote the students, user has to select class and section. Then handle the promotion section. In promotion section, user has to select the promote session, promote class and promote section. By clicking the promote button he can promote the students.</p>
-                        <img src="/Eskooly/student_promote.png" alt="Search Promote Students" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <span class="font-bold text-slate-700">Search Student Promote</span>
+                        <p class="mt-1 mb-3">To search student promote list, year and class have to select.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">View Academic Performance</span>
+                        <p class="mt-1 mb-3">In the list, by clicking the view academic performance button, user can able to see the detail academic performance.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Student Promote</span>
+                        <p class="mt-1 mb-3">In the promote student in next session, After selecting the pass or fail, super admin have to select the promote session and promote class.</p>
+                    </li>
+                    <p class="mt-4">This module is designed to promote students of a particular class to the next class in the next session. â€˜Student Promotionâ€™ submenu will be found under the menu â€˜studentâ€™ in the admin panel. To promote students to the next class, admin needs to select the present class of the students and the class where he/she wants to promote the students. The present session which has been already set from the system settings will be selected automatically as the present session and the next session will be automatically calculated by the software.</p>
+                </ol>
+            </div>` 
+            },
+            {
+                slug: "disabled-students", 
+                title: "Disabled Students", 
+                content: `
+            <div class="space-y-6">
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Disabled Students</h3>
+                <img src="/Eskooly/disabled_student.png" alt="Disabled Students" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
+                    <li>
+                        <span class="font-bold text-slate-700">Search Disabled Students</span>
+                        <p class="mt-1 mb-3">To search the disabled student list,class is required and if need to find the individual then the section, name and roll is needed.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Select Actions</span>
+                        <p class="mt-1 mb-3">In the disabled students list, super admin can view, edit and delete the list item.</p>
                     </li>
                 </ol>
-            </div>` }
+            </div>` 
+            },
+            {
+                slug: "student-report", 
+                title: "Student Report", 
+                content: `
+            <div class="space-y-6">
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Report</h3>
+                <img src="/Eskooly/student_reports.png" alt="Student Report" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
+                    <li>
+                        <span class="font-bold text-slate-700">Search Student Report</span>
+                        <p class="mt-1 mb-3">To search the student report, have to select the class,section, student type, gender.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Student Report List</span>
+                        <p class="mt-1 mb-3">The search result is shown in student report list. Here student's all the major information are shown.</p>
+                    </li>
+                </ol>
+            </div>` 
+            },
+            {
+                slug: "guardian-reports", 
+                title: "Guardian Reports", 
+                content: `
+            <div class="space-y-6">
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Guardian Reports</h3>
+                <img src="/Eskooly/guardian_reports.png" alt="Guardian Reports" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
+                    <li>
+                        <span class="font-bold text-slate-700">Search Guardian Reports</span>
+                        <p class="mt-1 mb-3">To search the guardian report, have to select the class, section.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Student Guardian Reports List</span>
+                        <p class="mt-1 mb-3">The search result is shown in guardian report list. Here student's guardian all the major information are shown.</p>
+                    </li>
+                </ol>
+            </div>` 
+            },
+            {
+                slug: "student-history", 
+                title: "Student History", 
+                content: `
+            <div class="space-y-6">
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student History</h3>
+                <img src="/Eskooly/students_history.png" alt="Student History" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
+                    <li>
+                        <span class="font-bold text-slate-700">Search Student History</span>
+                        <p class="mt-1 mb-3">For searching the student history, super admin have to select the class and admission year.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Student Report List</span>
+                        <p class="mt-1 mb-3">The search result is shown in student history list. Here student history are shown.</p>
+                    </li>
+                </ol>
+            </div>` 
+            },
+            {
+                slug: "student-login-report", 
+                title: "Student Login Report", 
+                content: `
+            <div class="space-y-6">
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Login Report</h3>
+                <img src="/Eskooly/student_login_report.png" alt="Student Login Report" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
+                    <li>
+                        <span class="font-bold text-slate-700">Search Student Login Report</span>
+                        <p class="mt-1 mb-3">To search the student login report, have to select the class, the current section.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Student Login Info Report List</span>
+                        <p class="mt-1 mb-3">The search result is shown in student login report list. Here student can reset his password and his guardian as well.</p>
+                    </li>
+                </ol>
+            </div>` 
+            }
         ]
     },
     {
         category: "Reports",
         items: [
             {
-                slug: "student-report", title: "Student Report", content: `
-            <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Report</h3>
-                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
-                    <li>
-                        <span class="font-bold text-slate-700">Search Student Report</span>
-                        <p class="mt-1 mb-3">To search the student report, user has to select class, section, category, gender and route.</p>
-                        <img src="/Eskooly/student_reports.png" alt="Search Student Report" class="w-full rounded-lg shadow-md border border-slate-200" />
-                    </li>
-                </ol>
-            </div>` },
-            {
-                slug: "guardian-reports", title: "Guardian Reports", content: `
-            <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Guardian Reports</h3>
-                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
-                    <li>
-                        <span class="font-bold text-slate-700">Search Guardian Reports</span>
-                        <p class="mt-1 mb-3">To search the guardian report, user has to select class and section.</p>
-                        <img src="/Eskooly/guardian_reports.png" alt="Search Guardian Reports" class="w-full rounded-lg shadow-md border border-slate-200" />
-                    </li>
-                </ol>
-            </div>` },
-            {
-                slug: "student-history", title: "Student History", content: `
-            <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student History</h3>
-                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
-                    <li>
-                        <span class="font-bold text-slate-700">Search Student History</span>
-                        <p class="mt-1 mb-3">For searching the student history, user has to select class, section and year.</p>
-                        <img src="/Eskooly/students_history.png" alt="Search Student History" class="w-full rounded-lg shadow-md border border-slate-200" />
-                    </li>
-                </ol>
-            </div>` },
-            {
-                slug: "student-login-credential", title: "Student Login Credential", content: `
-            <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Login Credential</h3>
-                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
-                    <li>
-                        <span class="font-bold text-slate-700">Search Student Login Credential</span>
-                        <p class="mt-1 mb-3">To search the student login report, user has to select class and section.</p>
-                       <img src="/student-login-credential-1.png" alt="Search Student Login Credential" class="w-full rounded-lg shadow-md border border-slate-200" />
-                    </li>
-                </ol>
-            </div>` },
-            {
-                slug: "fees-statement", title: "Fees Statement", content: `
+                slug: "fees-statement", 
+                title: "Fees Statement", 
+                content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Fees Statement</h3>
+                <img src="/Eskooly/FeesStatement1.png" alt="Fees Statement" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <img src="/Eskooly/FeesStatement2.png" alt="Fees Statement" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Search Fees Statement</span>
-                        <p class="mt-1 mb-3">For searching the student fees statement report, user has to select class, section, student, fees group, fees type, mode, date from and date to.</p>
-                        <img src="/Eskooly/FeesStatement1.png" alt="Search Fees Statement" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <p class="mt-1 mb-3">For searching the student fees statement report, have to select the class, section, student name.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Student Fees Statement List</span>
+                        <p class="mt-1 mb-3">The search result is shown in student fees statement report list. Here, student's fees which are paid already and if has any discount that are also shown.</p>
                     </li>
                 </ol>
-            </div>` },
+            </div>` 
+            },
             {
-                slug: "balance-fees-report", title: "Balance Fees Report", content: `
+                slug: "balance-fees-report", 
+                title: "Balance Fees Report", 
+                content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Balance Fees Report</h3>
+                <img src="/Eskooly/Balance_Fees_Report.png" alt="Balance Fees Report" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Search Balance Fees Report</span>
-                        <p class="mt-1 mb-3">For searching the student balance fees report, user has to select class and section.</p>
-                        <img src="/Eskooly/Balance_Fees_Report.png" alt="Search Balance Fees Report" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <p class="mt-1 mb-3">For searching the student balance fees report, have to select the class, section.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Student Fees Report List</span>
+                        <p class="mt-1 mb-3">The search result is shown in student balance fees report list. Here student's amount, discount, fine, paid fees, balance statement are shown.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Grand Total</span>
+                        <p class="mt-1 mb-3">Grand total is shown one section's amount, discount, fine, paid fees, balance total statement</p>
                     </li>
                 </ol>
-            </div>` },
+            </div>` 
+            },
             {
-                slug: "transaction-report", title: "Transaction Report", content: `
+                slug: "transaction-report", 
+                title: "Transaction Report", 
+                content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Transaction Report</h3>
+                <img src="/Eskooly/TransactionReport1.png" alt="Transaction Report" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Search Transaction Report</span>
-                        <p class="mt-1 mb-3">For searching the student balance fees report, user has to select date from and date to.</p>
-                        <img src="/Eskooly/TransactionReport1.png" alt="Search Transaction Report" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <p class="mt-1 mb-3">For searching the student balance fees report, have to select from from date to date to.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Fees Collection Details</span>
+                        <p class="mt-1 mb-3">Fees collection detail list show particular date duration's fees collection information.</p>
+                        <img src="/Eskooly/TransactionReport2.png" alt="Transaction Report" class="w-full rounded-lg shadow-md border border-slate-200" />
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Income Result</span>
+                        <p class="mt-1 mb-3">Income result list show particular date duration's income detail information. Grand total show the total amount of income.</p>
+                        <img src="/Eskooly/TransactionReport3.png" alt="Transaction Report" class="w-full rounded-lg shadow-md border border-slate-200" />
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Expense Result</span>
+                        <p class="mt-1 mb-3">Expense result list show particular date duration's expense detail information.Grand total show the total amount of expense</p>
                     </li>
                 </ol>
-            </div>` },
+            </div>` 
+            },
             {
-                slug: "class-routine-report", title: "Class Routine", content: `
+                slug: "class-report", 
+                title: "Class Report", 
+                content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Class Routine</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Class Report</h3>
+                <img src="/Eskooly/ClassReport1.png" alt="Class Report" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <img src="/Eskooly/ClassReport2.png" alt="Class Report" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
+                    <li>
+                        <span class="font-bold text-slate-700">Search Class Report</span>
+                        <p class="mt-1 mb-3">For searching the class report, have to select class and it's section name.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Class Report for particular Class and Section</span>
+                        <p class="mt-1 mb-3">This report show the particular class's summary. Here includes class information, subjects, type of fees collection.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Statistic of Fees Collection</span>
+                        <p class="mt-1 mb-3">This graphical statistic represents the particular class's fees collection statement.</p>
+                    </li>
+                </ol>
+            </div>` 
+            },
+            {
+                slug: "class-routine-report", 
+                title: "Class Routine Report", 
+                content: `
+            <div class="space-y-6">
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Class Routine Report</h3>
+                <img src="/Eskooly/class_routine_report.png" alt="Class Routine Report" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Search Class Routine</span>
-                        <p class="mt-1 mb-3">For searching the class report, user has to select class and section.</p>
-                        <img src="/Eskooly/class_routine_report.png" alt="Search Class Routine" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <p class="mt-1 mb-3">For searching the class routine, have to select class and it's section name.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Class Routine List</span>
+                        <p class="mt-1 mb-3">The search result is shown in class routine report list. Here full week's per period assigned classes are shown.</p>
                     </li>
                 </ol>
-            </div>` },
+            </div>` 
+            },
             {
-                slug: "exam-schedule-report", title: "Exam Schedule", content: `
+                slug: "exam-routine", 
+                title: "Exam Routine", 
+                content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Exam Schedule</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Exam Routine</h3>
+                <img src="/Eskooly/exam_routine_report.png" alt="Exam Routine" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
-                        <span class="font-bold text-slate-700">Search Exam Schedule</span>
-                        <p class="mt-1 mb-3">For searching the exam schedule report, user has to select exam, class and section.</p>
-                        <img src="/Eskooly/exam_routine_report.png" alt="Search Exam Schedule" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <span class="font-bold text-slate-700">Search Exam Routine</span>
+                        <p class="mt-1 mb-3">For searching the exam routine, have to select examination name.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Exam Routine List</span>
+                        <p class="mt-1 mb-3">The search result is shown in exam routine report list. Here particular exam's full routine are shown.</p>
                     </li>
                 </ol>
-            </div>` },
+            </div>` 
+            },
             {
-                slug: "exam-result", title: "Exam Result", content: `
+                slug: "teacher-class-routine-report", 
+                title: "Teacher Class Routine Report", 
+                content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Exam Result</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Teacher Class Routine Report</h3>
+                <img src="/Eskooly/TeacherClassRoutineReport.png" alt="Teacher Class Routine Report" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
-                        <span class="font-bold text-slate-700">Search Exam Result</span>
-                        <p class="mt-1 mb-3">For searching the exam result report, user has to select exam, class and section.</p>
-                        <img src="/Eskooly/result-view.png" alt="Search Exam Result" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <span class="font-bold text-slate-700">Search Teacher Class Routine Report</span>
+                        <p class="mt-1 mb-3">By selecting the teacher name, super admin can see the particular teacher's class routine.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Class Routine List</span>
+                        <p class="mt-1 mb-3">In this class routine, individual teacher's full week assign class are listed.</p>
                     </li>
                 </ol>
-            </div>` },
+            </div>` 
+            },
             {
-                slug: "attendance-report", title: "Attendance Report", content: `
+                slug: "merit-list-report", 
+                title: "Merit List Report", 
+                content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Attendance Report</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Merit List Report</h3>
+                <img src="/Eskooly/merit_list_report.png" alt="Merit List Report" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
-                        <span class="font-bold text-slate-700">Search Attendance Report</span>
-                        <p class="mt-1 mb-3">For searching the attendance report, user has to select class, section and date.</p>
-                        <img src="/Eskooly/student_attendance-report.png" alt="Search Attendance Report" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <span class="font-bold text-slate-700">Search Merit List Report</span>
+                        <p class="mt-1 mb-3">To see the particular section of a class, have to select the exam name, class name, section.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Merit List Report</span>
+                        <p class="mt-1 mb-3">Search result are shown the a class all student's merit list. Here, in ascending order of student position, lists are shown. Individual subject's mark, grade also inclued in this list.</p>
                     </li>
                 </ol>
-            </div>` }
+            </div>` 
+            },
+            {
+                slug: "online-exam-report", 
+                title: "Online Exam Report", 
+                content: `
+            <div class="space-y-6">
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Online Exam Report</h3>
+                <img src="/Eskooly/online_result_view.png" alt="Online Exam Report" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
+                    <li>
+                        <span class="font-bold text-slate-700">Search Online Exam Report</span>
+                        <p class="mt-1 mb-3">You can search online exam report. Search fields are exam term, class, and section</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Result View</span>
+                        <p class="mt-1 mb-3">After searching the result view list are shown</p>
+                    </li>
+                </ol>
+            </div>` 
+            },
+            {
+                slug: "tabulation-sheet-report", 
+                title: "Tabulation Sheet Report", 
+                content: `
+            <div class="space-y-6">
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Tabulation Sheet Report</h3>
+                <img src="/Eskooly/terminal_report.png" alt="Tabulation Sheet Report" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
+                    <li>
+                        <span class="font-bold text-slate-700">Search Tabulation Sheet Report</span>
+                        <p class="mt-1 mb-3">You can search tabulation sheet report. Searching fields are Exam type Id, Class, Section and student.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Student Terminal Report</span>
+                        <p class="mt-1 mb-3">After searching tabulation sheet, the tabulation sheet are shown in below.</p>
+                    </li>
+                </ol>
+            </div>` 
+            },
+            {
+                slug: "student-progress-report", 
+                title: "Student Progress Report", 
+                content: `
+            <div class="space-y-6">
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Progress Report</h3>
+                <img src="/Eskooly/progress-report.png" alt="Progress Report" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
+                    <li>
+                        <span class="font-bold text-slate-700">Search Progress Report</span>
+                        <p class="mt-1 mb-3">You can search student progress report</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Progress Report List</span>
+                        <p class="mt-1 mb-3">After searching you can find student progress report list.</p>
+                    </li>
+                </ol>
+            </div>` 
+            },
+            {
+                slug: "student-fine-report", 
+                title: "Student Fine Report", 
+                content: `
+            <div class="space-y-6">
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Fine Report</h3>
+                <img src="/Eskooly/student_fine_report.png" alt="Student Fine Report" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
+                    <li>
+                        <span class="font-bold text-slate-700">Search Student Fine Report</span>
+                        <p class="mt-1 mb-3">You can search student fine report form between two date</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Student Fine Report List</span>
+                        <p class="mt-1 mb-3">After searching you can find student fine report list.</p>
+                    </li>
+                </ol>
+            </div>` 
+            },
+            {
+                slug: "user-log", 
+                title: "User Log", 
+                content: `
+            <div class="space-y-6">
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly User Log</h3>
+                <img src="/Eskooly/user_log.png" alt="User Log" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
+                    <li>
+                        <span class="font-bold text-slate-700">User Log list</span>
+                        <p class="mt-1 mb-3">This is onl for administrator, he can see the user loging history so that he can understand which user is active or not.</p>
+                    </li>
+                </ol>
+            </div>` 
+            }
         ]
     },
     {
         category: "Student Panel",
         items: [
             {
-                slug: "student-login", title: "Login", content: `
-            <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Login</h3>
-                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
-                    <li>
-                        <span class="font-bold text-slate-700">Login</span>
-                        <p class="mt-1 mb-3">Student can login with his username and password.</p>
-                        <img src="/Eskooly/login.png" alt="Login" class="w-full rounded-lg shadow-md border border-slate-200" />
-                    </li>
-                </ol>
-            </div>` },
-            {
-                slug: "student-dashboard", title: "Dashboard", content: `
-            <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Dashboard</h3>
-                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
-                    <li>
-                        <span class="font-bold text-slate-700">Dashboard</span>
-                        <p class="mt-1 mb-3">Student can see the dashboard with summary.</p>
-                        <img src="/Eskooly/student_panel.png" alt="Dashboard" class="w-full rounded-lg shadow-md border border-slate-200" />
-                    </li>
-                </ol>
-            </div>` },
-            {
-                slug: "student-profile", title: "My Profile", content: `
+                slug: "student-profile", 
+                title: "Student Profile", 
+                content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Profile</h3>
+                <img src="/Eskooly/student_panel.png" alt="Student Profile" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
-                        <span class="font-bold text-slate-700">My Profile</span>
-                        <p class="mt-1 mb-3">Student can see his Profile information.</p>
-                        <img src="/Eskooly/profile.png" alt="My Profile" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <span class="font-bold text-slate-700">Student Profile</span>
+                        <p class="mt-1 mb-3">Student can see his Profile,fees statement,examination,document and timeline.the profile includes personal information,parent,transport,dormitory, other information and so on.</p>
                     </li>
                 </ol>
-            </div>` },
+            </div>` 
+            },
             {
-                slug: "student-teachers", title: "Teachers", content: `
+                slug: "fees", 
+                title: "Fees", 
+                content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Teachers</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Fees</h3>
+                <img src="/Eskooly/fees.png" alt="Fees" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
-                        <span class="font-bold text-slate-700">Teachers</span>
-                        <p class="mt-1 mb-3">Student can see the list of teachers.</p>
-                        <img src="/Eskooly/teacher.png" alt="Teachers" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <span class="font-bold text-slate-700">Add Fees</span>
+                        <p class="mt-1 mb-3">Fees statement lists are shown and if fees are not paid yet then student is able to pay his fees through Paypal and Stripe.</p>
                     </li>
                 </ol>
-            </div>` },
+            </div>` 
+            },
             {
-                slug: "student-subject", title: "Subject", content: `
+                slug: "class-routine", 
+                title: "Class Routine", 
+                content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Subject</h3>
-                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
-                    <li>
-                        <span class="font-bold text-slate-700">Subject</span>
-                        <p class="mt-1 mb-3">Student can see his subjects.</p>
-                        <img src="/Eskooly/student_panel.png" alt="Subject" class="w-full rounded-lg shadow-md border border-slate-200" />
-                    </li>
-                </ol>
-            </div>` },
-            {
-                slug: "student-class-routine", title: "Class Routine", content: `
-            <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Class Routine</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Class Routine</h3>
+                <img src="/Eskooly/class_routine.png" alt="Class Routine" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Class Routine</span>
-                        <p class="mt-1 mb-3">Student can see his class routine.</p>
-                        <img src="/Eskooly/class_routine.png" alt="Class Routine" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <p class="mt-1 mb-3">Class routine are shown here. Class routine module has the capability to set routines section wise for a particular class. Admin can add, edit or delete any class routine and there is a print button associated with every class routine for printing</p>
                     </li>
                 </ol>
-            </div>` },
+            </div>` 
+            },
             {
-                slug: "student-lesson-plan", title: "Lesson Plan", content: `
+                slug: "homework", 
+                title: "Homework", 
+                content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Lesson Plan</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Homework</h3>
+                <img src="/Eskooly/homework.png" alt="Homework" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
-                        <span class="font-bold text-slate-700">Lesson Plan</span>
-                        <p class="mt-1 mb-3">Student can see the lesson plan.</p>
-                        <img src="/Eskooly/student_panel.png" alt="Lesson Plan" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <span class="font-bold text-slate-700">Homework List</span>
+                        <p class="mt-1 mb-3">Homework list with complete and incomplete status are shown.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Select Action</span>
+                        <p class="mt-1 mb-3">Student can see the homework's full detail view in the action section.</p>
                     </li>
                 </ol>
-            </div>` },
+            </div>` 
+            },
             {
-                slug: "student-syllabus", title: "Syllabus", content: `
+                slug: "download-center", 
+                title: "Download Center", 
+                content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Syllabus</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Download Center</h3>
+                <img src="/Eskooly/collect_fees.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
-                        <span class="font-bold text-slate-700">Syllabus</span>
-                        <p class="mt-1 mb-3">Student can see the syllabus.</p>
-                        <img src="/Eskooly/student_panel.png" alt="Syllabus" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <span class="font-bold text-slate-700">Search Collect Fees</span>
+                        <p class="mt-1 mb-3">Administrator/accountant can search to show their collecting fees from the student</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Collect Fees</span>
+                        <p class="mt-1 mb-3">To collect fees, click here.</p>
+                        <img src="/Eskooly/collect_fees_action.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Select Actions</span>
+                        <p class="mt-1 mb-3">You can add fees or print data.</p>
+                        <img src="/Eskooly/add_fees.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Add Fees</span>
+                        <p class="mt-1 mb-3">You can add fees fro here. There are four fields are required those are amount,discount group, discount & fine. There are three type of payment method has given. After giving all information of fees, then submit.</p>
                     </li>
                 </ol>
-            </div>` },
+            </div>` 
+            },
             {
-                slug: "student-homework", title: "Homework", content: `
+                slug: "attendance", 
+                title: "Attendance", 
+                content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Homework</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Attendance</h3>
+                <img src="/Eskooly/search_fees_payments.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
-                        <span class="font-bold text-slate-700">Homework</span>
-                        <p class="mt-1 mb-3">Student can see his homework.</p>
-                        <img src="/Eskooly/homework.png" alt="Homework" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <span class="font-bold text-slate-700">Search Fees Payment</span>
+                        <p class="mt-1 mb-3">You can search fees by payment ID.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Select Actions</span>
+                        <p class="mt-1 mb-3">You can view more details</p>
+                        <img src="/Eskooly/view (4).png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Print</span>
+                        <p class="mt-1 mb-3">You will able to print payment details.</p>
+                        <img src="/Eskooly/attendance.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Search Attendance</span>
+                        <p class="mt-1 mb-3">Student can search the student attendance.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Attendance Result</span>
+                        <p class="mt-1 mb-3">In this section attendance results are shown. Attendance result show the certain month attendance which is remarked by present(P),late(L),absent(A),Half Day(H) and Holiday(F)</p>
                     </li>
                 </ol>
-            </div>` },
+            </div>` 
+            },
             {
-                slug: "student-online-exam", title: "Online Exam", content: `
+                slug: "examinations", 
+                title: "Examinations", 
+                content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Online Exam</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Examinations</h3>
+                <img src="/Eskooly/fees_master.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
-                        <span class="font-bold text-slate-700">Online Exam</span>
-                        <p class="mt-1 mb-3">Student can appear in online exam.</p>
-                        <img src="/Eskooly/online-exam.png" alt="Online Exam" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <span class="font-bold text-slate-700">Add Fees Master</span>
+                        <p class="mt-1 mb-3">You can add fees master from here.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Select Actions</span>
+                        <p class="mt-1 mb-3">You can assign/view fees. You can also edit data from here.</p>
+                        <img src="/Eskooly/assign.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Search Fees Assign</span>
+                        <p class="mt-1 mb-3">You can search fees assign.</p>
+                        <img src="/Eskooly/examinations1.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <img src="/Eskooly/examinations2.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Exam Result</span>
+                        <p class="mt-1 mb-3">Student can see his result.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Search Exam Routine</span>
+                        <p class="mt-1 mb-3">For exam schedule, student can search here.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Exam Routine List</span>
+                        <p class="mt-1 mb-3">Exam routine are shown here.</p>
                     </li>
                 </ol>
-            </div>` },
+            </div>` 
+            },
             {
-                slug: "student-leave", title: "Leave", content: `
+                slug: "online-exam", 
+                title: "Online Exam", 
+                content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Leave</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Online Exam</h3>
+                <img src="/Eskooly/online_exam1.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <img src="/Eskooly/online_exam2.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
-                        <span class="font-bold text-slate-700">Leave</span>
-                        <p class="mt-1 mb-3">Student can apply for leave and see status.</p>
-                        <img src="/Eskooly/student_panel.png" alt="Leave" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <span class="font-bold text-slate-700">Online Active Exams</span>
+                        <p class="mt-1 mb-3">Which exams are active that are shown here.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Take Exam</span>
+                        <p class="mt-1 mb-3">Student can take examination if they want.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Take Online Exam</span>
+                        <p class="mt-1 mb-3">After completion of online exam, student can submit his exam answer.</p>
+                        <img src="/Eskooly/backup.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Upload Backup</span>
+                        <p class="mt-1 mb-3">Our system will help you to backup & restore your system. If you want to upload your database, then you can do it. But uploaded file must be sql file. Without sql file you can't upload it.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Images Backup</span>
+                        <p class="mt-1 mb-3">You can make whole image backup and download image as zip format.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Full System Backup</span>
+                        <p class="mt-1 mb-3">You can make whole full system backup and download as zip format. After downloading, you should delete system backup file from server.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Database Backup</span>
+                        <p class="mt-1 mb-3">You can take database backup and download.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Download</span>
+                        <p class="mt-1 mb-3">You can download from here</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Restore</span>
+                        <p class="mt-1 mb-3">You can restore your backup</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Delete</span>
+                        <p class="mt-1 mb-3">You can delete your backup</p>
                     </li>
                 </ol>
-            </div>` },
+            </div>` 
+            },
             {
-                slug: "student-library", title: "Library", content: `
+                slug: "notice-board", 
+                title: "Notice Board", 
+                content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Library</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Notice Board</h3>
+                <img src="/Eskooly/notice_board.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
-                        <span class="font-bold text-slate-700">Library</span>
-                        <p class="mt-1 mb-3">Student can see book list and issued books.</p>
-                        <img src="/Eskooly/library1.png" alt="Library" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <span class="font-bold text-slate-700">All Notice List</span>
+                        <p class="mt-1 mb-3">All the notice are listed here for student's acknowledgement.</p>
+                        <img src="/Eskooly/update-system.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">System Status</span>
+                        <p class="mt-1 mb-3">It will show that current system version and upgrade version. Upgrade version always offers to you with new features, bug fixing. It will take you advance technology.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Update System</span>
+                        <p class="mt-1 mb-3">If update version is available, then you can upgrade from here. At first you have to read alert carefully, If you have to do anything, then do it before taking upgrade.</p>
                     </li>
                 </ol>
-            </div>` },
+            </div>` 
+            },
             {
-                slug: "student-transport", title: "Transport", content: `
+                slug: "subject", 
+                title: "Subject", 
+                content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Transport</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Subject</h3>
+                <img src="/Eskooly/subject.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
-                        <span class="font-bold text-slate-700">Transport</span>
-                        <p class="mt-1 mb-3">Student can see transport routes and vehicles.</p>
-                        <img src="/Eskooly/transport.png" alt="Transport" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <span class="font-bold text-slate-700">Subject list</span>
+                        <p class="mt-1 mb-3">Assigned Subjects are listed here.Student can see those.</p>
                     </li>
                 </ol>
-            </div>` },
+            </div>` 
+            },
             {
-                slug: "student-dormitory", title: "Dormitory", content: `
+                slug: "teachers", 
+                title: "Teachers", 
+                content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Dormitory</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Teachers</h3>
+                <img src="/Eskooly/teacher.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
-                        <span class="font-bold text-slate-700">Dormitory</span>
-                        <p class="mt-1 mb-3">Student can see dormitory list.</p>
-                        <img src="/Eskooly/student_panel.png" alt="Dormitory" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <span class="font-bold text-slate-700">Teacher list</span>
+                        <p class="mt-1 mb-3">Course teacher listed here.</p>
                     </li>
                 </ol>
-            </div>` },
+            </div>` 
+            },
             {
-                slug: "student-notice", title: "Notice", content: `
+                slug: "library", 
+                title: "Library", 
+                content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Notice</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Library</h3>
+                <img src="/Eskooly/library1.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <img src="/Eskooly/library2.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
-                        <span class="font-bold text-slate-700">Notice</span>
-                        <p class="mt-1 mb-3">Student can see notice board.</p>
-                        <img src="/Eskooly/notice-board.png" alt="Notice" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <span class="font-bold text-slate-700">Book List</span>
+                        <p class="mt-1 mb-3">All Books which are available in the library are shown here.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">All Issued Book List</span>
+                        <p class="mt-1 mb-3">Which books are issued for this student are shown here.</p>
                     </li>
                 </ol>
-            </div>` }
+            </div>` 
+            },
+            {
+                slug: "transport", 
+                title: "Transport", 
+                content: `
+            <div class="space-y-6">
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Transport</h3>
+                <img src="/Eskooly/Transport.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
+                    <li>
+                        <span class="font-bold text-slate-700">Transport Route List</span>
+                        <p class="mt-1 mb-3">Student can see the transport routes and vehicles.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">View Info</span>
+                        <p class="mt-1 mb-3">Full details of transport route are shown here.</p>
+                    </li>
+                </ol>
+            </div>` 
+            },
+            {
+                slug: "dormitory", 
+                title: "Dormitory", 
+                content: `
+            <div class="space-y-6">
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Dormitory</h3>
+                <img src="/Eskooly/dormitory.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
+                    <li>
+                        <span class="font-bold text-slate-700">Dormitory Room List</span>
+                        <p class="mt-1 mb-3">Dormitory and it's room information with which room is assigned for the student is listed here.</p>
+                    </li>
+                </ol>
+            </div>` 
+            }
         ]
     },
     {
         category: "Parents Panel",
         items: [
             {
-                slug: "parents-login", title: "Login", content: `
+                slug: "student-profile", 
+                title: "Student Profile", 
+                content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Parents Login</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Profile</h3>
+                <img src="/Eskooly/my_children1.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <img src="/Eskooly/my_children2.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <img src="/Eskooly/my_children3.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
-                        <span class="font-bold text-slate-700">Login</span>
-                        <p class="mt-1 mb-3">Parent can login.</p>
-                        <img src="/Eskooly/login.png" alt="Login" class="w-full rounded-lg shadow-md border border-slate-200" />
-                    </li>
-                </ol>
-            </div>` },
-            {
-                slug: "parents-dashboard", title: "Dashboard", content: `
-            <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Parents Dashboard</h3>
-                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
-                    <li>
-                        <span class="font-bold text-slate-700">Dashboard</span>
-                        <p class="mt-1 mb-3">Parent can see dashboard.</p>
-                        <img src="/Eskooly/student_panel.png" alt="Dashboard" class="w-full rounded-lg shadow-md border border-slate-200" />
-                    </li>
-                </ol>
-            </div>` },
-            {
-                slug: "parents-my-children", title: "My Children", content: `
-            <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Parents My Children</h3>
-                <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
-                    <li>
-                        <span class="font-bold text-slate-700">My Children</span>
+                        <span class="font-bold text-slate-700">Student Profile</span>
                         <p class="mt-1 mb-3">Parent Can See the Selected Student's Profile.</p>
-                        <img src="/Eskooly/my_children1.png" alt="My Children" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <img src="/Eskooly/add-homework.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Create Homework</span>
+                        <p class="mt-1 mb-3">Administrator/Teachers can add homework for their students. After adding homework, students will get notification of their system panel.</p>
+                    </li>
+                    <p class="mt-4">Compulsory fields for homework Class * Section * Subject * HomeWork Date * Submission Date * Marks * Description *</p>
+                    <img src="/Eskooly/homework-list.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
+                    <li>
+                        <span class="font-bold text-slate-700">Update Homework</span>
+                        <p class="mt-1 mb-3">Evaluation homework Edit homework Delete homework 3. Search Homework Administrator/Teachers can search homework for their students homework</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Add Homework</span>
+                        <p class="mt-1 mb-3">Administrator/Teachers can add homework for their students</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Update Homework</span>
+                        <img src="/Eskooly/evaluation.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Homework Evaluation</span>
+                        <p class="mt-1 mb-3">Here Teachers can create Homework for their Class-Section. After creating homework teachers can evaluate homework for class-section students that who has completed homework or not completed. First we will Add Homework then we will evaluate homework. Homework- Go to Homework > Add Homework Here you can see all previously created homework and search them different criteria.</p>
                     </li>
                 </ol>
-            </div>` },
+            </div>` 
+            },
             {
-                slug: "parents-fees", title: "Fees", content: `
+                slug: "student-fees-statement", 
+                title: "Student Fees Statement", 
+                content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Parents Fees</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Fees Statement</h3>
+                <img src="/Eskooly/fees (1).png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
+                <img src="/Eskooly/fees1.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
                         <span class="font-bold text-slate-700">Student Fees Statement</span>
-                        <p class="mt-1 mb-3">Parent Can See the particular student's fees statement.</p>
-                        <img src="/Eskooly/fees1.png" alt="Student Fees Statement" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <p class="mt-1 mb-3">Parent Can See the particular student's fees statement,fees status which is paid or not.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Select Actions</span>
+                        <p class="mt-1 mb-3">The action includes two online payment options such as Paypal and Stripe.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Collect Fees Online Via Card</span>
+                        <p class="mt-1 mb-3">Parent Can pay the fees through online via cards.</p>
                     </li>
                 </ol>
-            </div>` },
+            </div>` 
+            },
             {
-                slug: "parents-class-routine", title: "Class Routine", content: `
+                slug: "student-class-routine", 
+                title: "Student Class Routine", 
+                content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Parents Class Routine</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Class Routine</h3>
+                <img src="/Eskooly/student_admission1.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
+                    <li>
+                        <span class="font-bold text-slate-700">Import Student</span>
+                        <p class="mt-1 mb-3">Administrator will able to import student. There is an Excel format for import student.</p>
+                    </li>
+                    <p class="mt-4">Student Admission There are several inputs fields for student admission. We will discuss in below.</p>
+                    <p class="mt-4">Admission Number: This input field will increase automatically. Compulsory Fields Class: If the class list is empty, then you have to add class Section: If the section list is empty, then you have to add section First Name Gender: If the gender list is empty, then you have to add base setup Date of Birth Session: If the gender list is empty, then you have to add session 2. Add Parent If a student have any siblings who are already admitted, then add parent of previous student.</p>
+                   <li>
+                    <span class="font-bold text-slate-700">Add Parent</span>
+                    <p class="mt-1 mb-3">If a student have any siblings who are already admitted, then add parent of previous student.</p>
+                    <img src="/Eskooly/student_admission2.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
+                   </li>
+        
+                    <li>
+                        <span class="font-bold text-slate-700">Guardian</span>
+                        <p class="mt-1 mb-3">If gurdian without one of parents, you have to add guardian and input their relations between them</p>
+                    <p class="mt-4">Compulsory Fields Guardian Email: It is required because their login in this system to check their child's progress or lacking Guardian Phone: Phone number is must required.</p>
+                        <img src="/Eskooly/student_admission3.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Save Student Data</span>
+                        <p class="mt-1 mb-3">You can select Dormitory & Room Number.</p>
+                    <p class="mt-4">You can select Transport Route, vehicle number, and driver name</p>
+                        <img src="/Eskooly/student_import.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Download Sample File</span>
+                        <p class="mt-1 mb-3">Before import excel file, you should download the sample file to know it's format.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Student Import</span>
+                        <p class="mt-1 mb-3">Before import excel file, you have to generate excel file according to our sample format, and follow our instruction which are given in above.</p>
+                        <img src="/Eskooly/class_routine (1).png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Student Class Routine</span>
+                        <p class="mt-1 mb-3">Parent can see the class routine of the particular student.</p>
+                        <img src="/Eskooly/class-routine.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
+                    </li>
                     <li>
                         <span class="font-bold text-slate-700">Class Routine</span>
-                        <p class="mt-1 mb-3">Parent can see class routine.</p>
-                        <img src="/Eskooly/class_routine.png" alt="Class Routine" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <p class="mt-1 mb-3">Administrator/Teachers can set Class Routine</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Class Period</span>
+                        <p class="mt-1 mb-3">If class period is empty, then at first you have to class period. You can also modify class period.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Weekend</span>
+                        <p class="mt-1 mb-3">If weekend is empty, then at first you have to weekend. You can also modify weekend.</p>
+                        <img src="/Eskooly/create-class-routine.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Set Class Routine</span>
+                        <p class="mt-1 mb-3">To set class routine, you have to select subject, teacher, and room number. Please see how to add subject , teacher , and room number</p>
                     </li>
                 </ol>
-            </div>` },
+            </div>` 
+            },
             {
-                slug: "parents-homework", title: "Homework", content: `
+                slug: "homework-list", 
+                title: "Homework list", 
+                content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Parents Homework</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Homework list</h3>
+                <img src="/Eskooly/student_list.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
-                        <span class="font-bold text-slate-700">Homework</span>
-                        <p class="mt-1 mb-3">Parent can see homework.</p>
-                        <img src="/Eskooly/homework.png" alt="Homework" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <span class="font-bold text-slate-700">Add Student</span>
+                        <p class="mt-1 mb-3">You can go add a student from here.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Search Student</span>
+                        <p class="mt-1 mb-3">You can search student list</p>
+                        <img src="/Eskooly/student_list3.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Select Student</span>
+                        <p class="mt-1 mb-3">You can view, edit, delete of the student.</p>
+                        <img src="/Eskooly/student_list4.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <img src="/Eskooly/student_list5.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Student Details</span>
+                    </li>
+                    <li>
+                    <span class="font-bold text-slate-700">Sibling Information</span>
+                    </li>
+                    <li>
+                    <span class="font-bold text-slate-700">Student Profile</span>
+                    </li>
+                    <li>
+                    <span class="font-bold text-slate-700">Edit Student</span>
+                    </li>
+                    <li>
+                    <span class="font-bold text-slate-700">Student Fees</span>
+                    </li>
+                    <li>
+                    <span class="font-bold text-slate-700">Document</span>
+                    </li>
+                    <li>
+                    <span class="font-bold text-slate-700">Timeline</span>
+                    <img src="/Eskooly/homework.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Student Homework list</span>
+                        <p class="mt-1 mb-3">Parent can see the student's homework list.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Select Action</span>
+                        <p class="mt-1 mb-3">Particular homework view in the action option.</p>
+                    <img src="/Eskooly/assign-subject.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Assign Subject</span>
+                        <p class="mt-1 mb-3">To set assign subject, you have to select subject, teacher, and room number. Please see how to add subject , teacher.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Search Assign Subject</span>
+                        <p class="mt-1 mb-3">Administrator will able to search assign subject.</p>
+                    <img src="/Eskooly/add-assign-subject.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
                     </li>
                 </ol>
-            </div>` },
+            </div>` 
+            },
             {
-                slug: "parents-exam", title: "Exam", content: `
+                slug: "student-attendance", 
+                title: "Student Attendance", 
+                content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Parents Exam</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Attendance</h3>
+                    <img src="/Eskooly/attendance (1).png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
-                        <span class="font-bold text-slate-700">Exam</span>
-                        <p class="mt-1 mb-3">Parent can see exam result.</p>
-                        <img src="/Eskooly/result-view.png" alt="Exam" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <span class="font-bold text-slate-700">Search Attendance</span>
+                        <p class="mt-1 mb-3">Parent can search the student attendance.</p>
+                    </li>
+                    <li>
+                        <span class="font-bold text-slate-700">Attendance Result</span>
+                        <p class="mt-1 mb-3">In this section attendance results are shown.Attendance result show the certain month attendance which is remarked by present(P),late(L),absent(A),Half Day(H) and Holiday(F)</p>
                     </li>
                 </ol>
-            </div>` },
+            </div>` 
+            },
             {
-                slug: "parents-attendance", title: "Attendance", content: `
+                slug: "notice-board", 
+                title: "Notice Board", 
+                content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Parents Attendance</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Notice Board</h3>
+                    <img src="/Eskooly/notice_board.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
-                        <span class="font-bold text-slate-700">Attendance</span>
-                        <p class="mt-1 mb-3">Parent can see attendance.</p>
-                        <img src="/Eskooly/student_attendance.png" alt="Attendance" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <span class="font-bold text-slate-700">All Notices</span>
+                        <p class="mt-1 mb-3">Parent can see the notice list which is selected for parents.</p>
                     </li>
                 </ol>
-            </div>` },
+            </div>` 
+            },
             {
-                slug: "parents-notice", title: "Notice", content: `
+                slug: "subjects", 
+                title: "Subjects", 
+                content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Parents Notice</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Subjects</h3>
+                    <img src="/Eskooly/subjects.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
-                        <span class="font-bold text-slate-700">Notice</span>
-                        <p class="mt-1 mb-3">Parent can see notice.</p>
-                        <img src="/Eskooly/notice-board.png" alt="Notice" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <span class="font-bold text-slate-700">Student assigned Subjects</span>
+                        <p class="mt-1 mb-3">Parent can see which subjects are assigned.</p>
                     </li>
                 </ol>
-            </div>` },
+            </div>` 
+            },
             {
-                slug: "parents-library", title: "Library", content: `
+                slug: "teacher-list", 
+                title: "Teacher List", 
+                content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Parents Library</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Teacher List</h3>
+                    <img src="/Eskooly/teacher (1).png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
-                        <span class="font-bold text-slate-700">Library</span>
-                        <p class="mt-1 mb-3">Parent can see library info.</p>
-                        <img src="/Eskooly/library1.png" alt="Library" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <span class="font-bold text-slate-700">Student assigned Teacher List</span>
+                        <p class="mt-1 mb-3">Parent can see the teachers list whom are assigned.</p>
                     </li>
                 </ol>
-            </div>` },
+            </div>` 
+            },
             {
-                slug: "parents-transport", title: "Transport", content: `
+                slug: "transport-list", 
+                title: "Transport List", 
+                content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Parents Transport</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Transport List</h3>
+                    <img src="/Eskooly/transport (1).png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
-                        <span class="font-bold text-slate-700">Transport</span>
-                        <p class="mt-1 mb-3">Parent can see transport info.</p>
-                        <img src="/Eskooly/transport.png" alt="Transport" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <span class="font-bold text-slate-700">Student Transport List</span>
+                        <p class="mt-1 mb-3">Parent can see the transport route and assigned vehicle.</p>
                     </li>
                 </ol>
-            </div>` },
+            </div>` 
+            },
             {
-                slug: "parents-dormitory", title: "Dormitory", content: `
+                slug: "dormitory", 
+                title: "Dormitory", 
+                content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Parents Dormitory</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Dormitory</h3>
+                    <img src="/Eskooly/dormitory (1).png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
-                        <span class="font-bold text-slate-700">Dormitory</span>
-                        <p class="mt-1 mb-3">Parent can see dormitory info.</p>
-                        <img src="/Eskooly/dormitory.png" alt="Dormitory" class="w-full rounded-lg shadow-md border border-slate-200" />
+                        <span class="font-bold text-slate-700">Student Assigned Dormitory</span>
+                        <p class="mt-1 mb-3">Dormitory list and assigned dormitory are seen in this module.</p>
                     </li>
                 </ol>
-            </div>` }
+            </div>` 
+            }
         ]
     },
 ];
@@ -2390,10 +3347,12 @@ export const categoryIcons: Record<string, any> = {
     "Examination": ClipboardList,
     "Leave Application": FileText,
     "Human Resource": UserCircle,
-    "Accounts": Wallet,
-    "Fees Collection": CreditCard,
+    "Profit": Wallet,
+    "Accounts": CreditCard,
+    "Download Center": Cloud,
     "Student Information": User,
     "Reports": BarChart,
     "Student Panel": Laptop,
+    "System Maintenance": Settings,
     "Parents Panel": Monitor
 };
