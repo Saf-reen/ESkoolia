@@ -12,7 +12,7 @@ const footerLinks = {
     { label: "Latest", href: "https://eskooly.pro/login" },
     { label: "Version 9.0", href: "https://eskooly.pro/login" },
     { label: "Version 8.0", href: "https://pro.eskooly.com/demo/login" },
-    { label: "Add-ons", href: "https://pro.eskooly.com/modules/" },
+    { label: "Add-ons", href: "/modules" },
   ],
   "Useful Links": [
     { label: "FAQ'S", href: "/faq" },
@@ -40,7 +40,7 @@ const paymentMethods = [
 
 export default function Footer() {
   return (
-    <footer className="relative bg-[#5727A3] text-white overflow-hidden pt-20 pb-8">
+    <footer className="relative bg-[#483285] text-white overflow-hidden pt-20 pb-8">
       {/* Wave Top Decoration (SVG) matches the header/section style */}
       <div className="absolute top-0 left-0 w-full overflow-hidden leading-none rotate-180">
         <svg className="relative block w-[calc(100%+1.3px)] h-[50px] lg:h-[100px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -54,7 +54,7 @@ export default function Footer() {
         <div className="flex flex-col items-center justify-center mb-16 text-center">
           <Link to="/" className="flex flex-col items-center gap-2 group">
             <div className="flex items-center gap-2">
-              <span className="font-display text-4xl font-black tracking-tight italic">ESKOOLIA</span>
+              <span className="font-display text-4xl font-black tracking-tight">ESKOOLIA</span>
             </div>
             <span className="text-white/60 text-sm tracking-widest uppercase mt-1">Ultimate Education Management ERP</span>
           </Link>
@@ -63,7 +63,7 @@ export default function Footer() {
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4 mb-20 text-center md:text-left">
           {Object.entries(footerLinks).map(([title, links]) => (
             <div key={title}>
-              <h4 className="mb-6 text-lg font-bold text-white/90">{title}</h4>
+              <h4 className="mb-6 text-xl font-bold text-white/90">{title}</h4>
               <ul className="space-y-3">
                 {links.map((l) => (
                   <li key={l.label}>
@@ -72,14 +72,14 @@ export default function Footer() {
                         href={l.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-white/70 hover:text-white transition-colors text-sm"
+                        className="text-white/70 hover:text-white transition-colors text-lg"
                       >
                         {l.label}
                       </a>
                     ) : (
                       <Link
                         to={l.href}
-                        className="text-white/70 hover:text-white transition-colors text-sm"
+                        className="text-white/70 hover:text-white transition-colors text-lg"
                       >
                         {l.label}
                       </Link>
@@ -104,7 +104,7 @@ export default function Footer() {
 
           {/* Certifications */}
           <div className="text-center">
-            <span className="block text-sm font-semibold mb-3 opacity-90">We're Proudly Certified</span>
+            <span className="block text-lg font-semibold mb-3 opacity-90">We're Proudly Certified</span>
             <div className="flex justify-center gap-4">
               <div className="w-10 h-10 bg-black/30 rounded-full flex items-center justify-center border border-white/20" title="Kids Club">
                 <ShieldCheck className="w-5 h-5" />

@@ -50,7 +50,7 @@ export default function Header() {
       <div className="py-2">
         <div className="container flex items-center justify-between relative">
           <Link to="/" className="flex items-center gap-2 font-display text-xl font-bold text-white group z-10">
-            <img src="/eskoolia_logo_.png" alt="Eskooly" className={`w-auto transition-all duration-300 ${scrolled ? "h-16" : "h-24"}`} />
+            <img src="/eskoolia_logo_.png" alt="Eskooly" className={`w-auto transition-all duration-300 ${scrolled ? "h-24" : "h-24"}`} />
           </Link>
 
           {/* Desktop nav */}

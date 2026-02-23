@@ -18,6 +18,8 @@ import PrivacyPage from "@/pages/PrivacyPage";
 import DeletionPolicyPage from "@/pages/DeletionPolicyPage";
 import DashboardOverview from "@/pages/dashboard/DashboardOverview";
 import DashboardPlaceholder from "@/pages/dashboard/DashboardPlaceholder";
+import ModulesPage from "@/pages/ModulesPage";
+import FAQPage from "@/pages/FAQPage";
 import NotFound from "@/pages/NotFound";
 import ScrollToTop from "@/components/ScrollToTop";
 
@@ -39,7 +41,9 @@ const App = () => (
             <Route path="/business" element={<BusinessPage />} />
             <Route path="/docs" element={<DocsPage />} />
             <Route path="/docs/:slug" element={<DocsPage />} />
+            <Route path="/faq" element={<FAQPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/modules" element={<ModulesPage />} />
             <Route path="/terms" element={<TermsPage />} />
             <Route path="/privacy" element={<PrivacyPage />} />
             <Route path="/deletion-policy" element={<DeletionPolicyPage />} />

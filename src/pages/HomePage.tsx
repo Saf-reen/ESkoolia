@@ -308,7 +308,7 @@ export default function HomePage() {
       <section className="py-20 pt-32 bg-white">
         <div className="container">
           <div className="mx-auto mb-20 max-w-3xl text-center">
-            <span className="mb-3 block font-bold text-orange-500 uppercase tracking-widest text-sm">Amazing features to convince you</span>
+            <span className="mb-3 block font-bold text-orange-500 uppercase tracking-widest text-lg">Amazing features to convince you</span>
             <h2 className="mb-6 font-display text-4xl font-bold text-[#483285]">Some Features that make Us Proud</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">Looking Forward To Something Different & Unique! Here We Are With Few That Never Expected In Others.</p>
           </div>
@@ -329,7 +329,7 @@ export default function HomePage() {
             {moreFeatures.map((f, i) => (
               <div key={i} className="flex items-center gap-2 px-6 py-3 rounded-full bg-secondary/30 hover:bg-secondary/60 transition-colors cursor-default border border-border/50">
                 <f.icon className="w-4 h-4 text-orange-500" />
-                <span className="font-semibold text-foreground/80 text-sm">{f.label}</span>
+                <span className="font-semibold text-foreground/80 text-lg">{f.label}</span>
               </div>
             ))}
           </div>
@@ -405,7 +405,7 @@ export default function HomePage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-8">
                     <div className="text-white">
                       <h4 className="font-bold text-xl mb-2">Mobile Ready</h4>
-                      <p className="text-sm opacity-80">Access your school data from anywhere, anytime.</p>
+                      <p className="text-lg opacity-80">Access your school data from anywhere, anytime.</p>
                     </div>
                   </div>
                 </div>
@@ -473,16 +473,16 @@ export default function HomePage() {
 
               {/* Floating Bubbles */}
               <div className="absolute top-0 right-10 w-28 h-28 bg-orange-100/90 backdrop-blur-sm rounded-full flex flex-col items-center justify-center text-center shadow-lg animate-float p-2 border border-orange-200" style={{ animationDelay: '0s' }}>
-                <span className="font-bold text-orange-600 text-sm leading-tight">Rich<br />Templates</span>
+                <span className="font-bold text-orange-600 text-lg leading-tight">Rich<br />Templates</span>
               </div>
               <div className="absolute bottom-10 left-0 w-28 h-28 bg-blue-100/90 backdrop-blur-sm rounded-full flex flex-col items-center justify-center text-center shadow-lg animate-float p-2 border border-blue-200" style={{ animationDelay: '1.5s' }}>
-                <span className="font-bold text-blue-600 text-sm leading-tight">Easy<br />Editing</span>
+                <span className="font-bold text-blue-600 text-lg leading-tight">Easy<br />Editing</span>
               </div>
               <div className="absolute top-1/2 left-[-20px] w-24 h-24 bg-purple-100/90 backdrop-blur-sm rounded-full flex flex-col items-center justify-center text-center shadow-lg animate-float p-2 border border-purple-200" style={{ animationDelay: '2.5s' }}>
-                <span className="font-bold text-purple-600 text-sm leading-tight">Quick<br />Setup</span>
+                <span className="font-bold text-purple-600 text-lg leading-tight">Quick<br />Setup</span>
               </div>
               <div className="absolute top-[-20px] left-1/2 w-26 h-26 bg-green-100/90 backdrop-blur-sm rounded-full flex flex-col items-center justify-center text-center shadow-lg animate-float p-2 border border-green-200" style={{ animationDelay: '1s' }}>
-                <span className="font-bold text-green-600 text-sm leading-tight">Mobile<br />Friendly</span>
+                <span className="font-bold text-green-600 text-lg leading-tight">Mobile<br />Friendly</span>
               </div>
               <div className="absolute bottom-1/2 right-[-20px] w-32 h-32 bg-indigo-100/90 backdrop-blur-sm rounded-full flex flex-col items-center justify-center text-center shadow-lg animate-float p-2 border border-indigo-200" style={{ animationDelay: '2s' }}>
                 <span className="font-bold text-indigo-600 text-lg leading-tight">ERP<br />Blend</span>
@@ -521,7 +521,7 @@ export default function HomePage() {
                     "Interface Customization",
                     "1 year Technical Support"
                   ].map((item, i) => (
-                    <li key={i} className="flex items-center justify-center text-sm text-muted-foreground">
+                    <li key={i} className="flex items-center justify-center text-lg text-muted-foreground">
                       {item}
                     </li>
                   ))}
@@ -583,7 +583,7 @@ export default function HomePage() {
                     "Full Customization",
                     "5 Years Support"
                   ].map((item, i) => (
-                    <li key={i} className="flex items-center justify-center text-sm text-muted-foreground">
+                    <li key={i} className="flex items-center justify-center text-lg text-muted-foreground">
                       {item}
                     </li>
                   ))}
@@ -642,7 +642,7 @@ export default function HomePage() {
                     <CarouselItem key={index}>
                       <div className="p-1">
                         <div className="bg-white p-8 rounded-2xl shadow-xl text-gray-800 min-h-[300px] flex flex-col justify-center">
-                          <p className="text-lg text-gray-600 mb-6 leading-relaxed italic">
+                          <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                             "{t.text}"
                           </p>
                           <div className="flex text-yellow-500">

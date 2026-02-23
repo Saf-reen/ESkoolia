@@ -162,7 +162,7 @@ export default function FeaturesPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
             {panelFeatures.map((panel, idx) => (
               <div key={idx} className="bg-white p-6 rounded-[24px] shadow-sm border border-slate-100 hover:shadow-lg transition-all">
-                <h3 className="text-xl font-black text-[#483285] mb-6 pb-3 border-b border-slate-50 flex items-center gap-2">
+                <h3 className="text-2xl font-black text-[#483285] mb-6 pb-3 border-b border-slate-50 flex items-center gap-2">
                   <div className="w-1.5 h-6 bg-orange-500 rounded-full"></div>
                   {panel.title}
                 </h3>
@@ -170,7 +170,7 @@ export default function FeaturesPage() {
                   {panel.features.map((f, i) => (
                     <div key={i} className="flex items-center gap-2 text-slate-600 group">
                       <div className="h-1 w-1 rounded-full bg-slate-300 group-hover:bg-orange-500 transition-colors"></div>
-                      <span className="text-xs font-bold group-hover:text-slate-900 transition-colors">{f}</span>
+                      <span className="text-lg font-bold group-hover:text-slate-900 transition-colors">{f}</span>
                     </div>
                   ))}
                 </div>
@@ -197,7 +197,7 @@ export default function FeaturesPage() {
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#483285]/5 text-[#483285] group-hover:bg-[#483285] group-hover:text-white transition-all">
                   <feature.icon className="h-5 w-5" />
                 </div>
-                <h4 className="font-bold text-slate-800 text-[13px] leading-tight">{feature.title}</h4>
+                <h4 className="font-bold text-slate-800 text-lg leading-tight">{feature.title}</h4>
               </div>
             ))}
           </div>
