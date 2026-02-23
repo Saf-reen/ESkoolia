@@ -1,106 +1,222 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import {
-  Users, UserCheck, CalendarCheck, FileText, DollarSign, BookOpen,
-  BarChart3, Briefcase, Bus, BedDouble, Bell, CalendarDays,
-  Building2, Shield, Monitor, Package, Clock, Layers, CheckCircle2
+  UserCog, User, GraduationCap, DollarSign, Wallet, Users,
+  FileSpreadsheet, BookOpen, MessageSquare, Library, Package,
+  Bus, Bed, Globe, BarChart3, Settings, Zap, Globe2, Code,
+  Smartphone, Languages, Palette, Bell, SmartphoneNfc, Printer,
+  Database, ShieldAlert, History, Download, ShieldCheck
 } from "lucide-react";
 import PageHeader from "@/components/layout/PageHeader";
 
-const moduleGroups = [
+const mainModules = [
+  { icon: UserCog, title: "Admin Module", desc: "Managing other accounts, Manage Teacher, Student, Guardian etc" },
+  { icon: User, title: "Student Info", desc: "Student Admission, Student List, Student Attendance, Promote, Reports, etc." },
+  { icon: GraduationCap, title: "Teacher", desc: "Uploading Content, Material, Assignment, Syllabus Downloads and many more." },
+  { icon: DollarSign, title: "Fees Collection", desc: "Fees Master Collect Fees Due fees searches Discount and many more" },
+  { icon: Wallet, title: "Accounts", desc: "Profit, Income, Expense Search Query Account List Payment Methods etc." },
+  { icon: Users, title: "Human Resource", desc: "Staff (Directory, Attendance, Reports) Payroll Designation Department and more." },
+  { icon: FileSpreadsheet, title: "Examination", desc: "Exam routine, Date & time Schedule notice. Seat plan Mark sheet & Report etc." },
+  { icon: BookOpen, title: "Academics", desc: "Class Routine Subjective assign Teacher assign Manage Subject etc." },
+  { icon: MessageSquare, title: "Communication", desc: "Notice Manage (Holiday, Events etc) Massaging Emailing Reports and More" },
+  { icon: Library, title: "Library", desc: "Book adding, removing, Card issuing Member listing & manage Book category/list" },
+  { icon: Package, title: "Inventory", desc: "Inventory Item (Listing, Storing, Categories) Supply Item Sell, Issuing etc Item receiving etc." },
+  { icon: Bus, title: "Transport", desc: "Roads, Vehicles listing, Schedule/routine, student transport Reports etc." },
+  { icon: Bed, title: "Dormitory", desc: "Dormitory finding Categories & Listing Rooms monitoring Reports etc." },
+  { icon: Globe, title: "Front CMS", desc: "No need to develop a seprate website for your school. it's pre-build." },
+  { icon: BarChart3, title: "Reports", desc: "Class reports, student’s reports, Progress card, Attendant reports and many more." },
+  { icon: Settings, title: "System Settings", desc: "General Settings, Email, Permission Setup Backup Restore, System Update and more." },
+];
+
+const additionalFeatures = [
+  { icon: Zap, title: "Optimized Performance" },
+  { icon: Download, title: "One Click Update System" },
+  { icon: Code, title: "Supports RESTful APIs" },
+  { icon: ShieldCheck, title: "Clean Code Quality" },
+  { icon: Zap, title: "Installation Wizard" },
+  { icon: Smartphone, title: "Fully Responsive" },
+  { icon: Globe2, title: "Supports Right-to-Left" },
+  { icon: Languages, title: "Multilingual" },
+  { icon: Palette, title: "Themes & Colors Styling" },
+  { icon: Bell, title: "Email Notification Templates" },
+  { icon: SmartphoneNfc, title: "Supports SMS Notification" },
+  { icon: Printer, title: "Printable Reports" },
+  { icon: Database, title: "Inbuilt Backup Tool" },
+  { icon: ShieldAlert, title: "IP Filter & Block" },
+  { icon: History, title: "Activity & Email Log" },
+  { icon: Download, title: "Export Reports" },
+];
+
+const panelFeatures = [
   {
-    title: "Academic Management",
-    modules: [
-      { icon: Users, title: "Student Management", desc: "Complete student lifecycle management from admission to graduation.", bullets: ["Student profiles & enrollment", "Class promotion & transfer", "Alumni tracking", "Document management"] },
-      { icon: UserCheck, title: "Teacher Management", desc: "Comprehensive teacher administration and performance tracking.", bullets: ["Teacher profiles & qualifications", "Subject & class assignments", "Performance evaluations", "Leave management"] },
-      { icon: CalendarCheck, title: "Attendance", desc: "Automated attendance tracking with real-time notifications.", bullets: ["Daily / period-wise tracking", "Parent SMS/email alerts", "Attendance reports", "Biometric integration"] },
-      { icon: FileText, title: "Exams & Results", desc: "Complete examination management from scheduling to report cards.", bullets: ["Exam creation & scheduling", "Grade management", "Report card generation", "Result analytics"] },
-      { icon: Clock, title: "Timetable", desc: "Intelligent class scheduling with conflict detection.", bullets: ["Auto-generate timetables", "Teacher allocation", "Room management", "Substitution handling"] },
-    ],
+    title: "ADMIN SECTION",
+    features: [
+      "Admission Query", "Visitor Book", "Phone Call Log", "Postal Receive", "Postal Dispatch",
+      "Complain", "Admin Setup", "Setup Front Office", "Managing User accounts", "Managing classes & subjects",
+      "Managing class routine", "Managing exam & grades", "Managing exam marks", "Sending marks via SMS",
+      "Students Attendance", "Student Certificate", "Generate ID Card", "Accounting & Finance",
+      "Student Admission", "Student Details", "Student Promote", "School Events", "Library & Transport"
+    ]
   },
   {
-    title: "Financial Management",
-    modules: [
-      { icon: DollarSign, title: "Fee Collection", desc: "Streamlined fee management with online payment support.", bullets: ["Fee structure creation", "Online payments", "Due reminders", "Receipt generation"] },
-      { icon: BarChart3, title: "Accounting", desc: "Double-entry accounting system for complete financial control.", bullets: ["Income & expense tracking", "Ledger management", "Balance sheets", "Tax compliance"] },
-      { icon: Package, title: "Payroll", desc: "Automated salary processing for all staff.", bullets: ["Salary calculation", "Deductions & bonuses", "Payslip generation", "Bank integration"] },
-    ],
+    title: "TEACHER PANEL",
+    features: [
+      "Add Homework", "Evaluation Report", "Upload Content", "Assignments", "Study Material",
+      "Syllabus", "Other Downloads", "Managing students", "Managing exam marks", "Managing attendance"
+    ]
   },
   {
-    title: "Administration",
-    modules: [
-      { icon: Briefcase, title: "HR Management", desc: "Complete human resource management for school staff.", bullets: ["Staff records", "Recruitment workflow", "Leave management", "Document storage"] },
-      { icon: BookOpen, title: "Library", desc: "Digital library management system.", bullets: ["Book cataloging", "Issue & return tracking", "Fine management", "Digital resources"] },
-      { icon: Bus, title: "Transport", desc: "School transport fleet management.", bullets: ["Route planning", "Vehicle tracking", "Driver management", "Fee integration"] },
-      { icon: BedDouble, title: "Hostel", desc: "Hostel and boarding facility management.", bullets: ["Room allocation", "Mess management", "Visitor tracking", "Fee integration"] },
-    ],
+    title: "PARENTS PANEL",
+    features: [
+      "Get children marks", "Get payment invoices", "Get class routine", "Messaging with teachers", "Childs attendance tracking"
+    ]
   },
   {
-    title: "System & Control",
-    modules: [
-      { icon: Building2, title: "Multi Branch", desc: "Manage multiple school campuses seamlessly.", bullets: ["Centralized control", "Branch-wise reports", "Data isolation", "Cross-branch transfers"] },
-      { icon: Layers, title: "Super Admin", desc: "Platform-wide control panel for system administrators.", bullets: ["Global settings", "Branch management", "User provisioning", "System monitoring"] },
-      { icon: Shield, title: "Roles & Permissions", desc: "Granular access control for every user type.", bullets: ["Custom roles", "Module-level permissions", "Action-level control", "Audit logs"] },
-      { icon: Monitor, title: "Online Classes", desc: "Virtual classroom integration.", bullets: ["Video conferencing", "Assignment sharing", "Attendance tracking", "Recording support"] },
-      { icon: Bell, title: "Notice Board", desc: "School-wide announcement system.", bullets: ["Targeted notifications", "Category-wise notices", "Attachment support", "Read receipts"] },
-      { icon: CalendarDays, title: "Events", desc: "School event planning and management.", bullets: ["Event calendar", "Registration", "Participant management", "Photo gallery"] },
-    ],
-  },
+    title: "STUDENT PANEL",
+    features: [
+      "Get class routine", "Get exam marks", "Get attendance status", "Get study materials", "Get payment invoices", "Pay online", "Communicate with teacher"
+    ]
+  }
+];
+
+const colorPalette = [
+  { gradient: "from-blue-600 to-indigo-700", dot1: "bg-blue-400", dot2: "bg-indigo-300", iconText: "text-blue-600" },
+  { gradient: "from-purple-600 to-fuchsia-700", dot1: "bg-purple-400", dot2: "bg-pink-300", iconText: "text-purple-600" },
+  { gradient: "from-orange-500 to-red-600", dot1: "bg-orange-400", dot2: "bg-yellow-300", iconText: "text-orange-600" },
+  { gradient: "from-emerald-500 to-teal-700", dot1: "bg-emerald-400", dot2: "bg-blue-300", iconText: "text-emerald-600" },
 ];
 
 export default function FeaturesPage() {
   return (
-    <div>
-      <PageHeader
-        title="All Features"
-        breadcrumbs={[
-          { label: "Features" },
-          { label: "All Features" }
-        ]}
-      />
+    <div className="bg-white">
+      <PageHeader title="Features" />
 
-      <div className="py-8"></div> {/* Spacer */}
+      {/* Hero Intro */}
+      <section className="py-12 lg:py-16 border-b border-slate-50">
+        <div className="w-full px-6 text-center">
+          <span className="text-orange-500 font-bold tracking-widest uppercase text-xs mb-3 block">An Exhaustive list of Amazing Features</span>
+          <h2 className="text-4xl lg:text-5xl font-black text-[#483285] mb-4">The last software you will have to use!</h2>
+          <p className="text-slate-500 text-lg max-w-4xl mx-auto leading-relaxed font-medium">
+            Every Single Module You Want That Are Available, Curiosity Is Future Of New Discover. Explore All Our Single Modules That Will Blow Your Mind!
+          </p>
+        </div>
+      </section>
 
-      {moduleGroups.map((group) => (
-        <section key={group.title} className="py-12 border-b border-gray-100 last:border-0">
-          <div className="container">
-            <h2 className="mb-12 font-display text-3xl font-bold text-[#483285] text-center">{group.title}</h2>
+      {/* 16 Main Modules Grid */}
+      <section className="py-12 lg:py-16">
+        <div className="w-full px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full">
+            {mainModules.map((mod, i) => {
+              const color = colorPalette[i % colorPalette.length];
+              return (
+                <div
+                  key={i}
+                  className={`group relative p-6 rounded-[32px] border transition-all duration-500 flex items-center gap-6 bg-white border-slate-100 hover:border-transparent hover:shadow-2xl hover:-translate-y-1 overflow-hidden`}
+                >
+                  {/* Active Hover Background Layer */}
+                  <div className={`absolute inset-0 bg-gradient-to-br ${color.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10`}></div>
 
-            <div className="grid gap-8">
-              {group.modules.map((mod, i) => (
-                <div key={mod.title} className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-md transition-shadow group">
-                  <div className="flex flex-col md:flex-row gap-6">
-                    <div className="shrink-0">
-                      <div className="h-14 w-14 rounded-xl bg-[#483285]/5 text-[#483285] flex items-center justify-center group-hover:bg-[#483285] group-hover:text-white transition-colors duration-300">
-                        <mod.icon className="h-7 w-7" />
-                      </div>
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="font-display text-xl font-bold text-slate-800 mb-2">{mod.title}</h3>
-                      <p className="text-slate-600 mb-4 leading-relaxed">{mod.desc}</p>
-                      <div className="flex flex-wrap gap-x-6 gap-y-2">
-                        {mod.bullets.map((b) => (
-                          <div key={b} className="flex items-center gap-2 text-sm text-slate-500 font-medium">
-                            <CheckCircle2 className="h-4 w-4 shrink-0 text-orange-400" /> {b}
-                          </div>
-                        ))}
+                  {/* Decorative Elements on hover */}
+                  <div className="absolute top-0 right-0 w-full h-full overflow-hidden rounded-[32px] pointer-events-none opacity-0 group-hover:opacity-30 transition-opacity">
+                    <div className="absolute -top-8 -right-8 w-32 h-32 bg-white/20 rounded-full blur-xl"></div>
+                  </div>
+
+                  {/* Circular Icon Container */}
+                  <div className="relative shrink-0 flex items-center justify-center">
+                    <div className={`absolute -top-0.5 -right-0.5 w-2 h-2 ${color.dot1} rounded-full border-2 border-white shadow-sm z-10 group-hover:scale-0 transition-transform`}></div>
+                    <div className={`absolute -bottom-0.5 -left-0.5 w-2 h-2 ${color.dot2} rounded-full border-2 border-white shadow-sm z-10 group-hover:scale-0 transition-transform`}></div>
+
+                    <div className={`h-20 w-20 rounded-full flex items-center justify-center bg-white border-[4px] border-slate-50 shadow-md relative overflow-hidden transition-all duration-500 group-hover:bg-white/10 group-hover:border-white/20 group-hover:backdrop-blur-md`}>
+                      <div className="absolute inset-0 border border-purple-500/5 rounded-full group-hover:opacity-0"></div>
+
+                      <div className={`p-3 rounded-full bg-slate-50 transition-all duration-500 group-hover:bg-transparent group-hover:scale-110 ${color.iconText} group-hover:text-white`}>
+                        <mod.icon className={`h-8 w-8`} />
                       </div>
                     </div>
                   </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-      ))}
 
-      <section className="bg-[#483285] py-20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20"></div>
-        <div className="container text-center relative z-10">
-          <h2 className="mb-6 font-display text-3xl font-bold text-white">Ready to Explore?</h2>
-          <Button size="lg" className="bg-white text-[#483285] hover:bg-slate-100 font-bold border-none" asChild>
-            <Link to="/register">Start Free Trial</Link>
-          </Button>
+                  {/* Text Content */}
+                  <div className="flex-1 space-y-1 z-10">
+                    <h3 className={`text-xl font-black font-display tracking-tight text-[#483285] transition-colors duration-500 group-hover:text-white`}>
+                      {mod.title}
+                    </h3>
+                    <p className={`text-[13px] leading-relaxed font-medium text-slate-500 transition-colors duration-500 group-hover:text-white/80`}>
+                      {mod.desc}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Panel Features Detailed List */}
+      <section className="py-12 bg-slate-50 border-y border-slate-100">
+        <div className="w-full px-6">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-black text-[#483285] mb-3">Panel Specific Features</h2>
+            <p className="text-slate-500 text-sm font-medium">Tailored interfaces for every user in your institution</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+            {panelFeatures.map((panel, idx) => (
+              <div key={idx} className="bg-white p-6 rounded-[24px] shadow-sm border border-slate-100 hover:shadow-lg transition-all">
+                <h3 className="text-xl font-black text-[#483285] mb-6 pb-3 border-b border-slate-50 flex items-center gap-2">
+                  <div className="w-1.5 h-6 bg-orange-500 rounded-full"></div>
+                  {panel.title}
+                </h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-2.5 gap-x-4">
+                  {panel.features.map((f, i) => (
+                    <div key={i} className="flex items-center gap-2 text-slate-600 group">
+                      <div className="h-1 w-1 rounded-full bg-slate-300 group-hover:bg-orange-500 transition-colors"></div>
+                      <span className="text-xs font-bold group-hover:text-slate-900 transition-colors">{f}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Grid of 16 Additional Features */}
+      <section className="py-16 relative overflow-hidden">
+        <div className="w-full px-6 text-center mb-12">
+          <span className="text-orange-500 font-bold tracking-widest uppercase text-xs mb-3 block">AMAZING FEATURES</span>
+          <h2 className="text-3xl lg:text-4xl font-black text-[#483285] mb-4">More Features Has eSkooly PRO</h2>
+          <p className="text-slate-500 text-base max-w-4xl mx-auto leading-relaxed font-medium">
+            It's Vast! eSkooly PRO Has More Additional Feature That Will Expect In A Complete Solution.
+          </p>
+        </div>
+
+        <div className="w-full px-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {additionalFeatures.map((feature, i) => (
+              <div key={i} className="flex items-center gap-3 bg-slate-50 p-4 rounded-xl shadow-sm border border-slate-50 hover:border-[#483285]/20 hover:shadow-md transition-all group">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#483285]/5 text-[#483285] group-hover:bg-[#483285] group-hover:text-white transition-all">
+                  <feature.icon className="h-5 w-5" />
+                </div>
+                <h4 className="font-bold text-slate-800 text-[13px] leading-tight">{feature.title}</h4>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 bg-[#483285] relative overflow-hidden text-center text-white">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.1),transparent)]"></div>
+        <div className="w-full px-6 relative z-10">
+          <h2 className="text-3xl md:text-4xl font-black mb-6 max-w-4xl mx-auto leading-tight">Take control of your school today with Eskooly Pro.</h2>
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <Button size="lg" className="h-12 px-8 rounded-full bg-orange-500 hover:bg-orange-600 text-white font-black text-base border-none shadow-[0_10px_30px_rgba(249,115,22,0.3)]" asChild>
+              <Link to="/register">JOIN NOW FREE</Link>
+            </Button>
+            <Button size="lg" variant="outline" className="h-12 px-8 rounded-full border-2 border-white/30 bg-white/5 hover:bg-white hover:text-[#483285] text-white font-black text-base backdrop-blur-sm shadow-xl" asChild>
+              <Link to="/contact">CONTACT SALES</Link>
+            </Button>
+          </div>
         </div>
       </section>
     </div>

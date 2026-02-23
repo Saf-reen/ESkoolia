@@ -92,10 +92,6 @@ export default function PricingPage() {
     <div>
       <PageHeader
         title="Pricing"
-        breadcrumbs={[
-          { label: "Pricing" },
-          { label: "Plans" }
-        ]}
       />
 
       <section className="py-16">

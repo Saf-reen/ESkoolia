@@ -12,12 +12,7 @@ export default function ContactPage() {
   return (
     <div className="bg-slate-50 min-h-screen">
       <PageHeader
-        title="Contact Us"
-        breadcrumbs={[
-          { label: "Pages" },
-          { label: "Contact" },
-          { label: "Contact Us" }
-        ]}
+        title="Contact"
       />
 
       <section className="py-20 -mt-10 relative z-20">

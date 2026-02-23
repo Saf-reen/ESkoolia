@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import {
@@ -152,100 +153,159 @@ const testimonials = [
   }
 ];
 
+
 export default function HomePage() {
+  const [typedText, setTypedText] = useState("");
+  const [wordIndex, setWordIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const words = ["Training Center.", "School.", "College.", "Institute", "Academy.", "Tution Center."];
+  const typingSpeed = isDeleting ? 50 : 150;
+
+  useEffect(() => {
+    const handleTyping = () => {
+      const currentWord = words[wordIndex];
+      if (isDeleting) {
+        setTypedText(currentWord.substring(0, typedText.length - 1));
+      } else {
+        setTypedText(currentWord.substring(0, typedText.length + 1));
+      }
+
+      if (!isDeleting && typedText === currentWord) {
+        setTimeout(() => setIsDeleting(true), 2000);
+      } else if (isDeleting && typedText === "") {
+        setIsDeleting(false);
+        setWordIndex((prev) => (prev + 1) % words.length);
+      }
+    };
+
+    const timer = setTimeout(handleTyping, typingSpeed);
+    return () => clearTimeout(timer);
+  }, [typedText, isDeleting, wordIndex, words]);
+
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative overflow-visible pb-48 pt-24 lg:pt-32 bg-[#483285] text-white">
-        <div className="container relative z-10">
+      <section
+        className="relative overflow-visible pb-24 pt-32 lg:pt-40 text-white bg-no-repeat bg-cover bg-center min-h-[80vh] flex flex-col items-center"
+        style={{ backgroundImage: 'url(/banner-bg.jpg)' }}
+      >
+        {/* Dark overlay for better text readability and matching screenshot vibe */}
+        <div className="absolute inset-0 bg-[#483285]/40 mix-blend-multiply"></div>
+
+        <div className="container relative z-10 px-4">
           <div className="mx-auto max-w-5xl text-center">
-            <h1 className="mb-6 font-display text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl lg:text-7xl">
+            <h1 className="mb-6 font-display text-4xl font-semibold leading-[1.15] tracking-tight sm:text-5xl lg:text-[64px]">
               The Ultimate Education<br />
               Management System for<br />
-              <span className="relative inline-block mt-2">
-                Academy<span className="text-orange-500">.</span>
-                <span className="absolute bottom-2 right-0 w-2 h-10 bg-orange-500/20 animate-pulse"></span>
+              <span className="relative inline-block mt-1 min-h-[1.1em]">
+                <span className="relative z-10">{typedText}</span>
+                <span className="absolute bottom-1.5 left-0 w-full h-1 bg-[#EA4C89] opacity-80 rounded-full"></span>
+                <span className="inline-block w-[2.5px] h-[40px] bg-white ml-1 align-middle -mt-1 animate-pulse"></span>
               </span>
             </h1>
 
-            <div className="flex flex-col sm:flex-row justify-center gap-6 mb-16 mt-10">
-              <Button size="lg" className="rounded-full h-14 px-10 text-lg shadow-xl hover:shadow-2xl transition-all uppercase tracking-wide font-bold bg-gradient-to-r from-orange-400 to-orange-600 hover:from-orange-500 hover:to-orange-700 text-white border-none" asChild>
+            <div className="flex flex-col sm:flex-row justify-center gap-5 mb-12 mt-8">
+              <Button size="lg" className="rounded-full h-14 px-10 text-base shadow-[0_10px_25px_rgba(71,94,237,0.3)] hover:shadow-[0_15px_35px_rgba(71,94,237,0.4)] transition-all uppercase tracking-wide font-black bg-[#475EED] hover:bg-[#3b4ecf] text-white border-none" asChild>
                 <a href="https://eskooly.pro/login" target="_blank" rel="noopener noreferrer">TRY LIVE DEMO</a>
               </Button>
-              <Button variant="ghost" size="lg" className="rounded-full h-14 px-8 text-lg hover:bg-white/10 group border border-white/30 text-white" asChild>
-                <a href="https://www.youtube.com/watch?v=q6PMu_DObcA" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3">
-                  <div className="flex items-center justify-center w-8 h-8 rounded-full border border-white/60 group-hover:border-white transition-colors">
-                    <Play className="w-3 h-3 fill-white text-white ml-0.5" />
-                  </div>
-                  <span className="font-medium">Play Video</span>
-                </a>
-              </Button>
+              <div className="flex items-center group cursor-pointer">
+                <div className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-white/40 group-hover:border-white transition-all mr-3 bg-white/5 backdrop-blur-sm">
+                  <Play className="w-4 h-4 fill-white text-white ml-0.5" />
+                </div>
+                <span className="text-lg font-bold tracking-tight">Play Video</span>
+              </div>
             </div>
 
             {/* Dashboard Image floating with perspective */}
-            <div className="relative mt-12 mx-auto max-w-6xl perspective-[2000px]">
-              <div className="relative z-10 rounded-2xl border-[8px] border-white/10 shadow-2xl overflow-hidden transform rotate-x-6 hover:rotate-x-0 transition-transform duration-700">
+            <div className="relative mt-12 mx-auto max-w-5xl perspective-[2000px]">
+              <div className="relative z-10 rounded-xl border-[10px] border-white/10 shadow-2xl overflow-hidden transform rotate-x-1 hover:rotate-x-0 transition-transform duration-700">
                 <img src={dashboardMockup} alt="Dashboard Preview" className="w-full h-auto object-cover" />
               </div>
             </div>
           </div>
         </div>
 
-        {/* Overlapping Stats Section - Adjusted to be white on purple/white split */}
-        <div className="absolute left-0 right-0 bottom-0 translate-y-1/2 z-20 px-4">
-          <div className="container max-w-5xl">
-            <div className="bg-white rounded-[3rem] shadow-xl p-8 md:p-12 flex flex-col md:flex-row justify-around items-center gap-8 border border-gray-100 relative overflow-hidden group">
-              {/* Decorative background shapes */}
-              <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-50 rounded-full -translate-y-1/2 translate-x-1/2 blur-2xl group-hover:bg-indigo-100 transition-colors"></div>
+        {/* Floating Decorative Shapes */}
+        <div className="absolute inset-0 pointer-events-none overflow-hidden h-full w-full">
+          {/* Triangle */}
+          <div className="absolute top-1/3 left-[15%] w-8 h-8 border-r-2 border-b-2 border-white/20 rotate-[135deg] animate-float"></div>
+          {/* Simple Circle */}
+          <div className="absolute bottom-1/4 left-[10%] w-4 h-4 rounded-full border-2 border-white/20 animate-pulse"></div>
+          {/* Square Outline */}
+          <div className="absolute top-1/2 right-[5%] w-6 h-6 border-2 border-white/20 rotate-45"></div>
+          {/* Small Dot Grid */}
+          <div className="absolute bottom-[20%] left-[5%] grid grid-cols-4 gap-2 opacity-20">
+            {[...Array(16)].map((_, i) => <div key={i} className="w-1.5 h-1.5 bg-white rounded-full"></div>)}
+          </div>
+          {/* Right Triangle */}
+          <div className="absolute top-[40%] right-[10%] w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-b-[18px] border-b-white/20 rotate-12"></div>
+        </div>
 
-              <div className="flex items-center gap-4 relative z-10 text-center md:text-left">
-                <div className="w-16 h-16 rounded-full bg-red-50 flex items-center justify-center text-red-500 shrink-0">
-                  <Grid className="w-8 h-8" />
-                </div>
-                <div>
-                  <div className="text-4xl font-extrabold text-[#483285] mb-1">15k</div>
-                  <div className="text-gray-500 text-sm font-semibold uppercase tracking-wider">Total User</div>
+        {/* Purple to Orange Transition Overlay */}
+        <div className="absolute bottom-0 left-0 w-full h-64 bg-gradient-to-t from-[#FF6B35] to-transparent opacity-60 pointer-events-none"></div>
+      </section>
+
+      {/* Arched Stats Container */}
+      <section className="relative -mt-16 z-20 pb-12">
+        <div className="container px-4">
+          <div className="bg-white rounded-[60px_60px_24px_24px] shadow-lg p-6 md:p-8 flex flex-col md:flex-row justify-around items-center gap-6 border border-gray-100 max-w-5xl mx-auto">
+
+            <div className="flex flex-col items-center gap-3 text-center group">
+              <div className="relative w-20 h-20 mb-1">
+                <div className="absolute inset-0 bg-red-500/10 rounded-full scale-110 group-hover:scale-125 transition-transform duration-500"></div>
+                <div className="relative h-full w-full flex items-center justify-center">
+                  <svg viewBox="0 0 24 24" className="w-10 h-10 text-red-500 fill-none stroke-[1.5] stroke-current">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                  </svg>
                 </div>
               </div>
+              <div>
+                <div className="text-4xl font-black text-[#483285] mb-0.5">15k</div>
+                <div className="text-gray-400 text-sm font-bold tracking-tight">Total User</div>
+              </div>
+            </div>
 
-              <div className="hidden md:block w-px h-16 bg-gray-200"></div>
-
-              <div className="flex items-center gap-4 relative z-10 text-center md:text-left">
-                <div className="w-16 h-16 rounded-full bg-orange-50 flex items-center justify-center text-orange-500 shrink-0">
-                  <Globe className="w-8 h-8" />
-                </div>
-                <div>
-                  <div className="text-4xl font-extrabold text-[#483285] mb-1">90+</div>
-                  <div className="text-gray-500 text-sm font-semibold uppercase tracking-wider">Countries</div>
+            <div className="flex flex-col items-center gap-3 text-center group">
+              <div className="relative w-20 h-20 mb-1">
+                <div className="absolute inset-0 bg-purple-500/10 rounded-full scale-110 group-hover:scale-125 transition-transform duration-500"></div>
+                <div className="relative h-full w-full flex items-center justify-center">
+                  <svg viewBox="0 0 24 24" className="w-10 h-10 text-purple-500 fill-none stroke-[1.5] stroke-current">
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="2" y1="12" x2="22" y2="12" />
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                  </svg>
                 </div>
               </div>
+              <div>
+                <div className="text-4xl font-black text-[#483285] mb-0.5">90+</div>
+                <div className="text-gray-400 text-sm font-bold tracking-tight">Countries</div>
+              </div>
+            </div>
 
-              <div className="hidden md:block w-px h-16 bg-gray-200"></div>
-
-              <div className="flex items-center gap-4 relative z-10 text-center md:text-left">
-                <div className="w-16 h-16 rounded-full bg-green-50 flex items-center justify-center text-green-500 shrink-0">
-                  <Star className="w-8 h-8 fill-green-500" />
+            <div className="flex flex-col items-center gap-3 text-center group">
+              <div className="relative w-20 h-20 mb-1">
+                <div className="absolute inset-0 bg-blue-500/10 rounded-full scale-110 group-hover:scale-125 transition-transform duration-500"></div>
+                <div className="relative h-full w-full flex items-center justify-center">
+                  <svg viewBox="0 0 24 24" className="w-10 h-10 text-blue-500 fill-none stroke-[1.5] stroke-current">
+                    <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                    <path d="m9 12 2 2 4-4" />
+                  </svg>
                 </div>
-                <div>
-                  <div className="text-4xl font-extrabold text-[#483285] mb-1">95%</div>
-                  <div className="text-gray-500 text-sm font-semibold uppercase tracking-wider">Satisfaction</div>
-                </div>
+              </div>
+              <div>
+                <div className="text-4xl font-black text-[#483285] mb-0.5">95%</div>
+                <div className="text-gray-400 text-sm font-bold tracking-tight">Satisfaction</div>
               </div>
             </div>
           </div>
         </div>
-
-        {/* Hero Background Shapes to match screenshot vibe */}
-        <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none -z-10">
-          <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[60%] bg-purple-500/20 rounded-full blur-[120px]"></div>
-          <div className="absolute bottom-[0%] right-[-10%] w-[40%] h-[50%] bg-blue-500/20 rounded-full blur-[100px]"></div>
-          {/* Wave Bottom for smooth transition */}
-          <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-b from-transparent to-white/5"></div>
-        </div>
       </section>
 
       {/* Proud Features - Centered & Colored Icons */}
-      <section className="py-32 pt-48 bg-white">
+      <section className="py-20 pt-32 bg-white">
         <div className="container">
           <div className="mx-auto mb-20 max-w-3xl text-center">
             <span className="mb-3 block font-bold text-orange-500 uppercase tracking-widest text-sm">Amazing features to convince you</span>
@@ -735,56 +795,65 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Right Content */}
             <div className="lg:order-2">
-              <span className="text-orange-500 font-bold block mb-2 uppercase tracking-wide text-sm">Stop wasting time</span>
-              <h2 className="text-4xl lg:text-5xl font-extrabold text-[#483285] mb-6">Need Some Help?</h2>
-              <p className="text-lg text-muted-foreground mb-12 leading-relaxed">
+              <span className="text-orange-500 font-bold block mb-2 uppercase tracking-wide text-xs">Stop wasting time</span>
+              <h2 className="text-3xl lg:text-4xl font-extrabold text-[#483285] mb-4">Need Some Help?</h2>
+              <p className="text-base text-muted-foreground mb-8 leading-relaxed">
                 Whether you’re stuck or just want some tips on where to start, any problem, hit up our experts anytime.
               </p>
 
-              <div className="space-y-6">
+              <div className="space-y-4">
                 {/* Card 1 */}
-                <a href="https://wa.me/+923460204447" target="_blank" rel="noopener noreferrer" className="flex items-center gap-6 p-6 rounded-2xl bg-white border border-border shadow-sm hover:shadow-lg transition-all group">
-                  <div className="w-16 h-16 rounded-full bg-red-50 flex items-center justify-center shrink-0">
-                    <div className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center text-red-500">
-                      <HelpCircle className="w-6 h-6" />
+                <a href="https://wa.me/+923460204447" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-4 rounded-xl bg-white border border-border shadow-sm hover:shadow-md transition-all group">
+                  <div className="w-12 h-12 rounded-full bg-red-50 flex items-center justify-center shrink-0">
+                    <div className="w-9 h-9 rounded-full bg-red-100 flex items-center justify-center text-red-500">
+                      <HelpCircle className="w-5 h-5" />
                     </div>
                   </div>
                   <div>
-                    <h4 className="text-xl font-bold text-[#483285] group-hover:text-orange-500 transition-colors">Live Chat</h4>
-                    <span className="text-green-500 font-medium text-sm">Start a live chat Now</span>
+                    <h4 className="text-lg font-bold text-[#483285] group-hover:text-orange-500 transition-colors">Live Chat</h4>
+                    <span className="text-green-500 font-medium text-xs">Start a live chat Now</span>
                   </div>
                 </a>
 
                 {/* Card 2 */}
-                <Link to="/docs" className="flex items-center gap-6 p-6 rounded-2xl bg-white border border-border shadow-sm hover:shadow-lg transition-all group">
-                  <div className="w-16 h-16 rounded-full bg-orange-50 flex items-center justify-center shrink-0">
-                    <div className="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center text-orange-500">
-                      <FileText className="w-6 h-6" />
+                <Link to="/docs" className="flex items-center gap-4 p-4 rounded-xl bg-white border border-border shadow-sm hover:shadow-md transition-all group">
+                  <div className="w-12 h-12 rounded-full bg-orange-50 flex items-center justify-center shrink-0">
+                    <div className="w-9 h-9 rounded-full bg-orange-100 flex items-center justify-center text-orange-500">
+                      <FileText className="w-5 h-5" />
                     </div>
                   </div>
                   <div>
-                    <h4 className="text-xl font-bold text-[#483285] group-hover:text-orange-500 transition-colors">Read Documentation</h4>
-                    <span className="text-green-500 font-medium text-sm">Complete documentation available</span>
+                    <h4 className="text-lg font-bold text-[#483285] group-hover:text-orange-500 transition-colors">Read Documentation</h4>
+                    <span className="text-green-500 font-medium text-xs">Complete documentation available</span>
                   </div>
                 </Link>
 
                 {/* Card 3 */}
-                <a href="/faq" className="flex items-center gap-6 p-6 rounded-2xl bg-white border border-border shadow-sm hover:shadow-lg transition-all group">
-                  <div className="w-16 h-16 rounded-full bg-blue-50 flex items-center justify-center shrink-0">
-                    <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-500">
-                      <HelpCircle className="w-6 h-6" />
+                <a href="/faq" className="flex items-center gap-4 p-4 rounded-xl bg-white border border-border shadow-sm hover:shadow-md transition-all group">
+                  <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center shrink-0">
+                    <div className="w-9 h-9 rounded-full bg-blue-100 flex items-center justify-center text-blue-500">
+                      <HelpCircle className="w-5 h-5" />
                     </div>
                   </div>
                   <div>
-                    <h4 className="text-xl font-bold text-[#483285] group-hover:text-orange-500 transition-colors">Explore FAQs</h4>
-                    <span className="text-green-500 font-medium text-sm">Go to FAQs page</span>
+                    <h4 className="text-lg font-bold text-[#483285] group-hover:text-orange-500 transition-colors">Explore FAQs</h4>
+                    <span className="text-green-500 font-medium text-xs">Go to FAQs page</span>
                   </div>
                 </a>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="py-16 bg-[#483285] text-white text-center">
+        <div className="container px-4">
+          <h2 className="text-3xl font-black mb-6">Ready to transform your institution?</h2>
+          <Button size="lg" className="rounded-full h-12 px-8 bg-orange-500 hover:bg-orange-600 text-white font-bold" asChild>
+            <Link to="/pricing">GET STARTED NOW</Link>
+          </Button>
         </div>
       </section>
     </div>

@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useState, useEffect, useRef } from "react";
+import { useParams, Link } from "react-router-dom";
 import { Search, Menu, Info, Laptop, ChevronRight } from "lucide-react";
 import { docsContent, categoryIcons } from "@/data/docsData";
 
@@ -8,6 +8,7 @@ export default function DocsPage() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [activeSlug, setActiveSlug] = useState("welcome");
+  const sidebarRef = useRef<HTMLDivElement>(null);
 
   // Filter docs for sidebar
   const filteredDocs = docsContent.map(cat => ({
@@ -36,6 +37,18 @@ export default function DocsPage() {
       }
     }
   };
+
+  // Scroll the sidebar to keep active item in view
+  useEffect(() => {
+    const activeBtn = document.getElementById(`nav-${activeSlug}`);
+    if (activeBtn && sidebarRef.current) {
+      activeBtn.scrollIntoView({
+        behavior: 'smooth',
+        block: 'nearest',
+        inline: 'start'
+      });
+    }
+  }, [activeSlug]);
 
   // Scroll to slug on mount
   useEffect(() => {
@@ -84,12 +97,16 @@ export default function DocsPage() {
       )}
 
       {/* Sidebar */}
-      <aside className={`fixed inset-y-0 left-0 z-40 w-64 bg-white border-r border-slate-200 transform transition-transform duration-300 ease-in-out lg:translate-x-0 lg:static lg:h-[calc(100vh-80px)] lg:sticky lg:top-[80px] overflow-y-auto ${sidebarOpen ? "translate-x-0" : "-translate-x-full"} shadow-lg lg:shadow-none`}>
+      <aside
+        ref={sidebarRef}
+        className={`fixed inset-y-0 left-0 z-40 w-64 bg-white border-r border-slate-200 transform transition-transform duration-300 ease-in-out lg:translate-x-0 lg:static lg:h-[calc(100vh)] lg:sticky lg:top-0 overflow-y-auto ${sidebarOpen ? "translate-x-0" : "-translate-x-full"} shadow-lg lg:shadow-none`}
+      >
         <div className="p-4 flex flex-col h-full">
           {/* Logo Area */}
-          <div className="mb-6 px-2 flex items-center gap-2 lg:hidden">
-            <div className="h-8 w-8 bg-gradient-to-br from-[#6f42c1] to-purple-600 rounded-lg flex items-center justify-center text-white font-bold shadow-md">E</div>
-            <span className="font-extrabold text-lg text-slate-800 tracking-tight">ESKOOLY</span>
+          <div className="mb-2 p-2 bg-[#483285] -mx-4 -mt-4 flex justify-center items-center shadow-lg border-b border-white/10">
+            <Link to="/" className="flex items-center gap-2 group cursor-pointer">
+              <img src="/eskoolia_logo_.png" alt="Eskooly" className="h-24 w-auto brightness-110" />
+            </Link>
           </div>
 
           <div className="mb-6 relative group">
@@ -122,6 +139,7 @@ export default function DocsPage() {
                     {category.items.map(item => (
                       <button
                         key={item.slug}
+                        id={`nav-${item.slug}`}
                         onClick={() => scrollToSection(item.slug)}
                         className={`w-full text-left px-3 py-1.5 text-[13px] font-medium rounded-md transition-all duration-200 flex items-center justify-between group/item ${activeSlug === item.slug
                           ? "text-[#6f42c1] bg-purple-50"

@@ -7,11 +7,8 @@ export default function BusinessPage() {
   return (
     <div>
       <PageHeader
-        title="White Label & Business"
-        breadcrumbs={[
-          { label: "Business" },
-          { label: "White Label" }
-        ]}
+        title="Business"
+        category="Enterprise"
       />
 
       <section className="py-20 -mt-10 relative z-20">

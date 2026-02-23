@@ -70,12 +70,8 @@ export default function PrivacyPage() {
   return (
     <div className="min-h-screen bg-slate-50">
       <PageHeader
-        title="Our Privacy Policy"
-        breadcrumbs={[
-          { label: "Pages" },
-          { label: "Privacy" },
-          { label: "Privacy Policy" }
-        ]}
+        title="Privacy Policy"
+        category="Legal"
       />
 
       <div className="container mx-auto px-4 py-16">

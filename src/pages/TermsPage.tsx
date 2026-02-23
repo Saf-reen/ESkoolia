@@ -5,11 +5,7 @@ export default function TermsPage() {
     <div className="min-h-screen bg-slate-50">
       <PageHeader
         title="Terms of Service"
-        breadcrumbs={[
-          { label: "Pages" },
-          { label: "Terms" },
-          { label: "Terms of Service" }
-        ]}
+        category="Legal"
       />
 
       <div className="container mx-auto px-4 py-16">
