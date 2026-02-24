@@ -2,13 +2,32 @@ import { useState, useEffect, useRef } from "react";
 import { useParams, Link } from "react-router-dom";
 import { Search, Menu, Info, Laptop, ChevronRight } from "lucide-react";
 import { docsContent, categoryIcons } from "@/data/docsData";
+import { useVoiceReader } from "@/hooks/useVoiceReader";
 
 export default function DocsPage() {
   const { slug } = useParams();
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [activeSlug, setActiveSlug] = useState("welcome");
+  const [voiceEnabled, setVoiceEnabled] = useState(false);
   const sidebarRef = useRef<HTMLDivElement>(null);
+  const { speak, pause, resume, stop, isSpeaking } = useVoiceReader();
+
+  useEffect(() => {
+    if (!voiceEnabled) return;
+
+    const element = document.getElementById(activeSlug);
+    if (element) {
+      stop(); // Stop previous section speech
+      speak(element.innerText);
+    }
+  }, [activeSlug, voiceEnabled]);
+
+  useEffect(() => {
+    return () => {
+      window.speechSynthesis.cancel();
+    };
+  }, []);
 
   // Filter docs for sidebar
   const filteredDocs = docsContent.map(cat => ({
@@ -161,6 +180,55 @@ export default function DocsPage() {
       {/* Main Content */}
       <main className="flex-1 min-w-0 bg-white lg:bg-slate-50">
         <div className="max-w-full mx-auto px-4 py-8 lg:px-8 lg:py-12 pb-32">
+
+          {/* Voice Controls */}
+          <div className="flex flex-wrap items-center gap-3 mb-8 bg-white p-4 rounded-xl shadow-sm border border-slate-200 lg:sticky lg:top-[20px] z-30">
+            <button
+              onClick={() => setVoiceEnabled(true)}
+              className={`flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-bold transition-all shadow-sm ${voiceEnabled
+                ? "bg-purple-100 text-[#6f42c1] ring-2 ring-purple-500/20"
+                : "bg-[#6f42c1] text-white hover:bg-[#5a32a3] hover:shadow-md"
+                }`}
+            >
+              <span className={isSpeaking ? "animate-pulse" : ""}>🔊</span>
+              {voiceEnabled ? "Voice On" : "Start Voice"}
+            </button>
+
+            {/* <div className="flex items-center gap-2 bg-slate-50 p-1 rounded-lg border border-slate-100">
+              <button
+                onClick={pause}
+                className="p-2 hover:bg-white hover:shadow-sm rounded-md transition-all text-slate-600 hover:text-[#6f42c1]"
+                title="Pause"
+              >
+                ⏸
+              </button>
+
+              <button
+                onClick={resume}
+                className="p-2 hover:bg-white hover:shadow-sm rounded-md transition-all text-slate-600 hover:text-[#6f42c1]"
+                title="Resume"
+              >
+                ▶
+              </button>
+            </div> */}
+
+            <button
+              onClick={() => {
+                stop();
+                setVoiceEnabled(false);
+              }}
+              className="px-5 py-2.5 bg-rose-50 text-rose-600 hover:bg-rose-100 rounded-lg text-sm font-bold transition-all border border-rose-100"
+            >
+              ⏹ Stop
+            </button>
+
+            {isSpeaking && (
+              <div className="ml-auto hidden md:flex items-center gap-2 text-[10px] font-bold text-slate-400 uppercase tracking-widest">
+                <span className="flex h-2 w-2 rounded-full bg-green-500 animate-ping"></span>
+                AI Voice Active
+              </div>
+            )}
+          </div>
 
           <div className="space-y-12">
             {docsContent.map((cat, catIdx) => (

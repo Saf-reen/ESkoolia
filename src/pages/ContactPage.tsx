@@ -49,7 +49,7 @@ export default function ContactPage() {
                 <Mail className="h-10 w-10" />
               </div>
               <h3 className="text-xl font-black text-[#483285] mb-2 uppercase tracking-tight">Email Us</h3>
-              <a href="mailto:support@eskooly.com" className="text-xl font-black text-blue-600 hover:text-[#483285] transition-colors tracking-tight">support@eskooly.com</a>
+              <a href="mailto:support@eskoolia.com" className="text-xl font-black text-blue-600 hover:text-[#483285] transition-colors tracking-tight">support@eskoolia.com</a>
               <div className="mt-4 px-3 py-1 rounded-full bg-blue-50 text-blue-600 text-[10px] font-black uppercase tracking-widest">Available 24/7</div>
             </div>
 

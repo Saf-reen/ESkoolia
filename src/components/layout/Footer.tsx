@@ -17,15 +17,15 @@ const footerLinks = {
   "Useful Links": [
     { label: "FAQ'S", href: "/faq" },
     { label: "Documentation", href: "/docs" },
-    { label: "Live Chat", href: "https://wa.me/+923460204447" },
+    { label: "Live Chat", href: "https://wa.me/+919701314138" },
     { label: "Live Demo", href: "https://eskooly.pro/login" },
   ],
   "Legal": [
     { label: "Privacy Policy", href: "/privacy" },
     { label: "Deletion Policy", href: "/deletion-policy" },
     { label: "Terms & Conditions", href: "/terms" },
-    { label: "Refund Policy", href: "/pricing" },
-    { label: "Support Policy", href: "/contact" },
+    { label: "Refund Policy", href: "/refund-policy" },
+    { label: "Support Policy", href: "/support-policy" },
   ],
 };
 

@@ -15,6 +15,8 @@ import LoginPage from "@/pages/LoginPage";
 import RegisterPage from "@/pages/RegisterPage";
 import TermsPage from "@/pages/TermsPage";
 import PrivacyPage from "@/pages/PrivacyPage";
+import RefundPolicyPage from "@/pages/RefundPolicyPage";
+import SupportPolicyPage from "@/pages/SupportPolicyPage";
 import DeletionPolicyPage from "@/pages/DeletionPolicyPage";
 import DashboardOverview from "@/pages/dashboard/DashboardOverview";
 import DashboardPlaceholder from "@/pages/dashboard/DashboardPlaceholder";
@@ -46,6 +48,8 @@ const App = () => (
             <Route path="/modules" element={<ModulesPage />} />
             <Route path="/terms" element={<TermsPage />} />
             <Route path="/privacy" element={<PrivacyPage />} />
+            <Route path="/refund-policy" element={<RefundPolicyPage />} />
+            <Route path="/support-policy" element={<SupportPolicyPage />} />
             <Route path="/deletion-policy" element={<DeletionPolicyPage />} />
           </Route>
 
