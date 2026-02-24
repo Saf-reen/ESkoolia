@@ -184,9 +184,9 @@ export default function FeaturesPage() {
       <section className="py-16 relative overflow-hidden">
         <div className="w-full px-6 text-center mb-12">
           <span className="text-orange-500 font-bold tracking-widest uppercase text-xs mb-3 block">AMAZING FEATURES</span>
-          <h2 className="text-3xl lg:text-4xl font-black text-[#483285] mb-4">More Features Has eSkooly PRO</h2>
+          <h2 className="text-3xl lg:text-4xl font-black text-[#483285] mb-4">More Features Has eSkoolia PRO</h2>
           <p className="text-slate-500 text-base max-w-4xl mx-auto leading-relaxed font-medium">
-            It's Vast! eSkooly PRO Has More Additional Feature That Will Expect In A Complete Solution.
+            It's Vast! eSkoolia PRO Has More Additional Feature That Will Expect In A Complete Solution.
           </p>
         </div>
 
@@ -208,7 +208,7 @@ export default function FeaturesPage() {
       <section className="py-16 bg-[#483285] relative overflow-hidden text-center text-white">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.1),transparent)]"></div>
         <div className="w-full px-6 relative z-10">
-          <h2 className="text-3xl md:text-4xl font-black mb-6 max-w-4xl mx-auto leading-tight">Take control of your school today with Eskooly Pro.</h2>
+          <h2 className="text-3xl md:text-4xl font-black mb-6 max-w-4xl mx-auto leading-tight">Take control of your school today with Eskoolia.</h2>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button size="lg" className="h-12 px-8 rounded-full bg-orange-500 hover:bg-orange-600 text-white font-black text-base border-none shadow-[0_10px_30px_rgba(249,115,22,0.3)]" asChild>
               <Link to="/register">JOIN NOW FREE</Link>

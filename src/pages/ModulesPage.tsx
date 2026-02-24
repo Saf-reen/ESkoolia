@@ -7,42 +7,42 @@ const modules = [
     {
         icon: Video,
         title: "ZOOM",
-        desc: "This is Zoom module for live virtual class and meeting in eSkooly Pro.",
+        desc: "This is Zoom module for live virtual class and meeting in eSkoolia.",
         color: "blue",
         gradient: "from-blue-500 to-blue-700"
     },
     {
         icon: BookOpen,
         title: "Online Exam",
-        desc: "This is OnlineExam module for eSkooly Pro to take online exam.",
+        desc: "This is OnlineExam module for eSkoolia to take online exam.",
         color: "emerald",
         gradient: "from-emerald-500 to-teal-600"
     },
     {
         icon: UserPlus,
         title: "Registration",
-        desc: "This is online Parent Registration module for eSkooly Pro.",
+        desc: "This is online Parent Registration module for eSkoolia.",
         color: "orange",
         gradient: "from-orange-500 to-red-600"
     },
     {
         icon: CreditCard,
         title: "RazorPay",
-        desc: "This is the Razor Pay module for eSkooly Pro for Online payment.",
+        desc: "This is the Razor Pay module for eSkoolia for Online payment.",
         color: "indigo",
         gradient: "from-indigo-500 to-blue-600"
     },
     {
         icon: Users,
         title: "BigBlueButton",
-        desc: "This is BigBlueButton module for live virtual class and meeting in eSkooly Pro.",
+        desc: "This is BigBlueButton module for live virtual class and meeting in eSkoolia.",
         color: "sky",
         gradient: "from-sky-500 to-blue-700"
     },
     {
         icon: LinkIcon,
         title: "Jitsi",
-        desc: "This is Jitsi module for live virtual classes and meetings in eSkooly Pro.",
+        desc: "This is Jitsi module for live virtual classes and meetings in eSkoolia.",
         color: "fuchsia",
         gradient: "from-fuchsia-500 to-purple-600"
     },
@@ -56,21 +56,21 @@ const modules = [
     {
         icon: Fingerprint,
         title: "Biometrics",
-        desc: "This is the Biometric Attendance module for eSkooly Pro.",
+        desc: "This is the Biometric Attendance module for eSkoolia.",
         color: "rose",
         gradient: "from-rose-500 to-pink-600"
     },
     {
         icon: Globe,
         title: "Google Meet",
-        desc: "This is Google meet module for live virtual class and meeting in eSkooly Pro.",
+        desc: "This is Google meet module for live virtual class and meeting in eSkoolia.",
         color: "green",
         gradient: "from-green-500 to-emerald-600"
     },
     {
         icon: MessageSquare,
         title: "WhatsApp",
-        desc: "This is WhatsApp Support module. Send messages via WhatsApp in eSkooly Pro.",
+        desc: "This is WhatsApp Support module. Send messages via WhatsApp in eSkoolia.",
         color: "emerald",
         gradient: "from-emerald-400 to-green-600"
     },
@@ -93,7 +93,7 @@ export default function ModulesPage() {
                 <div className="w-full px-6">
                     <span className="text-orange-500 font-bold tracking-widest uppercase text-xs mb-3 block">An Exhaustive list of Amazing Add-ons</span>
                     <h2 className="text-4xl lg:text-5xl font-black text-[#483285] mb-4 uppercase tracking-tight">
-                        Get extra modules to enhance the features of eSkooly Pro!
+                        Get extra modules to enhance the features of eSkoolia!
                     </h2>
                     <p className="text-slate-500 text-lg max-w-4xl mx-auto leading-relaxed font-medium">
                         Every Single Module You Want That Are Available, Curiosity Is Future Of New Discover. Explore All Our Single Modules That Will help you to extend our software features!

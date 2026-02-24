@@ -6,11 +6,11 @@ import { Link } from "react-router-dom";
 
 const faqs = [
     {
-        question: "How can we can make payment to purchase eSkooly Pro?",
-        answer: "You can purchase eSkooly Pro using your Credit or Debit card. You can also buy it using Wire Transfer."
+        question: "How can we can make payment to purchase eSkoolia?",
+        answer: "You can purchase eSkoolia using your Credit or Debit card. You can also buy it using Wire Transfer."
     },
     {
-        question: "How can I resell eSkooly Pro? Also need more details about Business package.",
+        question: "How can I resell eSkoolia? Also need more details about Business package.",
         answer: "Our business package is a completely white labeled cloud based system. It means you can install it on your own hosting under your domain name. In the business package you will get complete source code along with documentation and 5 years technical support. Moreover you will get a reseller permit so that you can sell it under your company brand at your own pricing. You will get 50 premium licenses in business package at only $999. Your minimum profit can be over $6,000 as our resellers usually sell one license at $599."
     },
     {
@@ -27,30 +27,30 @@ const faqs = [
     },
     {
         question: "Which option is better to manage my school?",
-        answer: "eSkooly is the world's most powerful and easiest school management software. We recommend the basic desktop version for small schools without much technical experience. However, for a complete professional ERP with branding and advanced features, you must go with the premium package."
+        answer: "eSkoolia is the world's most powerful and easiest school management software. We recommend the basic desktop version for small schools without much technical experience. However, for a complete professional ERP with branding and advanced features, you must go with the premium package."
     },
     {
-        question: "What is the difference between eSkooly Desktop and eSkooly Pro?",
-        answer: "eSkooly Desktop is a paid version installed on your local computer, easy to operate with automatic cloud backup. eSkooly Pro is completely white-labeled cloud-based software that you install on your own hosting. It is more professional and feature-rich with a slightly more complex interface."
+        question: "What is the difference between eSkoolia Desktop and eSkoolia?",
+        answer: "eSkoolia Desktop is a paid version installed on your local computer, easy to operate with automatic cloud backup. eSkoolia is completely white-labeled cloud-based software that you install on your own hosting. It is more professional and feature-rich with a slightly more complex interface."
     },
     {
         question: "How we can generate Students, Parents, and Staff logins?",
         answer: "Once you add any new student or staff, the system automatically generates their username and password. The default username will be their email address and default password will be 123456."
     },
     {
-        question: "Is there a Desktop version for the eSkooly Pro?",
+        question: "Is there a Desktop version for the eSkoolia?",
         answer: "As our Pro version is a completely white-labeled cloud-based system, it means you can access it from anywhere, anytime, and on any device using any browser."
     },
     {
-        question: "What is the difference between eSkooly and eSkooly Pro?",
-        answer: "eSkooly is a free online school management software for a lifetime with basic modules. Whereas eSkooly Pro is an Ultimate Education ERP and it's a full-featured professional paid version."
+        question: "What is the difference between eSkoolia and eSkoolia?",
+        answer: "eSkoolia is a free online school management software for a lifetime with basic modules. Whereas eSkoolia is an Ultimate Education ERP and it's a full-featured professional paid version."
     },
     {
         question: "What languages are the mobile application developed with?",
         answer: "Our mobile applications are developed using Flutter, ensuring a high-performance, native experience on both Android and iOS."
     },
     {
-        question: "Does eSkooly Pro sends the fees reminders to parents or students?",
+        question: "Does eSkoolia sends the fees reminders to parents or students?",
         answer: "Absolutely YES! Once you assign a new fee to any student, the system automatically sends a notification to both parents and student about the assigned payment."
     },
     {

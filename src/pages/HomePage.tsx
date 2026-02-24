@@ -43,7 +43,7 @@ const proudFeatures = [
     text: "text-red-500",
     bgLight: "bg-red-500/10",
     title: "Tons of features",
-    desc: "eSkooly PRO has all in one place. You’ll find everything what you are looking into education management system software."
+    desc: "eSkoolia PRO has all in one place. You’ll find everything what you are looking into education management system software."
   },
   {
     icon: Monitor,
@@ -59,7 +59,7 @@ const proudFeatures = [
     text: "text-blue-500",
     bgLight: "bg-blue-500/10",
     title: "Proper Documentation",
-    desc: "You know! Smart Idea always comes to well planners. And Our eSkooly PRO is Smart for its Well Documentation."
+    desc: "You know! Smart Idea always comes to well planners. And Our eSkoolia PRO is Smart for its Well Documentation."
   },
   {
     icon: Zap,
@@ -144,7 +144,7 @@ const testimonials = [
     rating: 5
   },
   {
-    text: "I was searching a school management software from a long time, finally i found eSkooly Pro. eSkooly has fulfill my all requirements that i was searching. Many congratulations to eSkooly team for make a excellent School ERP.",
+    text: "I was searching a school management software from a long time, finally i found eSkoolia. eSkoolia has fulfill my all requirements that i was searching. Many congratulations to eSkoolia team for make a excellent School ERP.",
     rating: 5
   },
   {
@@ -345,7 +345,7 @@ export default function HomePage() {
               <h2 className="mb-8 font-display text-4xl font-extrabold text-[#483285] sm:text-5xl">WHY CHOOSE US?</h2>
               <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                 <p>
-                  Reliability is the key factor when it comes to running a School Management System. Any lag or disturbance can affect your reputation. And we completely understand this responsibility from our 20 years+ of experience in working in this field. We know every nitty-gritty detail of this respected industry. With our experience and state-of-the-art interface designs, we have created eSkooly PRO in School Management ERP System which is extremely reliable, intuitive, and easy to use.
+                  Reliability is the key factor when it comes to running a School Management System. Any lag or disturbance can affect your reputation. And we completely understand this responsibility from our 20 years+ of experience in working in this field. We know every nitty-gritty detail of this respected industry. With our experience and state-of-the-art interface designs, we have created eSkoolia PRO in School Management ERP System which is extremely reliable, intuitive, and easy to use.
                 </p>
                 <p>
                   It can cater to all your needs of managing school, college, university and any other educational institution eliminating the tedious manual processes. With a framework built this solid and reliable, you can never go wrong. Whenever you face any difficulty, our friendliest support team will be with you at every step to guide the process. Once it is set and running, you can stop worrying about the system and focus on the other more important things of your organization. The beauty of automation will be at your fingertips.
@@ -364,7 +364,7 @@ export default function HomePage() {
               <div className="absolute inset-0 bg-[#483285]/10 rounded-full blur-3xl transform rotate-12"></div>
               {/* Product Box simulation */}
               <div className="relative z-10 w-64 h-80 bg-gradient-to-br from-[#483285] to-indigo-700 rounded-xl shadow-2xl transform -rotate-6 flex flex-col items-center justify-center text-white p-6 border-t border-white/20">
-                <span className="font-display font-black text-4xl mb-2 tracking-tighter">eSKOOLY</span>
+                <span className="font-display font-black text-4xl mb-2 tracking-tighter">eSKOOLIA</span>
                 <span className="text-xs uppercase tracking-[0.3em] font-light mb-8 opacity-80">Ultimate ERP</span>
                 <div className="w-full bg-white/20 h-px mb-8"></div>
                 <div className="grid grid-cols-2 gap-2 w-full opacity-60">
@@ -392,7 +392,7 @@ export default function HomePage() {
       <section className="py-24 bg-white">
         <div className="container">
           <div className="text-center mb-16 max-w-3xl mx-auto">
-            <span className="text-orange-500 font-bold text-lg block mb-2">What Features Have eSkooly PRO that Different From Others in Market?</span>
+            <span className="text-orange-500 font-bold text-lg block mb-2">What Features Have eSkoolia PRO that Different From Others in Market?</span>
             <h2 className="text-4xl font-extrabold text-[#483285]">Easy & Perfect Solution</h2>
           </div>
           <div className="grid gap-16 lg:grid-cols-2 items-center">
@@ -441,10 +441,10 @@ export default function HomePage() {
               <h2 className="mb-6 font-display text-5xl font-extrabold text-[#483285]">Front CMS</h2>
               <div className="space-y-6 text-lg text-muted-foreground leading-relaxed mb-8">
                 <p>
-                  Experience the next level of ERP integration with eSkooly's innovative Front CMS. Seamlessly merge your ERP functionalities with a powerful website builder to create a cohesive online presence.
+                  Experience the next level of ERP integration with eSkoolia's innovative Front CMS. Seamlessly merge your ERP functionalities with a powerful website builder to create a cohesive online presence.
                 </p>
                 <p>
-                  Our intuitive page builder empowers you to craft stunning websites effortlessly, enhancing your brand's visibility and engagement. With eSkooly's Front CMS, unlock the full potential of your ERP system and elevate your online experience.
+                  Our intuitive page builder empowers you to craft stunning websites effortlessly, enhancing your brand's visibility and engagement. With eSkoolia's Front CMS, unlock the full potential of your ERP system and elevate your online experience.
                 </p>
               </div>
               <div className="flex flex-wrap gap-4">
@@ -498,7 +498,7 @@ export default function HomePage() {
           <div className="mx-auto mb-20 max-w-3xl text-center">
             <span className="mb-3 block font-bold text-orange-500 uppercase tracking-widest text-xs">Choose a plan that's right for you</span>
             <h2 className="mb-6 font-display text-4xl font-bold text-[#483285]">Simple Pricing Plans</h2>
-            <p className="text-xl text-muted-foreground">eSkooly Pro has plans, from standard to business, that scale with your needs. Subscribe to a plan that fits you best.</p>
+            <p className="text-xl text-muted-foreground">eSkoolia has plans, from standard to business, that scale with your needs. Subscribe to a plan that fits you best.</p>
           </div>
 
           <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-3 items-end">
@@ -671,7 +671,7 @@ export default function HomePage() {
               <span className="text-orange-500 font-bold mb-2 block">Our stats say more than any words</span>
               <h2 className="text-4xl lg:text-5xl font-extrabold text-[#483285] mb-4">System Without Borders</h2>
               <p className="text-muted-foreground text-lg">
-                eSkooly are growing by 300% every year with a steady love from users around the world. We are also close to achieving 25 Thousand cumulative Users.
+                eSkoolia are growing by 300% every year with a steady love from users around the world. We are also close to achieving 25 Thousand cumulative Users.
               </p>
             </div>
             <div className="text-right">

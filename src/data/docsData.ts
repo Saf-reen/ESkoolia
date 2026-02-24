@@ -18,19 +18,19 @@ export const docsContent = [
           <div class="text-center py-10">
             <h1 class="text-2xl font-bold text-slate-700 mb-2">Welcome</h1>
             <h2 class="text-xl text-slate-600 mb-4">To</h2>
-            <h1 class="text-2xl font-bold text-[#6f42c1] mb-2">eSkooly ultimate Education ERP</h1>
+            <h1 class="text-2xl font-bold text-[#6f42c1] mb-2">eSkoolia ultimate Education ERP</h1>
             <p class="text-slate-500 mb-4">Ultimate solution for your school to run modern way</p>
             <p class="text-slate-600 font-medium">By</p>
-            <h3 class="text-xl font-bold text-[#6f42c1] mb-12">eSkooly</h3>
+            <h3 class="text-xl font-bold text-[#6f42c1] mb-12">eSkoolia</h3>
 
             <div class="text-left max-w-2xl mx-auto space-y-1 mb-10 text-xs text-blue-500 text-center">
-               <p>Email: pro@eskooly.com</p>
-               <p>Web: pro.eskooly.com</p>
+               <p>Email: pro@eskoolia.com</p>
+               <p>Web: pro.eskoolia.com</p>
             </div>
 
             <div class="text-center space-y-4 text-slate-600 mb-10">
-              <p>We would like to thank you for purchasing eSkooly School! We are very pleased you have chosen eSkooly School for your institution, you will not be disappointed! Before you get started, please be sure to always check out these documentation files. We outline all kinds of good information, and provide you with all the details you need to use eSkooly School. eSkooly School can be used with any school, college, university, training/coaching institute.</p>
-              <p>If you are unable to find your answer here in our documentation, watch our Video Tutorials, you can also visit our Help & Support. Chances are your question or issue have been brought up already and the answer is waiting to be found. If you are unable to find it anywhere, then please go our Support section and open a new Support Ticket with all the details we need. Please be sure to include your site URL as well. Thank you, we hope you enjoy using eSkooly School!</p>
+              <p>We would like to thank you for purchasing eSkoolia School! We are very pleased you have chosen eSkoolia School for your institution, you will not be disappointed! Before you get started, please be sure to always check out these documentation files. We outline all kinds of good information, and provide you with all the details you need to use eSkoolia School. eSkoolia School can be used with any school, college, university, training/coaching institute.</p>
+              <p>If you are unable to find your answer here in our documentation, watch our Video Tutorials, you can also visit our Help & Support. Chances are your question or issue have been brought up already and the answer is waiting to be found. If you are unable to find it anywhere, then please go our Support section and open a new Support Ticket with all the details we need. Please be sure to include your site URL as well. Thank you, we hope you enjoy using eSkoolia School!</p>
             </div>
 
             <div class="flex justify-center gap-4">
@@ -48,7 +48,7 @@ export const docsContent = [
             {
                 slug: "system-requirements", title: "System Requirements", content: `
             <div class="space-y-4">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-4 text-center">eSkooly System Requirements</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-4 text-center">eSkoolia System Requirements</h3>
                 <p>The Laravel framework has a few system requirements. All of these requirements are satisfied by the Laravel Homestead virtual machine, so it's highly recommended that you use Homestead as your local Laravel development environment.</p>
                 <p>However, if you are not using Homestead, you will need to make sure your server meets the following requirements:</p>
                 <ul class="list-none space-y-1 inline-block">
@@ -63,7 +63,7 @@ export const docsContent = [
                     <li>BCMath PHP Extension</li>
                 </ul>
                 <p class="italic text-sm">* In most hosting accounts, these extensions are enabled by default. But you should check with your hosting provider.</p>
-                <p>After installation eSkooly School to work properly, you must make few directories/files writable.</p>
+                <p>After installation eSkoolia School to work properly, you must make few directories/files writable.</p>
                 <p>Below are a list of directories/files you should ensure that have write permissions.</p>
                 <ul class="list-none space-y-1 inline-block">
                     <li>installation_dir/storage/app/</li>
@@ -76,7 +76,7 @@ export const docsContent = [
             {
                 slug: "getting-started", title: "Getting Started", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-4 text-center">eSkooly School Installation</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-4 text-center">eSkoolia School Installation</h3>
                 
                 <ol class="list-decimal pl-5 space-y-6 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -112,7 +112,7 @@ export const docsContent = [
                              <h4 class="font-bold text-xl text-slate-800 mb-6">Upload the package to your host</h4>
                              <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                                 <li>
-                                    <p class="mt-1 mb-3">Download the package from 2checkout or from pro.eskooly.com Website. Unzip the package and you'll find the following contents: Documentation, upload.zip</p>
+                                    <p class="mt-1 mb-3">Download the package from 2checkout or from pro.eskoolia.com Website. Unzip the package and you'll find the following contents: Documentation, upload.zip</p>
                                     <img src="/Eskooly/install-files.png" alt="Download Package" class="h-48 rounded-lg shadow-md border border-slate-200" />
                                 </li>
                                 <li>
@@ -129,7 +129,7 @@ export const docsContent = [
 
                     <li>
                         <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
-                             <h4 class="font-bold text-xl text-slate-800 mb-6">Configure eSkooly with Database credentials</h4>
+                             <h4 class="font-bold text-xl text-slate-800 mb-6">Configure eSkoolia with Database credentials</h4>
                              <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                                 <li>
                                      <p class="mt-1 mb-3">Use the file manager to edit the file in the path .env</p>
@@ -159,7 +159,7 @@ export const docsContent = [
                              <h4 class="font-bold text-xl text-slate-800 mb-6">Start the installation</h4>
                              <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                                 <li>
-                                    <p class="mt-1 mb-3">Use your browser to eSkooly install Script. Type in browser your application location followed by /install and hit Start Installation</p>
+                                    <p class="mt-1 mb-3">Use your browser to eSkoolia install Script. Type in browser your application location followed by /install and hit Start Installation</p>
                                     <img src="/Eskooly/step1.png" alt="Start Installation" class="h-48 rounded-lg shadow-md border border-slate-200" />
                                 </li>
                                 <li>
@@ -186,13 +186,13 @@ export const docsContent = [
             {
                 slug: "get-support", title: "Get Support", content: `
             <div class="space-y-4">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-4 text-center">Get Support from eSkooly</h3>
-                <p>To get Technical/Sales support. You must create eSkooly Account first.</p>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-4 text-center">Get Support from eSkoolia</h3>
+                <p>To get Technical/Sales support. You must create eSkoolia Account first.</p>
                 <div class="p-4 bg-slate-50 rounded-lg inline-block text-center w-full">
                     <h4 class="font-bold mb-2 text-center text-slate-700">Contact Info</h4>
-                    <p class="text-center">Email: <a href="mailto:pro@eskooly.com" class="text-blue-600 hover:underline">pro@eskooly.com</a></p>
-                    <p class="text-center">Web: <a href="https://pro.eskooly.com" target="_blank" class="text-blue-600 hover:underline">pro.eskooly.com</a></p>
-                    <p class="text-center">Support: <a href="http://ticket.eskooly.com" target="_blank" class="text-blue-600 hover:underline">http://ticket.eskooly.com</a></p>
+                    <p class="text-center">Email: <a href="mailto:pro@eskoolia.com" class="text-blue-600 hover:underline">pro@eskoolia.com</a></p>
+                    <p class="text-center">Web: <a href="https://pro.eskoolia.com" target="_blank" class="text-blue-600 hover:underline">pro.eskoolia.com</a></p>
+                    <p class="text-center">Support: <a href="http://ticket.eskoolia.com" target="_blank" class="text-blue-600 hover:underline">http://ticket.eskoolia.com</a></p>
                 </div>
             </div>` }
         ]
@@ -203,7 +203,7 @@ export const docsContent = [
             {
                 slug: "dashboard-overview", title: "Dashboard", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Dashboard</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Dashboard</h3>
                 <img src="/Eskooly/dashboard1.png" alt="Dashboard" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-none space-y-6">
                     <li>
@@ -219,7 +219,7 @@ export const docsContent = [
                     </li>
                     <li>
                              <h4 class="font-bold text-xl text-slate-800 mb-4">5. Language</h4>
-                             <p class="mt-1 mb-6 text-slate-600">eSkooly delivered to you equipped with different languages : English, Arabic (RTL), French, Dutch, German, Hindi, Italian, Turkish, Russian, Spanish & Portuguese etc. You can also add language with your own customization.</p>
+                             <p class="mt-1 mb-6 text-slate-600">eSkoolia delivered to you equipped with different languages : English, Arabic (RTL), French, Dutch, German, Hindi, Italian, Turkish, Russian, Spanish & Portuguese etc. You can also add language with your own customization.</p>
                     </li>
                     <li>
                              <h4 class="font-bold text-xl text-slate-800 mb-4">6. Notification</h4>
@@ -250,7 +250,7 @@ export const docsContent = [
             {
                 slug: "admission-query", title: "Admission Query", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Admission Query</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Admission Query</h3>
                 <img src="/Eskooly/admission_query.png" alt="Admission Query" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <img src="/Eskooly/admission_query0.1.png" alt="Admission Query" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <img src="/Eskooly/admission_query1.png" alt="Admission Query" class="w-full rounded-lg shadow-md border border-slate-200" />
@@ -276,7 +276,7 @@ export const docsContent = [
             {
                 slug: "visitor-book", title: "Visitor Book", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Visitor Book</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Visitor Book</h3>
                 <img src="/Eskooly/visitor_book.png" alt="Visitor Book" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-4 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -292,7 +292,7 @@ export const docsContent = [
             {
                 slug: "complaint", title: "Complaint", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Complaint</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Complaint</h3>
                 <img src="/Eskooly/complaint.png" alt="Complaint" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-4 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -308,7 +308,7 @@ export const docsContent = [
             {
                 slug: "postal-receive", title: "Postal Receive", content: `
              <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Postal Receive</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Postal Receive</h3>
                 <img src="/Eskooly/postal_receive.png" alt="Postal Receive" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-4 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -324,7 +324,7 @@ export const docsContent = [
             {
                 slug: "postal-dispatch", title: "Postal Dispatch", content: `
             <div class="space-y-6">
-                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Postal Dispatch</h3>
+                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Postal Dispatch</h3>
                  <img src="/Eskooly/postal_dispatch.png" alt="Postal Dispatch" class="w-full rounded-lg shadow-md border border-slate-200" />
                  <ol class="list-decimal pl-5 space-y-4 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -340,7 +340,7 @@ export const docsContent = [
             {
                 slug: "phone-call-log", title: "Phone Call Log", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Phone Call Log</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Phone Call Log</h3>
                 <img src="/Eskooly/phone_log.png" alt="Phone Call Log" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-4 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -356,7 +356,7 @@ export const docsContent = [
             {
                 slug: "admin-setup", title: "Admin Setup", content: `
             <div class="space-y-6">
-                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Admin Setup</h3>
+                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Admin Setup</h3>
                  <img src="/Eskooly/admin_setup.png" alt="Admin Setup" class="w-full rounded-lg shadow-md border border-slate-200" />
                  <ol class="list-decimal pl-5 space-y-4 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -372,7 +372,7 @@ export const docsContent = [
             {
                 slug: "student-certificate", title: "Student Certificate", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Certificate</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Student Certificate</h3>
                 <img src="/Eskooly/student_certificate.png" alt="Student Certificate" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-4 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -388,7 +388,7 @@ export const docsContent = [
             {
                 slug: "generate-certificate", title: "Generate Certificate", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Generate Certificate</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Generate Certificate</h3>
                 <img src="/Eskooly/generate_certificate.png" alt="Generate Certificate" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-4 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -403,7 +403,7 @@ export const docsContent = [
             {
                 slug: "student-id-card", title: "Student ID Card", content: `
              <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student ID Card</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Student ID Card</h3>
                 <img src="/Eskooly/student_id_card.png" alt="Student ID Card" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-4 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -419,7 +419,7 @@ export const docsContent = [
             {
                 slug: "generate-id-card", title: "Generate ID Card", content: `
              <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Generate ID Card</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Generate ID Card</h3>
                 <img src="/Eskooly/generate_id_card.png" alt="Generate ID Card" class="w-full rounded-lg shadow-md border border-slate-200" />
                  <ol class="list-decimal pl-5 space-y-4 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -439,7 +439,7 @@ export const docsContent = [
             {
                 slug: "general-setting", title: "General Setting", content: `
              <div class="space-y-6">
-                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly General Setting</h3>
+                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia General Setting</h3>
                  <img src="/Eskooly/general-setting.png" alt="General Setting" class="w-full rounded-lg shadow-md border border-slate-200" />
                  <ol class="list-decimal pl-5 space-y-4 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -472,14 +472,14 @@ export const docsContent = [
             {
                 slug: "email-setting", title: "Email Setting", content: `
              <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Email Setting</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Email Setting</h3>
                 <img src="/Eskooly/email-setting.png" alt="Email Setting" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <p>You have to configuration email.</p>
             </div>` },
             {
                 slug: "payment-method-settings", title: "Payment Method Settings", content: `
              <div class="space-y-6">
-                  <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Payment Method Settings</h3>
+                  <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Payment Method Settings</h3>
                   <img src="/Eskooly/payment-paypal.png" alt="Payment Method Settings" class="w-full rounded-lg shadow-md border border-slate-200" />
                   <ol class="list-decimal pl-5 space-y-4 marker:text-slate-700 marker:font-bold">
                      <li>
@@ -530,7 +530,7 @@ export const docsContent = [
             {
                 slug: "role-permission", title: "Role Permission", content: `
               <div class="space-y-6">
-                  <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Role Permission</h3>
+                  <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Role Permission</h3>
                   <img src="/Eskooly/role-permission.png" alt="Role Permission" class="w-full rounded-lg shadow-md border border-slate-200" />
                    <ol class="list-decimal pl-5 space-y-4 marker:text-slate-700 marker:font-bold">
                       <li>
@@ -546,7 +546,7 @@ export const docsContent = [
                          <span class="font-bold text-slate-700">Role Permission Assign</span>
                          <div class="mt-1 text-slate-600 space-y-2">
                              <p>The administrator can assign their permission</p>
-                             <p class="text-sm">Roles Permissions- Go to System Settings > Roles Permissions here we can create different Roles for staff users and then assign different user permission to this Role. To add new role enter Role Name then click on Save button all existing roles can be see from right side of this page. By default in eSkooly School you will get 6 user roles SuperAdmin, Admin, Teacher, Accountant, Librarian, Receptionist. You can edit name or permission of these roles except SuperAdmin. To assign permission click on Assign Permission button from Action column. At this page you can see Module wise different Features and their different Permissions. Carefully assign different permissions on roles. After assigning permission, check where it is effecting in system. There are 4 types of permissions present here View, Add, Edit and Delete. Here note that if you are assigning Add/Edit or Delete permission then View permission should be given obviously if you have not given View permission then system can behave inconsistent so in best practice if you are giving Add/Edit/Delete any one permission then give View permission too.</p>
+                             <p class="text-sm">Roles Permissions- Go to System Settings > Roles Permissions here we can create different Roles for staff users and then assign different user permission to this Role. To add new role enter Role Name then click on Save button all existing roles can be see from right side of this page. By default in eSkoolia School you will get 6 user roles SuperAdmin, Admin, Teacher, Accountant, Librarian, Receptionist. You can edit name or permission of these roles except SuperAdmin. To assign permission click on Assign Permission button from Action column. At this page you can see Module wise different Features and their different Permissions. Carefully assign different permissions on roles. After assigning permission, check where it is effecting in system. There are 4 types of permissions present here View, Add, Edit and Delete. Here note that if you are assigning Add/Edit or Delete permission then View permission should be given obviously if you have not given View permission then system can behave inconsistent so in best practice if you are giving Add/Edit/Delete any one permission then give View permission too.</p>
                          </div>
                       </li>
                    </ol>
@@ -554,7 +554,7 @@ export const docsContent = [
             {
                 slug: "base-setup", title: "Base Setup", content: `
               <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Base Setup</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Base Setup</h3>
                 <img src="/Eskooly/base-setup.png" alt="Base Setup" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-4 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -567,7 +567,7 @@ export const docsContent = [
             {
                 slug: "academic-year", title: "Academic Year", content: `
               <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Academic Year</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Academic Year</h3>
                 <img src="/Eskooly/academic-year.png" alt="Academic Year" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-4 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -580,7 +580,7 @@ export const docsContent = [
             {
                 slug: "session", title: "Session", content: `
               <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Session</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Session</h3>
                 <img src="/Eskooly/session.png" alt="Session" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-4 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -593,7 +593,7 @@ export const docsContent = [
             {
                 slug: "holiday", title: "Holiday", content: `
               <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Holiday</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Holiday</h3>
                 <img src="/Eskooly/holiday.png" alt="Holiday" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-4 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -714,7 +714,7 @@ export const docsContent = [
             {
                 slug: "dormitory-rooms", title: "Dormitory Rooms", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Dormitory Rooms</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Dormitory Rooms</h3>
                         <img src="/Eskooly/dormitory-rooms.png" alt="Add Dormitory Rooms" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -730,7 +730,7 @@ export const docsContent = [
             {
                 slug: "dormitory-list", title: "Dormitory List", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Dormitory List</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Dormitory List</h3>
                         <img src="/Eskooly/dormitory-list.png" alt="Add Dormitory" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -746,7 +746,7 @@ export const docsContent = [
             {
                 slug: "room-type", title: "Room Type", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Room Type</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Room Type</h3>
                         <img src="/Eskooly/room-type.png" alt="Add Room Type" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -762,7 +762,7 @@ export const docsContent = [
             {
                 slug: "student-dormitory-report", title: "Student Dormitory Report", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Dormitory Report</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Student Dormitory Report</h3>
                 <img src="/Eskooly/student-transport-report.png" alt="Search Student Dormitory Report" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -779,7 +779,7 @@ export const docsContent = [
             {
                 slug: "transport-route", title: "Transport Route", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Transport Route</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Transport Route</h3>
                 <img src="/Eskooly/add-route.png" alt="Routes" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <div class="space-y-4">
                 <h1 class="text-lg font-bold text-slate-700">Transport Route</h1>
@@ -804,19 +804,19 @@ export const docsContent = [
             {
                 slug: "vehicle", title: "Vehicle", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Vehicle</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Vehicle</h3>
                 <img src="/Eskooly/vehicle.png" alt="Add Vehicle" class="w-full rounded-lg shadow-md border border-slate-200" />
             </div>` },
             {
                 slug: "assign-vehicle", title: "Assign Vehicle", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Assign Vehicle</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Assign Vehicle</h3>
                 <img src="/Eskooly/assign-vehicle.png" alt="Assign Vehicle" class="w-full rounded-lg shadow-md border border-slate-200" />
             </div>` },
             {
                 slug: "student-transport-report", title: "Student Transport Report", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Transport Report</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Student Transport Report</h3>
                 <img src="/Eskooly/student-transport-report (1).png" alt="Student Transport Report" class="w-full rounded-lg shadow-md border border-slate-200" />
             </div>` }
         ]
@@ -827,7 +827,7 @@ export const docsContent = [
             {
                 slug: "item-category", title: "Item Category", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Item Category</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Item Category</h3>
                 <img src="/Eskooly/item-category-list.png" alt="Add Item Category" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -839,7 +839,7 @@ export const docsContent = [
             {
                 slug: "item-list", title: "Item List", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Item List</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Item List</h3>
                 <img src="/Eskooly/item.png" alt="Add Item List" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -855,7 +855,7 @@ export const docsContent = [
             {
                 slug: "item-store", title: "Item Store", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Item Store</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Item Store</h3>
                 <img src="/Eskooly/item-store.png" alt="Add Item Store" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -871,7 +871,7 @@ export const docsContent = [
             {
                 slug: "supplier", title: "Supplier", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Supplier</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Supplier</h3>
                 <img src="/Eskooly/supplier.png" alt="Add Supplier" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -887,7 +887,7 @@ export const docsContent = [
             {
                 slug: "item-receive", title: "Item Receive", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Item Receive</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Item Receive</h3>
                 <img src="/Eskooly/item-receive.png" alt="Receive Details" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -903,7 +903,7 @@ export const docsContent = [
             {
                 slug: "item-receive-list", title: "Item Receive List", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Item Receive List</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Item Receive List</h3>
                         <img src="/Eskooly/item-receive-list.png" alt="Paid and Unpaid Status" class="w-full rounded-lg shadow-md border border-slate-200" />
                         <img src="/Eskooly/purchase-details.png" alt="Purchase Details" class="w-full rounded-lg shadow-md border border-slate-200" />
                         <img src="/Eskooly/add-payment.png" alt="Purchase Details" class="w-full rounded-lg shadow-md border border-slate-200" />
@@ -933,7 +933,7 @@ export const docsContent = [
             {
                 slug: "item-sell-list", title: "Item Sell List", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Item Sell List</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Item Sell List</h3>
                         <img src="/Eskooly/item-sell.png" alt="Paid and Unpaid Status" class="w-full rounded-lg shadow-md border border-slate-200" />
                         <img src="/Eskooly/item-sell1.png" alt="Paid and Unpaid Status" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
@@ -958,7 +958,7 @@ export const docsContent = [
             {
                 slug: "issue-item", title: "Issue Item", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Issue Item</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Issue Item</h3>
                         <img src="/Eskooly/issue-a-item.png" alt="Issue a Item" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -975,7 +975,7 @@ export const docsContent = [
             {
                 slug: "add-book", title: "Add Book", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Add Book</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Add Book</h3>
                         <img src="/Eskooly/add-book.png" alt="Add Book" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -987,7 +987,7 @@ export const docsContent = [
             {
                 slug: "book-list", title: "Book List", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Book List</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Book List</h3>
                         <img src="/Eskooly/book-list.png" alt="Book List" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -999,7 +999,7 @@ export const docsContent = [
             {
                 slug: "book-categories", title: "Book Categories", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Book Categories</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Book Categories</h3>
                         <img src="/Eskooly/book-categories.png" alt="Book Categories" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -1011,7 +1011,7 @@ export const docsContent = [
             {
                 slug: "add-member", title: "Add Member", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Add Member</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Add Member</h3>
                         <img src="/Eskooly/add-member.png" alt="Add Member" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -1027,7 +1027,7 @@ export const docsContent = [
             {
                 slug: "issue-books", title: "Issue Books", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Issue Books</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Issue Books</h3>
                         <img src="/Eskooly/issue-books.png" alt="Issue Books" class="w-full rounded-lg shadow-md border border-slate-200" />
                         <img src="/Eskooly/issued-books.png" alt="Issue Books" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
@@ -1044,7 +1044,7 @@ export const docsContent = [
             {
                 slug: "issued-book-list", title: "Issued Book List", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Issued Book List</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Issued Book List</h3>
                         <img src="/Eskooly/issued-book-list.png" alt="Issued Book List" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -1061,7 +1061,7 @@ export const docsContent = [
             {
                 slug: "notice-board", title: "Notice Board", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Notice Board</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Notice Board</h3>
                         <img src="/Eskooly/notice-board.png" alt="Notice Board" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -1077,7 +1077,7 @@ export const docsContent = [
             {
                 slug: "send-message", title: "Send Message", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Send Message</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Send Message</h3>
                 <img src="/Eskooly/add_notice.png" alt="Add notices" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -1089,7 +1089,7 @@ export const docsContent = [
             {
                 slug: "send-email", title: "Send Email", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Send Email</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Send Email</h3>
                 <img src="/Eskooly/send-email1.png" alt="Send email or SMS (Group)" class="w-full rounded-lg shadow-md border border-slate-200" />
                         <img src="/Eskooly/send-email2.png" alt="Send email or SMS (Individual)" class="w-full rounded-lg shadow-md border border-slate-200" />
                         <img src="/Eskooly/send-email3.png" alt="Send email or SMS (Class)" class="w-full rounded-lg shadow-md border border-slate-200" />
@@ -1111,7 +1111,7 @@ export const docsContent = [
             {
                 slug: "email-sms-log-list", title: "Email / Sms Log List", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Email / Sms Log List</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Email / Sms Log List</h3>
                 <img src="/Eskooly/log.png" alt="Email / Sms Log List" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -1123,7 +1123,7 @@ export const docsContent = [
             {
                 slug: "event-list", title: "Event List", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Event List</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Event List</h3>
                 <img src="/Eskooly/event.png" alt="Add Event" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -1140,7 +1140,7 @@ export const docsContent = [
             {
                 slug: "add-homework", title: "Add Homework", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Add Homework</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Add Homework</h3>
                 <img src="/Eskooly/add-homework.png" alt="Add Homework" class="w-full rounded-lg shadow-md border border-slate-200" />
                         <img src="/Eskooly/homework-list.png" alt="Select Action" class="w-full rounded-lg shadow-md border border-slate-200" />
                         <img src="/Eskooly/evaluation.png" alt="Search Homework list" class="w-full rounded-lg shadow-md border border-slate-200" />
@@ -1174,7 +1174,7 @@ export const docsContent = [
             {
                 slug: "homework-evaluation-report", title: "Homework Evaluation Report", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Homework Evaluation Report</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Homework Evaluation Report</h3>
                         <img src="/Eskooly/homework-evaluation-report.png" alt="Search Homework Evaluation Report" class="w-full rounded-lg shadow-md border border-slate-200" />
                         <img src="/Eskooly/view.png" alt="Search Homework Evaluation Report" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
@@ -1196,7 +1196,7 @@ export const docsContent = [
             {
                 slug: "class-routine", title: "Class Routine", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Class Routine</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Class Routine</h3>
                         <img src="/Eskooly/class-routine.png" alt="Add Class routine" class="w-full rounded-lg shadow-md border border-slate-200" />
                         <img src="/Eskooly/create-class-routine.png" alt="Add Class routine" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
@@ -1217,7 +1217,7 @@ export const docsContent = [
             {
                 slug: "assign-subject", title: "Assign Subject", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Assign Subject</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Assign Subject</h3>
                         <img src="/Eskooly/assign-subject.png" alt="Search Assigned Subject" class="w-full rounded-lg shadow-md border border-slate-200" />
                         <img src="/Eskooly/add-assign-subject.png" alt="Search Assign Subject Create" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
@@ -1242,7 +1242,7 @@ export const docsContent = [
             {
                 slug: "assign-class-teacher", title: "Assign Class Teacher", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Assign Class Teacher</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Assign Class Teacher</h3>
                         <img src="/Eskooly/assign-class-teacher.png" alt="Assign Class Teacher" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -1254,7 +1254,7 @@ export const docsContent = [
             {
                 slug: "subject", title: "Subject", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Subject</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Subject</h3>
                         <img src="/Eskooly/add-subjects.png" alt="Add Subject" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -1266,7 +1266,7 @@ export const docsContent = [
             {
                 slug: "class", title: "Class", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Class</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Class</h3>
                         <img src="/Eskooly/class.png" alt="Add Class" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -1278,7 +1278,7 @@ export const docsContent = [
             {
                 slug: "sections", title: "Sections", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Sections</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Sections</h3>
                          <img src="/Eskooly/sections.png" alt="Add Section" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -1294,7 +1294,7 @@ export const docsContent = [
             {
                 slug: "class-room", title: "Class Room", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Class Room</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Class Room</h3>
                          <img src="/Eskooly/class-room.png" alt="Add Class Room" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -1310,7 +1310,7 @@ export const docsContent = [
             {
                 slug: "class-exam-time-setup", title: "Class & Exam Time Setup", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Class & Exam Time Setup</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Class & Exam Time Setup</h3>
                         <img src="/Eskooly/add-time.png" alt="Add Time" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -1331,7 +1331,7 @@ export const docsContent = [
             {
                 slug: "add-exam", title: "Add Exam", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Add Exam</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Add Exam</h3>
                         <img src="/Eskooly/add-exam.png" alt="Add Examination Name" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -1347,7 +1347,7 @@ export const docsContent = [
             {
                 slug: "exam", title: "Exam", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Exam</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Exam</h3>
                         <img src="/Eskooly/exam-setup1.png" alt="Add Exam" class="w-full rounded-lg shadow-md border border-slate-200" />
                         <img src="/Eskooly/exam-setup2.png" alt="Add Exam" class="w-full rounded-lg shadow-md border border-slate-200" />
                         <img src="/Eskooly/exam-setup3.png" alt="Add Exam" class="w-full rounded-lg shadow-md border border-slate-200" />
@@ -1365,7 +1365,7 @@ export const docsContent = [
             {
                 slug: "exam-schedule", title: "Exam Schedule", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Exam Schedule</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Exam Schedule</h3>
                         <img src="/Eskooly/exam-schedule.png" alt="Add Exam Schedule" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -1399,7 +1399,7 @@ export const docsContent = [
             {
                 slug: "marks-register", title: "Marks Register", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Marks Register</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Marks Register</h3>
                         <img src="/Eskooly/mark-register.png" alt="Mark Register" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -1415,7 +1415,7 @@ export const docsContent = [
             {
                 slug: "exam-attendance", title: "Exam Attendance", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Exam Attendance</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Exam Attendance</h3>
                         <img src="/Eskooly/exam-attendance.png" alt="Attendance Create" class="w-full rounded-lg shadow-md border border-slate-200" />
                         <img src="/Eskooly/exam-attendance1.png" alt="Attendance Status" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
@@ -1440,7 +1440,7 @@ export const docsContent = [
             {
                 slug: "marks-grade", title: "Marks Grade", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Marks Grade</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Marks Grade</h3>
                 <img src="/Eskooly/mark-grade.png" alt="Marks Grade" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -1456,7 +1456,7 @@ export const docsContent = [
             {
                 slug: "question-group", title: "Question Group", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Question Group</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Question Group</h3>
                 <img src="/Eskooly/question-group.png" alt="Question Group" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -1472,7 +1472,7 @@ export const docsContent = [
             {
                 slug: "question-bank", title: "Question Bank", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Question Bank</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Question Bank</h3>
                 <img src="/Eskooly/question-bank.png" alt="Question Bank" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -1488,7 +1488,7 @@ export const docsContent = [
             {
                 slug: "online-exam", title: "Online Exam", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Online Exam</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Online Exam</h3>
                 <img src="/Eskooly/online-exam.png" alt="Online Exam" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <img src="/Eskooly/question-list.png" alt="Online Exam" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <img src="/Eskooly/view-question.png" alt="Online Exam" class="w-full rounded-lg shadow-md border border-slate-200" />
@@ -1541,7 +1541,7 @@ export const docsContent = [
             {
                 slug: "approve-leave-request", title: "Approve Leave Request", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Approve Leave Request</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Approve Leave Request</h3>
                         <img src="/Eskooly/Approve-Leave-Request.png" alt="Approve Leave Request" class="w-full rounded-lg shadow-md border border-slate-200" />
                         <img src="/Eskooly/view (1).png" alt="Approve Leave Request" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
@@ -1562,7 +1562,7 @@ export const docsContent = [
             {
                 slug: "apply-leave", title: "Apply Leave", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Apply Leave</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Apply Leave</h3>
                         <img src="/Eskooly/apply-leave.png" alt="Apply Leave" class="w-full rounded-lg shadow-md border border-slate-200" />
                         <img src="/Eskooly/view-leave-details.png" alt="Leave List" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
@@ -1583,7 +1583,7 @@ export const docsContent = [
             {
                 slug: "leave-define", title: "Leave Define", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Leave Define</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Leave Define</h3>
                         <img src="/Eskooly/leave-define.png" alt="Add Leave Define" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -1599,7 +1599,7 @@ export const docsContent = [
             {
                 slug: "leave-type", title: "Leave Type", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Leave Type</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Leave Type</h3>
                         <img src="/Eskooly/leave-type.png" alt="Add Leave Type" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -1620,7 +1620,7 @@ export const docsContent = [
             {
                 slug: "staff-list", title: "Staff List", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Staff List</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Staff List</h3>
                         <img src="/Eskooly/staff_directory.png" alt="Search Staff List" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -1660,7 +1660,7 @@ export const docsContent = [
             {
                 slug: "staff-attendance", title: "Staff Attendance", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Staff Attendance</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Staff Attendance</h3>
                         <img src="/Eskooly/staff_attendance.png" alt="Search" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -1680,7 +1680,7 @@ export const docsContent = [
             {
                 slug: "staff-attendance-report", title: "Staff Attendance Report", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Staff Attendance Report</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Staff Attendance Report</h3>
                         <img src="/Eskooly/staff_attendance-report.png" alt="Search" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -1692,7 +1692,7 @@ export const docsContent = [
             {
                 slug: "payroll", title: "Payroll", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Payroll</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Payroll</h3>
                         <img src="/Eskooly/payroll_page.png" alt="Salary Template" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -1714,7 +1714,7 @@ export const docsContent = [
             {
                 slug: "payroll-report", title: "Payroll Report", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Payroll Report</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Payroll Report</h3>
                         <img src="/Eskooly/payroll_report.png" alt="Search Payroll" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -1735,7 +1735,7 @@ export const docsContent = [
             {
                 slug: "profit", title: "Profit", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Profit</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Profit</h3>
                         <img src="/Eskooly/profit.png" alt="Profit" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -1751,7 +1751,7 @@ export const docsContent = [
             {
                 slug: "income", title: "Income", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Income</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Income</h3>
                         <img src="/Eskooly/income.png" alt="Add Income" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -1767,7 +1767,7 @@ export const docsContent = [
             {
                 slug: "expense", title: "Expense", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Expense</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Expense</h3>
                         <img src="/Eskooly/expense.png" alt="Add Expense" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -1790,7 +1790,7 @@ export const docsContent = [
                 title: "Search Income/Expense", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Search Income/Expense</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Search Income/Expense</h3>
                 <img src="/Eskooly/search.png" alt="Search Income/Expense" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -1809,7 +1809,7 @@ export const docsContent = [
                 title: "Chart Of Account", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Chart Of Account</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Chart Of Account</h3>
                 <img src="/Eskooly/chart-of-account.png" alt="Chart Of Account" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -1828,7 +1828,7 @@ export const docsContent = [
                 title: "Payment Method", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Payment Method</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Payment Method</h3>
                 <img src="/Eskooly/payment_method.png" alt="Payment Method" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -1847,7 +1847,7 @@ export const docsContent = [
                 title: "Bank Account", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Bank Account</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Bank Account</h3>
                 <img src="/Eskooly/add_account.png" alt="Bank Account" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -1866,7 +1866,7 @@ export const docsContent = [
                 title: "Collect Fees", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Collect Fees</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Collect Fees</h3>
                 <img src="/Eskooly/collect_fees.png" alt="Collect Fees" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -1895,7 +1895,7 @@ export const docsContent = [
                 title: "Search Fees Payment", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Search Fees Payment</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Search Fees Payment</h3>
                 <img src="/Eskooly/search_fees_payments.png" alt="Search Fees Payment" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -1919,7 +1919,7 @@ export const docsContent = [
                 title: "Fees Master", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Fees Master</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Fees Master</h3>
                 <img src="/Eskooly/fees_master.png" alt="Fees Master" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -1943,7 +1943,7 @@ export const docsContent = [
                 title: "Fees Group", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Fees Group</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Fees Group</h3>
                 <img src="/Eskooly/fees_group.png" alt="Fees Group" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -1962,7 +1962,7 @@ export const docsContent = [
                 title: "Fees Type", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Fees Type</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Fees Type</h3>
                 <img src="/Eskooly/fees_type.png" alt="Fees Type" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -1981,7 +1981,7 @@ export const docsContent = [
                 title: "Fees Discount", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Fees Discount</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Fees Discount</h3>
                 <img src="/Eskooly/fees_discount.png" alt="Fees Discount" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -2005,7 +2005,7 @@ export const docsContent = [
                 title: "Fees Carry Forward", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Fees Carry Forward</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Fees Carry Forward</h3>
                 <img src="/Eskooly/carry.png" alt="Fees Carry Forward" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -2029,7 +2029,7 @@ export const docsContent = [
                 title: "Upload Content", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Upload Content</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Upload Content</h3>
                 <img src="/Eskooly/upload_content.png" alt="Upload Content" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -2048,7 +2048,7 @@ export const docsContent = [
                 title: "Assignment", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Assignment</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Assignment</h3>
                 <img src="/Eskooly/assignment.png" alt="Assignment" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -2067,7 +2067,7 @@ export const docsContent = [
                 title: "Study Material", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Study Material</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Study Material</h3>
                 <img src="/Eskooly/study_material.png" alt="Study Material" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -2086,7 +2086,7 @@ export const docsContent = [
                 title: "Syllabus", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Syllabus</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Syllabus</h3>
                 <img src="/Eskooly/syllabus.png" alt="Syllabus" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -2105,7 +2105,7 @@ export const docsContent = [
                 title: "Other Downloads", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Other Downloads</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Other Downloads</h3>
                 <img src="/Eskooly/other_download.png" alt="Other Downloads" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -2129,7 +2129,7 @@ export const docsContent = [
                 title: "Student Admission", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Admission</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Student Admission</h3>
                 <img src="/Eskooly/student_admission1.png" alt="Student Admission" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <img src="/Eskooly/student_admission2.png" alt="Student Admission" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <img src="/Eskooly/student_admission3.png" alt="Student Admission" class="w-full rounded-lg shadow-md border border-slate-200" />
@@ -2179,7 +2179,7 @@ export const docsContent = [
                 title: "Student List", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student List</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Student List</h3>
                 <img src="/Eskooly/student_list.png" alt="Student List" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -2238,7 +2238,7 @@ export const docsContent = [
                 title: "Student Attendance", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Attendance</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Student Attendance</h3>
                 <img src="/Eskooly/student_attendance.png" alt="Student Attendance" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -2261,7 +2261,7 @@ export const docsContent = [
                 title: "Student Attendance Report", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Attendance Report</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Student Attendance Report</h3>
                 <img src="/Eskooly/student_attendance-report.png" alt="Student Attendance Report" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -2280,7 +2280,7 @@ export const docsContent = [
                 title: "Student Category", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Category</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Student Category</h3>
                 <img src="/Eskooly/student_category.png" alt="Student Category" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -2299,7 +2299,7 @@ export const docsContent = [
                 title: "Student Group", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Group</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Student Group</h3>
                 <img src="/Eskooly/student_group.png" alt="Student Group" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -2318,7 +2318,7 @@ export const docsContent = [
                 title: "Student Promote", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Promote</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Student Promote</h3>
                 <img src="/Eskooly/student_promote.png" alt="Student Promote" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <img src="/Eskooly/student_promote2.png" alt="Student Promote" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
@@ -2343,7 +2343,7 @@ export const docsContent = [
                 title: "Disabled Students", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Disabled Students</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Disabled Students</h3>
                 <img src="/Eskooly/disabled_student.png" alt="Disabled Students" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -2362,7 +2362,7 @@ export const docsContent = [
                 title: "Student Report", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Report</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Student Report</h3>
                 <img src="/Eskooly/student_reports.png" alt="Student Report" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -2381,7 +2381,7 @@ export const docsContent = [
                 title: "Guardian Reports", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Guardian Reports</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Guardian Reports</h3>
                 <img src="/Eskooly/guardian_reports.png" alt="Guardian Reports" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -2400,7 +2400,7 @@ export const docsContent = [
                 title: "Student History", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student History</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Student History</h3>
                 <img src="/Eskooly/students_history.png" alt="Student History" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -2419,7 +2419,7 @@ export const docsContent = [
                 title: "Student Login Report", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Login Report</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Student Login Report</h3>
                 <img src="/Eskooly/student_login_report.png" alt="Student Login Report" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -2443,7 +2443,7 @@ export const docsContent = [
                 title: "Fees Statement", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Fees Statement</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Fees Statement</h3>
                 <img src="/Eskooly/FeesStatement1.png" alt="Fees Statement" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <img src="/Eskooly/FeesStatement2.png" alt="Fees Statement" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
@@ -2463,7 +2463,7 @@ export const docsContent = [
                 title: "Balance Fees Report", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Balance Fees Report</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Balance Fees Report</h3>
                 <img src="/Eskooly/Balance_Fees_Report.png" alt="Balance Fees Report" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -2486,7 +2486,7 @@ export const docsContent = [
                 title: "Transaction Report", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Transaction Report</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Transaction Report</h3>
                 <img src="/Eskooly/TransactionReport1.png" alt="Transaction Report" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -2515,7 +2515,7 @@ export const docsContent = [
                 title: "Class Report", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Class Report</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Class Report</h3>
                 <img src="/Eskooly/ClassReport1.png" alt="Class Report" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <img src="/Eskooly/ClassReport2.png" alt="Class Report" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
@@ -2539,7 +2539,7 @@ export const docsContent = [
                 title: "Class Routine Report", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Class Routine Report</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Class Routine Report</h3>
                 <img src="/Eskooly/class_routine_report.png" alt="Class Routine Report" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -2558,7 +2558,7 @@ export const docsContent = [
                 title: "Exam Routine", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Exam Routine</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Exam Routine</h3>
                 <img src="/Eskooly/exam_routine_report.png" alt="Exam Routine" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -2577,7 +2577,7 @@ export const docsContent = [
                 title: "Teacher Class Routine Report", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Teacher Class Routine Report</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Teacher Class Routine Report</h3>
                 <img src="/Eskooly/TeacherClassRoutineReport.png" alt="Teacher Class Routine Report" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -2596,7 +2596,7 @@ export const docsContent = [
                 title: "Merit List Report", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Merit List Report</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Merit List Report</h3>
                 <img src="/Eskooly/merit_list_report.png" alt="Merit List Report" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -2615,7 +2615,7 @@ export const docsContent = [
                 title: "Online Exam Report", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Online Exam Report</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Online Exam Report</h3>
                 <img src="/Eskooly/online_result_view.png" alt="Online Exam Report" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -2634,7 +2634,7 @@ export const docsContent = [
                 title: "Tabulation Sheet Report", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Tabulation Sheet Report</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Tabulation Sheet Report</h3>
                 <img src="/Eskooly/terminal_report.png" alt="Tabulation Sheet Report" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -2653,7 +2653,7 @@ export const docsContent = [
                 title: "Student Progress Report", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Progress Report</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Progress Report</h3>
                 <img src="/Eskooly/progress-report.png" alt="Progress Report" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -2672,7 +2672,7 @@ export const docsContent = [
                 title: "Student Fine Report", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Fine Report</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Student Fine Report</h3>
                 <img src="/Eskooly/student_fine_report.png" alt="Student Fine Report" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -2691,7 +2691,7 @@ export const docsContent = [
                 title: "User Log", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly User Log</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia User Log</h3>
                 <img src="/Eskooly/user_log.png" alt="User Log" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -2711,7 +2711,7 @@ export const docsContent = [
                 title: "Student Profile", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Profile</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Student Profile</h3>
                 <img src="/Eskooly/student_panel.png" alt="Student Profile" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -2726,7 +2726,7 @@ export const docsContent = [
                 title: "Fees", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Fees</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Fees</h3>
                 <img src="/Eskooly/fees.png" alt="Fees" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -2741,7 +2741,7 @@ export const docsContent = [
                 title: "Class Routine", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Class Routine</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Class Routine</h3>
                 <img src="/Eskooly/class_routine.png" alt="Class Routine" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -2756,7 +2756,7 @@ export const docsContent = [
                 title: "Homework", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Homework</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Homework</h3>
                 <img src="/Eskooly/homework.png" alt="Homework" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -2775,7 +2775,7 @@ export const docsContent = [
                 title: "Download Center", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Download Center</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Download Center</h3>
                 <img src="/Eskooly/collect_fees.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -2804,7 +2804,7 @@ export const docsContent = [
                 title: "Attendance", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Attendance</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Attendance</h3>
                 <img src="/Eskooly/search_fees_payments.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -2837,7 +2837,7 @@ export const docsContent = [
                 title: "Examinations", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Examinations</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Examinations</h3>
                 <img src="/Eskooly/fees_master.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -2875,7 +2875,7 @@ export const docsContent = [
                 title: "Online Exam", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Online Exam</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Online Exam</h3>
                 <img src="/Eskooly/online_exam1.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <img src="/Eskooly/online_exam2.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
@@ -2928,7 +2928,7 @@ export const docsContent = [
                 title: "Notice Board", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Notice Board</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Notice Board</h3>
                 <img src="/Eskooly/notice_board.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -2952,7 +2952,7 @@ export const docsContent = [
                 title: "Subject", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Subject</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Subject</h3>
                 <img src="/Eskooly/subject.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -2967,7 +2967,7 @@ export const docsContent = [
                 title: "Teachers", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Teachers</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Teachers</h3>
                 <img src="/Eskooly/teacher.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -2982,7 +2982,7 @@ export const docsContent = [
                 title: "Library", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Library</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Library</h3>
                 <img src="/Eskooly/library1.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <img src="/Eskooly/library2.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
@@ -3002,7 +3002,7 @@ export const docsContent = [
                 title: "Transport", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Transport</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Transport</h3>
                 <img src="/Eskooly/Transport.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -3021,7 +3021,7 @@ export const docsContent = [
                 title: "Dormitory", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Dormitory</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Dormitory</h3>
                 <img src="/Eskooly/dormitory.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -3041,7 +3041,7 @@ export const docsContent = [
                 title: "Student Profile", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Profile</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Student Profile</h3>
                 <img src="/Eskooly/my_children1.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <img src="/Eskooly/my_children2.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <img src="/Eskooly/my_children3.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
@@ -3081,7 +3081,7 @@ export const docsContent = [
                 title: "Student Fees Statement", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Fees Statement</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Student Fees Statement</h3>
                 <img src="/Eskooly/fees (1).png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <img src="/Eskooly/fees1.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
@@ -3105,7 +3105,7 @@ export const docsContent = [
                 title: "Student Class Routine", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Class Routine</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Student Class Routine</h3>
                 <img src="/Eskooly/student_admission1.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -3171,7 +3171,7 @@ export const docsContent = [
                 title: "Homework list", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Homework list</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Homework list</h3>
                 <img src="/Eskooly/student_list.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -3237,7 +3237,7 @@ export const docsContent = [
                 title: "Student Attendance", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Student Attendance</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Student Attendance</h3>
                     <img src="/Eskooly/attendance (1).png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -3256,7 +3256,7 @@ export const docsContent = [
                 title: "Notice Board", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Notice Board</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Notice Board</h3>
                     <img src="/Eskooly/notice_board.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -3271,7 +3271,7 @@ export const docsContent = [
                 title: "Subjects", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Subjects</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Subjects</h3>
                     <img src="/Eskooly/subjects.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -3286,7 +3286,7 @@ export const docsContent = [
                 title: "Teacher List", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Teacher List</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Teacher List</h3>
                     <img src="/Eskooly/teacher (1).png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -3301,7 +3301,7 @@ export const docsContent = [
                 title: "Transport List", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Transport List</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Transport List</h3>
                     <img src="/Eskooly/transport (1).png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>
@@ -3316,7 +3316,7 @@ export const docsContent = [
                 title: "Dormitory", 
                 content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkooly Dormitory</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Dormitory</h3>
                     <img src="/Eskooly/dormitory (1).png" alt="Download Center" class="w-full rounded-lg shadow-md border border-slate-200" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-slate-700 marker:font-bold">
                     <li>

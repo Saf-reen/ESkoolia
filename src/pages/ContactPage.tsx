@@ -94,7 +94,7 @@ export default function ContactPage() {
                 Send us a <span className="text-orange-500">Message</span>
               </h2>
               <p className="text-lg text-slate-500 font-medium leading-relaxed max-w-xl">
-                Have questions about eSkooly Pro? We're here to help you get started on your journey to school management excellence.
+                Have questions about eSkoolia? We're here to help you get started on your journey to school management excellence.
               </p>
 
               <div className="grid sm:grid-cols-2 gap-6">

@@ -37,7 +37,7 @@ export default function Header() {
         <div className="container flex justify-between items-center text-[13px] font-medium text-white/90">
           <div className="flex items-center gap-2">
             <span className="bg-white/20 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider">New</span>
-            <span>Congratulations eSkooly Pro version 9.0 has been launched.</span>
+            <span>Congratulations eSkoolia version 9.0 has been launched.</span>
           </div>
           <div className="flex gap-4">
             <a href="#" className="hover:text-white transition-colors">System Demo</a>
