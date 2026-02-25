@@ -22,6 +22,9 @@ import DashboardOverview from "@/pages/dashboard/DashboardOverview";
 import DashboardPlaceholder from "@/pages/dashboard/DashboardPlaceholder";
 import ModulesPage from "@/pages/ModulesPage";
 import FAQPage from "@/pages/FAQPage";
+import DigitalFrontgatePage from "@/pages/DigitalFrontgatePage";
+import EskooliaERPPage from "@/pages/EskooliaERPPage";
+import AISchoolAssistantPage from "@/pages/AISchoolAssistantPage";
 import NotFound from "@/pages/NotFound";
 import ScrollToTop from "@/components/ScrollToTop";
 
@@ -51,6 +54,9 @@ const App = () => (
             <Route path="/refund-policy" element={<RefundPolicyPage />} />
             <Route path="/support-policy" element={<SupportPolicyPage />} />
             <Route path="/deletion-policy" element={<DeletionPolicyPage />} />
+            <Route path="/digital-frontgate" element={<DigitalFrontgatePage />} />
+            <Route path="/eskoolia-erp" element={<EskooliaERPPage />} />
+            <Route path="/ai-assistant" element={<AISchoolAssistantPage />} />
           </Route>
 
           {/* Auth pages (no layout) */}

@@ -35,6 +35,8 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import dashboardMockup from "@/assets/dashboard-mockup.png";
+import EskooliaSuiteSection from "@/components/EskooliaSuiteSection";
+
 
 const proudFeatures = [
   {
@@ -245,10 +247,12 @@ export default function HomePage() {
         <div className="absolute bottom-0 left-0 w-full h-64 bg-gradient-to-t from-[#FF6B35] to-transparent opacity-60 pointer-events-none"></div>
       </section>
 
+
+
       {/* Arched Stats Container */}
-      <section className="relative -mt-16 z-20 pb-12">
+      <section className="relative -mt-16 z-20 pb-12 ">
         <div className="container px-4">
-          <div className="bg-white rounded-[60px_60px_24px_24px] shadow-lg p-6 md:p-8 flex flex-col md:flex-row justify-around items-center gap-6 border border-gray-100 max-w-5xl mx-auto">
+          <div className="bg-gradient-to-b from-[#f5f2fa] to-[#ffffff] rounded-[60px_60px_24px_24px] shadow-lg p-6 md:p-8 flex flex-col md:flex-row justify-around items-center gap-6 border border-gray-100 max-w-5xl mx-auto">
 
             <div className="flex flex-col items-center gap-3 text-center group">
               <div className="relative w-20 h-20 mb-1">
@@ -303,6 +307,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Animated Eskoolia Suite Section */}
+      <EskooliaSuiteSection />
 
       {/* Proud Features - Centered & Colored Icons */}
       <section className="py-20 pt-32 bg-white">
