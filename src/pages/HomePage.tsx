@@ -209,6 +209,10 @@ export default function HomePage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
+              <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-orange-500 text-white font-black text-xs uppercase tracking-[0.2em] mb-8 shadow-xl animate-bounce">
+                <MapPin className="w-3.5 h-3.5" />
+                Serving Tier 2 & Tier 3 Schools in Telangana
+              </div>
               <h1 className="mb-8 font-display text-5xl font-black leading-[1.1] tracking-tight sm:text-6xl lg:text-[80px] uppercase">
                 The Ultimate Dashboard for<br />
                 <span className="relative inline-block mt-2 min-h-[1.1em] text-orange-500">
@@ -218,8 +222,11 @@ export default function HomePage() {
                 </span>
               </h1>
 
-              <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto mb-12 font-medium leading-relaxed">
+              <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto mb-6 font-medium leading-relaxed">
                 Streamline admissions, automate operations, and scale your institution with the world's most intuitive school management suite.
+              </p>
+              <p className="text-lg md:text-xl text-orange-500 font-bold mb-12 uppercase tracking-wide">
+                Built specifically for Tier 2 & Tier 3 schools across Telangana.
               </p>
 
               <div className="flex flex-col sm:flex-row justify-center gap-6 mb-20">
@@ -301,10 +308,10 @@ export default function HomePage() {
       <section className="py-24 lg:py-32 bg-white relative overflow-hidden">
         <div className="container px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center mb-20">
-            <span className="text-orange-500 font-black uppercase tracking-[0.3em] text-sm mb-4 block">The Challenge</span>
+            <span className="text-orange-500 font-black uppercase tracking-[0.3em] text-sm mb-4 block">Why Sria Infotech? We Are Your Local Technology Partner.</span>
             <h2 className="font-display text-4xl md:text-6xl font-black text-[#581C87] mb-8 leading-[1.1] uppercase">Traditional School Management is <span className="text-orange-500">Broken</span></h2>
-            <p className="text-xl text-[#581C87]/60 font-medium leading-relaxed mb-6">
-              Traditional systems are limiting growth. Many schools face:
+            <p className="text-xl text-[#581C87]/70 font-bold leading-relaxed mb-6">
+              "Unlike national ERP vendors, we are physically based in Telangana. We visit your school, train your staff in person, and provide real local support when you need it."
             </p>
             <div className="flex flex-wrap justify-center gap-4 mb-12">
               {["Low online visibility", "Declining admissions", "Manual fee follow-ups", "Administrative overload", "Communication gaps with parents"].map((item, idx) => (
@@ -390,7 +397,13 @@ export default function HomePage() {
                 title: "03 AI Assistant",
                 subtitle: "WhatsApp Helpdesk",
                 desc: "WhatsApp-powered 24/7 school helpdesk. Automated support for parents, teachers, and admin.",
-                benefits: ["Instant Fee Balance Checks", "Exam Schedule Distribution", "Circulars & Lesson Plan Help", "Auto Enquiry Responses"],
+                benefits: [
+                  "Instant Fee Balance Checks",
+                  "Automated Fee Reminders",
+                  "Exam Schedule Distribution",
+                  "Instant Circular Distribution",
+                  "Auto Enquiry Responses"
+                ],
                 cta: "Explore AI Assistant",
                 href: "/ai-assistant"
               }
@@ -832,19 +845,30 @@ export default function HomePage() {
       </section>
 
       {/* Trust Signatures */}
-      <section className="py-12 bg-white border-t border-gray-50">
-        <div className="container flex flex-col md:flex-row items-center justify-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all duration-700">
-          <div className="flex items-center gap-4">
-            <Shield className="w-8 h-8 text-[#581C87]" />
-            <span className="font-black uppercase tracking-[0.2em] text-xs text-[#581C87]">Bank-Grade Security</span>
+      <section className="py-16 bg-white border-t border-gray-50">
+        <div className="container px-6">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all duration-700 mb-12">
+            <div className="flex items-center gap-4">
+              <Shield className="w-8 h-8 text-[#581C87]" />
+              <span className="font-black uppercase tracking-[0.2em] text-xs text-[#581C87]">Bank-Grade Security</span>
+            </div>
+            <div className="flex items-center gap-4">
+              <BadgeCheck className="w-8 h-8 text-[#581C87]" />
+              <span className="font-black uppercase tracking-[0.2em] text-xs text-[#581C87]">99.9% Uptime Commitment</span>
+            </div>
+            <div className="flex items-center gap-4">
+              <Map className="w-8 h-8 text-[#581C87]" />
+              <span className="font-black uppercase tracking-[0.2em] text-xs text-[#581C87]">Global Education Standard</span>
+            </div>
           </div>
-          <div className="flex items-center gap-4">
-            <BadgeCheck className="w-8 h-8 text-[#581C87]" />
-            <span className="font-black uppercase tracking-[0.2em] text-xs text-[#581C87]">99.9% Uptime Commitment</span>
-          </div>
-          <div className="flex items-center gap-4">
-            <Map className="w-8 h-8 text-[#581C87]" />
-            <span className="font-black uppercase tracking-[0.2em] text-xs text-[#581C87]">Global Education Standard</span>
+
+          <div className="max-w-4xl mx-auto text-center border-t border-gray-50 pt-10">
+            <p className="text-[#581C87] font-black uppercase tracking-[0.15em] text-sm mb-2">
+              Eskoolia is a product of Sria Infotech Pvt Ltd, Hyderabad.
+            </p>
+            <p className="text-[#581C87]/60 font-bold text-xs uppercase tracking-[0.1em]">
+              Serving educational institutions across Telangana with on-site implementation and support.
+            </p>
           </div>
         </div>
       </section>
