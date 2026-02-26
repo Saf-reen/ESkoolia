@@ -10,17 +10,16 @@ const DigitalFrontgatePage = () => {
             primaryCTA="Start Growing Digitally"
             secondaryCTA="Book a Demo"
             features={[
-                { title: "Custom School Website", desc: "Professionally designed website with custom domain and school branding." },
-                { title: "Digital Marketing", desc: "Integrated social media campaigns and online growth strategies tailored for schools." },
-                // { title: "Enquiry Management", desc: "Efficiently capture school enquiries and track contact details in a centralized system." },
-                { title: "Official Email Setup", desc: "Microsoft-based custom domain email setup for professional school communication." },
-                { title: "Admission Funnel", desc: "A structured enquiry-to-admission workflow to maximize student conversion." },
-                { title: "E-learning Model", desc: "Optional school LLM integration and digital learning environment setup." }
+                { title: "Professional SEO-Optimized Website", desc: "A modern, mobile-friendly website designed to rank on Google when parents search for schools in your area." },
+                { title: "Admissions Landing Page", desc: "A dedicated enquiry page that captures parent interest anytime, even outside office hours." },
+                { title: "Social Media Content", desc: "12 months of ready-to-post content for Facebook and Instagram to ensure consistent engagement." },
+                { title: "Admissions Landing Page", desc: "A 24/7 online enquiry form for parents to capture leads even outside office hours." },
+                { title: "Microsoft 365 Integration", desc: "Professional @schoolname.com email & Free Microsoft 365 Education setup for your institution." }
             ]}
             howItWorks={[
                 "Initial Setup & Branding",
                 "Digital Presence Launch",
-                // "Enquiry Capture & Conversion"
+                "Enquiry Capture & Conversion"
             ]}
             benefits={[
                 "Increase student enquiries",
@@ -28,7 +27,7 @@ const DigitalFrontgatePage = () => {
                 "Structured admissions process",
                 "Better online market reach"
             ]}
-            finalCTATitle="Ready to revolutionize your school's online presence?"
+            finalCTATitle="Modernize Your School's Digital Presence for 2026."
         />
     );
 };

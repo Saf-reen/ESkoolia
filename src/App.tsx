@@ -33,59 +33,61 @@ const queryClient = new QueryClient();
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <ScrollToTop />
-        <Routes>
-          {/* Public pages */}
-          <Route element={<PublicLayout />}>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/features" element={<FeaturesPage />} />
-            <Route path="/pricing" element={<PricingPage />} />
-            <Route path="/business" element={<BusinessPage />} />
-            <Route path="/docs" element={<DocsPage />} />
-            <Route path="/docs/:slug" element={<DocsPage />} />
-            <Route path="/faq" element={<FAQPage />} />
-            <Route path="/contact" element={<ContactPage />} />
-            <Route path="/modules" element={<ModulesPage />} />
-            <Route path="/terms" element={<TermsPage />} />
-            <Route path="/privacy" element={<PrivacyPage />} />
-            <Route path="/refund-policy" element={<RefundPolicyPage />} />
-            <Route path="/support-policy" element={<SupportPolicyPage />} />
-            <Route path="/deletion-policy" element={<DeletionPolicyPage />} />
-            <Route path="/digital-frontgate" element={<DigitalFrontgatePage />} />
-            <Route path="/eskoolia-erp" element={<EskooliaERPPage />} />
-            <Route path="/ai-assistant" element={<AISchoolAssistantPage />} />
-          </Route>
+      <div className="font-sans text-foreground antialiased">
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <ScrollToTop />
+          <Routes>
+            {/* Public pages */}
+            <Route element={<PublicLayout />}>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/features" element={<FeaturesPage />} />
+              <Route path="/pricing" element={<PricingPage />} />
+              <Route path="/business" element={<BusinessPage />} />
+              <Route path="/docs" element={<DocsPage />} />
+              <Route path="/docs/:slug" element={<DocsPage />} />
+              <Route path="/faq" element={<FAQPage />} />
+              <Route path="/contact" element={<ContactPage />} />
+              <Route path="/modules" element={<ModulesPage />} />
+              <Route path="/terms" element={<TermsPage />} />
+              <Route path="/privacy" element={<PrivacyPage />} />
+              <Route path="/refund-policy" element={<RefundPolicyPage />} />
+              <Route path="/support-policy" element={<SupportPolicyPage />} />
+              <Route path="/deletion-policy" element={<DeletionPolicyPage />} />
+              <Route path="/digital-frontgate" element={<DigitalFrontgatePage />} />
+              <Route path="/eskoolia-erp" element={<EskooliaERPPage />} />
+              <Route path="/ai-assistant" element={<AISchoolAssistantPage />} />
+            </Route>
 
-          {/* Auth pages (no layout) */}
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/register" element={<RegisterPage />} />
+            {/* Auth pages (no layout) */}
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/register" element={<RegisterPage />} />
 
-          {/* Dashboard */}
-          <Route path="/dashboard" element={<DashboardLayout />}>
-            <Route index element={<DashboardOverview />} />
-            <Route path="students" element={<DashboardPlaceholder />} />
-            <Route path="teachers" element={<DashboardPlaceholder />} />
-            <Route path="attendance" element={<DashboardPlaceholder />} />
-            <Route path="exams" element={<DashboardPlaceholder />} />
-            <Route path="fees" element={<DashboardPlaceholder />} />
-            <Route path="accounting" element={<DashboardPlaceholder />} />
-            <Route path="hr" element={<DashboardPlaceholder />} />
-            <Route path="library" element={<DashboardPlaceholder />} />
-            <Route path="transport" element={<DashboardPlaceholder />} />
-            <Route path="hostel" element={<DashboardPlaceholder />} />
-            <Route path="notices" element={<DashboardPlaceholder />} />
-            <Route path="events" element={<DashboardPlaceholder />} />
-            <Route path="reports" element={<DashboardPlaceholder />} />
-            <Route path="branches" element={<DashboardPlaceholder />} />
-            <Route path="settings" element={<DashboardPlaceholder />} />
-          </Route>
+            {/* Dashboard */}
+            <Route path="/dashboard" element={<DashboardLayout />}>
+              <Route index element={<DashboardOverview />} />
+              <Route path="students" element={<DashboardPlaceholder />} />
+              <Route path="teachers" element={<DashboardPlaceholder />} />
+              <Route path="attendance" element={<DashboardPlaceholder />} />
+              <Route path="exams" element={<DashboardPlaceholder />} />
+              <Route path="fees" element={<DashboardPlaceholder />} />
+              <Route path="accounting" element={<DashboardPlaceholder />} />
+              <Route path="hr" element={<DashboardPlaceholder />} />
+              <Route path="library" element={<DashboardPlaceholder />} />
+              <Route path="transport" element={<DashboardPlaceholder />} />
+              <Route path="hostel" element={<DashboardPlaceholder />} />
+              <Route path="notices" element={<DashboardPlaceholder />} />
+              <Route path="events" element={<DashboardPlaceholder />} />
+              <Route path="reports" element={<DashboardPlaceholder />} />
+              <Route path="branches" element={<DashboardPlaceholder />} />
+              <Route path="settings" element={<DashboardPlaceholder />} />
+            </Route>
 
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
     </TooltipProvider>
   </QueryClientProvider>
 );

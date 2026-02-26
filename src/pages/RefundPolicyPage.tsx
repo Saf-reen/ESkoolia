@@ -1,9 +1,16 @@
-import PageHeader from "@/components/layout/PageHeader";
-import { CREDIT_CARD, Package, CheckCircle, HelpCircle, Clock, XCircle, Mail, Menu, DollarSign } from "lucide-react";
 import { useState, useEffect } from "react";
-
-// Re-defining icons that might not be in the exact casing or needed
-import { CreditCard, Package as PackageIcon, CheckCircle2, HelpCircle as HelpIcon, Clock as ClockIcon, XCircle as XIcon, Mail as MailIcon } from "lucide-react";
+import PageHeader from "@/components/layout/PageHeader";
+import {
+    CreditCard,
+    Package as PackageIcon,
+    CheckCircle2,
+    HelpCircle as HelpIcon,
+    Clock as ClockIcon,
+    XCircle as XIcon,
+    Mail as MailIcon,
+    Menu,
+    DollarSign
+} from "lucide-react";
 
 export default function RefundPolicyPage() {
     const [activeSection, setActiveSection] = useState("standard-premium");
@@ -70,7 +77,7 @@ export default function RefundPolicyPage() {
     }, []);
 
     return (
-        <div className="min-h-screen bg-slate-50">
+        <div className="min-h-screen bg-white">
             <PageHeader
                 title="Refund Policy"
                 category="Legal"
@@ -80,8 +87,8 @@ export default function RefundPolicyPage() {
 
                 {/* Intro Text */}
                 <div className="max-w-4xl mx-auto mb-16 text-center">
-                    <p className="text-slate-600 leading-relaxed text-lg">
-                        At <span className="font-bold text-[#483285]">eSkoolia</span>, we want you to be completely satisfied with our software. This Refund Policy outlines the terms and conditions for requesting a refund.
+                    <p className="text-[#581C87]/70 leading-relaxed text-lg">
+                        At <span className="font-bold text-[#581C87]">eSkoolia</span>, we want you to be completely satisfied with our software. This Refund Policy outlines the terms and conditions for requesting a refund.
                     </p>
                 </div>
 
@@ -89,8 +96,8 @@ export default function RefundPolicyPage() {
 
                     {/* Left Sidebar - Sticky Navigation */}
                     <div className="lg:col-span-4 lg:sticky lg:top-24 hidden lg:block">
-                        <div className="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden">
-                            <div className="bg-[#483285] p-4 text-white">
+                        <div className="bg-white rounded-2xl shadow-lg border border-gray-50 overflow-hidden">
+                            <div className="bg-[#581C87] p-4 text-white">
                                 <h3 className="font-bold text-lg flex items-center gap-2">
                                     <Menu className="h-5 w-5" /> Contents
                                 </h3>
@@ -102,8 +109,8 @@ export default function RefundPolicyPage() {
                                             <a
                                                 href={`#${section.id}`}
                                                 className={`block px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200 ${activeSection === section.id
-                                                    ? "bg-slate-100 text-[#483285] font-bold shadow-sm translate-x-1"
-                                                    : "text-slate-600 hover:bg-slate-50 hover:text-[#483285]"
+                                                    ? "bg-gray-50 text-[#581C87] font-bold shadow-sm translate-x-1"
+                                                    : "text-[#581C87]/70 hover:bg-[#581C87]/5/50 hover:text-[#581C87]"
                                                     }`}
                                                 onClick={(e) => {
                                                     e.preventDefault();
@@ -124,15 +131,15 @@ export default function RefundPolicyPage() {
                         {sections.map((section) => (
                             <div key={section.id} id={section.id} className="scroll-mt-32 group">
                                 <div className="flex items-start gap-5">
-                                    <div className="shrink-0 p-3 rounded-xl bg-white text-[#483285] group-hover:bg-[#483285] group-hover:text-white transition-colors duration-300 shadow-sm border border-slate-200">
+                                    <div className="shrink-0 p-3 rounded-xl bg-white text-[#581C87] group-hover:bg-[#581C87] group-hover:text-white transition-colors duration-300 shadow-sm border border-gray-50">
                                         <section.icon className="h-6 w-6" />
                                     </div>
                                     <div>
-                                        <h2 className="text-2xl font-bold text-slate-800 mb-4 font-display group-hover:text-[#483285] transition-colors">{section.title}</h2>
-                                        <div className="text-slate-600 leading-relaxed text-lg">{section.content}</div>
+                                        <h2 className="text-2xl font-bold text-[#581C87] mb-4 font-display group-hover:text-orange-500 transition-colors">{section.title}</h2>
+                                        <div className="text-[#581C87]/70 leading-relaxed text-lg">{section.content}</div>
                                     </div>
                                 </div>
-                                <hr className="mt-12 border-slate-200 last:hidden" />
+                                <hr className="mt-12 border-gray-50 last:hidden" />
                             </div>
                         ))}
                     </div>

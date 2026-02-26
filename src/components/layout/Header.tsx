@@ -30,7 +30,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-[#483285] shadow-lg py-0" : "bg-transparent py-2"
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-[#581C87] shadow-lg py-0" : "bg-transparent py-2"
       }`}>
       {/* Announcement Bar */}
       <div className="bg-white/10 backdrop-blur-sm border-b border-white/10 py-2 hidden md:block">
@@ -59,7 +59,7 @@ export default function Header() {
               <Link
                 key={l.href}
                 to={l.href}
-                className={`text-[15px] font-semibold transition-all hover:text-orange-400 ${location.pathname === l.href ? "text-white" : "text-white/90"
+                className={`text-[15px] font-semibold transition-all hover:text-orange-500 ${location.pathname === l.href ? "text-white" : "text-white/90"
                   }`}
               >
                 {l.label}
@@ -68,12 +68,12 @@ export default function Header() {
           </nav>
 
           <div className="hidden items-center gap-3 md:flex z-10">
-            <Button variant="outline" className="gap-2 border-white/40 text-white bg-white/5 hover:bg-white hover:text-[#483285] hover:border-white transition-all rounded-full h-11 px-7 font-bold text-sm tracking-wide" asChild>
+            <Button variant="outline" className="gap-2 border-white/40 text-white bg-white/5 hover:bg-white hover:text-[#581C87] hover:border-white transition-all rounded-full h-11 px-7 font-bold text-sm tracking-wide" asChild>
               <a href="https://eskooly.pro/login" target="_blank" rel="noopener noreferrer">
                 <Monitor className="h-4 w-4" /> LIVE DEMO
               </a>
             </Button>
-            <Button variant="default" className="gap-2 bg-white/5 border border-white/40 hover:bg-white hover:text-[#483285] text-white border-none shadow-lg rounded-full h-11 px-7 font-bold text-sm tracking-wide transition-all" asChild>
+            <Button variant="default" className="gap-2 bg-white/5 border border-white/40 hover:bg-white hover:text-[#581C87] text-white border-none shadow-lg rounded-full h-11 px-7 font-bold text-sm tracking-wide transition-all" asChild>
               <Link to="/pricing">
                 <ShoppingCart className="h-4 w-4" /> BUY NOW
               </Link>
@@ -89,7 +89,7 @@ export default function Header() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="bg-[#483285] p-4 md:hidden shadow-xl animate-accordion-down overflow-hidden h-screen">
+        <div className="bg-[#581C87] p-4 md:hidden shadow-xl animate-accordion-down overflow-hidden h-screen">
           <nav className="flex flex-col gap-2 pt-10">
             {navLinks.map((l) => (
               <Link

@@ -101,39 +101,39 @@ export default function DocsPage() {
   }, []);
 
   return (
-    <div className="flex flex-col lg:flex-row min-h-screen bg-slate-50 text-slate-900 font-sans">
+    <div className="flex flex-col lg:flex-row min-h-screen bg-gray-50 text-[#581C87] font-sans">
       {/* Mobile Sidebar Toggle */}
-      <div className="lg:hidden p-4 border-b border-slate-200 bg-white flex items-center justify-between sticky top-[80px] z-20 shadow-sm">
-        <span className="font-bold text-[#6f42c1]">ESKOOLIA DOCS</span>
-        <button onClick={() => setSidebarOpen(true)} className="p-2 hover:bg-slate-100 rounded-md transition-colors">
-          <Menu className="h-5 w-5 text-slate-600" />
+      <div className="lg:hidden p-4 border-b border-gray-50 bg-white flex items-center justify-between sticky top-[80px] z-20 shadow-sm">
+        <span className="font-bold text-[#581C87]">ESKOOLIA DOCS</span>
+        <button onClick={() => setSidebarOpen(true)} className="p-2 hover:bg-[#581C87]/5 rounded-md transition-colors">
+          <Menu className="h-5 w-5 text-[#581C87]/70" />
         </button>
       </div>
 
       {/* Sidebar Overlay */}
       {sidebarOpen && (
-        <div className="fixed inset-0 z-30 bg-black/50 lg:hidden backdrop-blur-sm transition-opacity" onClick={() => setSidebarOpen(false)}></div>
+        <div className="fixed inset-0 z-30 bg-[#581C87]/40 lg:hidden backdrop-blur-sm transition-opacity" onClick={() => setSidebarOpen(false)}></div>
       )}
 
       {/* Sidebar */}
       <aside
         ref={sidebarRef}
-        className={`fixed inset-y-0 left-0 z-40 w-64 bg-white border-r border-slate-200 transform transition-transform duration-300 ease-in-out lg:translate-x-0 lg:static lg:h-[calc(100vh)] lg:sticky lg:top-0 overflow-y-auto ${sidebarOpen ? "translate-x-0" : "-translate-x-full"} shadow-lg lg:shadow-none`}
+        className={`fixed inset-y-0 left-0 z-40 w-64 bg-white border-r border-gray-50 transform transition-transform duration-300 ease-in-out lg:translate-x-0 lg:static lg:h-[calc(100vh)] lg:sticky lg:top-0 overflow-y-auto ${sidebarOpen ? "translate-x-0" : "-translate-x-full"} shadow-lg lg:shadow-none`}
       >
         <div className="p-4 flex flex-col h-full">
           {/* Logo Area */}
-          <div className="mb-2 p-2 bg-[#483285] -mx-4 -mt-4 flex justify-center items-center shadow-lg border-b border-white/10">
+          <div className="mb-2 p-2 bg-[#581C87] -mx-4 -mt-4 flex justify-center items-center shadow-lg border-b border-white/10">
             <Link to="/" className="flex items-center gap-2 group cursor-pointer">
               <img src="/eskoolia_logo_.png" alt="Eskooly" className="h-24 w-auto brightness-110" />
             </Link>
           </div>
 
           <div className="mb-6 relative group">
-            <Search className="absolute left-3 top-2.5 h-4 w-4 text-slate-400 group-focus-within:text-[#6f42c1] transition-colors" />
+            <Search className="absolute left-3 top-2.5 h-4 w-4 text-[#581C87]/40 group-focus-within:text-orange-500 transition-colors" />
             <input
               type="text"
               placeholder="Search documentation..."
-              className="w-full pl-9 pr-4 py-2 rounded-lg border border-slate-200 bg-slate-50 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500/20 focus:border-[#6f42c1] transition-all placeholder:text-slate-400"
+              className="w-full pl-9 pr-4 py-2 rounded-lg border border-gray-50 bg-gray-50 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-all placeholder:text-[#581C87]/40"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
@@ -146,14 +146,14 @@ export default function DocsPage() {
 
               return (
                 <div key={idx} className="group/category">
-                  <div className="px-2 mb-2 flex items-center gap-2 text-xs font-bold text-slate-400 uppercase tracking-wider">
+                  <div className="px-2 mb-2 flex items-center gap-2 text-xs font-bold text-[#581C87]/40 uppercase tracking-wider">
                     <Icon className="h-3.5 w-3.5" />
                     <span>{category.category}</span>
                   </div>
 
-                  <div className="space-y-0.5 border-l border-slate-100 ml-3.5 pl-2 relative">
+                  <div className="space-y-0.5 border-l border-gray-50 ml-3.5 pl-2 relative">
                     {/* Active line indicator */}
-                    <div className={`absolute left-[-1px] top-0 bottom-0 w-[2px] bg-[#6f42c1] transition-all duration-300 origin-top ${isCategoryActive ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0'}`} />
+                    <div className={`absolute left-[-1px] top-0 bottom-0 w-[2px] bg-orange-500 transition-all duration-300 origin-top ${isCategoryActive ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0'}`} />
 
                     {category.items.map(item => (
                       <button
@@ -161,8 +161,8 @@ export default function DocsPage() {
                         id={`nav-${item.slug}`}
                         onClick={() => scrollToSection(item.slug)}
                         className={`w-full text-left px-3 py-1.5 text-[13px] font-medium rounded-md transition-all duration-200 flex items-center justify-between group/item ${activeSlug === item.slug
-                          ? "text-[#6f42c1] bg-purple-50"
-                          : "text-slate-500 hover:text-slate-900 hover:bg-slate-50"
+                          ? "text-orange-500 bg-orange-500/10"
+                          : "text-[#581C87]/60 hover:text-[#581C87] hover:bg-[#581C87]/5"
                           }`}
                       >
                         <span className="truncate">{item.title}</span>
@@ -178,53 +178,35 @@ export default function DocsPage() {
       </aside>
 
       {/* Main Content */}
-      <main className="flex-1 min-w-0 bg-white lg:bg-slate-50">
+      <main className="flex-1 min-w-0 bg-white lg:bg-gray-50">
         <div className="max-w-full mx-auto px-4 py-8 lg:px-8 lg:py-12 pb-32">
 
           {/* Voice Controls */}
-          <div className="flex flex-wrap items-center gap-3 mb-8 bg-white p-4 rounded-xl shadow-sm border border-slate-200 lg:sticky lg:top-[20px] z-30">
+          <div className="flex flex-wrap items-center gap-3 mb-8 bg-white p-4 rounded-xl shadow-sm border border-gray-50 lg:sticky lg:top-[20px] z-30">
             <button
               onClick={() => setVoiceEnabled(true)}
               className={`flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-bold transition-all shadow-sm ${voiceEnabled
-                ? "bg-purple-100 text-[#6f42c1] ring-2 ring-purple-500/20"
-                : "bg-[#6f42c1] text-white hover:bg-[#5a32a3] hover:shadow-md"
+                ? "bg-orange-500/10 text-orange-500 ring-2 ring-orange-500/20"
+                : "bg-orange-500 text-white hover:bg-orange-600 hover:shadow-md"
                 }`}
             >
               <span className={isSpeaking ? "animate-pulse" : ""}>🔊</span>
               {voiceEnabled ? "Voice On" : "Start Voice"}
             </button>
 
-            {/* <div className="flex items-center gap-2 bg-slate-50 p-1 rounded-lg border border-slate-100">
-              <button
-                onClick={pause}
-                className="p-2 hover:bg-white hover:shadow-sm rounded-md transition-all text-slate-600 hover:text-[#6f42c1]"
-                title="Pause"
-              >
-                ⏸
-              </button>
-
-              <button
-                onClick={resume}
-                className="p-2 hover:bg-white hover:shadow-sm rounded-md transition-all text-slate-600 hover:text-[#6f42c1]"
-                title="Resume"
-              >
-                ▶
-              </button>
-            </div> */}
-
             <button
               onClick={() => {
                 stop();
                 setVoiceEnabled(false);
               }}
-              className="px-5 py-2.5 bg-rose-50 text-rose-600 hover:bg-rose-100 rounded-lg text-sm font-bold transition-all border border-rose-100"
+              className="px-5 py-2.5 bg-[#581C87]/5 text-[#581C87] hover:bg-[#581C87]/10 rounded-lg text-sm font-bold transition-all border border-[#581C87]/10"
             >
               ⏹ Stop
             </button>
 
             {isSpeaking && (
-              <div className="ml-auto hidden md:flex items-center gap-2 text-[10px] font-bold text-slate-400 uppercase tracking-widest">
-                <span className="flex h-2 w-2 rounded-full bg-green-500 animate-ping"></span>
+              <div className="ml-auto hidden md:flex items-center gap-2 text-[10px] font-bold text-[#581C87]/40 uppercase tracking-widest">
+                <span className="flex h-2 w-2 rounded-full bg-orange-500 animate-ping"></span>
                 AI Voice Active
               </div>
             )}
@@ -238,34 +220,22 @@ export default function DocsPage() {
 
                     {item.slug === 'welcome' ? (
                       // Special rendering for Welcome section
-                      <section className="bg-white rounded-2xl shadow-sm border border-slate-100 p-8 lg:p-12 text-center transition-all hover:shadow-md">
-                        <div className="prose prose-slate max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-a:text-[#6f42c1] prose-a:no-underline hover:prose-a:underline">
+                      <section className="bg-white rounded-2xl shadow-sm border border-gray-50 p-8 lg:p-12 text-center transition-all hover:shadow-md">
+                        <div className="prose prose-slate max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-a:text-orange-500 prose-a:no-underline hover:prose-a:underline prose-p:text-[#581C87]/70 prose-headings:text-[#581C87]">
                           <div dangerouslySetInnerHTML={{ __html: item.content }} />
                         </div>
                       </section>
                     ) : (
                       // Standard rendering for other sections
                       <div className="group">
-                        <div className="flex items-center gap-3 mb-6 pb-4 border-b border-slate-200">
-                          <div className="h-8 w-1 bg-[#6f42c1] rounded-full"></div>
-                          <h1 className="text-2xl font-bold tracking-tight text-slate-800">{item.title}</h1>
+                        <div className="flex items-center gap-3 mb-6 pb-4 border-b border-gray-50">
+                          <div className="h-8 w-1 bg-orange-500 rounded-full"></div>
+                          <h1 className="text-2xl font-bold tracking-tight text-[#581C87]">{item.title}</h1>
                         </div>
 
-                        <section className="bg-white rounded-xl shadow-sm border border-slate-200/60 overflow-hidden transition-all duration-300 hover:shadow-md p-6 lg:p-8">
-                          <article className="prose prose-slate max-w-none prose-headings:text-slate-800 prose-p:text-slate-600 prose-a:text-[#6f42c1]">
+                        <section className="bg-white rounded-xl shadow-sm border border-gray-50 overflow-hidden transition-all duration-300 hover:shadow-md p-6 lg:p-8">
+                          <article className="prose prose-slate max-w-none prose-headings:text-[#581C87] prose-p:text-[#581C87]/70 prose-a:text-orange-500">
                             <div className="text-sm leading-7 space-y-4" dangerouslySetInnerHTML={{ __html: item.content }} />
-
-                            {/* Screenshot Placeholder - Only show if content implies visual context or for major sections */}
-                            {/* {['dashboard-overview', 'student-admission', 'collect-fees'].includes(item.slug) && (
-                              <div className="mt-8 mb-4 border border-slate-200 rounded-lg overflow-hidden bg-slate-50">
-                                <div className="aspect-[16/9] flex flex-col items-center justify-center text-slate-400 bg-slate-100/50">
-                                  <div className="p-4 bg-white rounded-full shadow-sm mb-3">
-                                    <Laptop className="h-6 w-6 text-slate-300" />
-                                  </div>
-                                  <p className="font-semibold text-xs uppercase tracking-wider text-slate-400">Application Screenshot</p>
-                                </div>
-                              </div>
-                            )} */}
                           </article>
                         </section>
                       </div>

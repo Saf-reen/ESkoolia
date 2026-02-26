@@ -10,12 +10,12 @@ const EskooliaERPPage = () => {
             primaryCTA="Digitize Your School Operations"
             secondaryCTA="Request a Demo"
             features={[
-                { title: "School Management", desc: "Digital student records, staff management, and automated attendance tracking." },
-                { title: "Academic Operations", desc: "Centralized timetable and examination management with automated result generation." },
-                { title: "Administration Module", desc: "Automated fees management, expense tracking, and real-time reports & analytics." },
-                { title: "Mobile Application", desc: "Native Android application for instant parent, student, and staff access." },
-                { title: "Centralized Dashboard", desc: "Real-time overview of all school departments on a single interactive screen." },
-                { title: "Inventory & Assets", desc: "Efficiently manage school supplies, inventory items, and institutional assets." }
+                { title: "Fee Management", desc: "Automated collection, digital receipts, and comprehensive defaulter reports." },
+                { title: "Staff & Payroll", desc: "HR management and monthly school payroll generation in just one click." },
+                { title: "Academics", desc: "Exam marks entry, automated report cards, student rankings, and performance analysis." },
+                { title: "Mobile Applications", desc: "Dedicated Android & iOS apps included for parents, students, and teachers." },
+                { title: "Security & Cloud", desc: "Secure Cloud Data storage accessible from anywhere, ensuring 99.9% uptime." },
+                { title: "Attendance & Alerts", desc: "Real-time attendance tracking with instant SMS and App alerts to parents." }
             ]}
             howItWorks={[
                 "Database Migration",

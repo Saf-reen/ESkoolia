@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ["Outfit", "system-ui", "sans-serif"],
-        display: ["Outfit", "system-ui", "sans-serif"],
+        sans: ['"Plus Jakarta Sans"', 'sans-serif'], // Body
+        display: ["Outfit", "system-ui", "sans-serif"], // Headings
       },
       colors: {
         border: "hsl(var(--border))",

@@ -15,11 +15,15 @@ import {
   HelpCircle,
   Map,
   BadgeCheck,
+  CreditCard,
   ShoppingCart,
   Server,
   Layers,
   Lock,
-  Clock
+  MapPin,
+  Clock,
+  MessageSquare,
+  Database
 } from "lucide-react";
 import {
   Accordion,
@@ -34,42 +38,43 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { motion } from "framer-motion";
 import dashboardMockup from "@/assets/dashboard-mockup.png";
 import EskooliaSuiteSection from "@/components/EskooliaSuiteSection";
 
 
-const proudFeatures = [
+const localAdvantages = [
   {
-    icon: Grid,
-    bg: "bg-red-500",
-    text: "text-red-500",
-    bgLight: "bg-red-500/10",
-    title: "Tons of features",
-    desc: "eSkoolia PRO has all in one place. You’ll find everything what you are looking into education management system software."
-  },
-  {
-    icon: Monitor,
+    icon: MessageSquare,
     bg: "bg-orange-500",
     text: "text-orange-500",
-    bgLight: "bg-orange-500/10",
-    title: "User Friendly Interface",
-    desc: "We care! User will never bothered in our real eye catchy user friendly UI & UX Interface design."
+    bgLight: "bg-gray-50",
+    title: "Telugu Support",
+    desc: "No call centers. Speak your language. Get help in Telugu from our Hyderabad-based support team."
   },
   {
-    icon: Shield,
-    bg: "bg-blue-500",
-    text: "text-blue-500",
-    bgLight: "bg-blue-500/10",
-    title: "Proper Documentation",
-    desc: "You know! Smart Idea always comes to well planners. And Our eSkoolia PRO is Smart for its Well Documentation."
+    icon: MapPin,
+    bg: "bg-[#581C87]",
+    text: "text-[#581C87]",
+    bgLight: "bg-gray-50",
+    title: "In-School Setup",
+    desc: "We come to your school to install everything and train your staff in person. No remote guesswork."
   },
   {
     icon: Zap,
-    bg: "bg-green-500",
-    text: "text-green-500",
-    bgLight: "bg-green-500/10",
-    title: "Powerful Support",
-    desc: "Explore in new support world! It’s now faster & quicker. You’ll find us on Support Ticket, Email, Skype, WhatsApp."
+    bg: "bg-orange-500",
+    text: "text-orange-500",
+    bgLight: "bg-gray-50",
+    title: "Same-Day Response",
+    desc: "We are in Telangana, not Bangalore. When you have a problem, our local team solves it fast."
+  },
+  {
+    icon: Star,
+    bg: "bg-[#581C87]",
+    text: "text-[#581C87]",
+    bgLight: "bg-gray-50",
+    title: "Education Specialists",
+    desc: "We understand your specific local fee structures and exam patterns better than anyone else."
   }
 ];
 
@@ -188,481 +193,513 @@ export default function HomePage() {
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
       <section
-        className="relative overflow-visible pb-24 pt-32 lg:pt-40 text-white bg-no-repeat bg-cover bg-center min-h-[80vh] flex flex-col items-center"
+        className="relative overflow-visible pb-32 pt-32 lg:pt-48 text-white bg-no-repeat bg-cover bg-center min-h-[90vh] flex flex-col items-center justify-center"
         style={{ backgroundImage: 'url(/banner-bg.jpg)' }}
       >
-        {/* Dark overlay for better text readability and matching screenshot vibe */}
-        <div className="absolute inset-0 bg-[#483285]/40 mix-blend-multiply"></div>
+        {/* Deep branding overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#581C87]/50 to-[#581C87]/70 mix-blend-multiply"></div>
+
+        {/* Subtle background glow */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-orange-500/20 rounded-full blur-[120px] pointer-events-none"></div>
 
         <div className="container relative z-10 px-4">
-          <div className="mx-auto max-w-5xl text-center">
-            <h1 className="mb-6 font-display text-4xl font-semibold leading-[1.15] tracking-tight sm:text-5xl lg:text-[64px]">
-              The Ultimate Education<br />
-              Management System for<br />
-              <span className="relative inline-block mt-1 min-h-[1.1em]">
-                <span className="relative z-10">{typedText}</span>
-                <span className="absolute bottom-1.5 left-0 w-full h-1 bg-[#EA4C89] opacity-80 rounded-full"></span>
-                <span className="inline-block w-[2.5px] h-[40px] bg-white ml-1 align-middle -mt-1 animate-pulse"></span>
-              </span>
-            </h1>
+          <div className="mx-auto max-w-6xl text-center">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              <h1 className="mb-8 font-display text-5xl font-black leading-[1.1] tracking-tight sm:text-6xl lg:text-[80px] uppercase">
+                The Ultimate Dashboard for<br />
+                <span className="relative inline-block mt-2 min-h-[1.1em] text-orange-500">
+                  <span className="relative z-10">{typedText}</span>
+                  <span className="absolute bottom-2 left-0 w-full h-2 bg-white/20 rounded-full"></span>
+                  <span className="inline-block w-[3px] h-[50px] bg-white ml-2 align-middle -mt-2 animate-pulse"></span>
+                </span>
+              </h1>
 
-            <div className="flex flex-col sm:flex-row justify-center gap-5 mb-12 mt-8">
-              <Button size="lg" className="rounded-full h-14 px-10 text-base shadow-[0_10px_25px_rgba(71,94,237,0.3)] hover:shadow-[0_15px_35px_rgba(71,94,237,0.4)] transition-all uppercase tracking-wide font-black bg-[#475EED] hover:bg-[#3b4ecf] text-white border-none" asChild>
-                <a href="https://eskooly.pro/login" target="_blank" rel="noopener noreferrer">TRY LIVE DEMO</a>
-              </Button>
-              <div className="flex items-center group cursor-pointer">
-                <div className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-white/40 group-hover:border-white transition-all mr-3 bg-white/5 backdrop-blur-sm">
-                  <Play className="w-4 h-4 fill-white text-white ml-0.5" />
+              <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto mb-12 font-medium leading-relaxed">
+                Streamline admissions, automate operations, and scale your institution with the world's most intuitive school management suite.
+              </p>
+
+              <div className="flex flex-col sm:flex-row justify-center gap-6 mb-20">
+                <Button size="lg" className="rounded-full h-16 px-12 text-lg shadow-[0_20px_50px_rgba(88,28,135,0.4)] hover:shadow-[0_25px_60px_rgba(88,28,135,0.5)] transition-all uppercase tracking-wider font-black bg-white text-[#581C87] hover:bg-orange-500 hover:text-white border-none transform hover:-translate-y-1" asChild>
+                  <a href="https://eskooly.pro/login" target="_blank" rel="noopener noreferrer">Try Live Demo Free</a>
+                </Button>
+                <div className="flex items-center group cursor-pointer justify-center">
+                  <div className="flex items-center justify-center w-14 h-14 rounded-full border-2 border-white/30 group-hover:border-white group-hover:bg-white/10 transition-all mr-4 bg-white/5 backdrop-blur-md">
+                    <Play className="w-5 h-5 fill-white text-white ml-1" />
+                  </div>
+                  <span className="text-xl font-bold tracking-tight uppercase text-white">Watch the Vision</span>
                 </div>
-                <span className="text-lg font-bold tracking-tight">Play Video</span>
               </div>
-            </div>
+            </motion.div>
 
-            {/* Dashboard Image floating with perspective */}
-            <div className="relative mt-12 mx-auto max-w-5xl perspective-[2000px]">
-              <div className="relative z-10 rounded-xl border-[10px] border-white/10 shadow-2xl overflow-hidden transform rotate-x-1 hover:rotate-x-0 transition-transform duration-700">
-                <img src={dashboardMockup} alt="Dashboard Preview" className="w-full h-auto object-cover" />
+            {/* Premium Dashboard Frame */}
+            <motion.div
+              initial={{ opacity: 0, y: 60 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.2 }}
+              className="relative mt-8 mx-auto max-w-6xl perspective-[2000px]"
+            >
+              <div className="relative z-10 rounded-2xl border-[12px] border-white/10 shadow-[0_40px_100px_rgba(0,0,0,0.5)] overflow-hidden transform hover:scale-[1.01] transition-transform duration-700">
+                <div className="absolute inset-0 bg-gradient-to-t from-[#581C87]/20 to-transparent pointer-events-none"></div>
+                <img src={dashboardMockup} alt="Eskoolia Dashboard" className="w-full h-auto object-cover" />
               </div>
-            </div>
+
+              {/* Accenting glow below image */}
+              <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-[80%] h-20 bg-orange-500/20 blur-[60px] -z-10"></div>
+            </motion.div>
           </div>
         </div>
 
-        {/* Floating Decorative Shapes */}
-        <div className="absolute inset-0 pointer-events-none overflow-hidden h-full w-full">
-          {/* Triangle */}
-          <div className="absolute top-1/3 left-[15%] w-8 h-8 border-r-2 border-b-2 border-white/20 rotate-[135deg] animate-float"></div>
-          {/* Simple Circle */}
-          <div className="absolute bottom-1/4 left-[10%] w-4 h-4 rounded-full border-2 border-white/20 animate-pulse"></div>
-          {/* Square Outline */}
-          <div className="absolute top-1/2 right-[5%] w-6 h-6 border-2 border-white/20 rotate-45"></div>
-          {/* Small Dot Grid */}
-          <div className="absolute bottom-[20%] left-[5%] grid grid-cols-4 gap-2 opacity-20">
-            {[...Array(16)].map((_, i) => <div key={i} className="w-1.5 h-1.5 bg-white rounded-full"></div>)}
-          </div>
-          {/* Right Triangle */}
-          <div className="absolute top-[40%] right-[10%] w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-b-[18px] border-b-white/20 rotate-12"></div>
+        {/* Floating Decorative Elements */}
+        <div className="absolute inset-0 pointer-events-none overflow-hidden h-full w-full opacity-40">
+          <div className="absolute top-1/4 left-[10%] w-12 h-12 border-2 border-white/20 rounded-lg rotate-12 animate-float"></div>
+          <div className="absolute bottom-1/3 right-[10%] w-16 h-16 border-2 border-white/10 rounded-full animate-pulse"></div>
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[radial-gradient(circle,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:60px_60px]"></div>
         </div>
-
-        {/* Purple to Orange Transition Overlay */}
-        <div className="absolute bottom-0 left-0 w-full h-64 bg-gradient-to-t from-[#FF6B35] to-transparent opacity-60 pointer-events-none"></div>
       </section>
 
-
-
-      {/* Arched Stats Container */}
-      <section className="relative -mt-16 z-20 pb-12 ">
+      {/* Trust Bar (previously stats) */}
+      <section className="relative -mt-10 z-20 pb-20">
         <div className="container px-4">
-          <div className="bg-gradient-to-b from-[#f5f2fa] to-[#ffffff] rounded-[60px_60px_24px_24px] shadow-lg p-6 md:p-8 flex flex-col md:flex-row justify-around items-center gap-6 border border-gray-100 max-w-5xl mx-auto">
-
-            <div className="flex flex-col items-center gap-3 text-center group">
-              <div className="relative w-20 h-20 mb-1">
-                <div className="absolute inset-0 bg-red-500/10 rounded-full scale-110 group-hover:scale-125 transition-transform duration-500"></div>
-                <div className="relative h-full w-full flex items-center justify-center">
-                  <svg viewBox="0 0 24 24" className="w-10 h-10 text-red-500 fill-none stroke-[1.5] stroke-current">
-                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                    <circle cx="9" cy="7" r="4" />
-                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                  </svg>
-                </div>
-              </div>
-              <div>
-                <div className="text-4xl font-black text-[#483285] mb-0.5">15k</div>
-                <div className="text-gray-400 text-sm font-bold tracking-tight">Total User</div>
-              </div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="bg-white rounded-[40px] shadow-[0_30px_70px_rgba(88,28,135,0.1)] p-8 md:p-12 flex flex-col md:flex-row justify-around items-center gap-10 border border-gray-50 max-w-6xl mx-auto"
+          >
+            <div className="flex flex-col items-center gap-4 text-center group">
+              <div className="text-5xl font-black text-[#581C87] mb-1">15k+</div>
+              <div className="text-[#581C87]/40 text-sm font-bold uppercase tracking-[0.2em]">Global Users</div>
             </div>
 
-            <div className="flex flex-col items-center gap-3 text-center group">
-              <div className="relative w-20 h-20 mb-1">
-                <div className="absolute inset-0 bg-purple-500/10 rounded-full scale-110 group-hover:scale-125 transition-transform duration-500"></div>
-                <div className="relative h-full w-full flex items-center justify-center">
-                  <svg viewBox="0 0 24 24" className="w-10 h-10 text-purple-500 fill-none stroke-[1.5] stroke-current">
-                    <circle cx="12" cy="12" r="10" />
-                    <line x1="2" y1="12" x2="22" y2="12" />
-                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-                  </svg>
-                </div>
-              </div>
-              <div>
-                <div className="text-4xl font-black text-[#483285] mb-0.5">90+</div>
-                <div className="text-gray-400 text-sm font-bold tracking-tight">Countries</div>
-              </div>
+            <div className="w-px h-12 bg-gray-50 hidden md:block"></div>
+
+            <div className="flex flex-col items-center gap-4 text-center group">
+              <div className="text-5xl font-black text-[#581C87] mb-1">90+</div>
+              <div className="text-[#581C87]/40 text-sm font-bold uppercase tracking-[0.2em]">Countries</div>
             </div>
 
-            <div className="flex flex-col items-center gap-3 text-center group">
-              <div className="relative w-20 h-20 mb-1">
-                <div className="absolute inset-0 bg-blue-500/10 rounded-full scale-110 group-hover:scale-125 transition-transform duration-500"></div>
-                <div className="relative h-full w-full flex items-center justify-center">
-                  <svg viewBox="0 0 24 24" className="w-10 h-10 text-blue-500 fill-none stroke-[1.5] stroke-current">
-                    <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
-                    <path d="m9 12 2 2 4-4" />
-                  </svg>
-                </div>
-              </div>
-              <div>
-                <div className="text-4xl font-black text-[#483285] mb-0.5">95%</div>
-                <div className="text-gray-400 text-sm font-bold tracking-tight">Satisfaction</div>
-              </div>
+            <div className="w-px h-12 bg-gray-50 hidden md:block"></div>
+
+            <div className="flex flex-col items-center gap-4 text-center group">
+              <div className="text-5xl font-black text-[#581C87] mb-1">95%</div>
+              <div className="text-[#581C87]/40 text-sm font-bold uppercase tracking-[0.2em]">Satisfaction Rate</div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
 
-      {/* Animated Eskoolia Suite Section */}
+      {/* Animated Eskoolia Suite Section - Signature visual identity */}
       <EskooliaSuiteSection />
 
-      {/* Proud Features - Centered & Colored Icons */}
-      <section className="py-20 pt-32 bg-white">
-        <div className="container">
-          <div className="mx-auto mb-20 max-w-3xl text-center">
-            <span className="mb-3 block font-bold text-orange-500 uppercase tracking-widest text-lg">Amazing features to convince you</span>
-            <h2 className="mb-6 font-display text-4xl font-bold text-[#483285]">Some Features that make Us Proud</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">Looking Forward To Something Different & Unique! Here We Are With Few That Never Expected In Others.</p>
-          </div>
-          <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4 mb-16">
-            {proudFeatures.map((f, i) => (
-              <div key={i} className="group text-center">
-                <div className={`mx-auto mb-8 flex h-24 w-24 items-center justify-center rounded-full ${f.bgLight} ${f.text} shadow-sm transition-all group-hover:scale-110 duration-300`}>
-                  <f.icon className={`h-10 w-10 ${f.text}`} />
+
+
+      {/* Problems Section */}
+      <section className="py-24 lg:py-32 bg-white relative overflow-hidden">
+        <div className="container px-6 relative z-10">
+          <div className="max-w-4xl mx-auto text-center mb-20">
+            <span className="text-orange-500 font-black uppercase tracking-[0.3em] text-sm mb-4 block">The Challenge</span>
+            <h2 className="font-display text-4xl md:text-6xl font-black text-[#581C87] mb-8 leading-[1.1] uppercase">Traditional School Management is <span className="text-orange-500">Broken</span></h2>
+            <p className="text-xl text-[#581C87]/60 font-medium leading-relaxed mb-6">
+              Traditional systems are limiting growth. Many schools face:
+            </p>
+            <div className="flex flex-wrap justify-center gap-4 mb-12">
+              {["Low online visibility", "Declining admissions", "Manual fee follow-ups", "Administrative overload", "Communication gaps with parents"].map((item, idx) => (
+                <div key={idx} className="px-6 py-3 bg-white text-orange-500 rounded-full font-bold text-sm border border-gray-50 uppercase tracking-tighter">
+                  {item}
                 </div>
-                <h3 className="mb-4 font-display text-xl font-bold text-[#483285]">{f.title}</h3>
-                <p className="text-muted-foreground leading-relaxed px-4">{f.desc}</p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
 
-          {/* More Features - Mini Tags */}
-          <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
-            {moreFeatures.map((f, i) => (
-              <div key={i} className="flex items-center gap-2 px-6 py-3 rounded-full bg-secondary/30 hover:bg-secondary/60 transition-colors cursor-default border border-border/50">
-                <f.icon className="w-4 h-4 text-orange-500" />
-                <span className="font-semibold text-foreground/80 text-lg">{f.label}</span>
-              </div>
+          <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+            {[
+              {
+                title: "Low Admissions",
+                desc: "Your school has no online presence. Parents search on Google and find your competitors instead of you.",
+                icon: Globe
+              },
+              {
+                title: "Fee Collection Chaos",
+                desc: "Chasing parents for fees every month wastes staff time and creates embarrassing situations.",
+                icon: CreditCard
+              },
+              {
+                title: "Admin Overload",
+                desc: "Attendance, exams, payroll—all done manually. Staff spend hours on work that should take minutes.",
+                icon: Clock
+              }
+            ].map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="bg-white p-10 rounded-[32px] border border-gray-50 shadow-sm hover:shadow-xl transition-all group"
+              >
+                <div className="w-16 h-16 rounded-2xl bg-[#581C87] text-white flex items-center justify-center mb-8 border border-gray-50 group-hover:bg-orange-500 transition-all">
+                  <item.icon className="w-8 h-8" />
+                </div>
+                <h3 className="text-2xl font-black text-[#581C87] mb-4 uppercase tracking-tight">{item.title}</h3>
+                <p className="text-[#581C87]/60 text-lg leading-relaxed font-medium">{item.desc}</p>
+              </motion.div>
             ))}
           </div>
         </div>
+
+        {/* Background texture */}
+        <div className="absolute inset-0 opacity-[0.4] bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] pointer-events-none"></div>
       </section>
 
-      {/* Why Choose Us - Left Text, Right Image */}
-      <section className="py-24 bg-[#483285]/5 overflow-hidden">
-        <div className="container">
-          <div className="grid gap-16 lg:grid-cols-2 items-center">
-            <div className="order-1">
-              <span className="block font-bold text-orange-500 text-lg mb-2">All-in-one Solution for you</span>
-              <h2 className="mb-8 font-display text-4xl font-extrabold text-[#483285] sm:text-5xl">WHY CHOOSE US?</h2>
-              <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
-                <p>
-                  Reliability is the key factor when it comes to running a School Management System. Any lag or disturbance can affect your reputation. And we completely understand this responsibility from our 20 years+ of experience in working in this field. We know every nitty-gritty detail of this respected industry. With our experience and state-of-the-art interface designs, we have created eSkoolia PRO in School Management ERP System which is extremely reliable, intuitive, and easy to use.
-                </p>
-                <p>
-                  It can cater to all your needs of managing school, college, university and any other educational institution eliminating the tedious manual processes. With a framework built this solid and reliable, you can never go wrong. Whenever you face any difficulty, our friendliest support team will be with you at every step to guide the process. Once it is set and running, you can stop worrying about the system and focus on the other more important things of your organization. The beauty of automation will be at your fingertips.
-                </p>
-                <div className="flex flex-wrap gap-4 pt-6">
-                  <div className="px-6 py-3 bg-white rounded-lg shadow-sm border border-border font-semibold text-foreground">100% White Labeled</div>
-                  <div className="px-6 py-3 bg-white rounded-lg shadow-sm border border-border font-semibold text-foreground">Open Source</div>
-                  <div className="px-6 py-3 bg-white rounded-lg shadow-sm border border-border font-semibold text-foreground">Cloud Based</div>
-                  <div className="px-6 py-3 bg-white rounded-lg shadow-sm border border-border font-semibold text-foreground">Self Hosted</div>
-                </div>
-              </div>
-            </div>
-
-            {/* Right side graphic placeholder */}
-            <div className="order-2 relative h-[500px] w-full flex items-center justify-center">
-              <div className="absolute inset-0 bg-[#483285]/10 rounded-full blur-3xl transform rotate-12"></div>
-              {/* Product Box simulation */}
-              <div className="relative z-10 w-64 h-80 bg-gradient-to-br from-[#483285] to-indigo-700 rounded-xl shadow-2xl transform -rotate-6 flex flex-col items-center justify-center text-white p-6 border-t border-white/20">
-                <span className="font-display font-black text-4xl mb-2 tracking-tighter">eSKOOLIA</span>
-                <span className="text-xs uppercase tracking-[0.3em] font-light mb-8 opacity-80">Ultimate ERP</span>
-                <div className="w-full bg-white/20 h-px mb-8"></div>
-                <div className="grid grid-cols-2 gap-2 w-full opacity-60">
-                  <div className="h-2 bg-white rounded"></div>
-                  <div className="h-2 bg-white rounded"></div>
-                  <div className="h-2 bg-white rounded col-span-2"></div>
-                </div>
-              </div>
-              {/* Circles */}
-              <div className="absolute top-10 right-10 w-32 h-32 bg-orange-100 rounded-full flex items-center justify-center text-orange-600 font-bold text-center p-4 shadow-lg animate-float" style={{ animationDelay: '0s' }}>
-                Fully<br />Customisable
-              </div>
-              <div className="absolute bottom-20 left-10 w-28 h-28 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold text-center p-4 shadow-lg animate-float" style={{ animationDelay: '1s' }}>
-                100%<br />Secure
-              </div>
-              <div className="absolute top-1/2 right-0 w-24 h-24 bg-green-100 rounded-full flex items-center justify-center text-green-600 font-bold text-center p-4 shadow-lg animate-float" style={{ animationDelay: '1.5s' }}>
-                Fast<br />Support
-              </div>
-            </div>
+      {/* 4. 3 Core Solutions */}
+      <section className="py-24 lg:py-32 bg-white">
+        <div className="container px-6">
+          <div className="text-center mb-20">
+            <span className="text-orange-500 font-black uppercase tracking-[0.3em] text-sm mb-4 block">Local Advantage</span>
+            <h2 className="font-display text-4xl md:text-6xl font-black text-[#581C87] tracking-tight uppercase leading-tight max-w-5xl mx-auto">
+              Why Sria Infotech? <br />We Are Your <span className="text-orange-500">Local Technology Partner.</span>
+            </h2>
+            <p className="text-xl text-[#581C87]/60 font-medium leading-relaxed max-w-4xl mx-auto">
+              We've engineered three powerful modules that work in perfect harmony to transform your school into a high-performance institution.
+            </p>
           </div>
-        </div>
-      </section>
 
-      {/* Easy & Perfect Solution - Left Image Right Text */}
-      <section className="py-24 bg-white">
-        <div className="container">
-          <div className="text-center mb-16 max-w-3xl mx-auto">
-            <span className="text-orange-500 font-bold text-lg block mb-2">What Features Have eSkoolia PRO that Different From Others in Market?</span>
-            <h2 className="text-4xl font-extrabold text-[#483285]">Easy & Perfect Solution</h2>
-          </div>
-          <div className="grid gap-16 lg:grid-cols-2 items-center">
-            <div className="relative h-[600px] flex items-center justify-center">
-              {/* Phone Mockup */}
-              <div className="relative z-10 w-[300px] h-[600px] bg-[#483285] rounded-[3rem] p-4 shadow-2xl border-[8px] border-[#483285]">
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-[#483285] rounded-b-2xl z-20"></div>
-                <div className="w-full h-full bg-background rounded-[2.2rem] overflow-hidden relative">
-                  <img src={dashboardMockup} alt="Mobile App" className="w-full h-full object-cover opacity-80" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-8">
-                    <div className="text-white">
-                      <h4 className="font-bold text-xl mb-2">Mobile Ready</h4>
-                      <p className="text-lg opacity-80">Access your school data from anywhere, anytime.</p>
+          <div className="grid lg:grid-cols-3 gap-12 max-w-7xl mx-auto">
+            {[
+              {
+                title: "01 Digital Frontgate",
+                subtitle: "Admissions Growth Engine",
+                desc: "Your complete online presence & admissions engine. Modern, mobile-friendly, and ranks on Google.",
+                benefits: ["Professional SEO Website", "12 Months Social Media Content", "24/7 Enquiry Landing Page", "Microsoft 365 Education Setup"],
+                cta: "Explore Frontgate",
+                href: "/digital-frontgate"
+              },
+              {
+                title: "02 Eskoolia ERP",
+                subtitle: "The Operating system",
+                desc: "The complete school management operating system. Automate collection, payroll, and academics.",
+                benefits: ["Fee Management & Defaulter Reports", "One-Click Staff & Payroll", "Exam Marks & Automated Rankings", "Android & iOS Mobile Apps"],
+                cta: "Explore ERP",
+                href: "/eskoolia-erp"
+              },
+              {
+                title: "03 AI Assistant",
+                subtitle: "WhatsApp Helpdesk",
+                desc: "WhatsApp-powered 24/7 school helpdesk. Automated support for parents, teachers, and admin.",
+                benefits: ["Instant Fee Balance Checks", "Exam Schedule Distribution", "Circulars & Lesson Plan Help", "Auto Enquiry Responses"],
+                cta: "Explore AI Assistant",
+                href: "/ai-assistant"
+              }
+            ].map((sol, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="flex flex-col bg-white rounded-[48px] p-10 border border-gray-50 shadow-[0_20px_60px_rgba(0,0,0,0.03)] hover:shadow-[0_40px_100px_rgba(72,50,133,0.08)] transition-all group"
+              >
+                <span className="text-[#581C87]/60 font-black uppercase tracking-widest text-sm mb-2 text-wrap">{sol.title}</span>
+                <h3 className="text-3xl font-black text-[#581C87] mb-6 uppercase tracking-tight">{sol.subtitle}</h3>
+                <p className="text-[#581C87]/60 text-lg leading-relaxed mb-8 flex-1">{sol.desc}</p>
+                <div className="space-y-4 mb-10">
+                  {sol.benefits.map((b, idx) => (
+                    <div key={idx} className="flex gap-3 items-center">
+                      <CheckCircle2 className="w-5 h-5 text-orange-500" />
+                      <span className="font-bold text-[#581C87]">{b}</span>
                     </div>
-                  </div>
+                  ))}
                 </div>
-              </div>
-              {/* Decorative blob */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-gradient-to-tr from-blue-200 to-purple-200 rounded-full blur-3xl -z-10"></div>
-            </div>
+                <Button className="w-full rounded-full h-14 bg-[#581C87] hover:bg-orange-500 text-white font-black text-lg transition-all uppercase tracking-tight" asChild>
+                  <Link to={sol.href}>{sol.cta}</Link>
+                </Button>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 5. Outcome-Driven Benefits Content */}
+      <section className="py-24 lg:py-40 bg-[#581C87] text-white overflow-hidden relative">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.1),transparent)]"></div>
+        <div className="container px-6 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-20 items-center">
             <div>
-              <div className="grid gap-10">
-                {selfFeatures.map((item, i) => (
-                  <div key={i} className="flex gap-6 group">
-                    <div className="mt-1 flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-white shadow-md text-primary group-hover:scale-110 transition-transform">
-                      <CheckCircle2 className="h-7 w-7" />
-                    </div>
+              <span className="text-orange-500 font-black uppercase tracking-[0.3em] text-sm mb-6 block text-wrap">Is Your School Ready for 2026?</span>
+              <h2 className="font-display text-5xl md:text-7xl font-black mb-10 leading-[1.05] uppercase">Engineered for <br /><span className="text-orange-500">Total Excellence</span></h2>
+              <div className="space-y-10 mt-16">
+                {[
+                  { title: "Increase Admissions", desc: "Our Growth Engine is built to attract more enquiries and convert them into successful enrollments automatically." },
+                  { title: "Reduce Admin Workload", desc: "Automate manual tasks and eliminate paperwork, saving your staff hours of tedious work every single day." },
+                  { title: "24/7 Smart Communication", desc: "Parents get instant answers to their questions via WhatsApp, increasing institutional trust and satisfaction." }
+                ].map((benefit, i) => (
+                  <motion.div
+                    key={i}
+                    initial={{ opacity: 0, x: -30 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.1 }}
+                    className="flex gap-8 group"
+                  >
+                    <div className="shrink-0 w-2 h-24 bg-orange-500/30 group-hover:bg-orange-500 transition-colors rounded-full"></div>
                     <div>
-                      <h4 className="font-bold text-xl text-[#483285] mb-3">{item.title}</h4>
-                      <p className="text-muted-foreground leading-relaxed">{item.desc}</p>
+                      <h4 className="text-3xl font-black mb-3 uppercase tracking-tight text-white">{benefit.title}</h4>
+                      <p className="text-white/70 text-xl leading-relaxed font-medium">{benefit.desc}</p>
                     </div>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Front CMS - Right Image with Bubbles */}
-      <section className="py-24 bg-[#483285]/5 overflow-hidden">
-        <div className="container">
-          <div className="grid gap-16 lg:grid-cols-2 items-center">
-            <div className="order-1">
-              <span className="block font-bold text-orange-500 text-lg mb-2">Craft Stunning Websites Effortlessly</span>
-              <h2 className="mb-6 font-display text-5xl font-extrabold text-[#483285]">Front CMS</h2>
-              <div className="space-y-6 text-lg text-muted-foreground leading-relaxed mb-8">
-                <p>
-                  Experience the next level of ERP integration with eSkoolia's innovative Front CMS. Seamlessly merge your ERP functionalities with a powerful website builder to create a cohesive online presence.
-                </p>
-                <p>
-                  Our intuitive page builder empowers you to craft stunning websites effortlessly, enhancing your brand's visibility and engagement. With eSkoolia's Front CMS, unlock the full potential of your ERP system and elevate your online experience.
-                </p>
-              </div>
-              <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="rounded-full h-12 px-8 shadow-lg shadow-orange-200 bg-gradient-to-r from-orange-400 to-orange-600 hover:from-orange-500 hover:to-orange-700 text-white border-0" asChild>
-                  <a href="https://eskooly.pro/login" target="_blank" rel="noopener noreferrer">Try Live Demo <ArrowRight className="ml-2 h-4 w-4" /></a>
-                </Button>
-                <Button variant="outline" size="lg" className="rounded-full h-12 px-8 border-[#483285] text-[#483285] hover:bg-[#483285] hover:text-white transition-all" asChild>
-                  <Link to="/pricing">Buy Now</Link>
-                </Button>
-              </div>
-            </div>
-
-            <div className="order-2 relative flex items-center justify-center py-10">
-              {/* Laptop Mockup */}
-              <div className="relative z-10 w-full max-w-[600px]">
-                <div className="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] md:h-[294px] w-[301px] md:w-[513px]">
-                  <div className="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
-                    <img src={dashboardMockup} className="dark:hidden h-full w-full object-cover" alt="Website Mockup" />
-                    <img src={dashboardMockup} className="hidden dark:block h-full w-full object-cover" alt="Website Mockup" />
+            <div className="relative">
+              <div className="relative z-10 space-y-6 transform translate-x-10">
+                <motion.div
+                  animate={{ y: [0, -20, 0] }}
+                  transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+                  className="bg-white p-8 rounded-[32px] shadow-2xl w-full max-w-[400px] ml-auto"
+                >
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center text-white">
+                      <CheckCircle2 className="w-7 h-7" />
+                    </div>
+                    <div className="text-[#581C87]">
+                      <div className="font-black text-2xl">+40%</div>
+                      <div className="text-xs font-bold uppercase tracking-wider opacity-60">Admissions Growth</div>
+                    </div>
                   </div>
-                </div>
-                <div className="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] md:h-[21px] max-w-[351px] md:max-w-[597px]">
-                  <div className="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800"></div>
-                </div>
-              </div>
+                  <div className="h-2 w-full bg-gray-50 rounded-full overflow-hidden">
+                    <div className="h-full w-[80%] bg-orange-500"></div>
+                  </div>
+                </motion.div>
 
-              {/* Floating Bubbles */}
-              <div className="absolute top-0 right-10 w-28 h-28 bg-orange-100/90 backdrop-blur-sm rounded-full flex flex-col items-center justify-center text-center shadow-lg animate-float p-2 border border-orange-200" style={{ animationDelay: '0s' }}>
-                <span className="font-bold text-orange-600 text-lg leading-tight">Rich<br />Templates</span>
+                <motion.div
+                  animate={{ y: [0, 20, 0] }}
+                  transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+                  className="bg-white p-8 rounded-[32px] shadow-2xl w-full max-w-[400px] mr-auto"
+                >
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-12 h-12 bg-[#581C87] rounded-full flex items-center justify-center text-white">
+                      <Clock className="w-7 h-7" />
+                    </div>
+                    <div className="text-[#581C87]">
+                      <div className="font-black text-2xl">65%</div>
+                      <div className="text-xs font-bold uppercase tracking-wider opacity-60">Time Saved Permanently</div>
+                    </div>
+                  </div>
+                  <div className="h-2 w-full bg-gray-50 rounded-full overflow-hidden">
+                    <div className="h-full w-[65%] bg-[#581C87]"></div>
+                  </div>
+                </motion.div>
               </div>
-              <div className="absolute bottom-10 left-0 w-28 h-28 bg-blue-100/90 backdrop-blur-sm rounded-full flex flex-col items-center justify-center text-center shadow-lg animate-float p-2 border border-blue-200" style={{ animationDelay: '1.5s' }}>
-                <span className="font-bold text-blue-600 text-lg leading-tight">Easy<br />Editing</span>
-              </div>
-              <div className="absolute top-1/2 left-[-20px] w-24 h-24 bg-purple-100/90 backdrop-blur-sm rounded-full flex flex-col items-center justify-center text-center shadow-lg animate-float p-2 border border-purple-200" style={{ animationDelay: '2.5s' }}>
-                <span className="font-bold text-purple-600 text-lg leading-tight">Quick<br />Setup</span>
-              </div>
-              <div className="absolute top-[-20px] left-1/2 w-26 h-26 bg-green-100/90 backdrop-blur-sm rounded-full flex flex-col items-center justify-center text-center shadow-lg animate-float p-2 border border-green-200" style={{ animationDelay: '1s' }}>
-                <span className="font-bold text-green-600 text-lg leading-tight">Mobile<br />Friendly</span>
-              </div>
-              <div className="absolute bottom-1/2 right-[-20px] w-32 h-32 bg-indigo-100/90 backdrop-blur-sm rounded-full flex flex-col items-center justify-center text-center shadow-lg animate-float p-2 border border-indigo-200" style={{ animationDelay: '2s' }}>
-                <span className="font-bold text-indigo-600 text-lg leading-tight">ERP<br />Blend</span>
-              </div>
+              <div className="absolute inset-0 bg-white/5 rounded-full blur-[100px] -z-10"></div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Pricing - Arched Cards */}
-      <section className="py-24 bg-white" id="pricing">
-        <div className="container">
-          <div className="mx-auto mb-20 max-w-3xl text-center">
-            <span className="mb-3 block font-bold text-orange-500 uppercase tracking-widest text-xs">Choose a plan that's right for you</span>
-            <h2 className="mb-6 font-display text-4xl font-bold text-[#483285]">Simple Pricing Plans</h2>
-            <p className="text-xl text-muted-foreground">eSkoolia has plans, from standard to business, that scale with your needs. Subscribe to a plan that fits you best.</p>
+      <section className="py-28 bg-gradient-to-b from-white to-gray-50" id="pricing">
+        <div className="container mx-auto px-6">
+
+          {/* Section Header */}
+          <div className="text-center max-w-3xl mx-auto mb-20">
+            <span className="text-orange-500 font-bold uppercase tracking-[0.3em] text-sm">
+              System Audit
+            </span>
+            <h2 className="mt-4 text-4xl md:text-5xl font-extrabold text-[#581C87] leading-tight">
+              The Real Challenges <br className="hidden md:block" />
+              Facing Your School Today
+            </h2>
+            <p className="mt-6 text-lg text-[#581C87]/70">
+              Traditional systems slow down growth. Eskoolia modernizes your school.
+            </p>
           </div>
 
-          <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-3 items-end">
-            {/* Standard Card */}
-            <div className="relative group">
-              <div className="absolute inset-0 bg-red-500 rounded-2xl blur-xl opacity-5 group-hover:opacity-10 transition-opacity"></div>
-              <div className="relative bg-white border border-border rounded-b-2xl rounded-t-[40%] pt-20 pb-8 px-8 shadow-card hover:shadow-card-xl transition-all duration-300 flex flex-col items-center">
-                <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-32 h-32 rounded-full bg-gradient-to-br from-red-400 to-pink-600 border-4 border-white flex flex-col items-center justify-center text-white shadow-lg z-10">
-                  <span className="text-2xl font-bold">$67</span>
-                  <span className="text-xs opacity-90">Lifetime</span>
-                </div>
-                <h3 className="font-display text-2xl font-bold text-[#483285] mt-6 mb-6">Standard</h3>
-                <div className="w-12 h-1 bg-red-100 rounded-full mb-8"></div>
-                <ul className="space-y-4 w-full mb-8">
-                  {[
-                    "Online Pro Version",
-                    "1 License",
-                    "Lifetime Updates",
-                    "Front CMS",
-                    "Interface Customization",
-                    "1 year Technical Support"
-                  ].map((item, i) => (
-                    <li key={i} className="flex items-center justify-center text-lg text-muted-foreground">
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-                <Button className="w-full rounded-full bg-gradient-to-r from-red-400 to-pink-600 hover:from-red-500 hover:to-pink-700 border-0 shadow-lg shadow-red-200 dark:shadow-none text-white h-12" asChild>
-                  <Link to="/pricing">Buy Now <ArrowRight className="ml-2 h-4 w-4" /></Link>
-                </Button>
-              </div>
+          {/* Early Bird Card */}
+          <div className="max-w-5xl mx-auto bg-white rounded-3xl shadow-2xl border border-orange-500/20 p-10 md:p-14 mb-24 relative">
+
+            <div className="absolute top-6 right-6 bg-orange-500 text-white text-xs font-bold px-4 py-2 rounded-full uppercase">
+              Only 20 Slots Left
             </div>
 
-            {/* Premium Card - Center Highlighted */}
-            <div className="relative group -mt-8 sm:mt-0">
-              <div className="absolute inset-0 bg-cyan-500 rounded-2xl blur-xl opacity-10 group-hover:opacity-20 transition-opacity"></div>
-              <div className="relative bg-cyan-500 dark:bg-cyan-900 border border-cyan-400 rounded-b-2xl rounded-t-[40%] pt-24 pb-10 px-8 shadow-2xl hover:scale-105 transition-all duration-300 z-10 flex flex-col items-center">
-                <div className="absolute -top-20 left-1/2 -translate-x-1/2 w-40 h-40 rounded-full bg-white border-8 border-cyan-500/30 flex flex-col items-center justify-center text-cyan-600 shadow-xl z-10">
-                  <span className="text-4xl font-extrabold">$149</span>
-                  <span className="text-sm font-semibold">Lifetime</span>
-                </div>
-                <h3 className="font-display text-3xl font-bold text-white mt-8 mb-6">Premium</h3>
-                <div className="w-16 h-1 bg-white/30 rounded-full mb-10"></div>
-                <ul className="space-y-4 w-full mb-10">
-                  {[
-                    "Online Pro Version",
-                    "Android App",
-                    "IOS App",
-                    "1 License",
-                    "Front CMS",
-                    "Lifetime Updates",
-                    "Interface Customization",
-                    "1 year Technical Support"
-                  ].map((item, i) => (
-                    <li key={i} className="flex items-center justify-center text-white/90 font-medium">
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-                <Button className="w-full rounded-full bg-white text-cyan-600 hover:bg-cyan-50 border-0 shadow-xl h-14 text-lg font-bold" asChild>
-                  <Link to="/pricing">Buy Now <ArrowRight className="ml-2 h-5 w-5" /></Link>
-                </Button>
-              </div>
-            </div>
+            <div className="grid md:grid-cols-2 gap-12 items-center">
 
-            {/* Business Card */}
-            <div className="relative group">
-              <div className="absolute inset-0 bg-purple-500 rounded-2xl blur-xl opacity-5 group-hover:opacity-10 transition-opacity"></div>
-              <div className="relative bg-white border border-border rounded-b-2xl rounded-t-[40%] pt-20 pb-8 px-8 shadow-card hover:shadow-card-xl transition-all duration-300 flex flex-col items-center">
-                <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-32 h-32 rounded-full bg-gradient-to-br from-purple-500 to-indigo-600 border-4 border-white flex flex-col items-center justify-center text-white shadow-lg z-10">
-                  <span className="text-2xl font-bold">$999</span>
-                  <span className="text-xs opacity-90">Lifetime</span>
+              {/* Price */}
+              <div>
+                <p className="text-orange-500 font-bold uppercase tracking-widest text-sm">
+                  Early Bird Offer
+                </p>
+
+                <div className="mt-4 flex items-end gap-4">
+                  <h3 className="text-5xl font-black text-[#581C87]">
+                    ₹49,999
+                  </h3>
+                  <span className="text-[#581C87]/70 line-through text-xl">
+                    ₹67,500
+                  </span>
                 </div>
-                <h3 className="font-display text-2xl font-bold text-[#483285] mt-6 mb-6">Business</h3>
-                <div className="w-12 h-1 bg-purple-100 rounded-full mb-8"></div>
-                <ul className="space-y-4 w-full mb-8">
+
+                <p className="mt-3 text-sm text-[#581C87]/70">
+                  One-time setup fee. Includes 26% discount.
+                </p>
+
+                <Button
+                  size="lg"
+                  className="mt-8 bg-orange-500 hover:bg-[#581C87] text-white rounded-full px-10 h-14 font-bold shadow-lg"
+                  asChild
+                >
+                  <Link to="/contact">
+                    Claim Your Slot Now
+                  </Link>
+                </Button>
+              </div>
+
+              {/* Features */}
+              <div>
+                <p className="font-bold uppercase text-xs tracking-[0.2em] text-[#581C87]/70 mb-6">
+                  What You Get
+                </p>
+
+                <ul className="space-y-4">
                   {[
-                    "Online Pro Version",
-                    "Android App",
-                    "IOS App",
-                    "50 Licenses",
-                    "Full Customization",
-                    "5 Years Support"
-                  ].map((item, i) => (
-                    <li key={i} className="flex items-center justify-center text-lg text-muted-foreground">
+                    "Professional School Website + SEO",
+                    "12 Months Social Media Content",
+                    "Microsoft 365 Education Setup",
+                    "Eskoolia ERP (Android & iOS)",
+                    "WhatsApp AI Assistant",
+                    "In-School Setup & Staff Training"
+                  ].map((item, idx) => (
+                    <li key={idx} className="flex items-center gap-3 text-[#581C87] font-medium">
+                      <CheckCircle2 className="w-5 h-5 text-orange-500" />
                       {item}
                     </li>
                   ))}
                 </ul>
-                <Button className="w-full rounded-full bg-gradient-to-r from-purple-500 to-indigo-600 hover:from-purple-600 hover:to-indigo-700 border-0 shadow-lg shadow-purple-200 dark:shadow-none text-white h-12" asChild>
-                  <Link to="/pricing">Buy Now <ArrowRight className="ml-2 h-4 w-4" /></Link>
-                </Button>
               </div>
+
             </div>
           </div>
+
+          {/* Pricing Cards */}
+          <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+            {/* Standard */}
+            <div className="bg-white rounded-3xl border border-gray-50 p-10 text-center shadow-lg hover:shadow-xl transition">
+              <h3 className="text-2xl font-bold text-[#581C87]">Standard</h3>
+              <p className="mt-6 text-4xl font-extrabold text-[#581C87]">$67</p>
+              <p className="text-sm text-[#581C87]/60">Lifetime</p>
+
+              <ul className="mt-8 space-y-3 text-[#581C87]/70 font-medium">
+                <li>Online Pro Version</li>
+                <li>1 License</li>
+                <li>Lifetime Updates</li>
+                <li>Front CMS</li>
+                <li>1 Year Support</li>
+              </ul>
+
+              <Button className="mt-8 w-full rounded-full bg-[#581C87] text-white hover:bg-orange-500 h-12" asChild>
+                <Link to="/pricing">Buy Now</Link>
+              </Button>
+            </div>
+
+            {/* Premium (Highlighted) */}
+            <div className="bg-[#581C87] text-white rounded-3xl p-12 text-center shadow-2xl scale-105 relative">
+              <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-orange-500 text-white text-xs font-bold px-4 py-1 rounded-full uppercase">
+                Most Popular
+              </span>
+
+              <h3 className="text-3xl font-bold">Premium</h3>
+              <p className="mt-6 text-5xl font-extrabold">$149</p>
+              <p className="text-sm opacity-80">Lifetime</p>
+
+              <ul className="mt-10 space-y-4 opacity-90 font-medium">
+                <li>Android + iOS App</li>
+                <li>1 License</li>
+                <li>Lifetime Updates</li>
+                <li>Front CMS</li>
+                <li>1 Year Support</li>
+              </ul>
+
+              <Button className="mt-10 w-full rounded-full bg-white text-[#581C87] hover:bg-orange-500 hover:text-white h-14 font-bold" asChild>
+                <Link to="/pricing">Buy Now</Link>
+              </Button>
+            </div>
+
+            {/* Business */}
+            <div className="bg-white rounded-3xl border border-gray-50 p-10 text-center shadow-lg hover:shadow-xl transition">
+              <h3 className="text-2xl font-bold text-[#581C87]">Business</h3>
+              <p className="mt-6 text-4xl font-extrabold text-[#581C87]">$999</p>
+              <p className="text-sm text-[#581C87]/60">Lifetime</p>
+
+              <ul className="mt-8 space-y-3 text-[#581C87]/70 font-medium">
+                <li>Android + iOS App</li>
+                <li>50 Licenses</li>
+                <li>Full Customization</li>
+                <li>5 Years Support</li>
+              </ul>
+
+              <Button className="mt-8 w-full rounded-full bg-[#581C87] text-white hover:bg-orange-500 h-12" asChild>
+                <Link to="/pricing">Buy Now</Link>
+              </Button>
+            </div>      </div>
+
         </div>
       </section>
 
-      {/* Testimonials - Slider */}
-      <section className="py-24 bg-[#5727A3] relative overflow-hidden">
-        {/* Wave background svg */}
-        <div className="absolute top-0 left-0 w-full h-full opacity-10">
-          <svg viewBox="0 0 1440 320" className="w-full h-full object-cover text-white fill-current">
-            <path fillOpacity="1" d="M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,213.3C672,192,768,128,864,128C960,128,1056,192,1152,213.3C1248,235,1344,213,1392,202.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-          </svg>
-        </div>
-
-        <div className="container relative z-10 text-white">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <h4 className="font-bold text-yellow-400 text-xl mb-2">Testimonials</h4>
-              <h2 className="text-4xl lg:text-5xl font-extrabold mb-6 leading-tight">Over 15,000<br />happy clients</h2>
-              <p className="text-white/80 text-lg mb-8 leading-relaxed">
-                Everyday reviews from users around the world are an important driver of our team.
+      {/* 6. Testimonials - The Wall of Love */}
+      <section className="py-24 lg:py-40 bg-white overflow-hidden">
+        <div className="container px-6">
+          <div className="grid lg:grid-cols-2 gap-20 items-center">
+            <div className="lg:pr-12 text-center lg:text-left">
+              <span className="text-orange-500 font-black tracking-[0.3em] text-sm uppercase mb-6 block">Wall of Love</span>
+              <h2 className="font-display text-4xl md:text-6xl font-black text-[#581C87] mb-8 leading-[1.1] uppercase">Trusted by <br /><span className="text-orange-500">15,000+ Educators</span></h2>
+              <p className="text-xl text-[#581C87]/60 font-medium leading-relaxed max-w-xl mb-12 mx-auto lg:mx-0">
+                From small academies to large university networks, Eskoolia is the standard for modern institutional management across 90+ countries.
               </p>
-              <Button size="lg" className="rounded-full bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold px-8 h-12 uppercase" asChild>
-                <Link to="/pricing">Purchase Now <ArrowRight className="ml-2 h-4 w-4" /></Link>
-              </Button>
-
-              {/* Badges */}
-              <div className="mt-12 flex items-center gap-6">
-                <div className="w-16 h-16 rounded-full bg-black/40 flex items-center justify-center border border-white/20">
-                  <span className="text-xs font-bold text-center leading-tight">KIDS<br />CLUB</span>
+              <div className="flex justify-center lg:justify-start items-center gap-6">
+                <div className="flex -space-x-4">
+                  {[1, 2, 3, 4].map(i => (
+                    <div key={i} className="w-14 h-14 rounded-full border-4 border-white bg-gray-50 overflow-hidden shadow-sm">
+                      <img src={`https://i.pravatar.cc/150?u=school${i}`} alt="user" className="w-full h-full object-cover" />
+                    </div>
+                  ))}
                 </div>
-                <div className="w-16 h-16 rounded-full bg-blue-500/40 flex items-center justify-center border border-white/20">
-                  <BadgeCheck className="w-8 h-8" />
-                </div>
+                <div className="text-[#581C87] font-black uppercase tracking-wider text-sm">Join the Elite 1%</div>
               </div>
             </div>
 
-            <div className="w-full max-w-lg">
-              <Carousel
-                opts={{
-                  align: "start",
-                  loop: true,
-                }}
-                className="w-full"
-              >
+            <div className="relative">
+              <Carousel opts={{ align: "start", loop: true }} className="w-full">
                 <CarouselContent>
                   {testimonials.map((t, index) => (
                     <CarouselItem key={index}>
-                      <div className="p-1">
-                        <div className="bg-white p-8 rounded-2xl shadow-xl text-gray-800 min-h-[300px] flex flex-col justify-center">
-                          <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+                      <div className="p-2">
+                        <div className="bg-gray-50 p-10 rounded-[48px] border border-gray-50 shadow-sm min-h-[350px] flex flex-col justify-center relative overflow-hidden">
+                          <div className="absolute top-8 right-8 text-[#581C87]/10">
+                            <MessageSquare className="w-12 h-12" />
+                          </div>
+                          <div className="flex text-orange-500 mb-6">
+                            {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 fill-current" />)}
+                          </div>
+                          <p className="text-xl text-[#581C87] font-bold italic leading-relaxed mb-8 uppercase tracking-tight">
                             "{t.text}"
                           </p>
-                          <div className="flex text-yellow-500">
-                            {[...Array(t.rating)].map((_, i) => <Star key={i} className="w-5 h-5 fill-current" />)}
+                          <div className="flex items-center gap-3">
+                            <div className="w-1 h-8 bg-orange-500 rounded-full"></div>
+                            <div className="text-[#581C87] font-black uppercase tracking-widest text-xs">Verified Institution Partner</div>
                           </div>
                         </div>
                       </div>
                     </CarouselItem>
                   ))}
                 </CarouselContent>
-                <div className="flex justify-end gap-2 mt-4">
-                  <CarouselPrevious className="static translate-y-0 bg-white/10 hover:bg-white/20 border-white/30 text-white" />
-                  <CarouselNext className="static translate-y-0 bg-white/10 hover:bg-white/20 border-white/30 text-white" />
+                <div className="flex justify-start gap-4 mt-10">
+                  <CarouselPrevious className="static translate-y-0 h-14 w-14 bg-[#581C87] text-white hover:bg-orange-500 border-none shadow-lg" />
+                  <CarouselNext className="static translate-y-0 h-14 w-14 bg-[#581C87] text-white hover:bg-orange-500 border-none shadow-lg" />
                 </div>
               </Carousel>
             </div>
@@ -670,75 +707,120 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Stats / World Map */}
-      <section className="py-24 bg-white relative overflow-hidden">
-        <div className="container relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-            <div>
-              <span className="text-orange-500 font-bold mb-2 block">Our stats say more than any words</span>
-              <h2 className="text-4xl lg:text-5xl font-extrabold text-[#483285] mb-4">System Without Borders</h2>
-              <p className="text-muted-foreground text-lg">
-                eSkoolia are growing by 300% every year with a steady love from users around the world. We are also close to achieving 25 Thousand cumulative Users.
-              </p>
-            </div>
-            <div className="text-right">
-              <div className="flex items-center justify-end gap-2 text-yellow-500 mb-2">
-                {[1, 2, 3, 4, 5].map(i => <Star key={i} className="w-6 h-6 fill-current" />)}
-                <span className="text-foreground font-bold text-lg ml-2">4.9 / 5.0</span>
-              </div>
-              <div className="text-5xl lg:text-6xl font-extrabold text-green-500 mb-2">5,921+</div>
-              <div className="text-xl text-muted-foreground font-medium">Total User Reviews</div>
-            </div>
-          </div>
+      {/* 7. Final Strategic CTA */}
+      <section className="py-4 lg:py-8 bg-[#581C87] text-white text-center relative overflow-hidden">
 
-          {/* Simulated Map with Bubbles */}
-          <div className="relative h-[400px] lg:h-[600px] w-full bg-blue-50/50 dark:bg-blue-900/20 rounded-3xl border border-border/50">
-            {/* Simplified World Map Silhouette (CSS shapes or SVG path ideally, using opacity for now) */}
-            <div className="absolute inset-0 opacity-10 pointer-events-none">
-              <Map className="w-full h-full text-foreground" />
+        {/* Top Gradient Divider */}
+        <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
+
+        {/* Radial Glow */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(194,65,12,0.18),transparent_60%)]"></div>
+
+        <div className="container px-6 relative z-10 max-w-6xl mx-auto">
+
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+
+            {/* Main Heading */}
+            <h2 className="font-display text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-tight leading-[1.1] mb-8">
+              Secure Your Slot for
+              <br />
+              <span className="text-orange-500">
+                The 2026 Academic Year
+              </span>
+            </h2>
+
+            {/* Subtext */}
+            <p className="text-xl md:text-2xl text-white/70 max-w-3xl mx-auto mb-10 font-medium leading-relaxed">
+              Schools that modernize now attract the admissions their competitors lose.
+              Only <span className="text-orange-500 font-black">20 early bird slots</span> available.
+            </p>
+
+            {/* Value Pill */}
+            <div className="inline-block px-8 py-4 rounded-full bg-white/10 backdrop-blur-lg border border-white/20 mb-14 shadow-[0_0_60px_rgba(255,255,255,0.05)]">
+              <span className="text-lg md:text-xl font-black uppercase tracking-[0.2em] italic">
+                Complete Digital Transformation in One Package
+              </span>
             </div>
 
-            {stats.map((stat, i) => (
-              <div key={i} className={`absolute ${stat.position} ${stat.color} rounded-full flex flex-col items-center justify-center text-white shadow-lg animate-float`} style={{ width: '140px', height: '140px', animationDelay: `${i * 0.5}s` }}>
-                <span className="text-xs font-medium opacity-90">{stat.label}</span>
-                <span className="text-3xl font-bold">{stat.value}</span>
-              </div>
-            ))}
-          </div>
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row justify-center gap-6">
+
+              <Button
+                size="lg"
+                className="rounded-full h-16 md:h-18 px-12 bg-orange-500 hover:bg-white hover:text-[#581C87] text-white font-black text-xl shadow-[0_25px_60px_rgba(194,65,12,0.4)] transition-all hover:scale-105 active:scale-95 border-none"
+                asChild
+              >
+                <Link to="/contact">
+                  BOOK DEMO SESSION
+                </Link>
+              </Button>
+
+              <Button
+                size="lg"
+                variant="outline"
+                className="rounded-full h-16 md:h-18 px-12 border-2 border-white/40 bg-white/5 hover:bg-white hover:text-[#581C87] text-white font-black text-xl backdrop-blur-xl transition-all"
+                asChild
+              >
+                <a
+                  href="https://eskoolia.pro/register"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  DEPLOY FOR FREE
+                </a>
+              </Button>
+
+            </div>
+
+            {/* Premium Divider */}
+            <div className="w-24 h-px bg-gradient-to-r from-transparent via-white/40 to-transparent mx-auto my-16"></div>
+
+            {/* Trust Indicators */}
+            <div className="flex flex-wrap items-center justify-center gap-8 text-white/50 font-black uppercase tracking-[0.3em] text-xs md:text-sm">
+
+              <span className="hover:text-white transition">Secure Infrastructure</span>
+
+              <div className="w-1.5 h-1.5 rounded-full bg-white/30"></div>
+
+              <span className="hover:text-white transition">No Setup Fee</span>
+
+              <div className="w-1.5 h-1.5 rounded-full bg-white/30"></div>
+
+              <span className="hover:text-white transition">90+ Countries</span>
+
+            </div>
+
+          </motion.div>
+
         </div>
       </section>
 
-      {/* FAQ - Accordion */}
-      <section className="py-24 bg-[#483285]/5">
-        <div className="container">
-          <div className="grid lg:grid-cols-12 gap-12">
-            {/* Left Header */}
+      {/* Support / FAQ Deep Link */}
+      <section className="py-32 bg-white">
+        <div className="container px-8">
+          <div className="grid lg:grid-cols-12 gap-24 items-start">
             <div className="lg:col-span-4">
-              <div className="sticky top-24">
-                <div className="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center mb-6 animate-bounce">
-                  <HelpCircle className="w-10 h-10 text-yellow-600" />
-                </div>
-                <h2 className="text-3xl lg:text-4xl font-extrabold text-[#483285] mb-4">Frequently Asked<br />Questions</h2>
-                <a href="/faq" className="inline-flex items-center text-[#483285] font-bold hover:underline mt-2">
-                  More Questions <ArrowRight className="w-4 h-4 ml-2" />
-                </a>
+              <div className="sticky top-32">
+                <span className="text-orange-500 font-black uppercase tracking-[0.4em] text-xs mb-6 block">Direct Support</span>
+                <h2 className="font-display text-5xl font-black text-[#581C87] uppercase leading-tight mb-10">We Are Ready <br />To Assist.</h2>
+                <Button variant="outline" className="rounded-full h-14 px-10 border-2 border-[#581C87] text-[#581C87] hover:bg-[#581C87] hover:text-white font-black uppercase tracking-widest text-sm" asChild>
+                  <Link to="/faq">VIEW FULL KNOWLEDGE BASE <ArrowRight className="ml-3 w-5 h-5" /></Link>
+                </Button>
               </div>
             </div>
-
-            {/* Right List - Accordion */}
             <div className="lg:col-span-8">
-              <Accordion type="single" collapsible className="w-full space-y-4">
-                {faqs.map((faq, i) => (
-                  <AccordionItem key={i} value={`item-${i}`} className="border-b-0 bg-white rounded-xl shadow-sm px-6 py-2">
-                    <AccordionTrigger className="text-xl font-bold text-[#483285] hover:text-orange-500 hover:no-underline text-left">
-                      <div className="flex items-center gap-4">
-                        <div className="w-10 h-10 rounded-full bg-secondary shrink-0 flex items-center justify-center">
-                          <FileText className="w-5 h-5 text-gray-500" />
-                        </div>
-                        {faq.q}
-                      </div>
+              <Accordion type="single" collapsible className="w-full space-y-6">
+                {faqs.slice(0, 5).map((faq, i) => (
+                  <AccordionItem key={i} value={`faq-${i}`} className="border-none bg-white rounded-[32px] shadow-sm hover:shadow-md transition-all px-10 py-4">
+                    <AccordionTrigger className="text-2xl font-black text-[#581C87] hover:text-orange-500 hover:no-underline text-left uppercase tracking-tighter">
+                      {faq.q}
                     </AccordionTrigger>
-                    <AccordionContent className="text-lg text-muted-foreground pl-[72px] leading-relaxed">
+                    <AccordionContent className="text-xl text-[#581C87]/60 font-medium leading-relaxed pb-8 pt-4">
                       {faq.a}
                     </AccordionContent>
                   </AccordionItem>
@@ -749,118 +831,21 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Risk Free - Bottom */}
-      <section className="py-24 bg-[#5727A3] text-white text-center relative overflow-hidden">
-        <div className="container max-w-4xl relative z-10">
-          <div className="inline-flex items-center justify-center rounded-full bg-white/20 p-4 mb-8 backdrop-blur-sm">
-            <Shield className="h-12 w-12 text-white" />
+      {/* Trust Signatures */}
+      <section className="py-12 bg-white border-t border-gray-50">
+        <div className="container flex flex-col md:flex-row items-center justify-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all duration-700">
+          <div className="flex items-center gap-4">
+            <Shield className="w-8 h-8 text-[#581C87]" />
+            <span className="font-black uppercase tracking-[0.2em] text-xs text-[#581C87]">Bank-Grade Security</span>
           </div>
-          <h2 className="mb-6 font-display text-4xl font-extrabold tracking-tight">100% Risk Free</h2>
-          <p className="text-xl mb-10 opacity-90 leading-relaxed max-w-2xl mx-auto">
-            Don't worry! You are fully protected by our <span className="font-bold border-b border-white/40">100% No-Risk Money Back Guarantee</span>.
-          </p>
-        </div>
-        {/* Decorative blob for 100% badge simulation */}
-        <div className="absolute right-10 bottom-10 w-32 h-32 bg-purple-500 rounded-full flex items-center justify-center border-4 border-white/20 text-white font-bold text-2xl rotate-12 shadow-2xl opacity-80 lg:opacity-100">
-          100%
-        </div>
-      </section>
-
-      {/* Need Some Help Section */}
-      <section className="py-24 bg-white">
-        <div className="container">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            {/* Left Illustration Simulation */}
-            <div className="relative h-[500px] w-full flex items-center justify-center lg:order-1">
-              {/* Abstract shapes representing the illustration */}
-              <div className="relative w-full max-w-md aspect-square">
-                <div className="absolute inset-0 bg-blue-50 dark:bg-blue-900/10 rounded-full blur-3xl"></div>
-                {/* Person 1 (Woman) */}
-                <div className="absolute bottom-0 left-10 w-32 h-64 bg-indigo-500 rounded-t-full opacity-80 z-10"></div>
-                <div className="absolute bottom-32 left-8 w-20 h-20 bg-pink-300 rounded-full z-20"></div>
-
-                {/* Person 2 (Man Avatar) */}
-                <div className="absolute top-10 right-10 w-24 h-24 bg-purple-600 rounded-full border-4 border-white shadow-xl z-20 flex items-center justify-center text-white">
-                  <div className="w-16 h-16 bg-purple-400 rounded-full"></div>
-                </div>
-
-                {/* Connecting Lines */}
-                <svg className="absolute inset-0 w-full h-full z-0 pointer-events-none stroke-indigo-300 stroke-2 border-dashed">
-                  <path d="M100,300 Q200,100 350,150" fill="none" strokeDasharray="5,5" />
-                  <path d="M150,350 Q300,400 350,200" fill="none" strokeDasharray="5,5" />
-                </svg>
-
-                {/* Chat Bubbles */}
-                <div className="absolute top-20 left-20 bg-white p-4 rounded-xl shadow-lg border border-border animate-bounce delay-700">
-                  <div className="w-24 h-2 bg-gray-200 rounded mb-2"></div>
-                  <div className="w-16 h-2 bg-gray-200 rounded"></div>
-                </div>
-                <div className="absolute bottom-40 right-20 bg-primary text-primary-foreground p-4 rounded-xl shadow-lg animate-bounce">
-                  <div className="w-24 h-2 bg-white/50 rounded mb-2"></div>
-                  <div className="w-16 h-2 bg-white/50 rounded"></div>
-                </div>
-              </div>
-            </div>
-
-            <div className="lg:order-2">
-              <span className="text-orange-500 font-bold block mb-2 uppercase tracking-wide text-xs">Stop wasting time</span>
-              <h2 className="text-3xl lg:text-4xl font-extrabold text-[#483285] mb-4">Need Some Help?</h2>
-              <p className="text-base text-muted-foreground mb-8 leading-relaxed">
-                Whether you’re stuck or just want some tips on where to start, any problem, hit up our experts anytime.
-              </p>
-
-              <div className="space-y-4">
-                {/* Card 1 */}
-                <a href="https://wa.me/+923460204447" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-4 rounded-xl bg-white border border-border shadow-sm hover:shadow-md transition-all group">
-                  <div className="w-12 h-12 rounded-full bg-red-50 flex items-center justify-center shrink-0">
-                    <div className="w-9 h-9 rounded-full bg-red-100 flex items-center justify-center text-red-500">
-                      <HelpCircle className="w-5 h-5" />
-                    </div>
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-bold text-[#483285] group-hover:text-orange-500 transition-colors">Live Chat</h4>
-                    <span className="text-green-500 font-medium text-xs">Start a live chat Now</span>
-                  </div>
-                </a>
-
-                {/* Card 2 */}
-                <Link to="/docs" className="flex items-center gap-4 p-4 rounded-xl bg-white border border-border shadow-sm hover:shadow-md transition-all group">
-                  <div className="w-12 h-12 rounded-full bg-orange-50 flex items-center justify-center shrink-0">
-                    <div className="w-9 h-9 rounded-full bg-orange-100 flex items-center justify-center text-orange-500">
-                      <FileText className="w-5 h-5" />
-                    </div>
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-bold text-[#483285] group-hover:text-orange-500 transition-colors">Read Documentation</h4>
-                    <span className="text-green-500 font-medium text-xs">Complete documentation available</span>
-                  </div>
-                </Link>
-
-                {/* Card 3 */}
-                <a href="/faq" className="flex items-center gap-4 p-4 rounded-xl bg-white border border-border shadow-sm hover:shadow-md transition-all group">
-                  <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center shrink-0">
-                    <div className="w-9 h-9 rounded-full bg-blue-100 flex items-center justify-center text-blue-500">
-                      <HelpCircle className="w-5 h-5" />
-                    </div>
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-bold text-[#483285] group-hover:text-orange-500 transition-colors">Explore FAQs</h4>
-                    <span className="text-green-500 font-medium text-xs">Go to FAQs page</span>
-                  </div>
-                </a>
-              </div>
-            </div>
+          <div className="flex items-center gap-4">
+            <BadgeCheck className="w-8 h-8 text-[#581C87]" />
+            <span className="font-black uppercase tracking-[0.2em] text-xs text-[#581C87]">99.9% Uptime Commitment</span>
           </div>
-        </div>
-      </section>
-
-      {/* Final CTA */}
-      <section className="py-16 bg-[#483285] text-white text-center">
-        <div className="container px-4">
-          <h2 className="text-3xl font-black mb-6">Ready to transform your institution?</h2>
-          <Button size="lg" className="rounded-full h-12 px-8 bg-orange-500 hover:bg-orange-600 text-white font-bold" asChild>
-            <Link to="/pricing">GET STARTED NOW</Link>
-          </Button>
+          <div className="flex items-center gap-4">
+            <Map className="w-8 h-8 text-[#581C87]" />
+            <span className="font-black uppercase tracking-[0.2em] text-xs text-[#581C87]">Global Education Standard</span>
+          </div>
         </div>
       </section>
     </div>

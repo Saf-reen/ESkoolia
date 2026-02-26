@@ -30,17 +30,17 @@ const footerLinks = {
 };
 
 const paymentMethods = [
-  { name: "2checkout", color: "bg-green-600" },
-  { name: "PayPal", color: "bg-blue-600" },
-  { name: "VISA", color: "bg-blue-800" },
-  { name: "MasterCard", color: "bg-red-600" },
-  { name: "AMEX", color: "bg-blue-500" },
+  { name: "2checkout", color: "bg-orange-500" },
+  { name: "PayPal", color: "bg-orange-600" },
+  { name: "VISA", color: "bg-orange-900" },
+  { name: "MasterCard", color: "bg-[#581C87]" },
+  { name: "AMEX", color: "bg-[#581C87]/80" },
   { name: "Discover", color: "bg-orange-500" },
 ];
 
 export default function Footer() {
   return (
-    <footer className="relative bg-[#483285] text-white overflow-hidden pt-20 pb-8">
+    <footer className="relative bg-[#581C87] text-white overflow-hidden pt-20 pb-8">
       {/* Wave Top Decoration (SVG) matches the header/section style */}
       <div className="absolute top-0 left-0 w-full overflow-hidden leading-none rotate-180">
         <svg className="relative block w-[calc(100%+1.3px)] h-[50px] lg:h-[100px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -124,8 +124,14 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="mt-16 text-center text-white/40 text-sm flex flex-col sm:flex-row justify-between items-center border-t border-white/5 pt-6">
-          <div>Copyright © 2026. All Rights Reserved By <a href="https://eskooly.com" className="hover:text-white transition-colors">eSkoolia Inc.</a></div>
-          <div className="mt-2 sm:mt-0">Prices are listed without VAT</div>
+          <div className="flex flex-col items-center sm:items-start gap-1">
+            <span>Copyright © 2026. All Rights Reserved By <a href="https://eskoolia.com" className="hover:text-white transition-colors">eSkoolia Inc.</a></span>
+            <span className="text-xs opacity-50 uppercase tracking-widest font-black">By Sria Infotech Pvt Ltd</span>
+          </div>
+          <div className="mt-4 sm:mt-0 flex flex-col items-center sm:items-end gap-1">
+            <span className="font-bold text-white/60">Miyapur, Hyderabad | +91 970-131-4138</span>
+            <span className="text-xs">www.eskoolia.com | contact@eskooliaindian.com</span>
+          </div>
         </div>
       </div>
     </footer>

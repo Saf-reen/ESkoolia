@@ -80,10 +80,10 @@ const panelFeatures = [
 ];
 
 const colorPalette = [
-  { gradient: "from-blue-600 to-indigo-700", dot1: "bg-blue-400", dot2: "bg-indigo-300", iconText: "text-blue-600" },
-  { gradient: "from-purple-600 to-fuchsia-700", dot1: "bg-purple-400", dot2: "bg-pink-300", iconText: "text-purple-600" },
-  { gradient: "from-orange-500 to-red-600", dot1: "bg-orange-400", dot2: "bg-yellow-300", iconText: "text-orange-600" },
-  { gradient: "from-emerald-500 to-teal-700", dot1: "bg-emerald-400", dot2: "bg-blue-300", iconText: "text-emerald-600" },
+  { gradient: "from-[#581C87] to-[#581C87]/80", dot1: "bg-orange-500", dot2: "bg-orange-500", iconText: "text-[#581C87]" },
+  { gradient: "from-orange-500 to-orange-600", dot1: "bg-[#581C87]", dot2: "bg-[#581C87]", iconText: "text-orange-500" },
+  { gradient: "from-[#581C87] to-[#581C87]/80", dot1: "bg-orange-500", dot2: "bg-orange-500", iconText: "text-[#581C87]" },
+  { gradient: "from-orange-500 to-orange-600", dot1: "bg-[#581C87]", dot2: "bg-[#581C87]", iconText: "text-orange-500" },
 ];
 
 export default function FeaturesPage() {
@@ -92,11 +92,11 @@ export default function FeaturesPage() {
       <PageHeader title="Features" />
 
       {/* Hero Intro */}
-      <section className="py-12 lg:py-16 border-b border-slate-50">
+      <section className="py-12 lg:py-16 border-b border-gray-50 bg-white">
         <div className="w-full px-6 text-center">
           <span className="text-orange-500 font-bold tracking-widest uppercase text-xs mb-3 block">An Exhaustive list of Amazing Features</span>
-          <h2 className="text-4xl lg:text-5xl font-black text-[#483285] mb-4">The last software you will have to use!</h2>
-          <p className="text-slate-500 text-lg max-w-4xl mx-auto leading-relaxed font-medium">
+          <h2 className="font-display text-4xl lg:text-5xl font-black text-[#581C87] mb-4 uppercase tracking-tight">The last software you will have to use!</h2>
+          <p className="text-[#581C87]/70 text-lg max-w-4xl mx-auto leading-relaxed font-medium">
             Every Single Module You Want That Are Available, Curiosity Is Future Of New Discover. Explore All Our Single Modules That Will Blow Your Mind!
           </p>
         </div>
@@ -111,7 +111,7 @@ export default function FeaturesPage() {
               return (
                 <div
                   key={i}
-                  className={`group relative p-6 rounded-[32px] border transition-all duration-500 flex items-center gap-6 bg-white border-slate-100 hover:border-transparent hover:shadow-2xl hover:-translate-y-1 overflow-hidden`}
+                  className={`group relative p-6 rounded-[32px] border transition-all duration-500 flex items-center gap-6 bg-white border-gray-50 hover:border-transparent hover:shadow-2xl hover:-translate-y-1 overflow-hidden`}
                 >
                   {/* Active Hover Background Layer */}
                   <div className={`absolute inset-0 bg-gradient-to-br ${color.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10`}></div>
@@ -126,10 +126,10 @@ export default function FeaturesPage() {
                     <div className={`absolute -top-0.5 -right-0.5 w-2 h-2 ${color.dot1} rounded-full border-2 border-white shadow-sm z-10 group-hover:scale-0 transition-transform`}></div>
                     <div className={`absolute -bottom-0.5 -left-0.5 w-2 h-2 ${color.dot2} rounded-full border-2 border-white shadow-sm z-10 group-hover:scale-0 transition-transform`}></div>
 
-                    <div className={`h-20 w-20 rounded-full flex items-center justify-center bg-white border-[4px] border-slate-50 shadow-md relative overflow-hidden transition-all duration-500 group-hover:bg-white/10 group-hover:border-white/20 group-hover:backdrop-blur-md`}>
+                    <div className={`h-20 w-20 rounded-full flex items-center justify-center bg-white border-[4px] border-gray-50 shadow-md relative overflow-hidden transition-all duration-500 group-hover:bg-white/10 group-hover:border-white/20 group-hover:backdrop-blur-md`}>
                       <div className="absolute inset-0 border border-purple-500/5 rounded-full group-hover:opacity-0"></div>
 
-                      <div className={`p-3 rounded-full bg-slate-50 transition-all duration-500 group-hover:bg-transparent group-hover:scale-110 ${color.iconText} group-hover:text-white`}>
+                      <div className={`p-3 rounded-full bg-gray-50 transition-all duration-500 group-hover:bg-transparent group-hover:scale-110 ${color.iconText} group-hover:text-white`}>
                         <mod.icon className={`h-8 w-8`} />
                       </div>
                     </div>
@@ -137,10 +137,10 @@ export default function FeaturesPage() {
 
                   {/* Text Content */}
                   <div className="flex-1 space-y-1 z-10">
-                    <h3 className={`text-xl font-black font-display tracking-tight text-[#483285] transition-colors duration-500 group-hover:text-white`}>
+                    <h3 className={`text-xl font-black font-display tracking-tight text-[#581C87] transition-colors duration-500 group-hover:text-white`}>
                       {mod.title}
                     </h3>
-                    <p className={`text-[13px] leading-relaxed font-medium text-slate-500 transition-colors duration-500 group-hover:text-white/80`}>
+                    <p className={`text-[13px] leading-relaxed font-medium text-[#581C87]/70 transition-colors duration-500 group-hover:text-white/80`}>
                       {mod.desc}
                     </p>
                   </div>
@@ -152,25 +152,25 @@ export default function FeaturesPage() {
       </section>
 
       {/* Panel Features Detailed List */}
-      <section className="py-12 bg-slate-50 border-y border-slate-100">
+      <section className="py-12 bg-gray-50 border-y border-gray-50">
         <div className="w-full px-6">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-black text-[#483285] mb-3">Panel Specific Features</h2>
-            <p className="text-slate-500 text-sm font-medium">Tailored interfaces for every user in your institution</p>
+            <h2 className="font-display text-3xl font-black text-[#581C87] mb-3 uppercase tracking-tight">Panel Specific Features</h2>
+            <p className="text-[#581C87]/60 text-sm font-medium">Tailored interfaces for every user in your institution</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
             {panelFeatures.map((panel, idx) => (
-              <div key={idx} className="bg-white p-6 rounded-[24px] shadow-sm border border-slate-100 hover:shadow-lg transition-all">
-                <h3 className="text-2xl font-black text-[#483285] mb-6 pb-3 border-b border-slate-50 flex items-center gap-2">
+              <div key={idx} className="bg-white p-6 rounded-[24px] shadow-sm border border-gray-50 hover:shadow-lg transition-all">
+                <h3 className="text-2xl font-black text-[#581C87] mb-6 pb-3 border-b border-gray-50 flex items-center gap-2">
                   <div className="w-1.5 h-6 bg-orange-500 rounded-full"></div>
                   {panel.title}
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-2.5 gap-x-4">
                   {panel.features.map((f, i) => (
-                    <div key={i} className="flex items-center gap-2 text-slate-600 group">
-                      <div className="h-1 w-1 rounded-full bg-slate-300 group-hover:bg-orange-500 transition-colors"></div>
-                      <span className="text-lg font-bold group-hover:text-slate-900 transition-colors">{f}</span>
+                    <div key={i} className="flex items-center gap-2 text-[#581C87]/70 group">
+                      <div className="h-1 w-1 rounded-full bg-[#581C87]/20 group-hover:bg-orange-500 transition-colors"></div>
+                      <span className="text-lg font-bold group-hover:text-[#581C87] transition-colors">{f}</span>
                     </div>
                   ))}
                 </div>
@@ -181,11 +181,11 @@ export default function FeaturesPage() {
       </section>
 
       {/* Grid of 16 Additional Features */}
-      <section className="py-16 relative overflow-hidden">
+      <section className="py-16 relative overflow-hidden bg-white">
         <div className="w-full px-6 text-center mb-12">
           <span className="text-orange-500 font-bold tracking-widest uppercase text-xs mb-3 block">AMAZING FEATURES</span>
-          <h2 className="text-3xl lg:text-4xl font-black text-[#483285] mb-4">More Features Has eSkoolia PRO</h2>
-          <p className="text-slate-500 text-base max-w-4xl mx-auto leading-relaxed font-medium">
+          <h2 className="font-display text-3xl lg:text-4xl font-black text-[#581C87] mb-4 uppercase tracking-tight">More Features Has eSkoolia PRO</h2>
+          <p className="text-[#581C87]/70 text-base max-w-4xl mx-auto leading-relaxed font-medium">
             It's Vast! eSkoolia PRO Has More Additional Feature That Will Expect In A Complete Solution.
           </p>
         </div>
@@ -193,11 +193,11 @@ export default function FeaturesPage() {
         <div className="w-full px-6">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {additionalFeatures.map((feature, i) => (
-              <div key={i} className="flex items-center gap-3 bg-slate-50 p-4 rounded-xl shadow-sm border border-slate-50 hover:border-[#483285]/20 hover:shadow-md transition-all group">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#483285]/5 text-[#483285] group-hover:bg-[#483285] group-hover:text-white transition-all">
+              <div key={i} className="flex items-center gap-3 bg-gray-50/50 p-4 rounded-xl shadow-sm border border-gray-50 hover:border-[#581C87]/20 hover:shadow-md transition-all group">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#581C87]/5 text-[#581C87] group-hover:bg-[#581C87] group-hover:text-white transition-all">
                   <feature.icon className="h-5 w-5" />
                 </div>
-                <h4 className="font-bold text-slate-800 text-lg leading-tight">{feature.title}</h4>
+                <h4 className="font-bold text-[#581C87] text-lg leading-tight">{feature.title}</h4>
               </div>
             ))}
           </div>
@@ -205,15 +205,15 @@ export default function FeaturesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-[#483285] relative overflow-hidden text-center text-white">
+      <section className="py-16 bg-[#581C87] relative overflow-hidden text-center text-white">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.1),transparent)]"></div>
         <div className="w-full px-6 relative z-10">
-          <h2 className="text-3xl md:text-4xl font-black mb-6 max-w-4xl mx-auto leading-tight">Take control of your school today with Eskoolia.</h2>
+          <h2 className="font-display text-3xl md:text-4xl font-black mb-6 max-w-4xl mx-auto leading-tight uppercase tracking-tight">Take control of your school today with Eskoolia.</h2>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button size="lg" className="h-12 px-8 rounded-full bg-orange-500 hover:bg-orange-600 text-white font-black text-base border-none shadow-[0_10px_30px_rgba(249,115,22,0.3)]" asChild>
+            <Button size="lg" className="h-12 px-8 rounded-full bg-orange-500 hover:bg-orange-600 text-white font-black text-base border-none shadow-[0_10px_30px_rgba(194,65,12,0.3)]" asChild>
               <Link to="/register">JOIN NOW FREE</Link>
             </Button>
-            <Button size="lg" variant="outline" className="h-12 px-8 rounded-full border-2 border-white/30 bg-white/5 hover:bg-white hover:text-[#483285] text-white font-black text-base backdrop-blur-sm shadow-xl" asChild>
+            <Button size="lg" variant="outline" className="h-12 px-8 rounded-full border-2 border-white/30 bg-white/5 hover:bg-white hover:text-[#581C87] text-white font-black text-base backdrop-blur-sm shadow-xl" asChild>
               <Link to="/contact">CONTACT SALES</Link>
             </Button>
           </div>

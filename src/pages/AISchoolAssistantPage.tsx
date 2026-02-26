@@ -10,12 +10,12 @@ const AISchoolAssistantPage = () => {
             primaryCTA="Enable Smart Communication"
             secondaryCTA="Talk to Sales"
             features={[
-                { title: "WhatsApp Chatbot", desc: "Automated responses and instant query handling directly on WhatsApp." },
-                { title: "Digital School Assistant", desc: "24/7 Q&A for admissions, fee queries, and general school information." },
-                // { title: "Enquiry Automation", desc: "Capture leads and admission enquiries automatically via WhatsApp conversations." },
-                { title: "Support Agent System", desc: "WhatsApp-based support with human takeover options for complex queries." },
-                { title: "Conversation Logs", desc: "Track and monitor all parent engagements with detailed interaction analytics." },
-                { title: "AI-enhanced LLM", desc: "Advanced AI support powered by Large Language Models for school-specific context." }
+                { title: "For Parents: Instant Support", desc: "Instant fee balance checks, exam schedules, and event announcements directly on WhatsApp." },
+                { title: "For Teachers: Efficiency", desc: "Instant circular distribution and lesson plan assistance to reduce administrative friction." },
+                { title: "For Admin: Automation", desc: "Instant fee collection reports and automated student enquiry responses 24/7." },
+                { title: "WhatsApp-Powered Helpdesk", desc: "A modern, 24/7 mobile-friendly assistant that keeps your school connected." },
+                { title: "Smart Circulars", desc: "Broadcast important school announcements and event updates instantly to all stakeholders." },
+                { title: "Enquiry Conversions", desc: "Capture and respond to potential admission enquiries automatically, even after office hours." }
             ]}
             howItWorks={[
                 "WhatsApp API Connection",
