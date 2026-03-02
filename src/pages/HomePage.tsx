@@ -193,7 +193,7 @@ export default function HomePage() {
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
       <section
-        className="relative overflow-visible pb-32 pt-32 lg:pt-48 text-white bg-no-repeat bg-cover bg-center min-h-[90vh] flex flex-col items-center justify-center"
+        className="relative overflow-hidden pb-32 pt-32 lg:pt-48 text-white bg-no-repeat bg-cover bg-center min-h-[100vh] flex flex-col items-center justify-center cursor-purple-section"
         style={{ backgroundImage: 'url(/banner-bg.jpg)' }}
       >
         {/* Deep branding overlay */}
@@ -209,11 +209,11 @@ export default function HomePage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-orange-500 text-white font-black text-xs uppercase tracking-[0.2em] mb-8 shadow-xl animate-bounce">
+              <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-orange-500/10 text-orange-400 font-bold text-sm tracking-wide mb-8 border border-orange-500/20 shadow-lg backdrop-blur-md">
                 <MapPin className="w-3.5 h-3.5" />
                 Serving Tier 2 & Tier 3 Schools in Telangana
               </div>
-              <h1 className="mb-8 font-display text-5xl font-black leading-[1.1] tracking-tight sm:text-6xl lg:text-[80px] uppercase">
+              <h1 className="mb-6 font-display text-5xl font-extrabold leading-[1.1] tracking-tight sm:text-6xl lg:text-[80px]">
                 The Ultimate Dashboard for<br />
                 <span className="relative inline-block mt-2 min-h-[1.1em] text-orange-500">
                   <span className="relative z-10">{typedText}</span>
@@ -222,22 +222,22 @@ export default function HomePage() {
                 </span>
               </h1>
 
-              <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto mb-6 font-medium leading-relaxed">
+              <p className="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto mb-6 font-normal leading-relaxed">
                 Streamline admissions, automate operations, and scale your institution with the world's most intuitive school management suite.
               </p>
-              <p className="text-lg md:text-xl text-orange-500 font-bold mb-12 uppercase tracking-wide">
+              <p className="text-lg md:text-xl text-orange-400 font-medium mb-12">
                 Built specifically for Tier 2 & Tier 3 schools across Telangana.
               </p>
 
-              <div className="flex flex-col sm:flex-row justify-center gap-6 mb-20">
-                <Button size="lg" className="rounded-full h-16 px-12 text-lg shadow-[0_20px_50px_rgba(88,28,135,0.4)] hover:shadow-[0_25px_60px_rgba(88,28,135,0.5)] transition-all uppercase tracking-wider font-black bg-white text-[#581C87] hover:bg-orange-500 hover:text-white border-none transform hover:-translate-y-1" asChild>
+              <div className="flex flex-col sm:flex-row justify-center gap-6 mb-20 items-center">
+                <Button size="lg" className="rounded-full h-14 px-10 text-lg shadow-[0_20px_40px_rgba(249,115,22,0.3)] transition-all font-bold bg-orange-500 text-white hover:bg-orange-400 border-none transform hover:-translate-y-1" asChild>
                   <a href="https://eskooly.pro/login" target="_blank" rel="noopener noreferrer">Try Live Demo Free</a>
                 </Button>
                 <div className="flex items-center group cursor-pointer justify-center">
-                  <div className="flex items-center justify-center w-14 h-14 rounded-full border-2 border-white/30 group-hover:border-white group-hover:bg-white/10 transition-all mr-4 bg-white/5 backdrop-blur-md">
+                  <div className="flex items-center justify-center w-14 h-14 rounded-full border border-white/20 group-hover:border-white/50 group-hover:bg-white/10 transition-all mr-4 bg-white/5 backdrop-blur-md">
                     <Play className="w-5 h-5 fill-white text-white ml-1" />
                   </div>
-                  <span className="text-xl font-bold tracking-tight uppercase text-white">Watch the Vision</span>
+                  <span className="text-xl font-semibold tracking-tight text-white/90 group-hover:text-white transition-colors">Watch the Vision</span>
                 </div>
               </div>
             </motion.div>
@@ -275,25 +275,25 @@ export default function HomePage() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="bg-white rounded-[40px] shadow-[0_30px_70px_rgba(88,28,135,0.1)] p-8 md:p-12 flex flex-col md:flex-row justify-around items-center gap-10 border border-gray-50 max-w-6xl mx-auto"
+            className="bg-white/90 backdrop-blur-xl rounded-[32px] shadow-[0_20px_60px_rgba(88,28,135,0.05)] p-8 md:p-10 flex flex-col md:flex-row justify-around items-center gap-10 border border-purple-100 max-w-6xl mx-auto"
           >
-            <div className="flex flex-col items-center gap-4 text-center group">
-              <div className="text-5xl font-black text-[#581C87] mb-1">15k+</div>
-              <div className="text-[#581C87]/40 text-sm font-bold uppercase tracking-[0.2em]">Global Users</div>
+            <div className="flex flex-col items-center gap-2 text-center group">
+              <div className="text-5xl font-extrabold text-[#581C87] mb-1 tracking-tight">15k+</div>
+              <div className="text-[#581C87]/60 text-sm font-medium tracking-wide">Global Users</div>
             </div>
 
-            <div className="w-px h-12 bg-gray-50 hidden md:block"></div>
+            <div className="w-px h-12 bg-gray-100 hidden md:block"></div>
 
-            <div className="flex flex-col items-center gap-4 text-center group">
-              <div className="text-5xl font-black text-[#581C87] mb-1">90+</div>
-              <div className="text-[#581C87]/40 text-sm font-bold uppercase tracking-[0.2em]">Countries</div>
+            <div className="flex flex-col items-center gap-2 text-center group">
+              <div className="text-5xl font-extrabold text-[#581C87] mb-1 tracking-tight">90+</div>
+              <div className="text-[#581C87]/60 text-sm font-medium tracking-wide">Countries</div>
             </div>
 
-            <div className="w-px h-12 bg-gray-50 hidden md:block"></div>
+            <div className="w-px h-12 bg-gray-100 hidden md:block"></div>
 
-            <div className="flex flex-col items-center gap-4 text-center group">
-              <div className="text-5xl font-black text-[#581C87] mb-1">95%</div>
-              <div className="text-[#581C87]/40 text-sm font-bold uppercase tracking-[0.2em]">Satisfaction Rate</div>
+            <div className="flex flex-col items-center gap-2 text-center group">
+              <div className="text-5xl font-extrabold text-[#581C87] mb-1 tracking-tight">95%</div>
+              <div className="text-[#581C87]/60 text-sm font-medium tracking-wide">Satisfaction Rate</div>
             </div>
           </motion.div>
         </div>
@@ -305,24 +305,38 @@ export default function HomePage() {
 
 
       {/* Problems Section */}
-      <section className="py-24 lg:py-32 bg-white relative overflow-hidden">
+      <section className="py-24 lg:py-32 bg-gradient-to-br from-white via-purple-50 to-orange-50 relative overflow-hidden">
+        {/* Subtle background glows */}
+        <div className="absolute -top-40 -right-40 w-96 h-96 bg-orange-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+        <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-[#581C87]/10 rounded-full blur-[100px] pointer-events-none"></div>
+
         <div className="container px-6 relative z-10">
-          <div className="max-w-4xl mx-auto text-center mb-20">
-            <span className="text-orange-500 font-black uppercase tracking-[0.3em] text-sm mb-4 block">Why Sria Infotech? We Are Your Local Technology Partner.</span>
-            <h2 className="font-display text-4xl md:text-6xl font-black text-[#581C87] mb-8 leading-[1.1] uppercase">Traditional School Management is <span className="text-orange-500">Broken</span></h2>
-            <p className="text-xl text-[#581C87]/70 font-bold leading-relaxed mb-6">
-              "Unlike national ERP vendors, we are physically based in Telangana. We visit your school, train your staff in person, and provide real local support when you need it."
-            </p>
-            <div className="flex flex-wrap justify-center gap-4 mb-12">
+          <div className="max-w-4xl mx-auto text-center mb-20 relative">
+            <span className="text-orange-500 font-black uppercase tracking-[0.2em] text-sm mb-4 block">Why Sria Infotech? We Are Your Local Technology Partner.</span>
+            <h2 className="font-display text-5xl md:text-7xl font-black text-[#581C87] mb-8 leading-[1.05] uppercase tracking-tight">
+              Traditional School Management is <br className="hidden md:block" /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-purple-700">Broken</span>
+            </h2>
+
+            <div className="relative max-w-3xl mx-auto mb-12">
+              <div className="absolute -left-1 md:-left-4 top-0 bottom-0 w-1.5 bg-gradient-to-b from-orange-500 to-purple-700 rounded-full shadow-[0_0_15px_rgba(249,115,22,0.5)]"></div>
+              <div className="bg-white/70 backdrop-blur-xl rounded-2xl shadow-xl border border-white p-6 md:p-8 ml-3 md:ml-0 text-left md:text-center">
+                <p className="text-xl md:text-2xl text-[#581C87]/80 font-bold leading-relaxed italic">
+                  "Unlike national ERP vendors, we are physically based in Telangana. We visit your school, train your staff in person, and provide real local support when you need it."
+                </p>
+              </div>
+            </div>
+
+            <div className="flex flex-wrap justify-center gap-4">
               {["Low online visibility", "Declining admissions", "Manual fee follow-ups", "Administrative overload", "Communication gaps with parents"].map((item, idx) => (
-                <div key={idx} className="px-6 py-3 bg-white text-orange-500 rounded-full font-bold text-sm border border-gray-50 uppercase tracking-tighter">
+                <div key={idx} className="px-6 py-3.5 bg-white text-orange-500 rounded-full font-black text-sm shadow-md hover:shadow-xl hover:-translate-y-1 hover:border-orange-500/30 border border-transparent transition-all duration-300 uppercase tracking-tight flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-orange-500"></span>
                   {item}
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {[
               {
                 title: "Low Admissions",
@@ -342,40 +356,41 @@ export default function HomePage() {
             ].map((item, i) => (
               <motion.div
                 key={i}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="bg-white p-10 rounded-[32px] border border-gray-50 shadow-sm hover:shadow-xl transition-all group"
+                transition={{ delay: i * 0.15, duration: 0.6 }}
+                className={`flex flex-col items-start bg-gradient-to-b from-white to-purple-50/50 p-10 rounded-[32px] border border-white shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group border-l-4 border-l-orange-500 relative overflow-hidden ${i === 1 ? 'md:translate-y-8' : ''}`}
               >
-                <div className="w-16 h-16 rounded-2xl bg-[#581C87] text-white flex items-center justify-center mb-8 border border-gray-50 group-hover:bg-orange-500 transition-all">
-                  <item.icon className="w-8 h-8" />
+                <div className="w-20 h-20 rounded-2xl bg-[#581C87] text-white flex items-center justify-center mb-8 border border-white/20 shadow-md group-hover:bg-gradient-to-br group-hover:from-orange-500 group-hover:to-orange-600 group-hover:shadow-[0_0_40px_rgba(249,115,22,0.4)] transition-all duration-500 transform group-hover:scale-110">
+                  <item.icon className="w-10 h-10" />
                 </div>
                 <h3 className="text-2xl font-black text-[#581C87] mb-4 uppercase tracking-tight">{item.title}</h3>
-                <p className="text-[#581C87]/60 text-lg leading-relaxed font-medium">{item.desc}</p>
+                <p className="text-[#581C87]/70 text-lg leading-relaxed font-medium">{item.desc}</p>
               </motion.div>
             ))}
           </div>
         </div>
-
-        {/* Background texture */}
-        <div className="absolute inset-0 opacity-[0.4] bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] pointer-events-none"></div>
       </section>
 
       {/* 4. 3 Core Solutions */}
-      <section className="py-24 lg:py-32 bg-white">
-        <div className="container px-6">
-          <div className="text-center mb-20">
-            <span className="text-orange-500 font-black uppercase tracking-[0.3em] text-sm mb-4 block">Local Advantage</span>
-            <h2 className="font-display text-4xl md:text-6xl font-black text-[#581C87] tracking-tight uppercase leading-tight max-w-5xl mx-auto">
-              Why Sria Infotech? <br />We Are Your <span className="text-orange-500">Local Technology Partner.</span>
+      <section className="py-24 lg:py-32 bg-gradient-to-b from-white to-purple-50 relative overflow-hidden group/section">
+        {/* Soft center glow */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-purple-600/5 rounded-full blur-[120px] pointer-events-none transition-all duration-1000 group-hover/section:bg-purple-600/10 hover:scale-110 transform"></div>
+
+        <div className="container px-6 relative z-10">
+          <div className="text-center mb-24">
+            <span className="text-orange-500 font-black uppercase tracking-[0.2em] text-sm mb-4 block">Local Advantage</span>
+            <h2 className="font-display text-4xl md:text-6xl font-black text-[#581C87] mb-6 leading-[1.1] uppercase max-w-4xl mx-auto tracking-tight">
+              Why Sria Infotech? <br className="hidden md:block" />We Are Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-purple-700">Local Technology Partner.</span>
             </h2>
-            <p className="text-xl text-[#581C87]/60 font-medium leading-relaxed max-w-4xl mx-auto">
+            <div className="w-24 h-1.5 bg-gradient-to-r from-orange-500 to-purple-700 mx-auto rounded-full mb-8 opacity-80"></div>
+            <p className="text-xl text-[#581C87]/70 font-medium leading-relaxed max-w-3xl mx-auto">
               We've engineered three powerful modules that work in perfect harmony to transform your school into a high-performance institution.
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-12 max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-3 gap-10 max-w-7xl mx-auto group/cards">
             {[
               {
                 title: "01 Digital Frontgate",
@@ -410,40 +425,57 @@ export default function HomePage() {
             ].map((sol, i) => (
               <motion.div
                 key={i}
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
+                initial={{ opacity: 0, scale: 0.95, y: 30 }}
+                whileInView={{ opacity: 1, scale: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="flex flex-col bg-white rounded-[48px] p-10 border border-gray-50 shadow-[0_20px_60px_rgba(0,0,0,0.03)] hover:shadow-[0_40px_100px_rgba(72,50,133,0.08)] transition-all group"
+                transition={{ delay: i * 0.15, duration: 0.6 }}
+                className="group flex flex-col bg-white rounded-[40px] border border-purple-100 shadow-xl hover:shadow-[0_40px_80px_rgba(88,28,135,0.12)] hover:-translate-y-2 transition-all duration-500 relative overflow-hidden hover:opacity-100 opacity-100 lg:group-hover/cards:opacity-70"
               >
-                <span className="text-[#581C87]/60 font-black uppercase tracking-widest text-sm mb-2 text-wrap">{sol.title}</span>
-                <h3 className="text-3xl font-black text-[#581C87] mb-6 uppercase tracking-tight">{sol.subtitle}</h3>
-                <p className="text-[#581C87]/60 text-lg leading-relaxed mb-8 flex-1">{sol.desc}</p>
-                <div className="space-y-4 mb-10">
-                  {sol.benefits.map((b, idx) => (
-                    <div key={idx} className="flex gap-3 items-center">
-                      <CheckCircle2 className="w-5 h-5 text-orange-500" />
-                      <span className="font-bold text-[#581C87]">{b}</span>
-                    </div>
-                  ))}
+                {/* Top Gradient Strip */}
+                <div className="h-2 w-full bg-gradient-to-r from-purple-700 to-orange-500"></div>
+
+                {/* Large faint number */}
+                <div className="absolute top-8 right-6 text-8xl md:text-9xl font-black text-[#581C87] opacity-[0.03] pointer-events-none select-none transition-all duration-500 group-hover:scale-110 group-hover:text-orange-500 group-hover:opacity-[0.05]">
+                  0{i + 1}
                 </div>
-                <Button className="w-full rounded-full h-14 bg-[#581C87] hover:bg-orange-500 text-white font-black text-lg transition-all uppercase tracking-tight" asChild>
-                  <Link to={sol.href}>{sol.cta}</Link>
-                </Button>
+
+                <div className="p-10 flex flex-col flex-1 relative z-10">
+                  <span className="text-purple-700 font-black uppercase tracking-widest text-xs md:text-sm mb-2">{sol.title.substring(3)}</span>
+                  <h3 className="text-3xl font-black text-[#581C87] mb-4 uppercase tracking-tight">{sol.subtitle}</h3>
+                  <div className="w-12 h-1 bg-purple-100 mb-8 rounded-full group-hover:bg-orange-500 group-hover:w-20 transition-all duration-500"></div>
+
+                  <p className="text-[#581C87]/70 text-lg leading-relaxed mb-10 min-h-[80px]">{sol.desc}</p>
+
+                  <div className="space-y-3 mb-12 flex-1 relative">
+                    {sol.benefits.map((b, idx) => (
+                      <div key={idx} className="flex gap-4 items-center bg-purple-50 rounded-2xl p-4 group-hover:bg-orange-50 transition-colors duration-300 border border-transparent group-hover:border-orange-100">
+                        <CheckCircle2 className="w-6 h-6 text-orange-500 shrink-0 transform group-hover:scale-110 transition-transform duration-300" />
+                        <span className="font-bold text-[#581C87] text-sm md:text-base leading-tight">{b}</span>
+                      </div>
+                    ))}
+                  </div>
+
+                  <Button className="w-full rounded-full h-14 bg-gradient-to-r from-[#581C87] to-purple-700 hover:from-orange-500 hover:to-orange-600 text-white font-black text-lg shadow-lg hover:shadow-[0_15px_40px_rgba(249,115,22,0.4)] transition-all duration-500 uppercase tracking-tight transform group-hover:scale-[1.03] border-none" asChild>
+                    <Link to={sol.href}>{sol.cta}</Link>
+                  </Button>
+                </div>
               </motion.div>
             ))}
           </div>
         </div>
+
+        {/* Soft Divider */}
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-px bg-gradient-to-r from-transparent via-purple-200 to-transparent opacity-50"></div>
       </section>
 
       {/* 5. Outcome-Driven Benefits Content */}
-      <section className="py-24 lg:py-40 bg-[#581C87] text-white overflow-hidden relative">
+      <section className="py-24 lg:py-40 bg-[#581C87] text-white overflow-hidden relative cursor-purple-section">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.1),transparent)]"></div>
         <div className="container px-6 relative z-10">
           <div className="grid lg:grid-cols-2 gap-20 items-center">
             <div>
-              <span className="text-orange-500 font-black uppercase tracking-[0.3em] text-sm mb-6 block text-wrap">Is Your School Ready for 2026?</span>
-              <h2 className="font-display text-5xl md:text-7xl font-black mb-10 leading-[1.05] uppercase">Engineered for <br /><span className="text-orange-500">Total Excellence</span></h2>
+              <span className="text-orange-400 font-bold tracking-[0.2em] text-sm mb-4 block text-wrap uppercase">Is Your School Ready for 2026?</span>
+              <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold mb-8 leading-[1.1] tracking-tight">Engineered for <br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-200">Total Excellence</span></h2>
               <div className="space-y-10 mt-16">
                 {[
                   { title: "Increase Admissions", desc: "Our Growth Engine is built to attract more enquiries and convert them into successful enrollments automatically." },
@@ -460,8 +492,8 @@ export default function HomePage() {
                   >
                     <div className="shrink-0 w-2 h-24 bg-orange-500/30 group-hover:bg-orange-500 transition-colors rounded-full"></div>
                     <div>
-                      <h4 className="text-3xl font-black mb-3 uppercase tracking-tight text-white">{benefit.title}</h4>
-                      <p className="text-white/70 text-xl leading-relaxed font-medium">{benefit.desc}</p>
+                      <h4 className="text-2xl font-bold mb-2 tracking-tight text-white">{benefit.title}</h4>
+                      <p className="text-white/80 text-lg leading-relaxed">{benefit.desc}</p>
                     </div>
                   </motion.div>
                 ))}
@@ -476,15 +508,15 @@ export default function HomePage() {
                   className="bg-white p-8 rounded-[32px] shadow-2xl w-full max-w-[400px] ml-auto"
                 >
                   <div className="flex items-center gap-4 mb-6">
-                    <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center text-white">
-                      <CheckCircle2 className="w-7 h-7" />
+                    <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center text-white shadow-lg">
+                      <CheckCircle2 className="w-6 h-6" />
                     </div>
                     <div className="text-[#581C87]">
-                      <div className="font-black text-2xl">+40%</div>
-                      <div className="text-xs font-bold uppercase tracking-wider opacity-60">Admissions Growth</div>
+                      <div className="font-extrabold text-2xl tracking-tight">+40%</div>
+                      <div className="text-xs font-semibold uppercase tracking-wider opacity-70">Admissions Growth</div>
                     </div>
                   </div>
-                  <div className="h-2 w-full bg-gray-50 rounded-full overflow-hidden">
+                  <div className="h-1.5 w-full bg-gray-100 rounded-full overflow-hidden">
                     <div className="h-full w-[80%] bg-orange-500"></div>
                   </div>
                 </motion.div>
@@ -495,15 +527,15 @@ export default function HomePage() {
                   className="bg-white p-8 rounded-[32px] shadow-2xl w-full max-w-[400px] mr-auto"
                 >
                   <div className="flex items-center gap-4 mb-6">
-                    <div className="w-12 h-12 bg-[#581C87] rounded-full flex items-center justify-center text-white">
-                      <Clock className="w-7 h-7" />
+                    <div className="w-12 h-12 bg-[#581C87] rounded-full flex items-center justify-center text-white shadow-lg">
+                      <Clock className="w-6 h-6" />
                     </div>
                     <div className="text-[#581C87]">
-                      <div className="font-black text-2xl">65%</div>
-                      <div className="text-xs font-bold uppercase tracking-wider opacity-60">Time Saved Permanently</div>
+                      <div className="font-extrabold text-2xl tracking-tight">65%</div>
+                      <div className="text-xs font-semibold uppercase tracking-wider opacity-70">Time Saved Permanently</div>
                     </div>
                   </div>
-                  <div className="h-2 w-full bg-gray-50 rounded-full overflow-hidden">
+                  <div className="h-1.5 w-full bg-gray-100 rounded-full overflow-hidden">
                     <div className="h-full w-[65%] bg-[#581C87]"></div>
                   </div>
                 </motion.div>
@@ -520,22 +552,22 @@ export default function HomePage() {
 
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-20">
-            <span className="text-orange-500 font-bold uppercase tracking-[0.3em] text-sm">
+            <span className="text-orange-500 font-bold uppercase tracking-[0.2em] text-sm mb-4 block text-wrap">
               System Audit
             </span>
-            <h2 className="mt-4 text-4xl md:text-5xl font-extrabold text-[#581C87] leading-tight">
+            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#581C87] mb-8 leading-[1.1] tracking-tight">
               The Real Challenges <br className="hidden md:block" />
               Facing Your School Today
             </h2>
-            <p className="mt-6 text-lg text-[#581C87]/70">
-              Traditional systems slow down growth. Eskoolia modernizes your school.
+            <p className="text-lg md:text-xl text-[#581C87]/70 font-medium leading-relaxed max-w-2xl mx-auto mb-12">
+              Traditional systems slow down growth. Eskoolia modernizes your school from the ground up.
             </p>
           </div>
 
           {/* Early Bird Card */}
-          <div className="max-w-5xl mx-auto bg-white rounded-3xl shadow-2xl border border-orange-500/20 p-10 md:p-14 mb-24 relative">
+          <div className="max-w-5xl mx-auto bg-white rounded-[32px] shadow-[0_20px_60px_rgba(88,28,135,0.06)] border border-purple-100 p-10 md:p-14 mb-24 relative hover:shadow-[0_30px_80px_rgba(88,28,135,0.1)] transition-all duration-500">
 
-            <div className="absolute top-6 right-6 bg-orange-500 text-white text-xs font-bold px-4 py-2 rounded-full uppercase">
+            <div className="absolute top-6 right-6 bg-orange-500 text-white text-xs font-bold px-4 py-2 rounded-full uppercase tracking-wider">
               Only 20 Slots Left
             </div>
 
@@ -548,7 +580,7 @@ export default function HomePage() {
                 </p>
 
                 <div className="mt-4 flex items-end gap-4">
-                  <h3 className="text-5xl font-black text-[#581C87]">
+                  <h3 className="text-5xl font-extrabold text-[#581C87] tracking-tight">
                     ₹49,999
                   </h3>
                   <span className="text-[#581C87]/70 line-through text-xl">
@@ -668,9 +700,9 @@ export default function HomePage() {
         <div className="container px-6">
           <div className="grid lg:grid-cols-2 gap-20 items-center">
             <div className="lg:pr-12 text-center lg:text-left">
-              <span className="text-orange-500 font-black tracking-[0.3em] text-sm uppercase mb-6 block">Wall of Love</span>
-              <h2 className="font-display text-4xl md:text-6xl font-black text-[#581C87] mb-8 leading-[1.1] uppercase">Trusted by <br /><span className="text-orange-500">15,000+ Educators</span></h2>
-              <p className="text-xl text-[#581C87]/60 font-medium leading-relaxed max-w-xl mb-12 mx-auto lg:mx-0">
+              <span className="text-orange-500 font-bold uppercase tracking-[0.2em] text-sm mb-4 block">Wall of Love</span>
+              <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#581C87] mb-8 leading-[1.1] tracking-tight">Trusted by <br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-purple-600">15,000+ Educators</span></h2>
+              <p className="text-lg md:text-xl text-[#581C87]/70 font-medium leading-relaxed max-w-xl mb-12 mx-auto lg:mx-0">
                 From small academies to large university networks, Eskoolia is the standard for modern institutional management across 90+ countries.
               </p>
               <div className="flex justify-center lg:justify-start items-center gap-6">
@@ -698,7 +730,7 @@ export default function HomePage() {
                           <div className="flex text-orange-500 mb-6">
                             {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 fill-current" />)}
                           </div>
-                          <p className="text-xl text-[#581C87] font-bold italic leading-relaxed mb-8 uppercase tracking-tight">
+                          <p className="text-xl text-[#581C87] font-semibold italic leading-relaxed mb-8">
                             "{t.text}"
                           </p>
                           <div className="flex items-center gap-3">
@@ -721,125 +753,159 @@ export default function HomePage() {
       </section>
 
       {/* 7. Final Strategic CTA */}
-      <section className="py-4 lg:py-8 bg-[#581C87] text-white text-center relative overflow-hidden">
+      <section className="relative py-16 lg:py-24 bg-gradient-to-b from-[#4C1D95] via-[#581C87] to-[#3B0764] text-white overflow-hidden cursor-purple-section">
 
-        {/* Top Gradient Divider */}
-        <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
+        {/* Ambient Glow Background */}
+        <div className="absolute inset-0 opacity-30">
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[500px] bg-orange-500/20 blur-[160px] rounded-full"></div>
+        </div>
 
-        {/* Radial Glow */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(194,65,12,0.18),transparent_60%)]"></div>
+        <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
 
-        <div className="container px-6 relative z-10 max-w-6xl mx-auto">
+          {/* Eyebrow */}
+          <span className="inline-block mb-6 px-6 py-2 rounded-full bg-orange-500/20 border border-orange-500/30 backdrop-blur-md text-xs md:text-sm font-bold tracking-[0.2em] uppercase text-orange-400 shadow-lg">
+            2026 Admissions Now Open
+          </span>
 
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
+          {/* Heading */}
+          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold mb-8 leading-[1.1] tracking-tight">
+            Transform Your School Before
+            <br />
+            <span className="bg-gradient-to-r from-orange-400 to-orange-200 bg-clip-text text-transparent">
+              The Next Academic Year Begins
+            </span>
+          </h2>
 
-            {/* Main Heading */}
-            <h2 className="font-display text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-tight leading-[1.1] mb-8">
-              Secure Your Slot for
-              <br />
-              <span className="text-orange-500">
-                The 2026 Academic Year
-              </span>
-            </h2>
+          {/* Subtext */}
+          <p className="text-lg md:text-xl text-white/80 font-normal max-w-2xl mx-auto leading-relaxed mb-12">
+            Institutions that modernize early win parent trust, boost admissions,
+            and operate 3× more efficiently.
+            <span className="block mt-4 text-orange-400 font-bold tracking-wide">
+              Only 20 early transformation slots available.
+            </span>
+          </p>
 
-            {/* Subtext */}
-            <p className="text-xl md:text-2xl text-white/70 max-w-3xl mx-auto mb-10 font-medium leading-relaxed">
-              Schools that modernize now attract the admissions their competitors lose.
-              Only <span className="text-orange-500 font-black">20 early bird slots</span> available.
-            </p>
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row justify-center gap-6 mb-16">
 
-            {/* Value Pill */}
-            <div className="inline-block px-8 py-4 rounded-full bg-white/10 backdrop-blur-lg border border-white/20 mb-14 shadow-[0_0_60px_rgba(255,255,255,0.05)]">
-              <span className="text-lg md:text-xl font-black uppercase tracking-[0.2em] italic">
-                Complete Digital Transformation in One Package
-              </span>
-            </div>
+            <Button
+              size="lg"
+              className="rounded-full h-16 px-12 bg-orange-500 hover:bg-orange-400 text-white font-bold text-lg shadow-[0_20px_60px_rgba(194,65,12,0.5)] transition-all duration-300 hover:scale-105"
+              asChild
+            >
+              <Link to="/contact">
+                Book Strategy Demo
+              </Link>
+            </Button>
 
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row justify-center gap-6">
-
-              <Button
-                size="lg"
-                className="rounded-full h-16 md:h-18 px-12 bg-orange-500 hover:bg-white hover:text-[#581C87] text-white font-black text-xl shadow-[0_25px_60px_rgba(194,65,12,0.4)] transition-all hover:scale-105 active:scale-95 border-none"
-                asChild
+            <Button
+              size="lg"
+              variant="outline"
+              className="rounded-full h-16 px-12 border border-white/30 bg-white/5 hover:bg-white hover:text-[#581C87] font-bold text-lg backdrop-blur-lg transition-all duration-300"
+              asChild
+            >
+              <a
+                href="https://eskoolia.pro/register"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <Link to="/contact">
-                  BOOK DEMO SESSION
-                </Link>
-              </Button>
+                Start Free Deployment
+              </a>
+            </Button>
 
-              <Button
-                size="lg"
-                variant="outline"
-                className="rounded-full h-16 md:h-18 px-12 border-2 border-white/40 bg-white/5 hover:bg-white hover:text-[#581C87] text-white font-black text-xl backdrop-blur-xl transition-all"
-                asChild
-              >
-                <a
-                  href="https://eskoolia.pro/register"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  DEPLOY FOR FREE
-                </a>
-              </Button>
+          </div>
 
-            </div>
+          {/* Divider */}
+          <div className="w-32 h-px mx-auto bg-gradient-to-r from-transparent via-white/40 to-transparent mb-12"></div>
 
-            {/* Premium Divider */}
-            <div className="w-24 h-px bg-gradient-to-r from-transparent via-white/40 to-transparent mx-auto my-16"></div>
+          {/* Trust Row */}
+          <div className="flex flex-wrap justify-center items-center gap-10 text-white/60 text-xs md:text-sm font-semibold tracking-[0.25em] uppercase">
 
-            {/* Trust Indicators */}
-            <div className="flex flex-wrap items-center justify-center gap-8 text-white/50 font-black uppercase tracking-[0.3em] text-xs md:text-sm">
+            <span className="hover:text-white transition">
+              Enterprise-Grade Security
+            </span>
 
-              <span className="hover:text-white transition">Secure Infrastructure</span>
+            <span className="hidden md:block w-1.5 h-1.5 bg-white/30 rounded-full"></span>
 
-              <div className="w-1.5 h-1.5 rounded-full bg-white/30"></div>
+            <span className="hover:text-white transition">
+              Zero Setup Cost
+            </span>
 
-              <span className="hover:text-white transition">No Setup Fee</span>
+            <span className="hidden md:block w-1.5 h-1.5 bg-white/30 rounded-full"></span>
 
-              <div className="w-1.5 h-1.5 rounded-full bg-white/30"></div>
+            <span className="hover:text-white transition">
+              Global Deployment Ready
+            </span>
 
-              <span className="hover:text-white transition">90+ Countries</span>
-
-            </div>
-
-          </motion.div>
+          </div>
 
         </div>
       </section>
 
       {/* Support / FAQ Deep Link */}
-      <section className="py-32 bg-white">
-        <div className="container px-8">
-          <div className="grid lg:grid-cols-12 gap-24 items-start">
+      <section className="bg-[#FAF7FF] py-28">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="grid lg:grid-cols-12 gap-20">
+
+            {/* Left Column */}
             <div className="lg:col-span-4">
-              <div className="sticky top-32">
-                <span className="text-orange-500 font-black uppercase tracking-[0.4em] text-xs mb-6 block">Direct Support</span>
-                <h2 className="font-display text-5xl font-black text-[#581C87] uppercase leading-tight mb-10">We Are Ready <br />To Assist.</h2>
-                <Button variant="outline" className="rounded-full h-14 px-10 border-2 border-[#581C87] text-[#581C87] hover:bg-[#581C87] hover:text-white font-black uppercase tracking-widest text-sm" asChild>
-                  <Link to="/faq">VIEW FULL KNOWLEDGE BASE <ArrowRight className="ml-3 w-5 h-5" /></Link>
+              <div className="sticky top-28">
+
+                {/* Label */}
+                <span className="text-orange-500 font-black uppercase tracking-[0.3em] text-sm mb-4 block text-wrap">
+                  Support & Assistance
+                </span>
+
+                {/* Heading */}
+                <h2 className="font-display text-4xl md:text-6xl font-black text-[#581C87] mb-8 leading-[1.1] uppercase">
+                  We're Ready to Support Your Institution
+                </h2>
+
+                {/* Description */}
+                <p className="text-xl text-[#581C87]/70 font-medium leading-relaxed mb-12">
+                  Whether you have questions about onboarding, implementation,
+                  security, or pricing — our team is prepared to guide you
+                  every step of the way.
+                </p>
+
+                {/* Button */}
+                <Button
+                  variant="outline"
+                  className="mt-10 rounded-full px-8 h-12 border border-[#581C87] text-[#581C87] hover:bg-[#581C87] hover:text-white transition-all"
+                  asChild
+                >
+                  <Link to="/faq">
+                    View Full Knowledge Base
+                    <ArrowRight className="ml-2 w-4 h-4" />
+                  </Link>
                 </Button>
+
               </div>
             </div>
+
+            {/* Right Column - FAQ */}
             <div className="lg:col-span-8">
-              <Accordion type="single" collapsible className="w-full space-y-6">
+              <Accordion type="single" collapsible className="space-y-5">
+
                 {faqs.slice(0, 5).map((faq, i) => (
-                  <AccordionItem key={i} value={`faq-${i}`} className="border-none bg-white rounded-[32px] shadow-sm hover:shadow-md transition-all px-10 py-4">
-                    <AccordionTrigger className="text-2xl font-black text-[#581C87] hover:text-orange-500 hover:no-underline text-left uppercase tracking-tighter">
+                  <AccordionItem
+                    key={i}
+                    value={`faq-${i}`}
+                    className="bg-white border border-gray-200 rounded-xl px-8 py-6 shadow-sm transition hover:shadow-md"
+                  >
+                    <AccordionTrigger className="text-lg lg:text-xl font-semibold text-[#581C87] text-left hover:no-underline">
                       {faq.q}
                     </AccordionTrigger>
-                    <AccordionContent className="text-xl text-[#581C87]/60 font-medium leading-relaxed pb-8 pt-4">
+
+                    <AccordionContent className="mt-4 text-base text-[#581C87]/70 leading-relaxed">
                       {faq.a}
                     </AccordionContent>
                   </AccordionItem>
                 ))}
+
               </Accordion>
             </div>
+
           </div>
         </div>
       </section>

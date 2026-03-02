@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { CheckCircle2, X } from "lucide-react";
@@ -6,88 +5,56 @@ import PageHeader from "@/components/layout/PageHeader";
 
 const plans = [
   {
-    name: "Basic",
-    monthly: 29,
-    yearly: 290,
-    desc: "Perfect for small schools",
+    name: "Standard",
+    price: 67,
+    period: "Lifetime",
+    desc: "Perfect for single schools starting out",
     features: {
-      "Students": "Up to 200",
-      "Staff Accounts": "5",
-      "Student Management": true,
-      "Teacher Management": true,
-      "Attendance": true,
-      "Exams & Results": true,
-      "Fee Management": true,
-      "Accounting": false,
-      "HR & Payroll": false,
-      "Library": false,
-      "Transport": false,
-      "Hostel": false,
-      "Multi Branch": false,
-      "Online Classes": false,
-      "Reports": "Basic",
-      "Support": "Email",
-      "API Access": false,
+      "Online Pro Version": true,
+      "Android + iOS App": false,
+      "Licenses": "1 License",
+      "Updates": "Lifetime Updates",
+      "Front CMS": true,
+      "Support": "1 Year Support",
+      "Full Customization": false,
     },
     highlighted: false,
   },
   {
-    name: "Professional",
-    monthly: 79,
-    yearly: 790,
-    desc: "For growing institutions",
+    name: "Premium",
+    price: 149,
+    period: "Lifetime",
+    desc: "For growing institutions that need mobile apps",
     features: {
-      "Students": "Up to 2,000",
-      "Staff Accounts": "Unlimited",
-      "Student Management": true,
-      "Teacher Management": true,
-      "Attendance": true,
-      "Exams & Results": true,
-      "Fee Management": true,
-      "Accounting": true,
-      "HR & Payroll": true,
-      "Library": true,
-      "Transport": true,
-      "Hostel": true,
-      "Multi Branch": "2 Branches",
-      "Online Classes": true,
-      "Reports": "Advanced",
-      "Support": "Priority",
-      "API Access": true,
+      "Online Pro Version": true,
+      "Android + iOS App": true,
+      "Licenses": "1 License",
+      "Updates": "Lifetime Updates",
+      "Front CMS": true,
+      "Support": "1 Year Support",
+      "Full Customization": false,
     },
     highlighted: true,
   },
   {
-    name: "Enterprise",
-    monthly: 199,
-    yearly: 1990,
-    desc: "For large school networks",
+    name: "Business",
+    price: 999,
+    period: "Lifetime",
+    desc: "For large school networks and customizing",
     features: {
-      "Students": "Unlimited",
-      "Staff Accounts": "Unlimited",
-      "Student Management": true,
-      "Teacher Management": true,
-      "Attendance": true,
-      "Exams & Results": true,
-      "Fee Management": true,
-      "Accounting": true,
-      "HR & Payroll": true,
-      "Library": true,
-      "Transport": true,
-      "Hostel": true,
-      "Multi Branch": "Unlimited",
-      "Online Classes": true,
-      "Reports": "Custom",
-      "Support": "24/7 Dedicated",
-      "API Access": true,
+      "Online Pro Version": true,
+      "Android + iOS App": true,
+      "Licenses": "50 Licenses",
+      "Updates": "Lifetime Updates",
+      "Front CMS": true,
+      "Support": "5 Years Support",
+      "Full Customization": true,
     },
     highlighted: false,
   },
 ];
 
 export default function PricingPage() {
-  const [yearly, setYearly] = useState(false);
-
   return (
     <div>
       <PageHeader
@@ -135,21 +102,6 @@ export default function PricingPage() {
                 </div>
               </div>
             </div>
-
-            <div className="inline-flex items-center gap-1 rounded-full border border-gray-50 bg-white p-1 shadow-sm mt-8">
-              <button
-                onClick={() => setYearly(false)}
-                className={`rounded-full px-6 py-2 text-sm font-bold transition-all ${!yearly ? "bg-[#581C87] text-white shadow-md" : "text-[#581C87]/50 hover:text-[#581C87]"}`}
-              >
-                Monthly
-              </button>
-              <button
-                onClick={() => setYearly(true)}
-                className={`rounded-full px-6 py-2 text-sm font-bold transition-all ${yearly ? "bg-[#581C87] text-white shadow-md" : "text-[#581C87]/50 hover:text-[#581C87]"}`}
-              >
-                Yearly <span className={`text-[10px] ml-1 uppercase tracking-wide px-1.5 py-0.5 rounded ${yearly ? "bg-white/20" : "bg-orange-500/10 text-orange-500"}`}>Save 17%</span>
-              </button>
-            </div>
           </div>
 
           <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-3">
@@ -164,8 +116,8 @@ export default function PricingPage() {
                 <p className="text-[#581C87]/60 text-sm mb-6">{plan.desc}</p>
 
                 <div className="mb-8 flex items-baseline">
-                  <span className="font-display text-5xl font-extrabold text-[#581C87]">${yearly ? plan.yearly : plan.monthly}</span>
-                  <span className="text-[#581C87]/40 font-medium ml-2">/{yearly ? "year" : "month"}</span>
+                  <span className="font-display text-5xl font-extrabold text-[#581C87]">${plan.price}</span>
+                  <span className="text-[#581C87]/40 font-medium ml-2">/{plan.period}</span>
                 </div>
 
                 <Button className={`mb-8 w-full font-bold h-12 text-md shadow-lg ${plan.highlighted ? "bg-orange-500 hover:bg-[#581C87] text-white border-0" : "bg-gray-50 hover:bg-[#581C87]/5 text-[#581C87] border border-gray-50 shadow-none hover:shadow-sm"}`} asChild>

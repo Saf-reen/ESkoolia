@@ -27,15 +27,17 @@ import EskooliaERPPage from "@/pages/EskooliaERPPage";
 import AISchoolAssistantPage from "@/pages/AISchoolAssistantPage";
 import NotFound from "@/pages/NotFound";
 import ScrollToTop from "@/components/ScrollToTop";
+import CustomCursor from "@/components/CustomCursor";
 
 const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
-      <div className="font-sans text-foreground antialiased">
+      <div className="font-sans text-foreground antialiased overflow-x-hidden w-full flex flex-col min-h-screen">
         <Toaster />
         <Sonner />
+        <CustomCursor />
         <BrowserRouter>
           <ScrollToTop />
           <Routes>

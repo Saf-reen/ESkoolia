@@ -65,6 +65,7 @@
 
   html {
     font-size: 80%;
+    overflow-x: hidden;
   }
 
   .dark {
@@ -97,6 +98,12 @@
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
+    overflow-x: hidden;
+  }
+
+  body.hide-cursor,
+  body.hide-cursor * {
+    cursor: none !important;
   }
 }
 
@@ -126,4 +133,45 @@
     background-image: radial-gradient(circle, hsl(210 20% 90%) 1px, transparent 1px);
     background-size: 24px 24px;
   }
+}
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom,
+      #7e22ce,
+      /* purple */
+      #f97316
+      /* orange */
+    );
+  border-radius: 10px;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #7e22ce transparent;
+}
+
+body.purple-scroll::-webkit-scrollbar-thumb {
+  background: #7e22ce;
+}
+
+body.orange-scroll::-webkit-scrollbar-thumb {
+  background: #f97316;
+}
+
+body.purple-scroll * {
+  scrollbar-color: #7e22ce transparent;
+}
+
+body.orange-scroll * {
+  scrollbar-color: #f97316 transparent;
 }

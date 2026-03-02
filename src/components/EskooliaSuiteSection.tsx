@@ -14,7 +14,10 @@ const EskooliaSuiteSection = () => {
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     className="text-center mb-16 lg:mb-20"
                 >
-                    <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-black text-[#581C87] tracking-[0.02em] leading-[1.2] mb-6">
+                    <span className="text-orange-500 font-black uppercase tracking-[0.3em] text-sm mb-4 block">
+                        Core Platform
+                    </span>
+                    <h2 className="font-display text-4xl md:text-6xl font-black text-[#581C87] mb-8 leading-[1.1] uppercase">
                         Explore the Eskoolia Suite — <br className="hidden md:block" /> Built for Next-Gen Schools
                     </h2>
                     <motion.div
