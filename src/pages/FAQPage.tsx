@@ -15,7 +15,7 @@ const faqs = [
     },
     {
         question: "How can I get technical support?",
-        answer: "If you need any technical support please contact us on WhatsApp at +923460204447 for a quick chat or email us on support@eskooly.com. Please note: always send your order ID with the support request to get an instant reply."
+        answer: "If you need any technical support please contact us on WhatsApp at +923460204447 for a quick chat or email us on support@eskoolia.com. Please note: always send your order ID with the support request to get an instant reply."
     },
     {
         question: "Where I can download/get my mobile Apps?",

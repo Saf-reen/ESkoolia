@@ -124,7 +124,7 @@ export default function DocsPage() {
           {/* Logo Area */}
           <div className="mb-2 p-2 bg-[#581C87] -mx-4 -mt-4 flex justify-center items-center shadow-lg border-b border-white/10">
             <Link to="/" className="flex items-center gap-2 group cursor-pointer">
-              <img src="/eskoolia_logo_.png" alt="Eskooly" className="h-24 w-auto brightness-110" />
+              <img src="/eskoolia_logo_.png" alt="Eskoolia" className="h-24 w-auto brightness-110" />
             </Link>
           </div>
 

@@ -22,7 +22,7 @@ export default function DeletionPolicyPage() {
 
                     <div className="bg-gray-50 p-6 rounded-xl border border-gray-50">
                         <ul className="list-decimal pl-5 space-y-3 text-base marker:font-bold marker:text-[#581C87]">
-                            <li>Compose an email to our support team at <a href="mailto:support@eskooly.com" className="text-[#581C87] font-bold hover:underline">support@eskooly.com</a></li>
+                            <li>Compose an email to our support team at <a href="mailto:support@eskoolia.com" className="text-[#581C87] font-bold hover:underline">support@eskoolia.com</a></li>
                             <li>Use the subject line: <span className="font-bold text-[#581C87] bg-gray-50 px-2 py-0.5 rounded">"Account Deletion Request"</span></li>
                             <li>In the email body, please strictly include:
                                 <ul className="list-disc pl-5 mt-2 space-y-1 text-[#581C87]/70">
