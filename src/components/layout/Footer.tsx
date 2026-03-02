@@ -3,22 +3,22 @@ import { GraduationCap, Facebook, Twitter, Linkedin, Instagram, CreditCard, Shie
 
 const footerLinks = {
   "Our Products": [
-    { label: "eSkoolia SaaS - FREE", href: "https://eskooly.com" },
-    { label: "eSkoolia Desktop", href: "https://desktop.eskooly.com" },
-    { label: "eSkoolia Pro", href: "https://pro.eskooly.com" },
-    { label: "eSkoolia LMS", href: "https://lms.eskooly.com" },
+    { label: "eSkoolia SaaS - FREE", href: "#" },
+    { label: "eSkoolia Desktop", href: "#" },
+    { label: "eSkoolia Pro", href: "#" },
+    { label: "eSkoolia LMS", href: "#" },
   ],
   "Versions": [
-    { label: "Latest", href: "https://eskooly.pro/login" },
-    { label: "Version 9.0", href: "https://eskooly.pro/login" },
-    { label: "Version 8.0", href: "https://pro.eskooly.com/demo/login" },
+    { label: "Latest", href: "#" },
+    { label: "Version 9.0", href: "#" },
+    { label: "Version 9.1", href: "#" },
     { label: "Add-ons", href: "/modules" },
   ],
   "Useful Links": [
     { label: "FAQ'S", href: "/faq" },
     { label: "Documentation", href: "/docs" },
     { label: "Live Chat", href: "https://wa.me/+919701314138" },
-    { label: "Live Demo", href: "https://eskooly.pro/login" },
+    // { label: "Live Demo", href: "https://eskooly.pro/login" },
   ],
   "Legal": [
     { label: "Privacy Policy", href: "/privacy" },
