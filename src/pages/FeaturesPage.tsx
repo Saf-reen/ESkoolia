@@ -37,8 +37,8 @@ const additionalFeatures = [
   { icon: Smartphone, title: "Fully Responsive" },
   { icon: Globe2, title: "Supports Right-to-Left" },
   { icon: Languages, title: "Multilingual" },
-  { icon: Palette, title: "Themes & Colors Styling" },
-  { icon: Bell, title: "Email Notification Templates" },
+  { icon: Palette, title: "Themes & Colors Styling Options" },
+  { icon: Bell, title: "Email Notification with Templates" },
   { icon: SmartphoneNfc, title: "Supports SMS Notification" },
   { icon: Printer, title: "Printable Reports" },
   { icon: Database, title: "Inbuilt Backup Tool" },
@@ -52,29 +52,129 @@ const panelFeatures = [
     title: "ADMIN SECTION",
     features: [
       "Admission Query", "Visitor Book", "Phone Call Log", "Postal Receive", "Postal Dispatch",
-      "Complain", "Admin Setup", "Setup Front Office", "Managing User accounts", "Managing classes & subjects",
-      "Managing class routine", "Managing exam & grades", "Managing exam marks", "Sending marks via SMS",
-      "Students Attendance", "Student Certificate", "Generate ID Card", "Accounting & Finance",
-      "Student Admission", "Student Details", "Student Promote", "School Events", "Library & Transport"
+      "Complain", "Admin Setup", "Setup Front Office", "Managing User accounts (teacher, student, parent)",
+      "Managing classes, subjects", "Managing class routine", "Managing exam, grades",
+      "Managing exam marks", "Sending exam marks via sms", "Managing Students Attendance",
+      "Student Certificate", "Generate Certificate", "Student Id Card", "Generate Id Card",
+      "Managing accounting, income & expenses", "Student Admission", "Student Details",
+      "Student Promote", "Managing School events", "Student Category", "Student Group",
+      "Desabled Student", "Managing library, dormitory, transport", "Messaging between other users",
+      "Managing system settings (general, massaging , language)"
     ]
   },
   {
-    title: "TEACHER PANEL",
+    title: "TEACHER PANEL FEATURES",
     features: [
       "Add Homework", "Evaluation Report", "Upload Content", "Assignments", "Study Material",
-      "Syllabus", "Other Downloads", "Managing students", "Managing exam marks", "Managing attendance"
+      "Syllabus", "Other Downloads", "Teacher", "Managing students", "Managing exam marks", "Managing attendance"
     ]
   },
   {
-    title: "PARENTS PANEL",
+    title: "PARENTS PANEL FEATURES",
     features: [
-      "Get children marks", "Get payment invoices", "Get class routine", "Messaging with teachers", "Childs attendance tracking"
+      "Get children marks", "Get children payment invoices", "Get children class routine",
+      "Messaging with teachers", "Childs attendance tracking"
     ]
   },
   {
-    title: "STUDENT PANEL",
+    title: "STUDENT PANEL FEATURES",
     features: [
-      "Get class routine", "Get exam marks", "Get attendance status", "Get study materials", "Get payment invoices", "Pay online", "Communicate with teacher"
+      "Get class routine", "Get exam marks", "Get attendance status", "Get study materials / files from teacher",
+      "Get payment invoices, pay online", "Communicate with teacher"
+    ]
+  },
+  {
+    title: "FEES COLLECTION",
+    features: [
+      "Fees payment", "Collect Fees", "Search fees Payment", "Search fees due", "Fees Master",
+      "Fees Group", "Fees type", "Fees statement", "Reports", "Invoice", "Fees carry Forward",
+      "Paid/due fees statement etc"
+    ]
+  },
+  {
+    title: "ACCOUNTS",
+    features: [
+      "Account Dashboard", "Profit", "Income", "Expense", "Search", "Account List", "Payment Method",
+      "Bank Account", "Payment History"
+    ]
+  },
+  {
+    title: "HUMAN RESOURCE",
+    features: [
+      "Staff Directory", "Staff Attendence", "Staff Attendence Report", "Payroll", "Payroll Report"
+    ]
+  },
+  {
+    title: "EXAMINATION",
+    features: [
+      "Add Exam", "Exam", "Add Exam Type", "Exam Schedule", "Seat plan", "Exam routine",
+      "Marks Register", "Exam Attendence", "Marks Grade", "Send Marks by SMS", "Question Group",
+      "Question Bank", "Online Exam", "Date & time organization", "Schedule notice", "Instruction",
+      "Mark sheet & Report"
+    ]
+  },
+  {
+    title: "ACADEMICS",
+    features: [
+      "Dashboard", "Class Routine", "View Class Routine (Teacher)", "Assign Subject",
+      "Assign Class Teacher", "Subjects", "Class", "Sections", "Class Room", "CL/EX Time Setup",
+      "Subjective assign"
+    ]
+  },
+  {
+    title: "COMMUNICATE",
+    features: [
+      "Notice Board", "Send Massage", "Send Email/Sms", "Email/Sms", "Event notice", "Event Logs",
+      "Holiday notice"
+    ]
+  },
+  {
+    title: "LIBRARY",
+    features: [
+      "Add Book", "Book List", "Add Member", "Member listing & manage", "Book category/list",
+      "Issue/Return Book", "All Issued Book", "Card issuing"
+    ]
+  },
+  {
+    title: "INVENTORY",
+    features: [
+      "Item Category", "Item List", "Item Store", "Supplier", "Item Receive", "Item Receive List",
+      "Item Sell", "Item Issue"
+    ]
+  },
+  {
+    title: "HOMEWORK",
+    features: [
+      "Add Home Work", "Home Work List", "Home Work Evaluation Report"
+    ]
+  },
+  {
+    title: "TRANSPORT",
+    features: [
+      "Routes", "Vehicle", "Assign Vehicle", "Student Transport Report", "Schedule/Routine"
+    ]
+  },
+  {
+    title: "DORMITORY",
+    features: [
+      "Dormitory Rooms", "Dormitory", "Room Type", "Rooms monitoring", "Student Dormitory Report"
+    ]
+  },
+  {
+    title: "REPORTS",
+    features: [
+      "Student Report", "Guardian Report", "Student History", "Student Login Report", "Fees Statement",
+      "Balance Fees Report", "Transjection Report", "Class Report", "Class Routine Report",
+      "Exam Routine Report", "Teacher Class Routine", "Merit List Report", "Online Exam Report",
+      "Mark Sheet Report", "Tabulation Sheet Report", "Progress Card Report", "Student Fine Report",
+      "User Log", "Attendants Report (Teacher & Student both) and Many More…"
+    ]
+  },
+  {
+    title: "SYSTEM SETTINGS",
+    features: [
+      "General Settings", "Email Settings", "Payment Method Settings", "Role Permission", "Base Group",
+      "Base Setup", "Academic year", "Session", "Holiday", "SMS Settings", "Weekend", "Language Settings", "Backup"
     ]
   }
 ];
@@ -95,9 +195,9 @@ export default function FeaturesPage() {
       <section className="py-12 lg:py-16 border-b border-gray-50 bg-white">
         <div className="w-full px-6 text-center">
           <span className="text-orange-500 font-bold tracking-widest uppercase text-xs mb-3 block">An Exhaustive list of Amazing Features</span>
-          <h2 className="font-display text-4xl lg:text-5xl font-black text-[#581C87] mb-4 uppercase tracking-tight">The last software you will have to use!</h2>
+          <h2 className="font-display text-4xl lg:text-5xl font-black text-[#581C87] mb-4 uppercase tracking-tight">The only application you’ll need to power your life.</h2>
           <p className="text-[#581C87]/70 text-lg max-w-4xl mx-auto leading-relaxed font-medium">
-            Every Single Module You Want That Are Available, Curiosity Is Future Of New Discover. Explore All Our Single Modules That Will Blow Your Mind!
+            Numerous features make it possible to customize the system in accordance with all your needs.
           </p>
         </div>
       </section>
@@ -152,27 +252,38 @@ export default function FeaturesPage() {
       </section>
 
       {/* Panel Features Detailed List */}
-      <section className="py-12 bg-gray-50 border-y border-gray-50">
-        <div className="w-full px-6">
-          <div className="text-center mb-10">
-            <h2 className="font-display text-3xl font-black text-[#581C87] mb-3 uppercase tracking-tight">Panel Specific Features</h2>
-            <p className="text-[#581C87]/60 text-sm font-medium">Tailored interfaces for every user in your institution</p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+      <section className="py-20 bg-white border-y border-gray-50">
+        <div className="w-full max-w-7xl mx-auto px-6">
+          <div className="flex flex-col gap-24">
             {panelFeatures.map((panel, idx) => (
-              <div key={idx} className="bg-white p-6 rounded-[24px] shadow-sm border border-gray-50 hover:shadow-lg transition-all">
-                <h3 className="text-2xl font-black text-[#581C87] mb-6 pb-3 border-b border-gray-50 flex items-center gap-2">
-                  <div className="w-1.5 h-6 bg-orange-500 rounded-full"></div>
-                  {panel.title}
-                </h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-2.5 gap-x-4">
-                  {panel.features.map((f, i) => (
-                    <div key={i} className="flex items-center gap-2 text-[#581C87]/70 group">
-                      <div className="h-1 w-1 rounded-full bg-[#581C87]/20 group-hover:bg-orange-500 transition-colors"></div>
-                      <span className="text-lg font-bold group-hover:text-[#581C87] transition-colors">{f}</span>
+              <div key={idx} className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+                <div className="w-full lg:w-5/12 space-y-6">
+                  <div className="flex items-center gap-4">
+                    <div className="h-14 w-14 rounded-full bg-orange-500/10 flex flex-shrink-0 items-center justify-center">
+                      <div className="h-5 w-5 rounded-sm bg-gradient-to-br from-orange-400 to-orange-600 rotate-45"></div>
                     </div>
-                  ))}
+                    <h3 className="text-2xl lg:text-3xl font-black text-[#581C87] uppercase tracking-tight">{panel.title}</h3>
+                  </div>
+                  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-6">
+                    {panel.features.map((f, i) => (
+                      <li key={i} className="flex items-start gap-3 text-[#581C87]/80 group">
+                        <div className="mt-1.5 h-1.5 w-1.5 rounded-full bg-orange-500 shrink-0"></div>
+                        <span className="text-sm font-semibold group-hover:text-[#581C87] transition-colors leading-snug">{f}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="w-full lg:w-7/12">
+                  <img 
+                    src={`/Eskooly/${
+                      idx % 4 === 0 ? "dashboard1.png" : 
+                      idx % 4 === 1 ? "general_setting.png" : 
+                      idx % 4 === 2 ? "student-transport-report.png" :
+                      "admission_query.png"
+                    }`} 
+                    alt={`${panel.title} Preview`}
+                    className="w-full rounded-[2rem] shadow-2xl border border-gray-100 object-cover"
+                  />
                 </div>
               </div>
             ))}
@@ -181,25 +292,36 @@ export default function FeaturesPage() {
       </section>
 
       {/* Grid of 16 Additional Features */}
-      <section className="py-16 relative overflow-hidden bg-white">
-        <div className="w-full px-6 text-center mb-12">
-          <span className="text-orange-500 font-bold tracking-widest uppercase text-xs mb-3 block">AMAZING FEATURES</span>
-          <h2 className="font-display text-3xl lg:text-4xl font-black text-[#581C87] mb-4 uppercase tracking-tight">More Features Has eSkoolia PRO</h2>
-          <p className="text-[#581C87]/70 text-base max-w-4xl mx-auto leading-relaxed font-medium">
-            It's Vast! eSkoolia PRO Has More Additional Feature That Will Expect In A Complete Solution.
-          </p>
-        </div>
+      <section className="py-20 relative overflow-hidden bg-gray-50">
+        <div className="w-full max-w-7xl mx-auto px-6">
+          <div className="flex flex-col lg:flex-row gap-16 items-center lg:items-start">
+            
+            {/* Left Decorative Image (Mimicking recharge.png) */}
+            <div className="hidden lg:block w-1/4 shrink-0 relative mt-10">
+               <img src="/Eskooly/admin_setup.png" alt="Features" className="w-full max-w-[280px] mx-auto drop-shadow-2xl object-cover rounded-3xl hover:-translate-y-2 transition-transform duration-500" />
+            </div>
 
-        <div className="w-full px-6">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {additionalFeatures.map((feature, i) => (
-              <div key={i} className="flex items-center gap-3 bg-gray-50/50 p-4 rounded-xl shadow-sm border border-gray-50 hover:border-[#581C87]/20 hover:shadow-md transition-all group">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#581C87]/5 text-[#581C87] group-hover:bg-[#581C87] group-hover:text-white transition-all">
-                  <feature.icon className="h-5 w-5" />
-                </div>
-                <h4 className="font-bold text-[#581C87] text-lg leading-tight">{feature.title}</h4>
+            {/* Right content */}
+            <div className="w-full lg:w-3/4">
+              <div className="mb-12 text-center lg:text-left">
+                <span className="text-orange-500 font-bold tracking-widest uppercase text-xs mb-3 block">AMAZING FEATURES</span>
+                <h2 className="font-display text-3xl lg:text-4xl font-black text-[#581C87] mb-4 uppercase tracking-tight">More Features Has eSkooly PRO</h2>
+                <p className="text-[#581C87]/70 text-base max-w-2xl leading-relaxed font-medium mx-auto lg:mx-0">
+                  It's Vast! ESkooly PRO Has More Additional Feature That Will Expect In A Complete Solution.
+                </p>
               </div>
-            ))}
+
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+                {additionalFeatures.map((feature, i) => (
+                  <div key={i} className="flex flex-col items-center text-center gap-4 bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:border-orange-500 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
+                    <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-orange-50 to-orange-100 text-orange-600 group-hover:scale-110 group-hover:from-orange-500 group-hover:to-orange-400 group-hover:text-white transition-all duration-300">
+                      <feature.icon className="h-7 w-7" />
+                    </div>
+                    <h4 className="font-bold text-[#581C87] text-sm leading-tight">{feature.title}</h4>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
