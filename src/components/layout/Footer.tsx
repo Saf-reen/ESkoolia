@@ -40,31 +40,32 @@ const paymentMethods = [
 
 export default function Footer() {
   return (
-    <footer className="relative bg-[#581C87] text-white overflow-hidden pt-20 pb-8">
-      {/* Wave Top Decoration (SVG) matches the header/section style */}
-      <div className="absolute top-0 left-0 w-full overflow-hidden leading-none rotate-180">
-        <svg className="relative block w-[calc(100%+1.3px)] h-[50px] lg:h-[100px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="fill-white"></path>
-        </svg>
-      </div>
+    <footer className="relative bg-gradient-to-b from-[#581C87] to-[#3B0764] text-white pt-16 pb-6">
+      
+      <div className="container">
 
-      <div className="container relative z-10">
-
-        {/* Logo Section Centered */}
-        <div className="flex flex-col items-center justify-center mb-16 text-center">
-          <Link to="/" className="flex flex-col items-center gap-2 group">
-            <div className="flex items-center gap-2">
-              <span className="font-display text-4xl font-black tracking-tight">ESKOOLIA</span>
-            </div>
-            <span className="text-white/60 text-sm tracking-widest uppercase mt-1">Ultimate Education Management ERP</span>
+        {/* Brand Section */}
+        <div className="flex flex-col items-center text-center mb-12">
+          <Link to="/" className="group">
+            <h2 className="text-4xl font-extrabold tracking-tight">
+              ESKOOLIA
+            </h2>
+            <p className="text-xs tracking-[0.3em] uppercase text-white/60 mt-2">
+              Ultimate Education Management ERP
+            </p>
           </Link>
         </div>
 
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4 mb-20 text-center md:text-left">
+        {/* Links */}
+        <div className="grid md:grid-cols-2 gap-10 max-w-4xl mx-auto">
           {Object.entries(footerLinks).map(([title, links]) => (
-            <div key={title}>
-              <h4 className="mb-6 text-xl font-bold text-white/90">{title}</h4>
-              <ul className="space-y-3">
+            <div key={title} className="text-center md:text-left">
+              <h4 className="text-lg font-semibold text-white mb-4 relative inline-block">
+                {title}
+                <span className="absolute -bottom-1 left-0 w-6 h-[2px] bg-orange-500"></span>
+              </h4>
+
+              <ul className="space-y-3 mt-4">
                 {links.map((l) => (
                   <li key={l.label}>
                     {l.href.startsWith("http") ? (
@@ -72,14 +73,14 @@ export default function Footer() {
                         href={l.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-white/70 hover:text-white transition-colors text-lg"
+                        className="text-white/70 hover:text-orange-400 transition-all duration-300"
                       >
                         {l.label}
                       </a>
                     ) : (
                       <Link
                         to={l.href}
-                        className="text-white/70 hover:text-white transition-colors text-lg"
+                        className="text-white/70 hover:text-orange-400 transition-all duration-300"
                       >
                         {l.label}
                       </Link>
@@ -91,48 +92,36 @@ export default function Footer() {
           ))}
         </div>
 
-        {/* Bottom Section: Payments & Certifications */}
-        {/* <div className="border-t border-white/10 pt-10 flex flex-col lg:flex-row justify-between items-center gap-8"> */}
-          {/* Payment Methods */}
-          {/* <div className="flex flex-wrap justify-center gap-3">
-            {paymentMethods.map((pm) => (
-              <div key={pm.name} className={`px-3 py-1.5 rounded-md ${pm.color} text-[10px] font-bold tracking-wider shadow-sm border border-white/20`}>
-                {pm.name}
-              </div>
-            ))}
-          </div> */}
+        {/* Divider */}
+        <div className="my-10 border-t border-white/10"></div>
 
-          {/* Certifications */}
-          {/* <div className="text-center">
-            <span className="block text-lg font-semibold mb-3 opacity-90">We're Proudly Certified</span>
-            <div className="flex justify-center gap-4">
-              <div className="w-10 h-10 bg-black/30 rounded-full flex items-center justify-center border border-white/20" title="Kids Club">
-                <ShieldCheck className="w-5 h-5" />
-              </div>
-              <div className="w-10 h-10 bg-blue-500/30 rounded-full flex items-center justify-center border border-white/20" title="GDPR">
-                <ShieldCheck className="w-5 h-5" />
-              </div>
-              <div className="w-10 h-10 bg-yellow-500/30 rounded-full flex items-center justify-center border border-white/20" title="Secure">
-                <ShieldCheck className="w-5 h-5" />
-              </div>
-              <div className="w-10 h-10 bg-green-500/30 rounded-full flex items-center justify-center border border-white/20" title="Certified">
-                <ShieldCheck className="w-5 h-5" />
-              </div>
-            </div>
+        {/* Bottom */}
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/60">
+          <div className="text-center md:text-left">
+            <p>
+              Copyright © 2026. All Rights Reserved By{" "}
+              <a
+                href="https://eskoolia.com"
+                className="hover:text-white transition-colors font-medium"
+              >
+                eSkoolia
+              </a>.
+            </p>
+            <p className="uppercase tracking-widest text-[10px] mt-1 opacity-50">
+              By Sria Infotech Pvt Ltd
+            </p>
           </div>
-        </div> */}
 
-        {/* Copyright */}
-        <div className="mt-16 text-center text-white/40 text-sm flex flex-col sm:flex-row justify-between items-center border-t border-white/5 pt-6">
-          <div className="flex flex-col items-center sm:items-start gap-1">
-            <span>Copyright © 2026. All Rights Reserved By <a href="https://eskoolia.com" className="hover:text-white transition-colors">eSkoolia.</a></span>
-            <span className="text-xs opacity-50 uppercase tracking-widest font-black">By Sria Infotech Pvt Ltd</span>
-          </div>
-          <div className="mt-4 sm:mt-0 flex flex-col items-center sm:items-end gap-1">
-            <span className="font-bold text-white/60">Miyapur, Hyderabad | +91 970-131-4138</span>
-            <span className="text-xs">www.eskoolia.com | contact@eskooliaindian.com</span>
+          <div className="text-center md:text-right">
+            <p className="font-medium">
+              Miyapur, Hyderabad | +91 970-131-4138
+            </p>
+            <p className="text-[11px] mt-1">
+              www.eskoolia.com | contact@eskooliaindian.com
+            </p>
           </div>
         </div>
+
       </div>
     </footer>
   );
