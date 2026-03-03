@@ -165,6 +165,7 @@ export default function HomePage() {
   const [typedText, setTypedText] = useState("");
   const [wordIndex, setWordIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
+  const [showVideo, setShowVideo] = useState(false)
   const words = ["Training Center.", "School.", "College.", "Institute.", "Academy.", "Tution Center."];
   const typingSpeed = isDeleting ? 50 : 150;
 
@@ -233,12 +234,42 @@ export default function HomePage() {
                 <Button size="lg" className="rounded-full h-14 px-10 text-lg shadow-[0_20px_40px_rgba(249,115,22,0.3)] transition-all font-bold bg-orange-500 text-white hover:bg-orange-400 border-none transform hover:-translate-y-1" asChild>
                   <a href="https://eskooly.pro/login" target="_blank" rel="noopener noreferrer">Try Live Demo Free</a>
                 </Button>
-                <div className="flex items-center group cursor-pointer justify-center">
+                <div
+                  onClick={() => setShowVideo(true)}
+                  className="flex items-center group cursor-pointer justify-center"
+                >
                   <div className="flex items-center justify-center w-14 h-14 rounded-full border border-white/20 group-hover:border-white/50 group-hover:bg-white/10 transition-all mr-4 bg-white/5 backdrop-blur-md">
                     <Play className="w-5 h-5 fill-white text-white ml-1" />
                   </div>
-                  <span className="text-xl font-semibold tracking-tight text-white/90 group-hover:text-white transition-colors">Watch the Vision</span>
+                  <span className="text-xl font-semibold tracking-tight text-white/90 group-hover:text-white transition-colors">
+                    Watch the Vision
+                  </span>
                 </div>
+                {showVideo && (
+                  <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50">
+                    <div className="relative w-[90%] md:w-[800px] aspect-video">
+
+                      {/* Close Button */}
+                      <button
+                        onClick={() => setShowVideo(false)}
+                        className="absolute -top-10 right-0 text-white text-2xl"
+                      >
+                        ✕
+                      </button>
+
+                      {/* YouTube Embed */}
+                      <iframe
+                        className="w-full h-full rounded-xl"
+                        src="https://www.youtube.com/embed/48oq-rXhQeU?autoplay=1"
+                        title="Vision Video"
+                        frameBorder="0"
+                        allow="autoplay; encrypted-media"
+                        allowFullScreen
+                      ></iframe>
+
+                    </div>
+                  </div>
+                )}
               </div>
             </motion.div>
 
