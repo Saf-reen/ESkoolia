@@ -727,58 +727,96 @@ export default function HomePage() {
       </section>
 
       {/* 6. Testimonials - The Wall of Love */}
-      <section className="py-24 lg:py-40 bg-white overflow-hidden">
+      <section className="py-12 lg:py-20 bg-white overflow-x-hidden">
         <div className="container px-6">
-          <div className="grid lg:grid-cols-2 gap-20 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+            {/* LEFT SIDE */}
             <div className="lg:pr-12 text-center lg:text-left">
-              <span className="text-orange-500 font-bold uppercase tracking-[0.2em] text-sm mb-4 block">Wall of Love</span>
-              <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#581C87] mb-8 leading-[1.1] tracking-tight">Trusted by <br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-purple-600">15,000+ Educators</span></h2>
+              <span className="text-orange-500 font-bold uppercase tracking-[0.2em] text-sm mb-4 block">
+                Wall of Love
+              </span>
+
+              <h2 className="font-display text-3xl md:text-5xl lg:text-6xl font-extrabold text-[#581C87] mb-8 leading-[1.1] tracking-tight">
+                Trusted by <br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-purple-600">
+                  15,000+ Educators
+                </span>
+              </h2>
+
               <p className="text-lg md:text-xl text-[#581C87]/70 font-medium leading-relaxed max-w-xl mb-12 mx-auto lg:mx-0">
                 From small academies to large university networks, Eskoolia is the standard for modern institutional management across 90+ countries.
               </p>
+
               <div className="flex justify-center lg:justify-start items-center gap-6">
                 <div className="flex -space-x-4">
                   {[1, 2, 3, 4].map(i => (
-                    <div key={i} className="w-14 h-14 rounded-full border-4 border-white bg-gray-50 overflow-hidden shadow-sm">
-                      <img src={`https://i.pravatar.cc/150?u=school${i}`} alt="user" className="w-full h-full object-cover" />
+                    <div
+                      key={i}
+                      className="w-10 h-10 md:w-14 md:h-14 rounded-full border-4 border-white bg-gray-50 overflow-hidden shadow-sm"
+                    >
+                      <img
+                        src={`https://i.pravatar.cc/150?u=school${i}`}
+                        alt="user"
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                   ))}
                 </div>
-                <div className="text-[#581C87] font-black uppercase tracking-wider text-sm">Join the Elite 1%</div>
+
+                <div className="text-[#581C87] font-black uppercase tracking-wider text-sm">
+                  Join the Elite 1%
+                </div>
               </div>
             </div>
 
-            <div className="relative">
-              <Carousel opts={{ align: "start", loop: true }} className="w-full">
+            {/* RIGHT SIDE */}
+            <div className="relative w-full max-w-full overflow-hidden">
+              <Carousel
+                opts={{ align: "start", loop: true }}
+                className="w-full max-w-full overflow-hidden"
+              >
                 <CarouselContent>
                   {testimonials.map((t, index) => (
-                    <CarouselItem key={index}>
+                    <CarouselItem key={index} className="basis-full">
                       <div className="p-2">
-                        <div className="bg-gray-50 p-10 rounded-[48px] border border-gray-50 shadow-sm min-h-[350px] flex flex-col justify-center relative overflow-hidden">
-                          <div className="absolute top-8 right-8 text-[#581C87]/10">
-                            <MessageSquare className="w-12 h-12" />
+                        <div className="bg-gray-50 p-6 md:p-10 rounded-3xl md:rounded-[48px] border border-gray-100 shadow-sm min-h-[250px] md:min-h-[350px] flex flex-col justify-center relative overflow-hidden">
+
+                          <div className="absolute top-6 right-6 md:top-8 md:right-8 text-[#581C87]/10">
+                            <MessageSquare className="w-8 h-8 md:w-12 md:h-12" />
                           </div>
-                          <div className="flex text-orange-500 mb-6">
-                            {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 fill-current" />)}
+
+                          <div className="flex text-orange-500 mb-4 md:mb-6">
+                            {[...Array(5)].map((_, i) => (
+                              <Star key={i} className="w-4 h-4 md:w-5 md:h-5 fill-current" />
+                            ))}
                           </div>
-                          <p className="text-xl text-[#581C87] font-semibold italic leading-relaxed mb-8">
+
+                          <p className="text-base md:text-xl text-[#581C87] font-semibold italic leading-relaxed mb-6 md:mb-8">
                             "{t.text}"
                           </p>
+
                           <div className="flex items-center gap-3">
-                            <div className="w-1 h-8 bg-orange-500 rounded-full"></div>
-                            <div className="text-[#581C87] font-black uppercase tracking-widest text-xs">Verified Institution Partner</div>
+                            <div className="w-1 h-6 md:h-8 bg-orange-500 rounded-full"></div>
+                            <div className="text-[#581C87] font-black uppercase tracking-widest text-xs">
+                              Verified Institution Partner
+                            </div>
                           </div>
+
                         </div>
                       </div>
                     </CarouselItem>
                   ))}
                 </CarouselContent>
-                <div className="flex justify-start gap-4 mt-10">
-                  <CarouselPrevious className="static translate-y-0 h-14 w-14 bg-[#581C87] text-white hover:bg-orange-500 border-none shadow-lg" />
-                  <CarouselNext className="static translate-y-0 h-14 w-14 bg-[#581C87] text-white hover:bg-orange-500 border-none shadow-lg" />
+
+                <div className="flex justify-center lg:justify-start gap-4 mt-6 md:mt-10">
+                  <CarouselPrevious className="static translate-y-0 h-10 w-10 md:h-14 md:w-14 bg-[#581C87] text-white hover:bg-orange-500 border-none shadow-lg" />
+                  <CarouselNext className="static translate-y-0 h-10 w-10 md:h-14 md:w-14 bg-[#581C87] text-white hover:bg-orange-500 border-none shadow-lg" />
                 </div>
+
               </Carousel>
             </div>
+
           </div>
         </div>
       </section>
