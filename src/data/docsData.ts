@@ -15,30 +15,46 @@ export const docsContent = [
                 slug: "welcome",
                 title: "Welcome",
                 content: `
-          <div class="text-center py-10">
-            <h1 class="text-2xl font-bold text-[#581C87]/70 mb-2">Welcome</h1>
-            <h2 class="text-xl text-[#581C87]/70 mb-4">To</h2>
-            <h1 class="text-2xl font-bold text-[#6f42c1] mb-2">eSkoolia ultimate Education ERP</h1>
-            <p class="text-[#581C87]/70 mb-4">Ultimate solution for your school to run modern way</p>
-            <p class="text-[#581C87]/70 font-medium">By</p>
-            <h3 class="text-xl font-bold text-[#6f42c1] mb-12">eSkoolia</h3>
+<div class="text-center py-6 px-2">
 
-            <div class="text-left max-w-2xl mx-auto space-y-1 mb-10 text-xs text-blue-500 text-center">
-               <p>Email: pro@eskoolia.com</p>
-               <p>Web: pro.eskoolia.com</p>
-            </div>
+  <h1 class="text-2xl font-bold text-[#581C87]/80 mb-1">Welcome</h1>
+  <h2 class="text-lg text-[#581C87]/70 mb-1">To</h2>
+  <h1 class="text-2xl font-bold text-[#6f42c1] mb-2">
+    eSkoolia Ultimate Education ERP
+  </h1>
 
-            <div class="text-center space-y-4 text-[#581C87]/70 mb-10">
-              <p>We would like to thank you for purchasing eSkoolia School! We are very pleased you have chosen eSkoolia School for your institution, you will not be disappointed! Before you get started, please be sure to always check out these documentation files. We outline all kinds of good information, and provide you with all the details you need to use eSkoolia School. eSkoolia School can be used with any school, college, university, training/coaching institute.</p>
-              <p>If you are unable to find your answer here in our documentation, watch our Video Tutorials, you can also visit our Help & Support. Chances are your question or issue have been brought up already and the answer is waiting to be found. If you are unable to find it anywhere, then please go our Support section and open a new Support Ticket with all the details we need. Please be sure to include your site URL as well. Thank you, we hope you enjoy using eSkoolia School!</p>
-            </div>
+  <p class="text-[#581C87]/70 mb-2 text-sm">
+    Ultimate solution for your school to run modern way
+  </p>
 
-            <div class="flex justify-center gap-4">
-              <button class="px-6 py-2 bg-[#8B5CF6] text-white font-bold rounded-full text-[10px] uppercase tracking-wide shadow-md hover:bg-[#7c3aed] transition-colors">Video Tutorials</button>
-              <button class="px-6 py-2 bg-white text-[#8B5CF6] border border-[#8B5CF6] font-bold rounded-full text-[10px] uppercase tracking-wide shadow-sm hover:bg-[#581C87]/5 transition-colors">Help & Supports</button>
-            </div>
-          </div>
-        `
+  <p class="text-[#581C87]/70 text-sm">By</p>
+  <h3 class="text-lg font-bold text-[#6f42c1] mb-3">eSkoolia</h3>
+
+  <div class="text-xs text-blue-500 mb-4 space-y-0.5">
+    <p>Email: pro@eskoolia.com</p>
+    <p>Web: pro.eskoolia.com</p>
+  </div>
+
+  <div class="text-[#581C87]/70 text-sm leading-6 space-y-3 mb-6 px-2">
+    <p>
+      We would like to thank you for purchasing eSkoolia School! We are very pleased you have chosen eSkoolia School for your institution, you will not be disappointed! Before you get started, please be sure to always check out these documentation files. We outline all kinds of good information, and provide you with all the details you need to use eSkoolia School. eSkoolia School can be used with any school, college, university, training/coaching institute.
+    </p>
+    <p>
+      If you are unable to find your answer here in our documentation, watch our Video Tutorials, you can also visit our Help & Support. Chances are your question or issue have been brought up already and the answer is waiting to be found. If you are unable to find it anywhere, then please go our Support section and open a new Support Ticket with all the details we need. Please be sure to include your site URL as well. Thank you, we hope you enjoy using eSkoolia School!
+    </p>
+  </div>
+
+  <div class="flex justify-center gap-3">
+    <button class="px-5 py-2 bg-[#8B5CF6] text-white font-semibold rounded-full text-[11px] uppercase tracking-wide shadow-sm hover:bg-[#7c3aed] transition-colors">
+      Video Tutorials
+    </button>
+    <button class="px-5 py-2 bg-white text-[#8B5CF6] border border-[#8B5CF6] font-semibold rounded-full text-[11px] uppercase tracking-wide hover:bg-[#581C87]/5 transition-colors">
+      Help & Supports
+    </button>
+  </div>
+
+</div>
+`
             }
         ]
     },

@@ -193,34 +193,52 @@ export default function DocsPage() {
         <div className="max-w-full mx-auto px-4 py-8 lg:px-8 lg:py-12 pb-32">
 
           {/* Voice Controls */}
-          <div className="flex flex-wrap items-center gap-3 mb-8 bg-white p-4 rounded-xl shadow-sm border border-gray-50 lg:sticky lg:top-[20px] z-30">
-            <button
-              onClick={() => setVoiceEnabled(true)}
-              className={`flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-bold transition-all shadow-sm ${voiceEnabled
-                ? "bg-orange-500/10 text-orange-500 ring-2 ring-orange-500/20"
-                : "bg-orange-500 text-white hover:bg-orange-600 hover:shadow-md"
-                }`}
-            >
-              <span className={isSpeaking ? "animate-pulse" : ""}>🔊</span>
-              {voiceEnabled ? "Voice On" : "Start Voice"}
-            </button>
+          <div className="relative flex items-center justify-between flex-wrap gap-4 mb-6 bg-white/70 backdrop-blur-md px-6 py-3 rounded-2xl shadow-md border border-gray-100 lg:sticky lg:top-[20px] z-30">
 
-            <button
-              onClick={() => {
-                stop();
-                setVoiceEnabled(false);
-              }}
-              className="px-5 py-2.5 bg-[#581C87]/5 text-[#581C87] hover:bg-[#581C87]/10 rounded-lg text-sm font-bold transition-all border border-[#581C87]/10"
-            >
-              ⏹ Stop
-            </button>
+            {/* Left Section - Controls */}
+            <div className="flex items-center gap-3">
 
-            {isSpeaking && (
-              <div className="ml-auto hidden md:flex items-center gap-2 text-[10px] font-bold text-[#581C87]/40 uppercase tracking-widest">
-                <span className="flex h-2 w-2 rounded-full bg-orange-500 animate-ping"></span>
-                AI Voice Active
-              </div>
-            )}
+              {/* Start / Voice On Button */}
+              <button
+                onClick={() => setVoiceEnabled(true)}
+                className={`flex items-center gap-2 px-5 py-2 rounded-xl text-sm font-semibold transition-all duration-300
+        ${voiceEnabled
+                    ? "bg-orange-50 text-orange-600 border border-orange-200"
+                    : "bg-gradient-to-r from-orange-500 to-orange-600 text-white hover:shadow-lg hover:scale-[1.03]"
+                  }`}
+              >
+                <span className={`text-base ${isSpeaking ? "animate-pulse" : ""}`}>
+                  🎙️
+                </span>
+                {voiceEnabled ? "Voice Enabled" : "Start Voice"}
+              </button>
+
+              {/* Stop Button */}
+              <button
+                onClick={() => {
+                  stop();
+                  setVoiceEnabled(false);
+                }}
+                className="px-5 py-2 rounded-xl text-sm font-semibold bg-[#581C87]/5 text-[#581C87] border border-[#581C87]/20 hover:bg-[#581C87]/10 transition-all duration-300"
+              >
+                Stop
+              </button>
+
+            </div>
+
+            {/* Right Section - Status */}
+            <div className="flex items-center gap-2">
+              {isSpeaking && (
+                <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-orange-50 border border-orange-200 text-orange-600 text-xs font-semibold uppercase tracking-wider">
+                  <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-orange-500"></span>
+                  </span>
+                  AI Speaking
+                </div>
+              )}
+            </div>
+
           </div>
 
           <div className="space-y-12">
