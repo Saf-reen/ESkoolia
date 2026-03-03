@@ -1751,7 +1751,7 @@ export const docsContent = [
             {
                 slug: "income", title: "Income", content: `
             <div class="space-y-6">
-                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Income</h3>
+                <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eskooliaome</h3>
                         <img src="/Eskooly/income.png" alt="Add Income" class="w-full rounded-lg shadow-md border border-gray-50" />
                 <ol class="list-decimal pl-5 space-y-8 marker:text-[#581C87]/70 marker:font-bold">
                     <li>
@@ -1786,8 +1786,8 @@ export const docsContent = [
         category: "Accounts",
         items: [
             {
-                slug: "search-income-expense", 
-                title: "Search Income/Expense", 
+                slug: "search-income-expense",
+                title: "Search Income/Expense",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Search Income/Expense</h3>
@@ -1802,11 +1802,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">Search result are shown in this list. Where individual information and grand total are shown.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "chart-of-account", 
-                title: "Chart Of Account", 
+                slug: "chart-of-account",
+                title: "Chart Of Account",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Chart Of Account</h3>
@@ -1821,11 +1821,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">Edit and delete are includes in the action column in this list.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "payment-method", 
-                title: "Payment Method", 
+                slug: "payment-method",
+                title: "Payment Method",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Payment Method</h3>
@@ -1840,11 +1840,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">Edit and delete are includes in the action column in this list.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "bank-account", 
-                title: "Bank Account", 
+                slug: "bank-account",
+                title: "Bank Account",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Bank Account</h3>
@@ -1859,11 +1859,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">Edit and delete are includes in the action column in this list.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "collect-fees", 
-                title: "Collect Fees", 
+                slug: "collect-fees",
+                title: "Collect Fees",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Collect Fees</h3>
@@ -1888,11 +1888,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">By clicking the add fees option, super admin will get the add fees page. Where date, amount, discount group, discount, fine and payment mode is required.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "search-fees-payment", 
-                title: "Search Fees Payment", 
+                slug: "search-fees-payment",
+                title: "Search Fees Payment",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Search Fees Payment</h3>
@@ -1912,11 +1912,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">In view page, the payment details are shown in the list. Print option is available in this list.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "fees-master", 
-                title: "Fees Master", 
+                slug: "fees-master",
+                title: "Fees Master",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Fees Master</h3>
@@ -1936,11 +1936,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">By clicking the assign/view, super admin can enter the fees master assign page. Where super admin can able to assign the fees group.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "fees-group", 
-                title: "Fees Group", 
+                slug: "fees-group",
+                title: "Fees Group",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Fees Group</h3>
@@ -1955,11 +1955,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">In the fees group list, edit and delete is available.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "fees-type", 
-                title: "Fees Type", 
+                slug: "fees-type",
+                title: "Fees Type",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Fees Type</h3>
@@ -1974,11 +1974,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">In the fees discount list, edit and delete is available.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "fees-discount", 
-                title: "Fees Discount", 
+                slug: "fees-discount",
+                title: "Fees Discount",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Fees Discount</h3>
@@ -1998,11 +1998,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">By clicking the assign, super admin can enter the fees discount assign page. Where super admin can able to assign the fees discount.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "fees-carry-forward", 
-                title: "Fees Carry Forward", 
+                slug: "fees-carry-forward",
+                title: "Fees Carry Forward",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Fees Carry Forward</h3>
@@ -2017,7 +2017,7 @@ export const docsContent = [
                         <p class="mt-1 mb-3">Search result will show the previous session balance fees. In this list particular student's balance are shown. Here, super admin can add balance for students.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             }
         ]
     },
@@ -2025,8 +2025,8 @@ export const docsContent = [
         category: "Download Center",
         items: [
             {
-                slug: "upload-content", 
-                title: "Upload Content", 
+                slug: "upload-content",
+                title: "Upload Content",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Upload Content</h3>
@@ -2041,11 +2041,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">The uploaded content are listed in upload content list. In this list, user can delete and download the content.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "assignment", 
-                title: "Assignment", 
+                slug: "assignment",
+                title: "Assignment",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Assignment</h3>
@@ -2060,11 +2060,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">Delete and download options are available in the action column.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "study-material", 
-                title: "Study Material", 
+                slug: "study-material",
+                title: "Study Material",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Study Material</h3>
@@ -2079,11 +2079,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">Delete and download options are available in the action column.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "syllabus", 
-                title: "Syllabus", 
+                slug: "syllabus",
+                title: "Syllabus",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Syllabus</h3>
@@ -2098,11 +2098,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">Delete and download options are available in the action column.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "other-downloads", 
-                title: "Other Downloads", 
+                slug: "other-downloads",
+                title: "Other Downloads",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Other Downloads</h3>
@@ -2117,7 +2117,7 @@ export const docsContent = [
                         <p class="mt-1 mb-3">Delete and download options are available in the action column.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             }
         ]
     },
@@ -2125,8 +2125,8 @@ export const docsContent = [
         category: "Student Information",
         items: [
             {
-                slug: "student-admission", 
-                title: "Student Admission", 
+                slug: "student-admission",
+                title: "Student Admission",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Student Admission</h3>
@@ -2172,11 +2172,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">4.Student Import Clicking there will lead you to a new page. The method of importing is cited on that page. Follow those to successfully import students using a csv file.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "student-list", 
-                title: "Student List", 
+                slug: "student-list",
+                title: "Student List",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Student List</h3>
@@ -2231,11 +2231,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">Add timeline option is available in the timeline page.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "student-attendance", 
-                title: "Student Attendance", 
+                slug: "student-attendance",
+                title: "Student Attendance",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Student Attendance</h3>
@@ -2254,11 +2254,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">Super admin can able to add attendance students. If anyone absent then check the absent, if present then check the present. Late and half day also can be checked.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "student-attendance-report", 
-                title: "Student Attendance Report", 
+                slug: "student-attendance-report",
+                title: "Student Attendance Report",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Student Attendance Report</h3>
@@ -2273,11 +2273,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">The search result will show in this report. If wants to see the individual students attendance then just click on the '+' symbolic button then see the all the days of a month report.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "student-category", 
-                title: "Student Category", 
+                slug: "student-category",
+                title: "Student Category",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Student Category</h3>
@@ -2292,11 +2292,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">super admin can able to edit and delete the student category list.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "student-group", 
-                title: "Student Group", 
+                slug: "student-group",
+                title: "Student Group",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Student Group</h3>
@@ -2311,11 +2311,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">super admin can able to edit and delete the student group list.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "student-promote", 
-                title: "Student Promote", 
+                slug: "student-promote",
+                title: "Student Promote",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Student Promote</h3>
@@ -2336,11 +2336,11 @@ export const docsContent = [
                     </li>
                     <p class="mt-4">This module is designed to promote students of a particular class to the next class in the next session. ‘Student Promotion’ submenu will be found under the menu ‘student’ in the admin panel. To promote students to the next class, admin needs to select the present class of the students and the class where he/she wants to promote the students. The present session which has been already set from the system settings will be selected automatically as the present session and the next session will be automatically calculated by the software.</p>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "disabled-students", 
-                title: "Disabled Students", 
+                slug: "disabled-students",
+                title: "Disabled Students",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Disabled Students</h3>
@@ -2355,11 +2355,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">In the disabled students list, super admin can view, edit and delete the list item.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "student-report", 
-                title: "Student Report", 
+                slug: "student-report",
+                title: "Student Report",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Student Report</h3>
@@ -2374,11 +2374,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">The search result is shown in student report list. Here student's all the major information are shown.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "guardian-reports", 
-                title: "Guardian Reports", 
+                slug: "guardian-reports",
+                title: "Guardian Reports",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Guardian Reports</h3>
@@ -2393,11 +2393,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">The search result is shown in guardian report list. Here student's guardian all the major information are shown.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "student-history", 
-                title: "Student History", 
+                slug: "student-history",
+                title: "Student History",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Student History</h3>
@@ -2412,11 +2412,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">The search result is shown in student history list. Here student history are shown.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "student-login-report", 
-                title: "Student Login Report", 
+                slug: "student-login-report",
+                title: "Student Login Report",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Student Login Report</h3>
@@ -2431,7 +2431,7 @@ export const docsContent = [
                         <p class="mt-1 mb-3">The search result is shown in student login report list. Here student can reset his password and his guardian as well.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             }
         ]
     },
@@ -2439,8 +2439,8 @@ export const docsContent = [
         category: "Reports",
         items: [
             {
-                slug: "fees-statement", 
-                title: "Fees Statement", 
+                slug: "fees-statement",
+                title: "Fees Statement",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Fees Statement</h3>
@@ -2456,11 +2456,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">The search result is shown in student fees statement report list. Here, student's fees which are paid already and if has any discount that are also shown.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "balance-fees-report", 
-                title: "Balance Fees Report", 
+                slug: "balance-fees-report",
+                title: "Balance Fees Report",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Balance Fees Report</h3>
@@ -2479,11 +2479,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">Grand total is shown one section's amount, discount, fine, paid fees, balance total statement</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "transaction-report", 
-                title: "Transaction Report", 
+                slug: "transaction-report",
+                title: "Transaction Report",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Transaction Report</h3>
@@ -2508,11 +2508,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">Expense result list show particular date duration's expense detail information.Grand total show the total amount of expense</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "class-report", 
-                title: "Class Report", 
+                slug: "class-report",
+                title: "Class Report",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Class Report</h3>
@@ -2532,11 +2532,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">This graphical statistic represents the particular class's fees collection statement.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "class-routine-report", 
-                title: "Class Routine Report", 
+                slug: "class-routine-report",
+                title: "Class Routine Report",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Class Routine Report</h3>
@@ -2551,11 +2551,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">The search result is shown in class routine report list. Here full week's per period assigned classes are shown.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "exam-routine", 
-                title: "Exam Routine", 
+                slug: "exam-routine",
+                title: "Exam Routine",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Exam Routine</h3>
@@ -2570,11 +2570,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">The search result is shown in exam routine report list. Here particular exam's full routine are shown.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "teacher-class-routine-report", 
-                title: "Teacher Class Routine Report", 
+                slug: "teacher-class-routine-report",
+                title: "Teacher Class Routine Report",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Teacher Class Routine Report</h3>
@@ -2589,11 +2589,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">In this class routine, individual teacher's full week assign class are listed.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "merit-list-report", 
-                title: "Merit List Report", 
+                slug: "merit-list-report",
+                title: "Merit List Report",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Merit List Report</h3>
@@ -2608,11 +2608,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">Search result are shown the a class all student's merit list. Here, in ascending order of student position, lists are shown. Individual subject's mark, grade also inclued in this list.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "online-exam-report", 
-                title: "Online Exam Report", 
+                slug: "online-exam-report",
+                title: "Online Exam Report",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Online Exam Report</h3>
@@ -2627,11 +2627,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">After searching the result view list are shown</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "tabulation-sheet-report", 
-                title: "Tabulation Sheet Report", 
+                slug: "tabulation-sheet-report",
+                title: "Tabulation Sheet Report",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Tabulation Sheet Report</h3>
@@ -2646,11 +2646,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">After searching tabulation sheet, the tabulation sheet are shown in below.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "student-progress-report", 
-                title: "Student Progress Report", 
+                slug: "student-progress-report",
+                title: "Student Progress Report",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Progress Report</h3>
@@ -2665,11 +2665,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">After searching you can find student progress report list.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "student-fine-report", 
-                title: "Student Fine Report", 
+                slug: "student-fine-report",
+                title: "Student Fine Report",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Student Fine Report</h3>
@@ -2684,11 +2684,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">After searching you can find student fine report list.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "user-log", 
-                title: "User Log", 
+                slug: "user-log",
+                title: "User Log",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia User Log</h3>
@@ -2699,7 +2699,7 @@ export const docsContent = [
                         <p class="mt-1 mb-3">This is onl for administrator, he can see the user loging history so that he can understand which user is active or not.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             }
         ]
     },
@@ -2707,8 +2707,8 @@ export const docsContent = [
         category: "Student Panel",
         items: [
             {
-                slug: "student-profile", 
-                title: "Student Profile", 
+                slug: "student-profile",
+                title: "Student Profile",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Student Profile</h3>
@@ -2719,11 +2719,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">Student can see his Profile,fees statement,examination,document and timeline.the profile includes personal information,parent,transport,dormitory, other information and so on.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "fees", 
-                title: "Fees", 
+                slug: "fees",
+                title: "Fees",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Fees</h3>
@@ -2734,11 +2734,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">Fees statement lists are shown and if fees are not paid yet then student is able to pay his fees through Paypal and Stripe.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "class-routine", 
-                title: "Class Routine", 
+                slug: "class-routine",
+                title: "Class Routine",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Class Routine</h3>
@@ -2749,11 +2749,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">Class routine are shown here. Class routine module has the capability to set routines section wise for a particular class. Admin can add, edit or delete any class routine and there is a print button associated with every class routine for printing</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "homework", 
-                title: "Homework", 
+                slug: "homework",
+                title: "Homework",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Homework</h3>
@@ -2768,11 +2768,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">Student can see the homework's full detail view in the action section.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "download-center", 
-                title: "Download Center", 
+                slug: "download-center",
+                title: "Download Center",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Download Center</h3>
@@ -2797,11 +2797,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">You can add fees fro here. There are four fields are required those are amount,discount group, discount & fine. There are three type of payment method has given. After giving all information of fees, then submit.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "attendance", 
-                title: "Attendance", 
+                slug: "attendance",
+                title: "Attendance",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Attendance</h3>
@@ -2830,11 +2830,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">In this section attendance results are shown. Attendance result show the certain month attendance which is remarked by present(P),late(L),absent(A),Half Day(H) and Holiday(F)</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "examinations", 
-                title: "Examinations", 
+                slug: "examinations",
+                title: "Examinations",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Examinations</h3>
@@ -2868,11 +2868,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">Exam routine are shown here.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "online-exam", 
-                title: "Online Exam", 
+                slug: "online-exam",
+                title: "Online Exam",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Online Exam</h3>
@@ -2921,11 +2921,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">You can delete your backup</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "notice-board", 
-                title: "Notice Board", 
+                slug: "notice-board",
+                title: "Notice Board",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Notice Board</h3>
@@ -2945,11 +2945,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">If update version is available, then you can upgrade from here. At first you have to read alert carefully, If you have to do anything, then do it before taking upgrade.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "subject", 
-                title: "Subject", 
+                slug: "subject",
+                title: "Subject",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Subject</h3>
@@ -2960,11 +2960,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">Assigned Subjects are listed here.Student can see those.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "teachers", 
-                title: "Teachers", 
+                slug: "teachers",
+                title: "Teachers",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Teachers</h3>
@@ -2975,11 +2975,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">Course teacher listed here.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "library", 
-                title: "Library", 
+                slug: "library",
+                title: "Library",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Library</h3>
@@ -2995,11 +2995,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">Which books are issued for this student are shown here.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "transport", 
-                title: "Transport", 
+                slug: "transport",
+                title: "Transport",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Transport</h3>
@@ -3014,11 +3014,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">Full details of transport route are shown here.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "dormitory", 
-                title: "Dormitory", 
+                slug: "dormitory",
+                title: "Dormitory",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Dormitory</h3>
@@ -3029,7 +3029,7 @@ export const docsContent = [
                         <p class="mt-1 mb-3">Dormitory and it's room information with which room is assigned for the student is listed here.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             }
         ]
     },
@@ -3037,8 +3037,8 @@ export const docsContent = [
         category: "Parents Panel",
         items: [
             {
-                slug: "student-profile", 
-                title: "Student Profile", 
+                slug: "student-profile",
+                title: "Student Profile",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Student Profile</h3>
@@ -3074,11 +3074,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">Here Teachers can create Homework for their Class-Section. After creating homework teachers can evaluate homework for class-section students that who has completed homework or not completed. First we will Add Homework then we will evaluate homework. Homework- Go to Homework > Add Homework Here you can see all previously created homework and search them different criteria.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "student-fees-statement", 
-                title: "Student Fees Statement", 
+                slug: "student-fees-statement",
+                title: "Student Fees Statement",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Student Fees Statement</h3>
@@ -3098,11 +3098,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">Parent Can pay the fees through online via cards.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "student-class-routine", 
-                title: "Student Class Routine", 
+                slug: "student-class-routine",
+                title: "Student Class Routine",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Student Class Routine</h3>
@@ -3164,11 +3164,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">To set class routine, you have to select subject, teacher, and room number. Please see how to add subject , teacher , and room number</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "homework-list", 
-                title: "Homework list", 
+                slug: "homework-list",
+                title: "Homework list",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Homework list</h3>
@@ -3230,11 +3230,11 @@ export const docsContent = [
                     <img src="/Eskooly/add-assign-subject.png" alt="Download Center" class="w-full rounded-lg shadow-md border border-gray-50" />
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "student-attendance", 
-                title: "Student Attendance", 
+                slug: "student-attendance",
+                title: "Student Attendance",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Student Attendance</h3>
@@ -3249,11 +3249,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">In this section attendance results are shown.Attendance result show the certain month attendance which is remarked by present(P),late(L),absent(A),Half Day(H) and Holiday(F)</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "notice-board", 
-                title: "Notice Board", 
+                slug: "notice-board",
+                title: "Notice Board",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Notice Board</h3>
@@ -3264,11 +3264,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">Parent can see the notice list which is selected for parents.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "subjects", 
-                title: "Subjects", 
+                slug: "subjects",
+                title: "Subjects",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Subjects</h3>
@@ -3279,11 +3279,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">Parent can see which subjects are assigned.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "teacher-list", 
-                title: "Teacher List", 
+                slug: "teacher-list",
+                title: "Teacher List",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Teacher List</h3>
@@ -3294,11 +3294,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">Parent can see the teachers list whom are assigned.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "transport-list", 
-                title: "Transport List", 
+                slug: "transport-list",
+                title: "Transport List",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Transport List</h3>
@@ -3309,11 +3309,11 @@ export const docsContent = [
                         <p class="mt-1 mb-3">Parent can see the transport route and assigned vehicle.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             },
             {
-                slug: "dormitory", 
-                title: "Dormitory", 
+                slug: "dormitory",
+                title: "Dormitory",
                 content: `
             <div class="space-y-6">
                 <h3 class="text-xl font-bold text-[#6f42c1] mb-2 text-center">eSkoolia Dormitory</h3>
@@ -3324,7 +3324,7 @@ export const docsContent = [
                         <p class="mt-1 mb-3">Dormitory list and assigned dormitory are seen in this module.</p>
                     </li>
                 </ol>
-            </div>` 
+            </div>`
             }
         ]
     },

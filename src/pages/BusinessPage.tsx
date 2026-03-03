@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { CheckCircle2, Code2, Building2, DollarSign, Server, ArrowRight, TrendingUp, ShieldCheck, Rocket } from "lucide-react";
+import { CheckCircle2, Code2, Building2, IndianRupee, Server, ArrowRight, TrendingUp, ShieldCheck, Rocket } from "lucide-react";
 import PageHeader from "@/components/layout/PageHeader";
 
 export default function BusinessPage() {
@@ -39,7 +39,7 @@ export default function BusinessPage() {
                 {[
                   { icon: Code2, title: "Full Source Code", desc: "Complete access to the entire codebase. Modify, extend, and customize without limits.", color: "text-[#581C87]", bg: "bg-gray-50" },
                   { icon: Building2, title: "Multi Branch System", desc: "Manage unlimited schools and branches from a single super-admin dashboard.", color: "text-orange-500", bg: "bg-orange-50" },
-                  { icon: DollarSign, title: "100% Revenue", desc: "Set your own pricing plans. Keep 100% of the profits. No revenue sharing.", color: "text-[#581C87]", bg: "bg-gray-50" },
+                  { icon: IndianRupee, title: "100% Revenue", desc: "Set your own pricing plans. Keep 100% of the profits. No revenue sharing.", color: "text-[#581C87]", bg: "bg-gray-50" },
                   { icon: Server, title: "Self-Hosted Control", desc: "Deploy on your own servers (AWS, DigitalOcean, etc). You own your data.", color: "text-orange-500", bg: "bg-orange-50" },
                 ].map((item) => (
                   <div key={item.title} className="rounded-2xl border border-gray-50 bg-white p-6 shadow-sm hover:shadow-md transition-all duration-300 group">
@@ -116,7 +116,7 @@ export default function BusinessPage() {
                     <div className="text-sm text-[#581C87]/60 font-medium mt-1">Potential client base</div>
                   </div>
                   <div className="pt-8 sm:pt-0">
-                    <DollarSign className="h-8 w-8 text-orange-500 mx-auto mb-3" />
+                    <IndianRupee className="h-8 w-8 text-orange-500 mx-auto mb-3" />
                     <div className="font-display text-3xl font-bold text-[#581C87]">$60K+</div>
                     <div className="text-sm text-[#581C87]/60 font-medium mt-1">Annual revenue</div>
                   </div>

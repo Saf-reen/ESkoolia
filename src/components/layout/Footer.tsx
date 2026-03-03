@@ -2,23 +2,23 @@ import { Link } from "react-router-dom";
 import { GraduationCap, Facebook, Twitter, Linkedin, Instagram, CreditCard, ShieldCheck } from "lucide-react";
 
 const footerLinks = {
-  "Our Products": [
-    { label: "eSkoolia SaaS - FREE", href: "#" },
-    { label: "eSkoolia Desktop", href: "#" },
-    { label: "eSkoolia Pro", href: "#" },
-    { label: "eSkoolia LMS", href: "#" },
-  ],
-  "Versions": [
-    { label: "Latest", href: "#" },
-    { label: "Version 9.0", href: "#" },
-    { label: "Version 9.1", href: "#" },
-    { label: "Add-ons", href: "/modules" },
-  ],
+  // "Our Products": [
+  //   { label: "eSkoolia SaaS - FREE", href: "#" },
+  //   { label: "eSkoolia Desktop", href: "#" },
+  //   { label: "eSkoolia Pro", href: "#" },
+  //   { label: "eSkoolia LMS", href: "#" },
+  // ],
+  // "Versions": [
+  //   { label: "Latest", href: "#" },
+  //   { label: "Version 9.0", href: "#" },
+  //   { label: "Version 9.1", href: "#" },
+  // ],
   "Useful Links": [
     { label: "FAQ'S", href: "/faq" },
     { label: "Documentation", href: "/docs" },
     { label: "Live Chat", href: "https://wa.me/+919701314138" },
     // { label: "Live Demo", href: "https://eskooly.pro/login" },
+    { label: "Add-ons", href: "/modules" },
   ],
   "Legal": [
     { label: "Privacy Policy", href: "/privacy" },
@@ -92,18 +92,18 @@ export default function Footer() {
         </div>
 
         {/* Bottom Section: Payments & Certifications */}
-        <div className="border-t border-white/10 pt-10 flex flex-col lg:flex-row justify-between items-center gap-8">
+        {/* <div className="border-t border-white/10 pt-10 flex flex-col lg:flex-row justify-between items-center gap-8"> */}
           {/* Payment Methods */}
-          <div className="flex flex-wrap justify-center gap-3">
+          {/* <div className="flex flex-wrap justify-center gap-3">
             {paymentMethods.map((pm) => (
               <div key={pm.name} className={`px-3 py-1.5 rounded-md ${pm.color} text-[10px] font-bold tracking-wider shadow-sm border border-white/20`}>
                 {pm.name}
               </div>
             ))}
-          </div>
+          </div> */}
 
           {/* Certifications */}
-          <div className="text-center">
+          {/* <div className="text-center">
             <span className="block text-lg font-semibold mb-3 opacity-90">We're Proudly Certified</span>
             <div className="flex justify-center gap-4">
               <div className="w-10 h-10 bg-black/30 rounded-full flex items-center justify-center border border-white/20" title="Kids Club">
@@ -120,12 +120,12 @@ export default function Footer() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Copyright */}
         <div className="mt-16 text-center text-white/40 text-sm flex flex-col sm:flex-row justify-between items-center border-t border-white/5 pt-6">
           <div className="flex flex-col items-center sm:items-start gap-1">
-            <span>Copyright © 2026. All Rights Reserved By <a href="https://eskoolia.com" className="hover:text-white transition-colors">eSkoolia Inc.</a></span>
+            <span>Copyright © 2026. All Rights Reserved By <a href="https://eskoolia.com" className="hover:text-white transition-colors">eSkoolia.</a></span>
             <span className="text-xs opacity-50 uppercase tracking-widest font-black">By Sria Infotech Pvt Ltd</span>
           </div>
           <div className="mt-4 sm:mt-0 flex flex-col items-center sm:items-end gap-1">

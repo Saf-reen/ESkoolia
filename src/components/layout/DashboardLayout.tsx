@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, Outlet, useLocation } from "react-router-dom";
 import {
   LayoutDashboard, Users, UserCheck, CalendarCheck, FileText,
-  DollarSign, BookOpen, Settings, Building2, Menu, X,
+  IndianRupee, BookOpen, Settings, Building2, Menu, X,
   GraduationCap, BarChart3, Briefcase, Bus, BedDouble,
   Bell, CalendarDays
 } from "lucide-react";
@@ -13,7 +13,7 @@ const sidebarLinks = [
   { label: "Teachers", href: "/dashboard/teachers", icon: UserCheck },
   { label: "Attendance", href: "/dashboard/attendance", icon: CalendarCheck },
   { label: "Exams", href: "/dashboard/exams", icon: FileText },
-  { label: "Fees", href: "/dashboard/fees", icon: DollarSign },
+  { label: "Fees", href: "/dashboard/fees", icon: IndianRupee },
   { label: "Accounting", href: "/dashboard/accounting", icon: BarChart3 },
   { label: "HR & Payroll", href: "/dashboard/hr", icon: Briefcase },
   { label: "Library", href: "/dashboard/library", icon: BookOpen },

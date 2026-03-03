@@ -16,13 +16,13 @@ export default function TermsPage() {
       id: "intellectual-property",
       title: "Intellectual Property",
       icon: Copyright,
-      content: "eSkoolia Pro and its content, including but not limited to software, logos, trademarks, and designs, are the intellectual property of eSkoolia Inc. and are protected by copyright, trademark, and other laws."
+      content: "eSkoolia Pro and its content, including but not limited to software, logos, trademarks, and designs, are the intellectual property of eskoolia. and are protected by copyright, trademark, and other laws."
     },
     {
       id: "data-ownership",
       title: "Data Ownership",
       icon: Database,
-      content: "You retain ownership of any data or content you upload, input, or submit to eSkoolia Pro. By using our service, you grant eSkoolia Inc. a non-exclusive, worldwide, royalty-free license to use, reproduce, and distribute your data solely for the purpose of providing and improving our service."
+      content: "You retain ownership of any data or content you upload, input, or submit to eSkoolia Pro. By using our service, you grant eskoolia. a non-exclusive, worldwide, royalty-free license to use, reproduce, and distribute your data solely for the purpose of providing and improving our service."
     },
     {
       id: "acceptable-use",
@@ -34,13 +34,13 @@ export default function TermsPage() {
       id: "limitation-of-liability",
       title: "Limitation of Liability",
       icon: Scale,
-      content: "In no event shall eSkoolia Inc. be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or in connection with your use of eSkoolia Pro. eSkoolia Inc. shall not be liable for any interruption or cessation of service, loss of data, or unauthorized access to your account."
+      content: "In no event shall eskoolia. be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or in connection with your use of eSkoolia Pro. eskoolia. shall not be liable for any interruption or cessation of service, loss of data, or unauthorized access to your account."
     },
     {
       id: "termination",
       title: "Termination",
       icon: XCircle,
-      content: "eSkoolia Inc. reserves the right to suspend or terminate your access to eSkoolia Pro at any time for any reason without prior notice. Upon termination, your right to use eSkoolia Pro will cease, and you must cease all use of the service and destroy any copies of eSkoolia Pro in your possession."
+      content: "eskoolia. reserves the right to suspend or terminate your access to eSkoolia Pro at any time for any reason without prior notice. Upon termination, your right to use eSkoolia Pro will cease, and you must cease all use of the service and destroy any copies of eSkoolia Pro in your possession."
     },
     {
       id: "governing-law",

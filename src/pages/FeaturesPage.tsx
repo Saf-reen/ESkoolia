@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import {
-  UserCog, User, GraduationCap, DollarSign, Wallet, Users,
+  UserCog, User, GraduationCap, IndianRupee, Wallet, Users,
   FileSpreadsheet, BookOpen, MessageSquare, Library, Package,
   Bus, Bed, Globe, BarChart3, Settings, Zap, Globe2, Code,
   Smartphone, Languages, Palette, Bell, SmartphoneNfc, Printer,
@@ -13,7 +13,7 @@ const mainModules = [
   { icon: UserCog, title: "Admin Module", desc: "Managing other accounts, Manage Teacher, Student, Guardian etc" },
   { icon: User, title: "Student Info", desc: "Student Admission, Student List, Student Attendance, Promote, Reports, etc." },
   { icon: GraduationCap, title: "Teacher", desc: "Uploading Content, Material, Assignment, Syllabus Downloads and many more." },
-  { icon: DollarSign, title: "Fees Collection", desc: "Fees Master Collect Fees Due fees searches Discount and many more" },
+  { icon: IndianRupee, title: "Fees Collection", desc: "Fees Master Collect Fees Due fees searches Discount and many more" },
   { icon: Wallet, title: "Accounts", desc: "Profit, Income, Expense Search Query Account List Payment Methods etc." },
   { icon: Users, title: "Human Resource", desc: "Staff (Directory, Attendance, Reports) Payroll Designation Department and more." },
   { icon: FileSpreadsheet, title: "Examination", desc: "Exam routine, Date & time Schedule notice. Seat plan Mark sheet & Report etc." },

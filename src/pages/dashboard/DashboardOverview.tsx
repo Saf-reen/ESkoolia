@@ -1,9 +1,9 @@
-import { Users, UserCheck, DollarSign, BookOpen, TrendingUp, TrendingDown, CalendarCheck, FileText } from "lucide-react";
+import { Users, UserCheck, IndianRupee, BookOpen, TrendingUp, TrendingDown, CalendarCheck, FileText } from "lucide-react";
 
 const stats = [
   { label: "Total Students", value: "2,847", change: "+12%", up: true, icon: Users },
   { label: "Total Teachers", value: "156", change: "+3%", up: true, icon: UserCheck },
-  { label: "Fee Collected", value: "$284,500", change: "+8%", up: true, icon: DollarSign },
+  { label: "Fee Collected", value: "$284,500", change: "+8%", up: true, icon: IndianRupee },
   { label: "Attendance Rate", value: "94.2%", change: "-0.5%", up: false, icon: CalendarCheck },
 ];
 

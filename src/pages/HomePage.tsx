@@ -165,7 +165,7 @@ export default function HomePage() {
   const [typedText, setTypedText] = useState("");
   const [wordIndex, setWordIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const words = ["Training Center.", "School.", "College.", "Institute", "Academy.", "Tution Center."];
+  const words = ["Training Center.", "School.", "College.", "Institute.", "Academy.", "Tution Center."];
   const typingSpeed = isDeleting ? 50 : 150;
 
   useEffect(() => {
@@ -635,7 +635,7 @@ export default function HomePage() {
             {/* Standard */}
             <div className="bg-white rounded-3xl border border-gray-50 p-10 text-center shadow-lg hover:shadow-xl transition">
               <h3 className="text-2xl font-bold text-[#581C87]">Standard</h3>
-              <p className="mt-6 text-4xl font-extrabold text-[#581C87]">$67</p>
+              <p className="mt-6 text-4xl font-extrabold text-[#581C87]">₹67</p>
               <p className="text-sm text-[#581C87]/60">Lifetime</p>
 
               <ul className="mt-8 space-y-3 text-[#581C87]/70 font-medium">
@@ -658,7 +658,7 @@ export default function HomePage() {
               </span>
 
               <h3 className="text-3xl font-bold">Premium</h3>
-              <p className="mt-6 text-5xl font-extrabold">$149</p>
+              <p className="mt-6 text-5xl font-extrabold">₹149</p>
               <p className="text-sm opacity-80">Lifetime</p>
 
               <ul className="mt-10 space-y-4 opacity-90 font-medium">
@@ -677,7 +677,7 @@ export default function HomePage() {
             {/* Business */}
             <div className="bg-white rounded-3xl border border-gray-50 p-10 text-center shadow-lg hover:shadow-xl transition">
               <h3 className="text-2xl font-bold text-[#581C87]">Business</h3>
-              <p className="mt-6 text-4xl font-extrabold text-[#581C87]">$999</p>
+              <p className="mt-6 text-4xl font-extrabold text-[#581C87]">₹999</p>
               <p className="text-sm text-[#581C87]/60">Lifetime</p>
 
               <ul className="mt-8 space-y-3 text-[#581C87]/70 font-medium">

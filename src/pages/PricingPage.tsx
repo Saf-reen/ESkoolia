@@ -116,7 +116,7 @@ export default function PricingPage() {
                 <p className="text-[#581C87]/60 text-sm mb-6">{plan.desc}</p>
 
                 <div className="mb-8 flex items-baseline">
-                  <span className="font-display text-5xl font-extrabold text-[#581C87]">${plan.price}</span>
+                  <span className="font-display text-5xl font-extrabold text-[#581C87]">₹{plan.price}</span>
                   <span className="text-[#581C87]/40 font-medium ml-2">/{plan.period}</span>
                 </div>
 

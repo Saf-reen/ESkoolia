@@ -61,11 +61,22 @@ export default function DocsPage() {
   useEffect(() => {
     const activeBtn = document.getElementById(`nav-${activeSlug}`);
     if (activeBtn && sidebarRef.current) {
-      activeBtn.scrollIntoView({
-        behavior: 'smooth',
-        block: 'nearest',
-        inline: 'start'
-      });
+      const container = sidebarRef.current;
+      const btnRect = activeBtn.getBoundingClientRect();
+      const containerRect = container.getBoundingClientRect();
+
+      // Calculate relative position within the visible area of the container
+      const relativeTop = btnRect.top - containerRect.top;
+
+      // Check if button is out of the visible area of the sidebar
+      const isVisible = relativeTop >= 0 && relativeTop + btnRect.height <= containerRect.height;
+
+      if (!isVisible) {
+        container.scrollTo({
+          top: container.scrollTop + relativeTop - (containerRect.height / 2) + (btnRect.height / 2),
+          behavior: 'smooth'
+        });
+      }
     }
   }, [activeSlug]);
 
@@ -118,7 +129,7 @@ export default function DocsPage() {
       {/* Sidebar */}
       <aside
         ref={sidebarRef}
-        className={`fixed inset-y-0 left-0 z-40 w-64 bg-white border-r border-gray-50 transform transition-transform duration-300 ease-in-out lg:translate-x-0 lg:static lg:h-[calc(100vh)] lg:sticky lg:top-0 overflow-y-auto ${sidebarOpen ? "translate-x-0" : "-translate-x-full"} shadow-lg lg:shadow-none`}
+        className={`fixed inset-y-0 left-0 z-40 w-64 bg-white border-r border-gray-50 transform transition-transform duration-300 ease-in-out lg:translate-x-0 lg:sticky lg:top-0 lg:h-screen overflow-y-auto ${sidebarOpen ? "translate-x-0" : "-translate-x-full"} shadow-lg lg:shadow-none`}
       >
         <div className="p-4 flex flex-col h-full">
           {/* Logo Area */}

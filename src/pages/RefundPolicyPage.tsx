@@ -9,7 +9,7 @@ import {
     XCircle as XIcon,
     Mail as MailIcon,
     Menu,
-    DollarSign
+    IndianRupee
 } from "lucide-react";
 
 export default function RefundPolicyPage() {
@@ -25,7 +25,7 @@ export default function RefundPolicyPage() {
         {
             id: "business-package",
             title: "Business Package",
-            icon: DollarSign,
+            icon: IndianRupee,
             content: "Due to the nature of the Business package, which is tailored for larger institutions and enterprises, we do not offer refunds for the Business package."
         },
         {
