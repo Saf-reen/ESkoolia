@@ -5,10 +5,10 @@ import { Menu, X, GraduationCap, Monitor, ShoppingCart } from "lucide-react";
 
 const navLinks = [
   { label: "Home", href: "/" },
-  { label: "Features", href: "/features" },
-  { label: "Pricing", href: "/pricing" },
-  { label: "Docs", href: "/docs" },
-  { label: "Contact", href: "/contact" },
+  { label: "Modules", href: "/features" },
+  { label: "Solutions", href: "/pricing" },
+  { label: "Resources", href: "/docs" },
+  { label: "Contact Us", href: "/contact" },
 ];
 
 export default function Header() {
@@ -30,10 +30,9 @@ export default function Header() {
   }, []);
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-[#581C87] shadow-lg py-0" : "bg-transparent py-2"
-      }`}>
+    <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[#276221] shadow-lg py-0">
       {/* Announcement Bar */}
-      <div className="bg-white/10 backdrop-blur-sm border-b border-white/10 py-2 hidden md:block">
+      {/* <div className="bg-white/10 backdrop-blur-sm border-b border-white/10 py-2 hidden md:block">
         <div className="container flex justify-between items-center text-[13px] font-medium text-white/90">
           <div className="flex items-center gap-2">
             <span className="bg-white/20 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider">New</span>
@@ -45,7 +44,7 @@ export default function Header() {
             <a href="#" className="hover:text-white transition-colors">Front CMS</a>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="py-2">
         <div className="container flex items-center justify-between relative">
@@ -68,12 +67,12 @@ export default function Header() {
           </nav>
 
           <div className="hidden items-center gap-3 md:flex z-10">
-            <Button variant="outline" className="gap-2 border-white/40 text-white bg-white/5 hover:bg-white hover:text-[#581C87] hover:border-white transition-all rounded-full h-11 px-7 font-bold text-sm tracking-wide" asChild>
+            {/* <Button variant="outline" className="gap-2 border-white/40 text-white bg-white/5 hover:bg-white hover:text-[#276221] hover:border-white transition-all rounded-full h-11 px-7 font-bold text-sm tracking-wide" asChild>
               <a href="https://eskooly.pro/login" target="_blank" rel="noopener noreferrer">
                 <Monitor className="h-4 w-4" /> LIVE DEMO
               </a>
-            </Button>
-            <Button variant="default" className="gap-2 bg-white/5 border border-white/40 hover:bg-white hover:text-[#581C87] text-white border-none shadow-lg rounded-full h-11 px-7 font-bold text-sm tracking-wide transition-all" asChild>
+            </Button> */}
+            <Button variant="default" className="gap-2 bg-white/5 border border-white/40 hover:bg-white hover:text-[#276221] text-white border-none shadow-lg rounded-full h-11 px-7 font-bold text-sm tracking-wide transition-all" asChild>
               <Link to="/pricing">
                 <ShoppingCart className="h-4 w-4" /> BUY NOW
               </Link>
@@ -89,7 +88,7 @@ export default function Header() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="bg-[#581C87] p-4 md:hidden shadow-xl animate-accordion-down overflow-hidden h-screen">
+        <div className="bg-[#276221] p-4 md:hidden shadow-xl animate-accordion-down overflow-hidden h-screen">
           <nav className="flex flex-col gap-2 pt-10">
             {navLinks.map((l) => (
               <Link
@@ -103,11 +102,11 @@ export default function Header() {
               </Link>
             ))}
             <div className="grid gap-4 mt-10">
-              <Button variant="outline" className="gap-2 justify-center h-14 text-lg border-white/30 text-white" asChild>
+              {/* <Button variant="outline" className="gap-2 justify-center h-14 text-lg border-white/30 text-white" asChild>
                 <a href="https://eskooly.pro/login" target="_blank" rel="noopener noreferrer">
                   <Monitor className="h-5 w-5" /> LIVE DEMO
                 </a>
-              </Button>
+              </Button> */}
               <Button variant="default" className="gap-2 justify-center h-14 text-lg bg-orange-500 hover:bg-orange-600 border-none" asChild>
                 <Link to="/pricing" onClick={() => setMobileOpen(false)}>
                   <ShoppingCart className="h-5 w-5" /> BUY NOW

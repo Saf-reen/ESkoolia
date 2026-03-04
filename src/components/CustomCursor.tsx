@@ -21,17 +21,17 @@ export default function CustomCursor() {
             const element = document.elementFromPoint(e.clientX, e.clientY);
             if (!element) return;
 
-            if (element.closest(".cursor-purple-section")) {
+            if (element.closest(".cursor-green-section")) {
                 setVariant("orange");
-                document.body.classList.add("purple-scroll");
+                document.body.classList.add("green-scroll");
                 document.body.classList.remove("orange-scroll");
             } else if (element.closest(".cursor-orange-section")) {
-                setVariant("purple");
+                setVariant("green");
                 document.body.classList.add("orange-scroll");
-                document.body.classList.remove("purple-scroll");
+                document.body.classList.remove("green-scroll");
             } else {
                 // Reset scrollbar logic
-                document.body.classList.remove("purple-scroll");
+                document.body.classList.remove("green-scroll");
                 document.body.classList.remove("orange-scroll");
 
                 if (element.closest("a, button, [role='button'], .hover-target, .cursor-pointer")) {
@@ -72,8 +72,8 @@ export default function CustomCursor() {
         switch (variant) {
             case "orange":
                 return "border-orange-500 bg-orange-500/10 w-16 h-16 -ml-8 -mt-8 backdrop-blur-sm";
-            case "purple":
-                return "border-purple-700 bg-purple-700/10 w-16 h-16 -ml-8 -mt-8 backdrop-blur-sm";
+            case "green":
+                return "border-green-700 bg-green-700/10 w-16 h-16 -ml-8 -mt-8 backdrop-blur-sm";
             case "grow":
                 return "border-orange-500 bg-orange-500/10 w-20 h-20 -ml-10 -mt-10 backdrop-blur-sm";
             default:
@@ -82,8 +82,8 @@ export default function CustomCursor() {
     };
 
     const dotColor =
-        variant === "purple"
-            ? "bg-purple-700"
+        variant === "green"
+            ? "bg-green-700"
             : "bg-orange-500";
 
     return (

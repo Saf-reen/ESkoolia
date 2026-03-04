@@ -112,18 +112,18 @@ export default function DocsPage() {
   }, []);
 
   return (
-    <div className="flex flex-col lg:flex-row min-h-screen bg-gray-50 text-[#581C87] font-sans">
+    <div className="flex flex-col lg:flex-row min-h-screen bg-gray-50 text-[#276221] font-sans">
       {/* Mobile Sidebar Toggle */}
       <div className="lg:hidden p-4 border-b border-gray-50 bg-white flex items-center justify-between sticky top-[80px] z-20 shadow-sm">
-        <span className="font-bold text-[#581C87]">ESKOOLIA DOCS</span>
-        <button onClick={() => setSidebarOpen(true)} className="p-2 hover:bg-[#581C87]/5 rounded-md transition-colors">
-          <Menu className="h-5 w-5 text-[#581C87]/70" />
+        <span className="font-bold text-[#276221]">ESKOOLIA DOCS</span>
+        <button onClick={() => setSidebarOpen(true)} className="p-2 hover:bg-[#276221]/5 rounded-md transition-colors">
+          <Menu className="h-5 w-5 text-[#276221]/70" />
         </button>
       </div>
 
       {/* Sidebar Overlay */}
       {sidebarOpen && (
-        <div className="fixed inset-0 z-30 bg-[#581C87]/40 lg:hidden backdrop-blur-sm transition-opacity" onClick={() => setSidebarOpen(false)}></div>
+        <div className="fixed inset-0 z-30 bg-[#276221]/40 lg:hidden backdrop-blur-sm transition-opacity" onClick={() => setSidebarOpen(false)}></div>
       )}
 
       {/* Sidebar */}
@@ -133,18 +133,18 @@ export default function DocsPage() {
       >
         <div className="p-4 flex flex-col h-full">
           {/* Logo Area */}
-          <div className="mb-2 p-2 bg-[#581C87] -mx-4 -mt-4 flex justify-center items-center shadow-lg border-b border-white/10">
+          <div className="mb-2 p-2 bg-[#276221] -mx-4 -mt-4 flex justify-center items-center shadow-lg border-b border-white/10">
             <Link to="/" className="flex items-center gap-2 group cursor-pointer">
               <img src="/eskoolia_logo_.png" alt="Eskoolia" className="h-24 w-auto brightness-110" />
             </Link>
           </div>
 
           <div className="mb-6 relative group">
-            <Search className="absolute left-3 top-2.5 h-4 w-4 text-[#581C87]/40 group-focus-within:text-orange-500 transition-colors" />
+            <Search className="absolute left-3 top-2.5 h-4 w-4 text-[#276221]/40 group-focus-within:text-orange-500 transition-colors" />
             <input
               type="text"
               placeholder="Search documentation..."
-              className="w-full pl-9 pr-4 py-2 rounded-lg border border-gray-50 bg-gray-50 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-all placeholder:text-[#581C87]/40"
+              className="w-full pl-9 pr-4 py-2 rounded-lg border border-gray-50 bg-gray-50 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-all placeholder:text-[#276221]/40"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
@@ -157,7 +157,7 @@ export default function DocsPage() {
 
               return (
                 <div key={idx} className="group/category">
-                  <div className="px-2 mb-2 flex items-center gap-2 text-xs font-bold text-[#581C87]/40 uppercase tracking-wider">
+                  <div className="px-2 mb-2 flex items-center gap-2 text-xs font-bold text-[#276221]/40 uppercase tracking-wider">
                     <Icon className="h-3.5 w-3.5" />
                     <span>{category.category}</span>
                   </div>
@@ -173,7 +173,7 @@ export default function DocsPage() {
                         onClick={() => scrollToSection(item.slug)}
                         className={`w-full text-left px-3 py-1.5 text-[13px] font-medium rounded-md transition-all duration-200 flex items-center justify-between group/item ${activeSlug === item.slug
                           ? "text-orange-500 bg-orange-500/10"
-                          : "text-[#581C87]/60 hover:text-[#581C87] hover:bg-[#581C87]/5"
+                          : "text-[#276221]/60 hover:text-[#276221] hover:bg-[#276221]/5"
                           }`}
                       >
                         <span className="truncate">{item.title}</span>
@@ -219,7 +219,7 @@ export default function DocsPage() {
                   stop();
                   setVoiceEnabled(false);
                 }}
-                className="px-5 py-2 rounded-xl text-sm font-semibold bg-[#581C87]/5 text-[#581C87] border border-[#581C87]/20 hover:bg-[#581C87]/10 transition-all duration-300"
+                className="px-5 py-2 rounded-xl text-sm font-semibold bg-[#276221]/5 text-[#276221] border border-[#276221]/20 hover:bg-[#276221]/10 transition-all duration-300"
               >
                 Stop
               </button>
@@ -250,7 +250,7 @@ export default function DocsPage() {
                     {item.slug === 'welcome' ? (
                       // Special rendering for Welcome section
                       <section className="bg-white rounded-2xl shadow-sm border border-gray-50 p-8 lg:p-12 text-center transition-all hover:shadow-md">
-                        <div className="prose prose-slate max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-a:text-orange-500 prose-a:no-underline hover:prose-a:underline prose-p:text-[#581C87]/70 prose-headings:text-[#581C87]">
+                        <div className="prose prose-slate max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-a:text-orange-500 prose-a:no-underline hover:prose-a:underline prose-p:text-[#276221]/70 prose-headings:text-[#276221]">
                           <div dangerouslySetInnerHTML={{ __html: item.content }} />
                         </div>
                       </section>
@@ -259,11 +259,11 @@ export default function DocsPage() {
                       <div className="group">
                         <div className="flex items-center gap-3 mb-6 pb-4 border-b border-gray-50">
                           <div className="h-8 w-1 bg-orange-500 rounded-full"></div>
-                          <h1 className="text-2xl font-bold tracking-tight text-[#581C87]">{item.title}</h1>
+                          <h1 className="text-2xl font-bold tracking-tight text-[#276221]">{item.title}</h1>
                         </div>
 
                         <section className="bg-white rounded-xl shadow-sm border border-gray-50 overflow-hidden transition-all duration-300 hover:shadow-md p-6 lg:p-8">
-                          <article className="prose prose-slate max-w-none prose-headings:text-[#581C87] prose-p:text-[#581C87]/70 prose-a:text-orange-500">
+                          <article className="prose prose-slate max-w-none prose-headings:text-[#276221] prose-p:text-[#276221]/70 prose-a:text-orange-500">
                             <div className="text-sm leading-7 space-y-4" dangerouslySetInnerHTML={{ __html: item.content }} />
                           </article>
                         </section>

@@ -8,21 +8,21 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 273 66% 10%;
+    --foreground: 114 50% 10%;
 
     --card: 0 0% 100%;
-    --card-foreground: 273 66% 10%;
+    --card-foreground: 114 50% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 273 66% 10%;
+    --popover-foreground: 114 50% 10%;
 
-    --primary: 273 66% 32%;
-    /* Purple-900: #581C87 */
+    --primary: 114 50% 26%;
+    /* green-900: #276221 */
     --primary-foreground: 0 0% 100%;
 
     --secondary: 210 20% 98%;
     /* Gray-50: #F9FAFB */
-    --secondary-foreground: 273 66% 10%;
+    --secondary-foreground: 114 50% 10%;
 
     --muted: 210 20% 98%;
     --muted-foreground: 273 20% 45%;
@@ -36,31 +36,31 @@
 
     --border: 210 20% 98%;
     --input: 210 20% 98%;
-    --ring: 273 66% 32%;
+    --ring: 114 50% 26%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 273 66% 32%;
+    --sidebar-background: 114 50% 26%;
     --sidebar-foreground: 0 0% 100%;
     --sidebar-primary: 24 95% 53%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 273 66% 40%;
+    --sidebar-accent: 114 50% 34%;
     --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 273 66% 25%;
+    --sidebar-border: 114 50% 20%;
     --sidebar-ring: 24 95% 53%;
 
     /* Custom tokens */
-    --hero-gradient: linear-gradient(135deg, hsl(273 66% 32%), hsl(273 66% 20%));
-    --card-shadow: 0 1px 3px 0 hsl(273 66% 10% / 0.06), 0 1px 2px -1px hsl(273 66% 10% / 0.06);
-    --card-shadow-lg: 0 10px 25px -5px hsl(273 66% 10% / 0.08), 0 8px 10px -6px hsl(273 66% 10% / 0.04);
-    --card-shadow-xl: 0 20px 40px -10px hsl(273 66% 32% / 0.15);
+    --hero-gradient: linear-gradient(135deg, hsl(114 50% 26%), hsl(114 50% 16%));
+    --card-shadow: 0 1px 3px 0 hsl(114 50% 10% / 0.06), 0 1px 2px -1px hsl(114 50% 10% / 0.06);
+    --card-shadow-lg: 0 10px 25px -5px hsl(114 50% 10% / 0.08), 0 8px 10px -6px hsl(114 50% 10% / 0.04);
+    --card-shadow-xl: 0 20px 40px -10px hsl(114 50% 26% / 0.15);
 
     --success: 152 69% 45%;
     --success-foreground: 0 0% 100%;
     --warning: 24 95% 53%;
     --warning-foreground: 0 0% 100%;
     --info: 210 20% 98%;
-    --info-foreground: 273 66% 10%;
+    --info-foreground: 114 50% 10%;
   }
 
   html {
@@ -146,8 +146,8 @@
 
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(to bottom,
-      #7e22ce,
-      /* purple */
+      #276221,
+      /* green */
       #f97316
       /* orange */
     );
@@ -157,19 +157,19 @@
 /* Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #7e22ce transparent;
+  scrollbar-color: #276221 transparent;
 }
 
-body.purple-scroll::-webkit-scrollbar-thumb {
-  background: #7e22ce;
+body.green-scroll::-webkit-scrollbar-thumb {
+  background: #276221;
 }
 
 body.orange-scroll::-webkit-scrollbar-thumb {
   background: #f97316;
 }
 
-body.purple-scroll * {
-  scrollbar-color: #7e22ce transparent;
+body.green-scroll * {
+  scrollbar-color: #276221 transparent;
 }
 
 body.orange-scroll * {

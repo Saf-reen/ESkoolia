@@ -17,7 +17,7 @@ const EskooliaSuiteSection = () => {
                     <span className="text-orange-500 font-black uppercase tracking-[0.3em] text-sm mb-4 block">
                         Core Platform
                     </span>
-                    <h2 className="font-display text-4xl md:text-6xl font-black text-[#581C87] mb-8 leading-[1.1] uppercase">
+                    <h2 className="font-display text-4xl md:text-6xl font-black text-[#276221] mb-8 leading-[1.1] uppercase">
                         Explore the Eskoolia Suite — <br className="hidden md:block" /> Built for Next-Gen Schools
                     </h2>
                     <motion.div
@@ -52,10 +52,10 @@ const EskooliaSuiteSection = () => {
                             className="relative z-10"
                         >
                             {/* Glowing background blob specific to image */}
-                            <div className="absolute inset-0 bg-[#581C87]/10 rounded-full blur-[80px] -z-10" />
+                            <div className="absolute inset-0 bg-[#276221]/10 rounded-full blur-[80px] -z-10" />
 
                             <img
-                                src="/suite.png"
+                                src="/suite_.png"
                                 alt="Eskoolia Suite Architecture"
                                 className="w-full h-auto drop-shadow-[0_20px_50px_rgba(88,28,135,0.15)] rounded-[32px] transition-all duration-500 hover:scale-[1.02] border border-gray-50"
                             />
@@ -71,11 +71,11 @@ const EskooliaSuiteSection = () => {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: 0.2 }}
                         >
-                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#581C87]/5 text-[#581C87] font-bold text-sm mb-6 uppercase tracking-wider border border-[#581C87]/10">
+                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#276221]/5 text-[#276221] font-bold text-sm mb-6 uppercase tracking-wider border border-[#276221]/10">
                                 <div className="w-2 h-2 rounded-full bg-orange-500 animate-pulse" />
                                 Unified Ecosystem
                             </div>
-                            <p className="text-xl md:text-2xl text-[#581C87]/80 leading-relaxed font-medium">
+                            <p className="text-xl md:text-2xl text-[#276221]/80 leading-relaxed font-medium">
                                 "The Eskoolia Suite is a unified digital ecosystem designed to help schools manage admissions, operations, and communication — all in one powerful platform."
                             </p>
                         </motion.div>
@@ -107,15 +107,15 @@ const EskooliaSuiteSection = () => {
                                     transition={{ duration: 0.6, delay: 0.4 + (i * 0.1) }}
                                 >
                                     <Link to={block.href} className="flex gap-6 group cursor-pointer">
-                                        <div className="mt-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#581C87]/10 text-[#581C87] group-hover:bg-[#581C87] group-hover:text-white transition-all duration-300 border border-[#581C87]/10">
+                                        <div className="mt-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#276221]/10 text-[#276221] group-hover:bg-[#276221] group-hover:text-white transition-all duration-300 border border-[#276221]/10">
                                             <span className="font-bold">{i + 1}</span>
                                         </div>
                                         <div className="flex-1">
-                                            <h4 className="text-[#581C87] font-bold text-xl mb-1 tracking-tight inline-block relative">
+                                            <h4 className="text-[#276221] font-bold text-xl mb-1 tracking-tight inline-block relative">
                                                 {block.title}
                                                 <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
                                             </h4>
-                                            <p className="text-[#581C87]/60 text-lg leading-relaxed">
+                                            <p className="text-[#276221]/60 text-lg leading-relaxed">
                                                 {block.desc}
                                             </p>
                                         </div>
@@ -132,7 +132,7 @@ const EskooliaSuiteSection = () => {
                             transition={{ delay: 0.8 }}
                             className="pt-4"
                         >
-                            <p className="text-[#581C87]/40 text-base">
+                            <p className="text-[#276221]/40 text-base">
                                 Improve efficiency and enhance the overall school experience.
                             </p>
                         </motion.div>
@@ -142,10 +142,10 @@ const EskooliaSuiteSection = () => {
 
             {/* Background Decorative Elements */}
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-                <div className="absolute top-40 -left-20 w-80 h-80 bg-[#581C87]/5 rounded-full blur-[100px]" />
+                <div className="absolute top-40 -left-20 w-80 h-80 bg-[#276221]/5 rounded-full blur-[100px]" />
                 <div className="absolute bottom-20 -right-20 w-96 h-96 bg-orange-500/5 rounded-full blur-[120px]" />
                 {/* Subtle dot pattern */}
-                <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(#581C87 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
+                <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(#276221 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
             </div>
         </section>
     );

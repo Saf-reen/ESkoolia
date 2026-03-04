@@ -180,10 +180,10 @@ const panelFeatures = [
 ];
 
 const colorPalette = [
-  { gradient: "from-[#581C87] to-[#581C87]/80", dot1: "bg-orange-500", dot2: "bg-orange-500", iconText: "text-[#581C87]" },
-  { gradient: "from-orange-500 to-orange-600", dot1: "bg-[#581C87]", dot2: "bg-[#581C87]", iconText: "text-orange-500" },
-  { gradient: "from-[#581C87] to-[#581C87]/80", dot1: "bg-orange-500", dot2: "bg-orange-500", iconText: "text-[#581C87]" },
-  { gradient: "from-orange-500 to-orange-600", dot1: "bg-[#581C87]", dot2: "bg-[#581C87]", iconText: "text-orange-500" },
+  { gradient: "from-[#276221] to-[#276221]/80", dot1: "bg-orange-500", dot2: "bg-orange-500", iconText: "text-[#276221]" },
+  { gradient: "from-orange-500 to-orange-600", dot1: "bg-[#276221]", dot2: "bg-[#276221]", iconText: "text-orange-500" },
+  { gradient: "from-[#276221] to-[#276221]/80", dot1: "bg-orange-500", dot2: "bg-orange-500", iconText: "text-[#276221]" },
+  { gradient: "from-orange-500 to-orange-600", dot1: "bg-[#276221]", dot2: "bg-[#276221]", iconText: "text-orange-500" },
 ];
 
 export default function FeaturesPage() {
@@ -195,8 +195,8 @@ export default function FeaturesPage() {
       <section className="py-12 lg:py-16 border-b border-gray-50 bg-white">
         <div className="w-full px-6 text-center">
           <span className="text-orange-500 font-bold tracking-widest uppercase text-xs mb-3 block">An Exhaustive list of Amazing Features</span>
-          <h2 className="font-display text-4xl lg:text-5xl font-black text-[#581C87] mb-4 uppercase tracking-tight">The only application you’ll need to power your life.</h2>
-          <p className="text-[#581C87]/70 text-lg max-w-4xl mx-auto leading-relaxed font-medium">
+          <h2 className="font-display text-4xl lg:text-5xl font-black text-[#276221] mb-4 uppercase tracking-tight">The only application you’ll need to power your life.</h2>
+          <p className="text-[#276221]/70 text-lg max-w-4xl mx-auto leading-relaxed font-medium">
             Numerous features make it possible to customize the system in accordance with all your needs.
           </p>
         </div>
@@ -227,7 +227,7 @@ export default function FeaturesPage() {
                     <div className={`absolute -bottom-0.5 -left-0.5 w-2 h-2 ${color.dot2} rounded-full border-2 border-white shadow-sm z-10 group-hover:scale-0 transition-transform`}></div>
 
                     <div className={`h-20 w-20 rounded-full flex items-center justify-center bg-white border-[4px] border-gray-50 shadow-md relative overflow-hidden transition-all duration-500 group-hover:bg-white/10 group-hover:border-white/20 group-hover:backdrop-blur-md`}>
-                      <div className="absolute inset-0 border border-purple-500/5 rounded-full group-hover:opacity-0"></div>
+                      <div className="absolute inset-0 border border-green-500/5 rounded-full group-hover:opacity-0"></div>
 
                       <div className={`p-3 rounded-full bg-gray-50 transition-all duration-500 group-hover:bg-transparent group-hover:scale-110 ${color.iconText} group-hover:text-white`}>
                         <mod.icon className={`h-8 w-8`} />
@@ -237,10 +237,10 @@ export default function FeaturesPage() {
 
                   {/* Text Content */}
                   <div className="flex-1 space-y-1 z-10">
-                    <h3 className={`text-xl font-black font-display tracking-tight text-[#581C87] transition-colors duration-500 group-hover:text-white`}>
+                    <h3 className={`text-xl font-black font-display tracking-tight text-[#276221] transition-colors duration-500 group-hover:text-white`}>
                       {mod.title}
                     </h3>
-                    <p className={`text-[13px] leading-relaxed font-medium text-[#581C87]/70 transition-colors duration-500 group-hover:text-white/80`}>
+                    <p className={`text-[13px] leading-relaxed font-medium text-[#276221]/70 transition-colors duration-500 group-hover:text-white/80`}>
                       {mod.desc}
                     </p>
                   </div>
@@ -262,25 +262,24 @@ export default function FeaturesPage() {
                     <div className="h-14 w-14 rounded-full bg-orange-500/10 flex flex-shrink-0 items-center justify-center">
                       <div className="h-5 w-5 rounded-sm bg-gradient-to-br from-orange-400 to-orange-600 rotate-45"></div>
                     </div>
-                    <h3 className="text-2xl lg:text-3xl font-black text-[#581C87] uppercase tracking-tight">{panel.title}</h3>
+                    <h3 className="text-2xl lg:text-3xl font-black text-[#276221] uppercase tracking-tight">{panel.title}</h3>
                   </div>
                   <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-6">
                     {panel.features.map((f, i) => (
-                      <li key={i} className="flex items-start gap-3 text-[#581C87]/80 group">
+                      <li key={i} className="flex items-start gap-3 text-[#276221]/80 group">
                         <div className="mt-1.5 h-1.5 w-1.5 rounded-full bg-orange-500 shrink-0"></div>
-                        <span className="text-sm font-semibold group-hover:text-[#581C87] transition-colors leading-snug">{f}</span>
+                        <span className="text-sm font-semibold group-hover:text-[#276221] transition-colors leading-snug">{f}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
                 <div className="w-full lg:w-7/12">
-                  <img 
-                    src={`/Eskooly/${
-                      idx % 4 === 0 ? "dashboard1.png" : 
-                      idx % 4 === 1 ? "general_setting.png" : 
-                      idx % 4 === 2 ? "student-transport-report.png" :
-                      "admission_query.png"
-                    }`} 
+                  <img
+                    src={`/Eskooly/${idx % 4 === 0 ? "dashboard1.png" :
+                        idx % 4 === 1 ? "general_setting.png" :
+                          idx % 4 === 2 ? "student-transport-report.png" :
+                            "admission_query.png"
+                      }`}
                     alt={`${panel.title} Preview`}
                     className="w-full rounded-[2rem] shadow-2xl border border-gray-100 object-cover"
                   />
@@ -295,19 +294,19 @@ export default function FeaturesPage() {
       <section className="py-20 relative overflow-hidden bg-gray-50">
         <div className="w-full max-w-7xl mx-auto px-6">
           <div className="flex flex-col lg:flex-row gap-16 items-center lg:items-start">
-            
+
             {/* Left Decorative Image (Mimicking recharge.png) */}
             <div className="hidden lg:block w-1/4 shrink-0 relative mt-10">
-               <img src="/Eskooly/admin_setup.png" alt="Features" className="w-full max-w-[280px] mx-auto drop-shadow-2xl object-cover rounded-3xl hover:-translate-y-2 transition-transform duration-500" />
+              <img src="/Eskooly/admin_setup.png" alt="Features" className="w-full max-w-[280px] mx-auto drop-shadow-2xl object-cover rounded-3xl hover:-translate-y-2 transition-transform duration-500" />
             </div>
 
             {/* Right content */}
             <div className="w-full lg:w-3/4">
               <div className="mb-12 text-center lg:text-left">
                 <span className="text-orange-500 font-bold tracking-widest uppercase text-xs mb-3 block">AMAZING FEATURES</span>
-                <h2 className="font-display text-3xl lg:text-4xl font-black text-[#581C87] mb-4 uppercase tracking-tight">More Features Has eSkooly PRO</h2>
-                <p className="text-[#581C87]/70 text-base max-w-2xl leading-relaxed font-medium mx-auto lg:mx-0">
-                  It's Vast! ESkooly PRO Has More Additional Feature That Will Expect In A Complete Solution.
+                <h2 className="font-display text-3xl lg:text-4xl font-black text-[#276221] mb-4 uppercase tracking-tight">More Features Has eSkoolia PRO</h2>
+                <p className="text-[#276221]/70 text-base max-w-2xl leading-relaxed font-medium mx-auto lg:mx-0">
+                  It's Vast! eSkoolia PRO Has More Additional Feature That Will Expect In A Complete Solution.
                 </p>
               </div>
 
@@ -317,7 +316,7 @@ export default function FeaturesPage() {
                     <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-orange-50 to-orange-100 text-orange-600 group-hover:scale-110 group-hover:from-orange-500 group-hover:to-orange-400 group-hover:text-white transition-all duration-300">
                       <feature.icon className="h-7 w-7" />
                     </div>
-                    <h4 className="font-bold text-[#581C87] text-sm leading-tight">{feature.title}</h4>
+                    <h4 className="font-bold text-[#276221] text-sm leading-tight">{feature.title}</h4>
                   </div>
                 ))}
               </div>
@@ -327,15 +326,15 @@ export default function FeaturesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-[#581C87] relative overflow-hidden text-center text-white">
+      <section className="py-16 bg-[#276221] relative overflow-hidden text-center text-white">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.1),transparent)]"></div>
         <div className="w-full px-6 relative z-10">
-          <h2 className="font-display text-3xl md:text-4xl font-black mb-6 max-w-4xl mx-auto leading-tight uppercase tracking-tight">Take control of your school today with Eskoolia.</h2>
+          <h2 className="font-display text-3xl md:text-4xl font-black mb-6 max-w-4xl mx-auto leading-tight uppercase tracking-tight">Take control of your school today with eSkoolia.</h2>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button size="lg" className="h-12 px-8 rounded-full bg-orange-500 hover:bg-orange-600 text-white font-black text-base border-none shadow-[0_10px_30px_rgba(194,65,12,0.3)]" asChild>
               <Link to="/register">JOIN NOW FREE</Link>
             </Button>
-            <Button size="lg" variant="outline" className="h-12 px-8 rounded-full border-2 border-white/30 bg-white/5 hover:bg-white hover:text-[#581C87] text-white font-black text-base backdrop-blur-sm shadow-xl" asChild>
+            <Button size="lg" variant="outline" className="h-12 px-8 rounded-full border-2 border-white/30 bg-white/5 hover:bg-white hover:text-[#276221] text-white font-black text-base backdrop-blur-sm shadow-xl" asChild>
               <Link to="/contact">CONTACT SALES</Link>
             </Button>
           </div>

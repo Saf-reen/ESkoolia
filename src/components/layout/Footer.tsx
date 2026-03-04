@@ -33,14 +33,14 @@ const paymentMethods = [
   { name: "2checkout", color: "bg-orange-500" },
   { name: "PayPal", color: "bg-orange-600" },
   { name: "VISA", color: "bg-orange-900" },
-  { name: "MasterCard", color: "bg-[#581C87]" },
-  { name: "AMEX", color: "bg-[#581C87]/80" },
+  { name: "MasterCard", color: "bg-[#276221]" },
+  { name: "AMEX", color: "bg-[#276221]/80" },
   { name: "Discover", color: "bg-orange-500" },
 ];
 
 export default function Footer() {
   return (
-    <footer className="relative bg-gradient-to-b from-[#581C87] to-[#3B0764] text-white pt-16 pb-6">
+    <footer className="relative bg-[#276221] text-white pt-16 pb-6">
       
       <div className="container">
 

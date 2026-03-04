@@ -8,8 +8,8 @@ const modules = [
         icon: Video,
         title: "ZOOM",
         desc: "This is Zoom module for live virtual class and meeting in eSkoolia.",
-        color: "purple",
-        gradient: "from-[#581C87] to-[#581C87]/80"
+        color: "green",
+        gradient: "from-[#276221] to-[#276221]/80"
     },
     {
         icon: BookOpen,
@@ -22,8 +22,8 @@ const modules = [
         icon: UserPlus,
         title: "Registration",
         desc: "This is online Parent Registration module for eSkoolia.",
-        color: "purple",
-        gradient: "from-[#581C87] to-[#581C87]/80"
+        color: "green",
+        gradient: "from-[#276221] to-[#276221]/80"
     },
     {
         icon: CreditCard,
@@ -36,8 +36,8 @@ const modules = [
         icon: Users,
         title: "BigBlueButton",
         desc: "This is BigBlueButton module for live virtual class and meeting in eSkoolia.",
-        color: "purple",
-        gradient: "from-[#581C87] to-[#581C87]/80"
+        color: "green",
+        gradient: "from-[#276221] to-[#276221]/80"
     },
     {
         icon: LinkIcon,
@@ -50,8 +50,8 @@ const modules = [
         icon: Building2,
         title: "SaaS",
         desc: "This is Saas module for manage multiple school or institutes.",
-        color: "purple",
-        gradient: "from-[#581C87] to-[#581C87]/80"
+        color: "green",
+        gradient: "from-[#276221] to-[#276221]/80"
     },
     {
         icon: Fingerprint,
@@ -64,8 +64,8 @@ const modules = [
         icon: Globe,
         title: "Google Meet",
         desc: "This is Google meet module for live virtual class and meeting in eSkoolia.",
-        color: "purple",
-        gradient: "from-[#581C87] to-[#581C87]/80"
+        color: "green",
+        gradient: "from-[#276221] to-[#276221]/80"
     },
     {
         icon: MessageSquare,
@@ -78,8 +78,8 @@ const modules = [
         icon: FileBadge,
         title: "Certificate Pro",
         desc: "This is the module to generate Certificates for students and employees.",
-        color: "purple",
-        gradient: "from-[#581C87] to-[#581C87]/80"
+        color: "green",
+        gradient: "from-[#276221] to-[#276221]/80"
     }
 ];
 
@@ -92,10 +92,10 @@ export default function ModulesPage() {
             <section className="py-16 lg:py-20 border-b border-gray-50 text-center bg-white">
                 <div className="w-full px-6">
                     <span className="text-orange-500 font-bold tracking-widest uppercase text-xs mb-3 block">An Exhaustive list of Amazing Add-ons</span>
-                    <h2 className="font-display text-4xl lg:text-5xl font-black text-[#581C87] mb-4 uppercase tracking-tight">
+                    <h2 className="font-display text-4xl lg:text-5xl font-black text-[#276221] mb-4 uppercase tracking-tight">
                         Get extra modules to enhance the features of eSkoolia!
                     </h2>
-                    <p className="text-[#581C87]/70 text-lg max-w-4xl mx-auto leading-relaxed font-medium">
+                    <p className="text-[#276221]/70 text-lg max-w-4xl mx-auto leading-relaxed font-medium">
                         Every Single Module You Want That Are Available, Curiosity Is Future Of New Discover. Explore All Our Single Modules That Will help you to extend our software features!
                     </p>
                 </div>
@@ -116,7 +116,7 @@ export default function ModulesPage() {
                                 {/* Icon Container */}
                                 <div className="relative mb-8">
                                     <div className={`h-20 w-20 rounded-3xl bg-gradient-to-br ${mod.gradient} p-0.5 shadow-lg group-hover:scale-110 transition-transform duration-500`}>
-                                        <div className="w-full h-full bg-white rounded-[22px] flex items-center justify-center text-[#581C87] group-hover:bg-transparent group-hover:text-white transition-colors duration-500">
+                                        <div className="w-full h-full bg-white rounded-[22px] flex items-center justify-center text-[#276221] group-hover:bg-transparent group-hover:text-white transition-colors duration-500">
                                             <mod.icon className="h-10 w-10" />
                                         </div>
                                     </div>
@@ -126,15 +126,15 @@ export default function ModulesPage() {
 
                                 {/* Content */}
                                 <div className="flex-1 space-y-3 relative z-10">
-                                    <h3 className="text-2xl font-black text-[#581C87] uppercase tracking-tight">{mod.title}</h3>
-                                    <p className="text-[#581C87]/70 font-medium leading-relaxed text-sm">
+                                    <h3 className="text-2xl font-black text-[#276221] uppercase tracking-tight">{mod.title}</h3>
+                                    <p className="text-[#276221]/70 font-medium leading-relaxed text-sm">
                                         {mod.desc}
                                     </p>
                                 </div>
 
                                 {/* Buy Button */}
                                 <div className="mt-8 pt-6 border-t border-gray-50">
-                                    <Button className={`w-full h-12 rounded-2xl font-black uppercase text-sm tracking-wider transition-all duration-300 bg-[#581C87] hover:bg-orange-500 text-white shadow-md hover:shadow-orange-500/20 flex items-center justify-center gap-2`} asChild>
+                                    <Button className={`w-full h-12 rounded-2xl font-black uppercase text-sm tracking-wider transition-all duration-300 bg-[#276221] hover:bg-orange-500 text-white shadow-md hover:shadow-orange-500/20 flex items-center justify-center gap-2`} asChild>
                                         <a href="https://wa.me/+923460204447" target="_blank" rel="noopener noreferrer">
                                             <ShoppingCart className="w-4 h-4" /> Buy Now
                                         </a>
@@ -147,7 +147,7 @@ export default function ModulesPage() {
             </section>
 
             {/* Pricing CTA */}
-            <section className="py-20 bg-[#581C87] relative overflow-hidden text-center text-white">
+            <section className="py-20 bg-[#276221] relative overflow-hidden text-center text-white">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.1),transparent)]"></div>
                 <div className="w-full px-6 relative z-10">
                     <h2 className="font-display text-4xl md:text-5xl font-black mb-8 uppercase tracking-tight">Need a customized solution?</h2>

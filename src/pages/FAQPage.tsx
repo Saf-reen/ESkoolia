@@ -88,11 +88,11 @@ export default function FAQPage() {
             <section className="py-16 lg:py-24 bg-white border-b border-gray-50">
                 <div className="w-full px-6 text-center">
                     <span className="text-orange-500 font-bold tracking-widest uppercase text-xs mb-3 block">Support Center</span>
-                    <h2 className="font-display text-4xl lg:text-6xl font-black text-[#581C87] mb-8 uppercase tracking-tighter">
+                    <h2 className="font-display text-4xl lg:text-6xl font-black text-[#276221] mb-8 uppercase tracking-tighter">
                         Questions & <span className="text-orange-500">Answers</span>
                     </h2>
                     <div className="max-w-3xl mx-auto relative group">
-                        <Search className="absolute left-6 top-1/2 -translate-y-1/2 text-[#581C87]/70 h-6 w-6 group-focus-within:text-orange-500 transition-colors" />
+                        <Search className="absolute left-6 top-1/2 -translate-y-1/2 text-[#276221]/70 h-6 w-6 group-focus-within:text-orange-500 transition-colors" />
                         <input
                             type="text"
                             placeholder="Search your question here..."
@@ -101,8 +101,8 @@ export default function FAQPage() {
                             className="w-full h-16 pl-16 pr-8 rounded-full border-2 border-gray-50 focus:border-orange-500 outline-none text-lg font-medium shadow-sm transition-all focus:shadow-xl"
                         />
                     </div>
-                    <p className="mt-8 text-[#581C87]/60 font-medium">
-                        Can't find what you're looking for? <a href="/contact" className="text-[#581C87] hover:text-orange-500 font-bold underline transition-colors">Contact us</a>
+                    <p className="mt-8 text-[#276221]/60 font-medium">
+                        Can't find what you're looking for? <a href="/contact" className="text-[#276221] hover:text-orange-500 font-bold underline transition-colors">Contact us</a>
                     </p>
                 </div>
             </section>
@@ -114,7 +114,7 @@ export default function FAQPage() {
 
                         {/* Sidebar Support */}
                         <div className="lg:col-span-4 space-y-6">
-                            <div className="bg-[#581C87] p-8 rounded-[40px] text-white relative overflow-hidden group shadow-2xl">
+                            <div className="bg-[#276221] p-8 rounded-[40px] text-white relative overflow-hidden group shadow-2xl">
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full blur-3xl -mr-16 -mt-16"></div>
                                 <HelpCircle className="h-12 w-12 text-orange-500 mb-6" />
                                 <h3 className="text-2xl font-black uppercase mb-4">Need More Help?</h3>
@@ -127,7 +127,7 @@ export default function FAQPage() {
                             </div>
 
                             <div className="bg-gray-50 p-8 rounded-[40px] border border-gray-50">
-                                <h4 className="text-[#581C87] font-black uppercase mb-6">Quick Links</h4>
+                                <h4 className="text-[#276221] font-black uppercase mb-6">Quick Links</h4>
                                 <ul className="space-y-4">
                                     {[
                                         { label: "Our Documentation", href: "/docs" },
@@ -136,7 +136,7 @@ export default function FAQPage() {
                                         { label: "Technical Support", href: "/contact" }
                                     ].map((link, i) => (
                                         <li key={i}>
-                                            <a href={link.href} className="text-[#581C87]/70 hover:text-orange-500 font-bold flex items-center transition-colors">
+                                            <a href={link.href} className="text-[#276221]/70 hover:text-orange-500 font-bold flex items-center transition-colors">
                                                 <span className="w-2 h-2 bg-orange-500 rounded-full mr-3"></span>
                                                 {link.label}
                                             </a>
@@ -153,25 +153,25 @@ export default function FAQPage() {
                                     filteredFaqs.map((faq, i) => (
                                         <div
                                             key={i}
-                                            className={`rounded-3xl border transition-all duration-300 ${openIndex === i ? "border-[#581C87] shadow-xl bg-white" : "border-gray-50 bg-gray-50/50 hover:bg-white"}`}
+                                            className={`rounded-3xl border transition-all duration-300 ${openIndex === i ? "border-[#276221] shadow-xl bg-white" : "border-gray-50 bg-gray-50/50 hover:bg-white"}`}
                                         >
                                             <button
                                                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
                                                 className="w-full px-8 py-6 text-left flex items-center justify-between gap-4"
                                             >
-                                                <span className={`text-lg font-black transition-colors ${openIndex === i ? "text-[#581C87]" : "text-[#581C87]/70"}`}>
+                                                <span className={`text-lg font-black transition-colors ${openIndex === i ? "text-[#276221]" : "text-[#276221]/70"}`}>
                                                     {faq.question}
                                                 </span>
                                                 {openIndex === i ? (
-                                                    <ChevronUp className="h-6 w-6 text-[#581C87] shrink-0" />
+                                                    <ChevronUp className="h-6 w-6 text-[#276221] shrink-0" />
                                                 ) : (
-                                                    <ChevronDown className="h-6 w-6 text-[#581C87]/70 shrink-0" />
+                                                    <ChevronDown className="h-6 w-6 text-[#276221]/70 shrink-0" />
                                                 )}
                                             </button>
                                             {openIndex === i && (
                                                 <div className="px-8 pb-8">
                                                     <div className="h-px bg-gray-50 mb-6"></div>
-                                                    <p className="text-[#581C87]/70 font-medium leading-relaxed text-lg">
+                                                    <p className="text-[#276221]/70 font-medium leading-relaxed text-lg">
                                                         {faq.answer}
                                                     </p>
                                                 </div>
@@ -180,9 +180,9 @@ export default function FAQPage() {
                                     ))
                                 ) : (
                                     <div className="text-center py-20 bg-gray-50 rounded-[40px] border-2 border-dashed border-gray-50">
-                                        <HelpCircle className="h-16 w-16 text-[#581C87]/70 mx-auto mb-4" />
-                                        <h3 className="text-xl font-bold text-[#581C87]/60 uppercase">No questions found matching "{searchQuery}"</h3>
-                                        <Button onClick={() => setSearchQuery("")} variant="link" className="text-[#581C87] font-bold mt-2">Clear Search</Button>
+                                        <HelpCircle className="h-16 w-16 text-[#276221]/70 mx-auto mb-4" />
+                                        <h3 className="text-xl font-bold text-[#276221]/60 uppercase">No questions found matching "{searchQuery}"</h3>
+                                        <Button onClick={() => setSearchQuery("")} variant="link" className="text-[#276221] font-bold mt-2">Clear Search</Button>
                                     </div>
                                 )}
                             </div>
@@ -193,7 +193,7 @@ export default function FAQPage() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-16 bg-[#581C87] text-white text-center">
+            <section className="py-16 bg-[#276221] text-white text-center">
                 <div className="w-full px-6">
                     <h2 className="font-display text-3xl md:text-5xl font-black mb-8 uppercase tracking-tighter">Still have questions in your mind?</h2>
                     <div className="flex flex-col sm:flex-row justify-center gap-6">

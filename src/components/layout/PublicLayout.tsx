@@ -16,7 +16,7 @@ export default function PublicLayout() {
 
       {/* Floating Chat Widget */}
       <div className="fixed bottom-6 right-6 z-50">
-        <button className="w-16 h-16 bg-[#581C87] rounded-full shadow-2xl flex items-center justify-center text-white hover:scale-110 transition-transform group relative">
+        <button className="w-16 h-16 bg-[#276221] rounded-full shadow-2xl flex items-center justify-center text-white hover:scale-110 transition-transform group relative">
           <svg viewBox="0 0 24 24" className="w-8 h-8 fill-none stroke-2 stroke-current">
             <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
           </svg>
