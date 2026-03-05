@@ -30,7 +30,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[#276221] shadow-lg py-0">
+    <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[#581C87] shadow-lg py-0">
       {/* Announcement Bar */}
       {/* <div className="bg-white/10 backdrop-blur-sm border-b border-white/10 py-2 hidden md:block">
         <div className="container flex justify-between items-center text-[13px] font-medium text-white/90">
@@ -48,8 +48,8 @@ export default function Header() {
 
       <div className="py-2">
         <div className="container flex items-center justify-between relative">
-          <Link to="/" className="flex items-center gap-2 font-display text-xl font-bold text-white group z-10">
-            <img src="/eskoolia_logo_.png" alt="Eskoolia" className={`w-auto transition-all duration-300 ${scrolled ? "h-24" : "h-24"}`} />
+          <Link to="/" aria-label="Eskoolia Home" className="flex items-center gap-2 font-display text-xl font-bold text-white group z-10">
+            <img src="/eskoolia_logo_.png" alt="Eskoolia Home" className={`w-auto transition-all duration-300 ${scrolled ? "h-24" : "h-24"}`} />
           </Link>
 
           {/* Desktop nav */}
@@ -58,7 +58,7 @@ export default function Header() {
               <Link
                 key={l.href}
                 to={l.href}
-                className={`text-[15px] font-semibold transition-all hover:text-orange-500 ${location.pathname === l.href ? "text-white" : "text-white/90"
+                className={`text-[15px] font-semibold transition-all hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-orange-600 ${location.pathname === l.href ? "text-white" : "text-white/90"
                   }`}
               >
                 {l.label}
@@ -67,20 +67,24 @@ export default function Header() {
           </nav>
 
           <div className="hidden items-center gap-3 md:flex z-10">
-            {/* <Button variant="outline" className="gap-2 border-white/40 text-white bg-white/5 hover:bg-white hover:text-[#276221] hover:border-white transition-all rounded-full h-11 px-7 font-bold text-sm tracking-wide" asChild>
+            {/* <Button variant="outline" className="gap-2 border-white/40 text-white bg-white/5 hover:bg-white hover:text-[#581C87] hover:border-white transition-all rounded-full h-11 px-7 font-bold text-sm tracking-wide" asChild>
               <a href="https://eskooly.pro/login" target="_blank" rel="noopener noreferrer">
                 <Monitor className="h-4 w-4" /> LIVE DEMO
               </a>
             </Button> */}
-            <Button variant="default" className="gap-2 bg-white/5 border border-white/40 hover:bg-white hover:text-[#276221] text-white border-none shadow-lg rounded-full h-11 px-7 font-bold text-sm tracking-wide transition-all" asChild>
+            <Button variant="default" className="gap-2 bg-white/5 border border-white/40 hover:bg-white hover:text-[#581C87] text-white border-none shadow-lg rounded-full h-11 px-7 font-bold text-sm tracking-wide transition-all" asChild>
               <Link to="/pricing">
-                <ShoppingCart className="h-4 w-4" /> BUY NOW
+                <ShoppingCart className="h-4 w-4" /> GET STARTED
               </Link>
             </Button>
           </div>
 
           {/* Mobile toggle */}
-          <button className="md:hidden text-white p-2 hover:bg-white/10 rounded-lg transition-colors z-10" onClick={() => setMobileOpen(!mobileOpen)}>
+          <button
+            className="md:hidden text-white p-2 hover:bg-white/10 rounded-lg transition-colors z-10"
+            onClick={() => setMobileOpen(!mobileOpen)}
+            aria-label={mobileOpen ? "Close menu" : "Open menu"}
+          >
             {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
@@ -88,7 +92,7 @@ export default function Header() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="bg-[#276221] p-4 md:hidden shadow-xl animate-accordion-down overflow-hidden h-screen">
+        <div className="bg-[#581C87] p-4 md:hidden shadow-xl animate-accordion-down overflow-hidden h-screen">
           <nav className="flex flex-col gap-2 pt-10">
             {navLinks.map((l) => (
               <Link
@@ -107,9 +111,9 @@ export default function Header() {
                   <Monitor className="h-5 w-5" /> LIVE DEMO
                 </a>
               </Button> */}
-              <Button variant="default" className="gap-2 justify-center h-14 text-lg bg-orange-500 hover:bg-orange-600 border-none" asChild>
+              <Button variant="default" className="gap-2 justify-center h-14 text-lg bg-gradient-to-r from-purple-600 to-orange-600 hover:bg-gradient-to-r from-purple-600 to-orange-600 border-none" asChild>
                 <Link to="/pricing" onClick={() => setMobileOpen(false)}>
-                  <ShoppingCart className="h-5 w-5" /> BUY NOW
+                  <ShoppingCart className="h-5 w-5" /> GET STARTED
                 </Link>
               </Button>
             </div>

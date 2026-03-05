@@ -21,17 +21,17 @@ export default function CustomCursor() {
             const element = document.elementFromPoint(e.clientX, e.clientY);
             if (!element) return;
 
-            if (element.closest(".cursor-green-section")) {
+            if (element.closest(".cursor-purple-section")) {
                 setVariant("orange");
-                document.body.classList.add("green-scroll");
+                document.body.classList.add("purple-scroll");
                 document.body.classList.remove("orange-scroll");
             } else if (element.closest(".cursor-orange-section")) {
-                setVariant("green");
+                setVariant("purple");
                 document.body.classList.add("orange-scroll");
-                document.body.classList.remove("green-scroll");
+                document.body.classList.remove("purple-scroll");
             } else {
                 // Reset scrollbar logic
-                document.body.classList.remove("green-scroll");
+                document.body.classList.remove("purple-scroll");
                 document.body.classList.remove("orange-scroll");
 
                 if (element.closest("a, button, [role='button'], .hover-target, .cursor-pointer")) {
@@ -71,20 +71,20 @@ export default function CustomCursor() {
     const getStyle = () => {
         switch (variant) {
             case "orange":
-                return "border-orange-500 bg-orange-500/10 w-16 h-16 -ml-8 -mt-8 backdrop-blur-sm";
-            case "green":
-                return "border-green-700 bg-green-700/10 w-16 h-16 -ml-8 -mt-8 backdrop-blur-sm";
+                return "border-orange-600 bg-gradient-to-r from-purple-600 to-orange-600/10 w-16 h-16 -ml-8 -mt-8 backdrop-blur-sm";
+            case "purple":
+                return "border-purple-700 bg-purple-700/10 w-16 h-16 -ml-8 -mt-8 backdrop-blur-sm";
             case "grow":
-                return "border-orange-500 bg-orange-500/10 w-20 h-20 -ml-10 -mt-10 backdrop-blur-sm";
+                return "border-orange-600 bg-gradient-to-r from-purple-600 to-orange-600/10 w-20 h-20 -ml-10 -mt-10 backdrop-blur-sm";
             default:
-                return "border-orange-500 w-10 h-10 -ml-5 -mt-5 backdrop-blur-sm";
+                return "border-orange-600 w-10 h-10 -ml-5 -mt-5 backdrop-blur-sm";
         }
     };
 
     const dotColor =
-        variant === "green"
-            ? "bg-green-700"
-            : "bg-orange-500";
+        variant === "purple"
+            ? "bg-purple-700"
+            : "bg-gradient-to-r from-purple-600 to-orange-600";
 
     return (
         <>

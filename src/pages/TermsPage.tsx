@@ -77,8 +77,8 @@ export default function TermsPage() {
 
         {/* Intro Text */}
         <div className="max-w-4xl mx-auto mb-16 text-center">
-          <p className="text-[#276221]/70 leading-relaxed text-lg">
-            Please read these Terms and Conditions carefully before using <span className="font-bold text-[#276221]">eSkoolia Pro</span>. Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms.
+          <p className="text-[#581C87]/70 leading-relaxed text-lg">
+            Please read these Terms and Conditions carefully before using <span className="font-bold text-[#581C87]">eSkoolia Pro</span>. Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms.
           </p>
         </div>
 
@@ -87,7 +87,7 @@ export default function TermsPage() {
           {/* Left Sidebar - Sticky Navigation */}
           <div className="lg:col-span-4 lg:sticky lg:top-24 hidden lg:block">
             <div className="bg-white rounded-2xl shadow-lg border border-gray-50 overflow-hidden">
-              <div className="bg-[#276221] p-4 text-white">
+              <div className="bg-[#581C87] p-4 text-white">
                 <h3 className="font-bold text-lg flex items-center gap-2">
                   <Menu className="h-5 w-5" /> Contents
                 </h3>
@@ -99,8 +99,8 @@ export default function TermsPage() {
                       <a
                         href={`#${section.id}`}
                         className={`block px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200 ${activeSection === section.id
-                          ? "bg-gray-50 text-[#276221] font-bold shadow-sm translate-x-1"
-                          : "text-[#276221]/70 hover:bg-[#276221]/5/50 hover:text-[#276221]"
+                          ? "bg-gray-50 text-[#581C87] font-bold shadow-sm translate-x-1"
+                          : "text-[#581C87]/70 hover:bg-[#581C87]/5/50 hover:text-[#581C87]"
                           }`}
                         onClick={(e) => {
                           e.preventDefault();
@@ -121,12 +121,12 @@ export default function TermsPage() {
             {sections.map((section) => (
               <div key={section.id} id={section.id} className="scroll-mt-32 group">
                 <div className="flex items-start gap-5">
-                  <div className="shrink-0 p-3 rounded-xl bg-white text-[#276221] group-hover:bg-[#276221] group-hover:text-white transition-colors duration-300 shadow-sm border border-gray-50">
+                  <div className="shrink-0 p-3 rounded-xl bg-white text-[#581C87] group-hover:bg-[#581C87] group-hover:text-white transition-colors duration-300 shadow-sm border border-gray-50">
                     <section.icon className="h-6 w-6" />
                   </div>
                   <div>
-                    <h2 className="text-2xl font-bold text-[#276221] mb-4 font-display group-hover:text-orange-500 transition-colors">{section.title}</h2>
-                    <div className="text-[#276221]/70 leading-relaxed text-lg">{section.content}</div>
+                    <h2 className="text-2xl font-bold text-[#581C87] mb-4 font-display group-hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-orange-600 transition-colors">{section.title}</h2>
+                    <div className="text-[#581C87]/70 leading-relaxed text-lg">{section.content}</div>
                   </div>
                 </div>
                 <hr className="mt-12 border-gray-50 last:hidden" />

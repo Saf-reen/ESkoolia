@@ -21,13 +21,13 @@ export default function DeletionPolicyPage() {
                     <p>To initiate an account deletion request, please follow these steps:</p>
 
                     <div className="bg-gray-50 p-6 rounded-xl border border-gray-50">
-                        <ul className="list-decimal pl-5 space-y-3 text-base marker:font-bold marker:text-[#276221]">
-                            <li>Compose an email to our support team at <a href="mailto:support@eskoolia.com" className="text-[#276221] font-bold hover:underline">support@eskoolia.com</a></li>
-                            <li>Use the subject line: <span className="font-bold text-[#276221] bg-gray-50 px-2 py-0.5 rounded">"Account Deletion Request"</span></li>
+                        <ul className="list-decimal pl-5 space-y-3 text-base marker:font-bold marker:text-[#581C87]">
+                            <li>Compose an email to our support team at <a href="mailto:support@eskoolia.com" className="text-[#581C87] font-bold hover:underline">support@eskoolia.com</a></li>
+                            <li>Use the subject line: <span className="font-bold text-[#581C87] bg-gray-50 px-2 py-0.5 rounded">"Account Deletion Request"</span></li>
                             <li>In the email body, please strictly include:
-                                <ul className="list-disc pl-5 mt-2 space-y-1 text-[#276221]/70">
-                                    <li>Your <span className="font-semibold text-[#276221]">Registered Email Address</span> or <span className="font-semibold text-[#276221]">Phone Number</span></li>
-                                    <li>Your <span className="font-semibold text-[#276221]">User Role</span> (e.g., School Admin, Teacher, Student, Parent)</li>
+                                <ul className="list-disc pl-5 mt-2 space-y-1 text-[#581C87]/70">
+                                    <li>Your <span className="font-semibold text-[#581C87]">Registered Email Address</span> or <span className="font-semibold text-[#581C87]">Phone Number</span></li>
+                                    <li>Your <span className="font-semibold text-[#581C87]">User Role</span> (e.g., School Admin, Teacher, Student, Parent)</li>
                                     <li>Looking School Name/ID (Optional, but helps speed up the process)</li>
                                 </ul>
                             </li>
@@ -51,28 +51,28 @@ export default function DeletionPolicyPage() {
                     <p>Understanding what happens when your account is deleted is crucial. Here is a breakdown of data handling:</p>
 
                     <div className="grid md:grid-cols-2 gap-6 mt-4">
-                        <div className="bg-orange-50 p-6 rounded-2xl border border-orange-100">
-                            <h4 className="font-bold text-orange-500 mb-4 text-lg flex items-center gap-2">
+                        <div className="bg-gradient-to-r from-purple-600 to-orange-50 p-6 rounded-2xl border border-orange-100">
+                            <h4 className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-orange-600 mb-4 text-lg flex items-center gap-2">
                                 <Trash2 className="h-5 w-5" /> Permanently Deleted
                             </h4>
-                            <ul className="space-y-2 text-sm text-orange-950/80 font-medium">
-                                <li className="flex items-start gap-2"><span className="text-orange-400">•</span> Personal Profile Information (Name, DOB, etc.)</li>
-                                <li className="flex items-start gap-2"><span className="text-orange-400">•</span> Academic Records & Transcripts</li>
-                                <li className="flex items-start gap-2"><span className="text-orange-400">•</span> Attendance History</li>
-                                <li className="flex items-start gap-2"><span className="text-orange-400">•</span> Homework, Assignments & Exams</li>
-                                <li className="flex items-start gap-2"><span className="text-orange-400">•</span> Fee & Billing Records (non-auditable)</li>
-                                <li className="flex items-start gap-2"><span className="text-orange-400">•</span> Login Credentials & Auth Tokens</li>
+                            <ul className="space-y-2 text-sm text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-orange-950/80 font-medium">
+                                <li className="flex items-start gap-2"><span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-orange-600">•</span> Personal Profile Information (Name, DOB, etc.)</li>
+                                <li className="flex items-start gap-2"><span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-orange-600">•</span> Academic Records & Transcripts</li>
+                                <li className="flex items-start gap-2"><span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-orange-600">•</span> Attendance History</li>
+                                <li className="flex items-start gap-2"><span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-orange-600">•</span> Homework, Assignments & Exams</li>
+                                <li className="flex items-start gap-2"><span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-orange-600">•</span> Fee & Billing Records (non-auditable)</li>
+                                <li className="flex items-start gap-2"><span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-orange-600">•</span> Login Credentials & Auth Tokens</li>
                             </ul>
                         </div>
 
-                        <div className="bg-[#276221]/5 p-6 rounded-2xl border border-[#276221]/10 h-fit">
-                            <h4 className="font-bold text-[#276221] mb-4 text-lg flex items-center gap-2">
+                        <div className="bg-[#581C87]/5 p-6 rounded-2xl border border-[#581C87]/10 h-fit">
+                            <h4 className="font-bold text-[#581C87] mb-4 text-lg flex items-center gap-2">
                                 <Database className="h-5 w-5" /> Temporarily Retained
                             </h4>
-                            <p className="text-sm text-[#276221]/80 mb-4 leading-relaxed">
+                            <p className="text-sm text-[#581C87]/80 mb-4 leading-relaxed">
                                 Certain financial transaction records (e.g., invoices, payment proofs) may be retained for up to <strong>90 days</strong> strictly for legal, tax, and auditing purposes.
                             </p>
-                            <div className="text-xs text-[#276221]/60 bg-[#276221]/10 p-3 rounded-lg border border-[#276221]/20">
+                            <div className="text-xs text-[#581C87]/60 bg-[#581C87]/10 p-3 rounded-lg border border-[#581C87]/20">
                                 <strong>Final Erasure:</strong> After this retention period, no trace of your data will remain on our active servers or backups.
                             </div>
                         </div>
@@ -109,8 +109,8 @@ export default function DeletionPolicyPage() {
 
                 {/* Intro Text */}
                 <div className="max-w-4xl mx-auto mb-16 text-center">
-                    <p className="text-[#276221]/70 leading-relaxed text-lg">
-                        At <span className="font-bold text-[#276221]">eSkoolia</span>, transparency is our core value. This policy outlines how you can request the permanent removal of your account and personal data from our systems.
+                    <p className="text-[#581C87]/70 leading-relaxed text-lg">
+                        At <span className="font-bold text-[#581C87]">eSkoolia</span>, transparency is our core value. This policy outlines how you can request the permanent removal of your account and personal data from our systems.
                     </p>
                 </div>
 
@@ -119,7 +119,7 @@ export default function DeletionPolicyPage() {
                     {/* Left Sidebar - Sticky Navigation */}
                     <div className="lg:col-span-4 lg:sticky lg:top-24 hidden lg:block">
                         <div className="bg-white rounded-2xl shadow-lg border border-gray-50 overflow-hidden">
-                            <div className="bg-[#276221] p-4 text-white">
+                            <div className="bg-[#581C87] p-4 text-white">
                                 <h3 className="font-bold text-lg flex items-center gap-2">
                                     <Menu className="h-5 w-5" /> Contents
                                 </h3>
@@ -131,8 +131,8 @@ export default function DeletionPolicyPage() {
                                             <a
                                                 href={`#${section.id}`}
                                                 className={`block px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200 ${activeSection === section.id
-                                                    ? "bg-gray-50 text-[#276221] font-bold shadow-sm translate-x-1"
-                                                    : "text-[#276221]/70 hover:bg-[#276221]/5/50 hover:text-[#276221]"
+                                                    ? "bg-gray-50 text-[#581C87] font-bold shadow-sm translate-x-1"
+                                                    : "text-[#581C87]/70 hover:bg-[#581C87]/5/50 hover:text-[#581C87]"
                                                     }`}
                                                 onClick={(e) => {
                                                     e.preventDefault();
@@ -153,12 +153,12 @@ export default function DeletionPolicyPage() {
                         {sections.map((section) => (
                             <div key={section.id} id={section.id} className="scroll-mt-32 group">
                                 <div className="flex items-start gap-5">
-                                    <div className="shrink-0 p-3 rounded-xl bg-white text-[#276221] group-hover:bg-[#276221] group-hover:text-white transition-colors duration-300 shadow-sm border border-gray-50">
+                                    <div className="shrink-0 p-3 rounded-xl bg-white text-[#581C87] group-hover:bg-[#581C87] group-hover:text-white transition-colors duration-300 shadow-sm border border-gray-50">
                                         <section.icon className="h-6 w-6" />
                                     </div>
                                     <div className="w-full">
-                                        <h2 className="text-2xl font-bold text-[#276221] mb-4 font-display group-hover:text-orange-500 transition-colors">{section.title}</h2>
-                                        <div className="text-[#276221]/70 leading-relaxed text-lg w-full">{section.content}</div>
+                                        <h2 className="text-2xl font-bold text-[#581C87] mb-4 font-display group-hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-orange-600 transition-colors">{section.title}</h2>
+                                        <div className="text-[#581C87]/70 leading-relaxed text-lg w-full">{section.content}</div>
                                     </div>
                                 </div>
                                 <hr className="mt-12 border-gray-50 last:hidden" />

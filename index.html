@@ -6,25 +6,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- TODO: Set the document title to the name of your application -->
   <title>eSkoolia - Ultimate Education ERP</title>
-  <meta name="description" content="Ultimate Educational ERP" />
-  <meta name="author" content="eskoolia" />
+  <meta name="description"
+    content="Manage your entire school from one platform with eSkoolia. The ultimate Education ERP for modern institutions." />
+  <meta name="author" content="Sria Infotech Pvt Ltd" />
 
-  <!-- TODO: Update og:title to match your application name -->
-  <meta property="og:title" content="eSkoolia" />
-  <meta property="og:description" content="Ultimate Educational ERP" />
+  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-<meta property="og:title" content="eSkoolia - Ultimate Education ERP" />
-<meta property="og:description" content="Ultimate Educational ERP" />
-<meta property="og:type" content="website" />
-<meta property="og:image" content="https://eskoolia-gnyr.onrender.com/preview.png" />
+  <meta property="og:url" content="https://eskoolia-gnyr.onrender.com/" />
+  <meta property="og:title" content="eSkoolia - Ultimate Education ERP" />
+  <meta property="og:description"
+    content="Manage your entire school from one platform with eSkoolia. The ultimate Education ERP for modern institutions." />
+  <meta property="og:image" content="https://eskoolia-gnyr.onrender.com/preview.png" />
 
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="eSkoolia - Ultimate Education ERP" />
-<meta name="twitter:description" content="Ultimate Educational ERP" />
-<meta name="twitter:image" content="https://eskoolia-gnyr.onrender.com/preview.png" />
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://eskoolia-gnyr.onrender.com/" />
+  <meta property="twitter:title" content="eSkoolia - Ultimate Education ERP" />
+  <meta property="twitter:description"
+    content="Manage your entire school from one platform with eSkoolia. The ultimate Education ERP for modern institutions." />
+  <meta property="twitter:image" content="https://eskoolia-gnyr.onrender.com/preview.png" />
+
+  <style>
+    #splash-screen {
+      position: fixed;
+      inset: 0;
+      background-color: #FAF7FF;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 99999;
+      transition: opacity 0.6s ease-out;
+    }
+
+    .splash-spinner {
+      width: 50px;
+      height: 50px;
+      border: 4px solid rgba(88, 28, 135, 0.1);
+      border-top-color: #581C87;
+      border-radius: 50%;
+      animation: splash-spin 1s linear infinite;
+      margin-bottom: 20px;
+    }
+
+    @keyframes splash-spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .splash-brand {
+      font-family: 'Outfit', sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: #581C87;
+      letter-spacing: -0.02em;
+    }
+
+    .splash-subtitle {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 14px;
+      color: #71717a;
+      margin-top: 8px;
+    }
+  </style>
 </head>
 
 <body>
+  <div id="splash-screen">
+    <div class="splash-spinner"></div>
+    <div class="splash-brand">eSkoolia ERP</div>
+    <div class="splash-subtitle">Waking up secure environment...</div>
+  </div>
   <div id="root"></div>
   <script type="module" src="/src/main.tsx"></script>
 </body>

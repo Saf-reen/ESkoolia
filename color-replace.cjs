@@ -6,7 +6,7 @@ function replaceInFile(filePath) {
         let content = fs.readFileSync(filePath, 'utf8');
         let original = content;
 
-        // Replace CSS HSL values for the purple palette with the Green #276221 palette
+        // Replace CSS HSL values for the purple palette with the purple #276221 palette
         // 273 66% 32% was the primary purple. #276221 is ~ 114 50% 26%
         content = content.replace(/273 66% 32%/g, '114 50% 26%');
         content = content.replace(/273 66% 10%/g, '114 50% 10%');

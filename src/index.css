@@ -8,27 +8,27 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 114 50% 10%;
+    --foreground: 273 66% 10%;
 
     --card: 0 0% 100%;
-    --card-foreground: 114 50% 10%;
+    --card-foreground: 273 66% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 114 50% 10%;
+    --popover-foreground: 273 66% 10%;
 
-    --primary: 114 50% 26%;
-    /* green-900: #276221 */
+    --primary: 273 66% 32%;
+    /* purple-900: #581C87 */
     --primary-foreground: 0 0% 100%;
 
     --secondary: 210 20% 98%;
     /* Gray-50: #F9FAFB */
-    --secondary-foreground: 114 50% 10%;
+    --secondary-foreground: 273 66% 10%;
 
     --muted: 210 20% 98%;
     --muted-foreground: 273 20% 45%;
 
     --accent: 24 95% 53%;
-    /* Orange-500: #F97316 */
+    /* Orange-500: #f97316 */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -36,31 +36,31 @@
 
     --border: 210 20% 98%;
     --input: 210 20% 98%;
-    --ring: 114 50% 26%;
+    --ring: 273 66% 32%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 114 50% 26%;
+    --sidebar-background: 273 66% 32%;
     --sidebar-foreground: 0 0% 100%;
     --sidebar-primary: 24 95% 53%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 114 50% 34%;
+    --sidebar-accent: 273 66% 40%;
     --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 114 50% 20%;
+    --sidebar-border: 273 66% 25%;
     --sidebar-ring: 24 95% 53%;
 
     /* Custom tokens */
-    --hero-gradient: linear-gradient(135deg, hsl(114 50% 26%), hsl(114 50% 16%));
-    --card-shadow: 0 1px 3px 0 hsl(114 50% 10% / 0.06), 0 1px 2px -1px hsl(114 50% 10% / 0.06);
-    --card-shadow-lg: 0 10px 25px -5px hsl(114 50% 10% / 0.08), 0 8px 10px -6px hsl(114 50% 10% / 0.04);
-    --card-shadow-xl: 0 20px 40px -10px hsl(114 50% 26% / 0.15);
+    --hero-gradient: linear-gradient(135deg, hsl(273 66% 32%), hsl(273 66% 20%));
+    --card-shadow: 0 1px 3px 0 hsl(273 66% 10% / 0.06), 0 1px 2px -1px hsl(273 66% 10% / 0.06);
+    --card-shadow-lg: 0 10px 25px -5px hsl(273 66% 10% / 0.08), 0 8px 10px -6px hsl(273 66% 10% / 0.04);
+    --card-shadow-xl: 0 20px 40px -10px hsl(273 66% 32% / 0.15);
 
     --success: 152 69% 45%;
     --success-foreground: 0 0% 100%;
     --warning: 24 95% 53%;
     --warning-foreground: 0 0% 100%;
     --info: 210 20% 98%;
-    --info-foreground: 114 50% 10%;
+    --info-foreground: 273 66% 10%;
   }
 
   html {
@@ -146,8 +146,8 @@
 
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(to bottom,
-      #276221,
-      /* green */
+      #581C87,
+      /* purple */
       #f97316
       /* orange */
     );
@@ -157,21 +157,75 @@
 /* Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #276221 transparent;
+  scrollbar-color: #581C87 transparent;
 }
 
-body.green-scroll::-webkit-scrollbar-thumb {
-  background: #276221;
+body.purple-scroll::-webkit-scrollbar-thumb {
+  background: #581C87;
 }
 
 body.orange-scroll::-webkit-scrollbar-thumb {
   background: #f97316;
 }
 
-body.green-scroll * {
-  scrollbar-color: #276221 transparent;
+body.purple-scroll * {
+  scrollbar-color: #581C87 transparent;
 }
 
 body.orange-scroll * {
   scrollbar-color: #f97316 transparent;
+}
+
+/* Responsive Table - Stack labels on mobile */
+@media (max-width: 768px) {
+  .responsive-table thead {
+    display: none;
+  }
+
+  .responsive-table tr {
+    display: block;
+    margin-bottom: 1.5rem;
+    border: 1px solid #f3f4f6;
+    border-radius: 1rem;
+    padding: 1rem;
+    background: white;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  }
+
+  .responsive-table td {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f9fafb;
+    text-align: right;
+  }
+
+  .responsive-table td:last-child {
+    border-bottom: 0;
+  }
+
+  .responsive-table td::before {
+    content: attr(data-label);
+    font-weight: 700;
+    text-align: left;
+    color: #581C87;
+  }
+}
+
+/* Micro-interactions */
+.card-hover-effect {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-hover-effect:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 25px 50px -12px rgba(88, 28, 135, 0.15);
+}
+
+.glow-on-hover:hover {
+  box-shadow: 0 0 20px rgba(249, 115, 22, 0.3);
+}
+
+.tap-effect:active {
+  transform: scale(0.95);
 }
