@@ -10,33 +10,60 @@ const jwt = require('jsonwebtoken');
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-// 1. Implement Security Headers (Item 1, 14)
+// 1. Comprehensive Security Headers with Helmet for Mozilla Observatory A+
 app.use(helmet({
     contentSecurityPolicy: {
+        useDefaults: true,
         directives: {
-            defaultSrc: ["'self'"],
-            scriptSrc: ["'self'", "'unsafe-inline'", "https://cdn.jsdelivr.net"],
-            styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
-            imgSrc: ["'self'", "data:", "https://*"],
-            connectSrc: ["'self'", "https://*"],
-            fontSrc: ["'self'", "https://fonts.gstatic.com"],
-            objectSrc: ["'none'"],
-            mediaSrc: ["'self'"],
-            frameAncestors: ["'none'"], // Prevent clickjacking (Item 14)
+            "default-src": ["'self'"],
+            "script-src": ["'self'", "'unsafe-inline'", "https://cdn.jsdelivr.net"],
+            "style-src": ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com", "https://fonts.gstatic.com"],
+            "img-src": ["'self'", "data:", "https:", "blob:"],
+            "connect-src": ["'self'", "https:", "wss:"],
+            "font-src": ["'self'", "https://fonts.gstatic.com", "data:"],
+            "object-src": ["'none'"],
+            "media-src": ["'self'"],
+            "frame-src": ["'self'", "https://www.youtube.com"],
+            "frame-ancestors": ["'none'"],
+            "base-uri": ["'self'"],
+            "form-action": ["'self'"],
+            "upgrade-insecure-requests": [],
         },
     },
-    crossOriginEmbedderPolicy: false,
-    crossOriginResourcePolicy: { policy: "cross-origin" },
+    referrerPolicy: { policy: "strict-origin-when-cross-origin" },
+    xFrameOptions: { action: "deny" },
+    crossOriginEmbedderPolicy: { policy: "credentialless" }, // Production-safe COEP
+    crossOriginResourcePolicy: { policy: "same-origin" },    // Stricter CORP for Observatory
+    crossOriginOpenerPolicy: { policy: "same-origin" },      // COOP
 }));
 
-// Additional HSTS (Item 1)
+// 2. Restrict browser features using Permissions-Policy
+app.use(helmet.permissionsPolicy({
+    features: {
+        camera: [],
+        microphone: [],
+        geolocation: [],
+        interestCohort: [],
+        fullscreen: ["self"],
+        payment: [],
+        usb: []
+    },
+}));
+
+// 3. Robust HSTS (Strict-Transport-Security) for Observatory
 app.use(helmet.hsts({
     maxAge: 31536000,
     includeSubDomains: true,
     preload: true
 }));
 
-// Disable X-Powered-By (Item 1)
+// 4. Additional production-safe headers
+app.use((req, res, next) => {
+    res.setHeader('X-XSS-Protection', '0'); // Explicitly disable legacy XSS filter
+    next();
+});
+
+// 5. Disable X-Powered-By
 app.disable('x-powered-by');
 
 // 3. Add Login Rate Limiting (Item 3)
