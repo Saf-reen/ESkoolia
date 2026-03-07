@@ -2,22 +2,10 @@ import { Link } from "react-router-dom";
 import { GraduationCap, Facebook, Twitter, Linkedin, Instagram, CreditCard, ShieldCheck } from "lucide-react";
 
 const footerLinks = {
-  // "Our Products": [
-  //   { label: "eSkoolia SaaS - FREE", href: "#" },
-  //   { label: "eSkoolia Desktop", href: "#" },
-  //   { label: "eSkoolia Pro", href: "#" },
-  //   { label: "eSkoolia LMS", href: "#" },
-  // ],
-  // "Versions": [
-  //   { label: "Latest", href: "#" },
-  //   { label: "Version 9.0", href: "#" },
-  //   { label: "Version 9.1", href: "#" },
-  // ],
   "Useful Links": [
     { label: "FAQ'S", href: "/faq" },
     { label: "Documentation", href: "/docs" },
     { label: "Live Chat", href: "https://wa.me/+919701314138" },
-    // { label: "Live Demo", href: "https://eskooly.pro/login" },
     { label: "Add-ons", href: "/modules" },
   ],
   "Legal": [
