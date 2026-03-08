@@ -344,13 +344,8 @@ export default function HomePage() {
       {/* Animated Eskoolia Suite Section - Signature visual identity */}
       <EskooliaSuiteSection />
 
-
-
-      {/* Problems Section */}
       {/* Problems Section */}
       <section className="relative py-28 lg:py-36 bg-gradient-to-b from-white via-purple-50/40 to-orange-50/40 overflow-hidden">
-
-
 
         <div className="container mx-auto px-6 relative z-10">
 
