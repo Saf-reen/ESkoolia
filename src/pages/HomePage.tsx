@@ -193,7 +193,7 @@ export default function HomePage() {
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
       <section
-        className="relative overflow-hidden pb-20 pt-32 lg:pt-40 bg-white min-h-screen flex flex-col items-center justify-center cursor-purple-section"
+        className="relative overflow-hidden pb-8 pt-8 lg:pt-40 bg-white min-h-screen flex flex-col items-center justify-center cursor-purple-section"
       >
 
 
@@ -315,31 +315,31 @@ export default function HomePage() {
 
       {/* Trust Bar (previously stats) */}
       {/* TrustBarSection */}
-      <section className="relative -mt-10 z-20 pb-20">
+      {/* <section className="relative -mt-10 z-20 pb-20">
         <div className="container px-4">
-          <div className="bg-white/90 backdrop-blur-xl rounded-[32px] shadow-lg p-8 md:p-10 flex flex-col md:flex-row justify-around items-center gap-10 border border-purple-100 max-w-6xl mx-auto">
+          <div className="bg-white/90 backdrop-blur-xl rounded-[32px] shadow-lg p-8 md:p-10 flex flex-col md:flex-row justify-around items-center gap-10 border border-purple-100 max-w-6xl mx-auto"> */}
 
-            {/* Users */}
-            <div className="flex flex-col items-center gap-2 text-center">
-              <div className="text-5xl font-extrabold text-[#581C87]">15k+</div>
-              <div className="text-[#581C87]/60 text-sm">Global Users</div>
-            </div>
+      {/* Users */}
+      {/* <div className="flex flex-col items-center gap-2 text-center">
+              <div className="text-5xl font-extrabold text-[#581C87]">50k+</div>
+              <div className="text-[#581C87]/60 text-sm">Early Users</div>
+            </div> */}
 
-            {/* Countries */}
-            <div className="flex flex-col items-center gap-2 text-center">
-              <div className="text-5xl font-extrabold text-[#581C87]">90+</div>
-              <div className="text-[#581C87]/60 text-sm">Countries</div>
-            </div>
+      {/* Countries */}
+      {/* <div className="flex flex-col items-center gap-2 text-center">
+              <div className="text-5xl font-extrabold text-[#581C87]">3+</div>
+              <div className="text-[#581C87]/60 text-sm">Pilot Schools</div>
+            </div> */}
 
-            {/* Satisfaction */}
-            <div className="flex flex-col items-center gap-2 text-center">
-              <div className="text-5xl font-extrabold text-[#581C87]">95%</div>
-              <div className="text-[#581C87]/60 text-sm">Satisfaction Rate</div>
+      {/* Satisfaction */}
+      {/* <div className="flex flex-col items-center gap-2 text-center">
+              <div className="text-5xl font-extrabold text-[#581C87]">20+</div>
+              <div className="text-[#581C87]/60 text-sm">ERP Modules</div>
             </div>
 
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Animated Eskoolia Suite Section - Signature visual identity */}
       <EskooliaSuiteSection />
