@@ -53,11 +53,6 @@ export default function Header() {
           </nav>
 
           <div className="hidden items-center gap-3 md:flex z-10">
-            {/* <Button variant="outline" className="gap-2 border-white/40 text-white bg-white/5 hover:bg-white hover:text-[#581C87] hover:border-white transition-all rounded-full h-11 px-7 font-bold text-sm tracking-wide" asChild>
-              <a href="https://eskooly.pro/login" target="_blank" rel="noopener noreferrer">
-                <Monitor className="h-4 w-4" /> LIVE DEMO
-              </a>
-            </Button> */}
             <Button variant="default" className="gap-2 bg-white/5 border border-white/40 hover:bg-white hover:text-[#581C87] text-white border-none shadow-lg rounded-full h-11 px-7 font-bold text-sm tracking-wide transition-all" asChild>
               <Link to="/pricing">
                 <ShoppingCart className="h-4 w-4" /> GET STARTED
@@ -92,11 +87,6 @@ export default function Header() {
               </Link>
             ))}
             <div className="grid gap-4 mt-10">
-              {/* <Button variant="outline" className="gap-2 justify-center h-14 text-lg border-white/30 text-white" asChild>
-                <a href="https://eskooly.pro/login" target="_blank" rel="noopener noreferrer">
-                  <Monitor className="h-5 w-5" /> LIVE DEMO
-                </a>
-              </Button> */}
               <Button variant="default" className="gap-2 justify-center h-14 text-lg bg-gradient-to-r from-purple-600 to-orange-600 hover:bg-gradient-to-r from-purple-600 to-orange-600 border-none" asChild>
                 <Link to="/pricing" onClick={() => setMobileOpen(false)}>
                   <ShoppingCart className="h-5 w-5" /> GET STARTED
