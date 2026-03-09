@@ -11,6 +11,7 @@ export default function CustomCursor() {
             setIsMobile(true);
             return;
         }
+        
 
         document.body.classList.add("hide-cursor");
 
