@@ -710,23 +710,6 @@ export default function HomePage() {
           {/* <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto"> */}
 
           {/* Standard */}
-          {/* <div className="bg-white rounded-3xl border border-gray-50 p-10 text-center shadow-lg hover:shadow-xl transition">
-              <h3 className="text-2xl font-bold text-[#581C87]">Standard</h3>
-              <p className="mt-6 text-4xl font-extrabold text-[#581C87]">₹67</p>
-              <p className="text-sm text-[#581C87]/60">Lifetime</p>
-
-              <ul className="mt-8 space-y-3 text-[#581C87]/70 font-medium">
-                <li>Online Pro Version</li>
-                <li>1 License</li>
-                <li>Lifetime Updates</li>
-                <li>Front CMS</li>
-                <li>1 Year Support</li>
-              </ul>
-
-              <Button className="mt-8 w-full rounded-full bg-[#581C87] text-white hover:bg-gradient-to-r from-purple-600 to-orange-600 h-12" asChild>
-                <Link to="/pricing">Buy Now</Link>
-              </Button>
-            </div> */}
 
           {/* Premium (Highlighted) */}
           {/* <div className="bg-[#581C87] text-white rounded-3xl p-12 text-center shadow-2xl scale-105 relative">
