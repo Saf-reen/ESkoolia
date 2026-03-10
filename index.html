@@ -39,20 +39,61 @@
       transition: opacity 0.6s ease-out;
     }
 
-    .splash-spinner {
-      width: 50px;
-      height: 50px;
-      border: 4px solid rgba(88, 28, 135, 0.1);
-      border-top-color: #581C87;
-      border-radius: 50%;
-      animation: splash-spin 1s linear infinite;
-      margin-bottom: 20px;
+    .splash-loader {
+      display: flex;
+      gap: 32px;
+      margin-bottom: 24px;
     }
 
-    @keyframes splash-spin {
-      to {
-        transform: rotate(360deg);
+    .splash-circle {
+      position: relative;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      border: 4px solid rgba(88, 28, 135, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .splash-ball {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      background-color: #581C87;
+      border-radius: 50%;
+      animation: ballMove 2s infinite ease-in-out;
+    }
+
+    .splash-circle:nth-child(2) .splash-ball {
+      animation-delay: 0.5s;
+    }
+
+    @keyframes ballMove {
+
+      0%,
+      100% {
+        transform: translate(0, 20px);
       }
+
+      25% {
+        transform: translate(20px, 0);
+      }
+
+      50% {
+        transform: translate(0, -20px);
+      }
+
+      75% {
+        transform: translate(-20px, 0);
+      }
+    }
+
+    .inner-ring {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 2px dashed rgba(88, 28, 135, 0.05);
     }
 
     .splash-brand {
@@ -74,7 +115,16 @@
 
 <body>
   <div id="splash-screen">
-    <div class="splash-spinner"></div>
+    <div class="splash-loader">
+      <div class="splash-circle">
+        <div class="splash-ball"></div>
+        <div class="inner-ring"></div>
+      </div>
+      <div class="splash-circle">
+        <div class="splash-ball"></div>
+        <div class="inner-ring"></div>
+      </div>
+    </div>
     <div class="splash-brand">eSkoolia ERP</div>
     <div class="splash-subtitle">Waking up secure environment...</div>
   </div>
