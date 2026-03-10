@@ -193,7 +193,7 @@ export default function HomePage() {
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
       <section
-        className="relative overflow-hidden pb-8 pt-8 lg:pt-40 bg-white min-h-screen flex flex-col items-center justify-center cursor-purple-section"
+        className="relative overflow-hidden pb-8 pt-32 lg:pt-40 bg-white min-h-screen flex flex-col items-center justify-center cursor-purple-section"
       >
 
 

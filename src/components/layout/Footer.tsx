@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { GraduationCap, Facebook, Twitter, Linkedin, Instagram, CreditCard, ShieldCheck } from "lucide-react";
+import { GraduationCap, Facebook, Youtube, Linkedin, Instagram, CreditCard, ShieldCheck } from "lucide-react";
 
 const footerLinks = {
   "Useful Links": [
@@ -43,10 +43,17 @@ export default function Footer() {
               The ultimate Education ERP designed to empower modern schools. Manage everything from admissions to academics in one secure, unified platform built for the future of education.
             </p>
             <div className="flex items-center gap-4">
-              {[Facebook, Twitter, Linkedin, Instagram].map((Icon, i) => (
+              {[
+                { Icon: Facebook, href: "https://www.facebook.com/eskoolia/" },
+                { Icon: Youtube, href: "https://www.youtube.com/@Eskoolia" },
+                { Icon: Linkedin, href: "https://www.linkedin.com/company/eskoolia/" },
+                { Icon: Instagram, href: "https://www.instagram.com/eskoolia_/" },
+              ].map(({ Icon, href }, i) => (
                 <a
                   key={i}
-                  href="#"
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-gradient-to-r from-purple-600 to-orange-600 transition-all duration-300 group border border-white/10"
                   aria-label="Social Link"
                 >
