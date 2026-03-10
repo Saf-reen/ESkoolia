@@ -5,6 +5,7 @@ import {
     FaFacebookF,
     FaYoutube,
     FaInstagram,
+    FaWhatsapp,
 } from "react-icons/fa";
 
 const FloatingButtons = () => {
@@ -79,98 +80,110 @@ const FloatingButtons = () => {
     };
 
     return (
-        <div className="fixed right-2 top-1/4 z-50 flex flex-col gap-3 items-end">
+        <>
+            <div className="fixed right-2 top-1/4 z-50 flex flex-col gap-3 items-end">
+                {/* PHONE */}
+                <div
+                    className={`
+              bg-orange-500 h-12 flex items-center shadow-lg rounded-md transition-all duration-500 ease-in-out overflow-hidden cursor-pointer
+              ${phoneOpen ? "w-[180px]" : "w-12"}
+            `}
+                    onMouseEnter={() => !isMobile && setPhoneOpen(true)}
+                    onMouseLeave={() => !isMobile && setPhoneOpen(false)}
+                    onClick={handlePhoneTap}
+                >
+                    <div className="w-12 h-12 flex items-center justify-center flex-shrink-0 text-white">
+                        <Phone size={22} />
+                    </div>
 
-            {/* PHONE */}
-            <div
-                className={`
-          bg-orange-500 h-12 flex items-center shadow-lg rounded-md transition-all duration-500 ease-in-out overflow-hidden cursor-pointer
-          ${phoneOpen ? "w-[180px]" : "w-12"}
-        `}
-                onMouseEnter={() => !isMobile && setPhoneOpen(true)}
-                onMouseLeave={() => !isMobile && setPhoneOpen(false)}
-                onClick={handlePhoneTap}
-            >
-                <div className="w-12 h-12 flex items-center justify-center flex-shrink-0 text-white">
-                    <Phone size={22} />
+                    <div className={`whitespace-nowrap text-white font-medium pr-4 transition-opacity duration-300 ${phoneOpen ? "opacity-100" : "opacity-0"}`}>
+                        +91 97013 14138
+                    </div>
                 </div>
 
-                <div className={`whitespace-nowrap text-white font-medium pr-4 transition-opacity duration-300 ${phoneOpen ? "opacity-100" : "opacity-0"}`}>
-                    +91 97013 14138
-                </div>
-            </div>
+                {/* MAIL */}
+                <div
+                    className={`
+              bg-orange-500 h-12 flex items-center shadow-lg rounded-md transition-all duration-500 ease-in-out overflow-hidden cursor-pointer
+              ${mailOpen ? "w-[240px]" : "w-12"}
+            `}
+                    onMouseEnter={() => !isMobile && setMailOpen(true)}
+                    onMouseLeave={() => !isMobile && setMailOpen(false)}
+                    onClick={handleMailTap}
+                >
+                    <div className="w-12 h-12 flex items-center justify-center flex-shrink-0 text-white">
+                        <Mail size={22} />
+                    </div>
 
-            {/* MAIL */}
-            <div
-                className={`
-          bg-orange-500 h-12 flex items-center shadow-lg rounded-md transition-all duration-500 ease-in-out overflow-hidden cursor-pointer
-          ${mailOpen ? "w-[240px]" : "w-12"}
-        `}
-                onMouseEnter={() => !isMobile && setMailOpen(true)}
-                onMouseLeave={() => !isMobile && setMailOpen(false)}
-                onClick={handleMailTap}
-            >
-                <div className="w-12 h-12 flex items-center justify-center flex-shrink-0 text-white">
-                    <Mail size={22} />
-                </div>
-
-                <div className={`whitespace-nowrap text-white font-medium pr-2 transition-opacity duration-300 ${mailOpen ? "opacity-100" : "opacity-0"}`}>
-                    support@eskoolia.com
-                </div>
-            </div>
-
-            {/* SHARE */}
-            <div
-                className={`
-          bg-orange-500 h-12 flex items-center shadow-lg rounded-md transition-all duration-500 ease-in-out overflow-hidden cursor-pointer
-          ${shareOpen ? "w-[200px]" : "w-12"}
-        `}
-                onMouseEnter={() => !isMobile && setShareOpen(true)}
-                onMouseLeave={() => !isMobile && setShareOpen(false)}
-                onClick={handleShareTap}
-            >
-                <div className="w-12 h-12 flex items-center justify-center flex-shrink-0 text-white">
-                    <Share2 size={22} />
+                    <div className={`whitespace-nowrap text-white font-medium pr-2 transition-opacity duration-300 ${mailOpen ? "opacity-100" : "opacity-0"}`}>
+                        support@eskoolia.com
+                    </div>
                 </div>
 
-                <div className={`flex gap-4 items-center transition-opacity duration-300 ${shareOpen ? "opacity-100" : "opacity-0"}`}>
-                    <div className="flex justify-center gap-4 text-lg text-white">
+                {/* SHARE */}
+                <div
+                    className={`
+              bg-orange-500 h-12 flex items-center shadow-lg rounded-md transition-all duration-500 ease-in-out overflow-hidden cursor-pointer
+              ${shareOpen ? "w-[200px]" : "w-12"}
+            `}
+                    onMouseEnter={() => !isMobile && setShareOpen(true)}
+                    onMouseLeave={() => !isMobile && setShareOpen(false)}
+                    onClick={handleShareTap}
+                >
+                    <div className="w-12 h-12 flex items-center justify-center flex-shrink-0 text-white">
+                        <Share2 size={22} />
+                    </div>
 
-                        <a
-                            href="https://www.linkedin.com/company/eskoolia/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <FaLinkedinIn className="text-white hover:text-orange-400 cursor-pointer" />
-                        </a>
+                    <div className={`flex gap-4 items-center transition-opacity duration-300 ${shareOpen ? "opacity-100" : "opacity-0"}`}>
+                        <div className="flex justify-center gap-4 text-lg text-white">
 
-                        <a
-                            href="https://www.facebook.com/eskoolia/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <FaFacebookF className="text-white hover:text-orange-400 cursor-pointer" />
-                        </a>
+                            <a
+                                href="https://www.linkedin.com/company/eskoolia/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <FaLinkedinIn className="text-white hover:text-orange-400 cursor-pointer" />
+                            </a>
 
-                        <a
-                            href="https://www.youtube.com/@Eskoolia"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <FaYoutube className="text-white hover:text-orange-400 cursor-pointer" />
-                        </a>
+                            <a
+                                href="https://www.facebook.com/eskoolia/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <FaFacebookF className="text-white hover:text-orange-400 cursor-pointer" />
+                            </a>
 
-                        <a
-                            href="https://www.instagram.com/eskoolia_/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <FaInstagram className="text-white hover:text-orange-400 cursor-pointer" />
-                        </a>
+                            <a
+                                href="https://www.youtube.com/@Eskoolia"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <FaYoutube className="text-white hover:text-orange-400 cursor-pointer" />
+                            </a>
+
+                            <a
+                                href="https://www.instagram.com/eskoolia_/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <FaInstagram className="text-white hover:text-orange-400 cursor-pointer" />
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+
+            {/* WhatsApp quick chat button */}
+            <a
+                aria-label="Chat on WhatsApp"
+                href={`https://wa.me/919701314138?text=${encodeURIComponent("Hi, I visited your website and would like to know more about your IT services.")}`}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="fixed right-6 bottom-36 z-[9999] bg-green-600 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg hover:h-16 hover:w-16 hover:shadow-2xl transition-all duration-300"
+            >
+                <FaWhatsapp className="w-8 h-8" />
+            </a>
+        </>
     );
 };
 
