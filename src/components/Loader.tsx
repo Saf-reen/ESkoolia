@@ -11,7 +11,7 @@ export default function Loader() {
                             animate={{
                                 x: [0, 20, 0, -20, 0],
                                 y: [20, 0, -20, 0, 20],
-                            }}
+                            }}      
                             transition={{
                                 duration: 2,
                                 repeat: Infinity,
