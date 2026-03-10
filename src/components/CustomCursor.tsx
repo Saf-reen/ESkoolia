@@ -61,7 +61,6 @@ export default function CustomCursor() {
             }));
             animationFrameId = requestAnimationFrame(updateDotPosition);
         };
-
         updateDotPosition();
 
         return () => cancelAnimationFrame(animationFrameId);
