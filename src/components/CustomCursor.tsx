@@ -41,7 +41,7 @@ export default function CustomCursor() {
                     setVariant("default");
                 }
             }
-        };
+        }; 
 
         window.addEventListener("mousemove", moveCursor);
         return () => {
