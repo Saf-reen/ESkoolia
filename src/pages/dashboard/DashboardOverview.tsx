@@ -35,7 +35,7 @@ export default function DashboardOverview() {
       </div>
 
       <div className="grid gap-6 lg:grid-cols-2">
-        {/* Chart placeholder */}
+        {/* Chart placeholder for student enrollment trend */}
         <div className="rounded-lg border border-border bg-card p-6 shadow-card">
           <h3 className="mb-4 font-display font-semibold text-foreground">Student Enrollment Trend</h3>
           <div className="flex h-48 items-center justify-center rounded-lg bg-secondary/50 text-sm text-muted-foreground">
