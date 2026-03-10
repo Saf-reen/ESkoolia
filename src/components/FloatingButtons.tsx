@@ -46,7 +46,7 @@ const FloatingButtons = () => {
 
     const handleMailTap = () => {
         if (!isMobile) {
-            window.location.href = "mailto:contact@eskoolia.com";
+            window.location.href = "mailto:support@eskoolia.com";
             return;
         }
 
@@ -55,7 +55,7 @@ const FloatingButtons = () => {
             setMailOpen(!mailOpen);
             setTimeout(() => (mailTapRef.current = 0), 350);
         } else if (mailTapRef.current === 2) {
-            window.location.href = "mailto:contact@eskoolia.com";
+            window.location.href = "mailto:support@eskoolia.com";
             mailTapRef.current = 0;
         }
     };
@@ -125,7 +125,7 @@ const FloatingButtons = () => {
                 </div>
 
                 <div className={`whitespace-nowrap text-white font-medium pr-2 transition-opacity duration-300 ${mailOpen ? "opacity-100" : "opacity-0"}`}>
-                    contact@eskoolia.com
+                    support@eskoolia.com
                 </div>
             </div>
 
