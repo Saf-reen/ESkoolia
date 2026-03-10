@@ -12,7 +12,6 @@ export default function CustomCursor() {
             return;
         }
 
-
         document.body.classList.add("hide-cursor");
 
         const moveCursor = (e: MouseEvent) => {
