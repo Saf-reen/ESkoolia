@@ -1,6 +1,7 @@
 import { Outlet, useLocation } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
+import FloatingButtons from "../FloatingButtons";
 
 export default function PublicLayout() {
   const location = useLocation();
@@ -13,6 +14,9 @@ export default function PublicLayout() {
         <Outlet />
       </main>
       <Footer />
+
+      {/* Floating Buttons */}
+      <FloatingButtons />
 
       {/* Floating Chat Widget */}
       <div className="fixed bottom-6 right-6 z-50">
