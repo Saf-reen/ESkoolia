@@ -102,6 +102,6 @@ export default function CustomCursor() {
                     transform: `translate3d(${dotPosition.x}px, ${dotPosition.y}px, 0)`,
                 }}
             />
-        </>
+        </>  
     );
 }
