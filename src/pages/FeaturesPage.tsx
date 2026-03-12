@@ -5,9 +5,18 @@ import {
   FileSpreadsheet, BookOpen, MessageSquare, Library, Package,
   Bus, Bed, Globe, BarChart3, Settings, Zap, Globe2, Code,
   Smartphone, Languages, Palette, Bell, SmartphoneNfc, Printer,
-  Database, ShieldAlert, History, Download, ShieldCheck
+  Database, ShieldAlert, History, Download, ShieldCheck, ArrowRight,
+  LayoutDashboard, SmartphoneIcon
 } from "lucide-react";
 import PageHeader from "@/components/layout/PageHeader";
+import { motion, AnimatePresence } from "framer-motion";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { useState } from "react";
 
 const mainModules = [
   { icon: UserCog, title: "Admin Module", desc: "Managing other accounts, Manage Teacher, Student, Guardian etc" },
@@ -29,169 +38,75 @@ const mainModules = [
 ];
 
 const additionalFeatures = [
-  { icon: Zap, title: "Optimized Performance" },
-  { icon: Download, title: "One Click Update System" },
-  { icon: Code, title: "Supports RESTful APIs" },
-  { icon: ShieldCheck, title: "Clean Code Quality" },
-  { icon: Zap, title: "Installation Wizard" },
-  { icon: Smartphone, title: "Fully Responsive" },
-  { icon: Globe2, title: "Supports Right-to-Left" },
-  { icon: Languages, title: "Multilingual" },
-  { icon: Palette, title: "Themes & Colors Styling Options" },
-  { icon: Bell, title: "Email Notification with Templates" },
-  { icon: SmartphoneNfc, title: "Supports SMS Notification" },
-  { icon: Printer, title: "Printable Reports" },
-  { icon: Database, title: "Inbuilt Backup Tool" },
-  { icon: ShieldAlert, title: "IP Filter & Block" },
-  { icon: History, title: "Activity & Email Log" },
-  { icon: Download, title: "Export Reports" },
+  { icon: Zap, title: "Optimized Performance", color: "bg-blue-50 text-blue-600" },
+  { icon: Download, title: "One Click Update System", color: "bg-orange-50 text-orange-600" },
+  { icon: Code, title: "Supports RESTful APIs", color: "bg-indigo-50 text-indigo-600" },
+  { icon: ShieldCheck, title: "Clean Code Quality", color: "bg-emerald-50 text-emerald-600" },
+  { icon: Zap, title: "Installation Wizard", color: "bg-amber-50 text-amber-600" },
+  { icon: Smartphone, title: "Fully Responsive", color: "bg-purple-50 text-purple-600" },
+  { icon: Globe2, title: "Supports RTL", color: "bg-sky-50 text-sky-600" },
+  { icon: Languages, title: "Multilingual", color: "bg-rose-50 text-rose-600" },
+  { icon: Palette, title: "Theming Options", color: "bg-fuchsia-50 text-fuchsia-600" },
+  { icon: Bell, title: "Email Templates", color: "bg-yellow-50 text-yellow-600" },
+  { icon: SmartphoneNfc, title: "SMS Notifications", color: "bg-green-50 text-green-600" },
+  { icon: Printer, title: "Printable Reports", color: "bg-slate-50 text-slate-600" },
+  { icon: Database, title: "Backup Tool", color: "bg-cyan-50 text-cyan-600" },
+  { icon: ShieldAlert, title: "Security Layers", color: "bg-red-50 text-red-600" },
+  { icon: History, title: "Cloud Logs", color: "bg-teal-50 text-teal-600" },
+  { icon: Download, title: "Instant Export", color: "bg-violet-50 text-violet-600" },
 ];
 
 const panelFeatures = [
   {
     title: "ADMIN SECTION",
+    image: "/Eskooly/dashboard1.png",
     features: [
       "Admission Query", "Visitor Book", "Phone Call Log", "Postal Receive", "Postal Dispatch",
-      "Complain", "Admin Setup", "Setup Front Office", "Managing User accounts (teacher, student, parent)",
-      "Managing classes, subjects", "Managing class routine", "Managing exam, grades",
-      "Managing exam marks", "Sending exam marks via sms", "Managing Students Attendance",
-      "Student Certificate", "Generate Certificate", "Student Id Card", "Generate Id Card",
-      "Managing accounting, income & expenses", "Student Admission", "Student Details",
-      "Student Promote", "Managing School events", "Student Category", "Student Group",
-      "Desabled Student", "Managing library, dormitory, transport", "Messaging between other users",
-      "Managing system settings (general, massaging , language)"
+      "Complain Management", "Setup Front Office", "User Management"
     ]
   },
   {
-    title: "TEACHER PANEL FEATURES",
+    title: "TEACHER PANEL",
+    image: "/Eskooly/general_setting.png",
     features: [
-      "Add Homework", "Evaluation Report", "Upload Content", "Assignments", "Study Material",
-      "Syllabus", "Other Downloads", "Teacher", "Managing students", "Managing exam marks", "Managing attendance"
+      "Add Homework", "Evaluation Report", "Upload Content", "Assignments", 
+      "Syllabus Management", "Teacher Dashboard", "Exam Marks Entry"
     ]
   },
   {
-    title: "PARENTS PANEL FEATURES",
+    title: "PARENTS & STUDENTS",
+    image: "/Eskooly/admission_query.png",
     features: [
-      "Get children marks", "Get children payment invoices", "Get children class routine",
-      "Messaging with teachers", "Childs attendance tracking"
+      "Real-time Marks Access", "Fee Invoices", "Class Routine", 
+      "Attendance Tracking", "Study Materials", "Online Payments"
     ]
   },
   {
-    title: "STUDENT PANEL FEATURES",
+    title: "OPERATIONS",
+    image: "/Eskooly/student-transport-report.png",
     features: [
-      "Get class routine", "Get exam marks", "Get attendance status", "Get study materials / files from teacher",
-      "Get payment invoices, pay online", "Communicate with teacher"
+      "Human Resource", "Payroll System", "Inventory Management", 
+      "Library System", "Transport Tracking", "Dormitory Monitoring"
     ]
   },
-  {
-    title: "FEES COLLECTION",
-    features: [
-      "Fees payment", "Collect Fees", "Search fees Payment", "Search fees due", "Fees Master",
-      "Fees Group", "Fees type", "Fees statement", "Reports", "Invoice", "Fees carry Forward",
-      "Paid/due fees statement etc"
-    ]
-  },
-  {
-    title: "ACCOUNTS",
-    features: [
-      "Account Dashboard", "Profit", "Income", "Expense", "Search", "Account List", "Payment Method",
-      "Bank Account", "Payment History"
-    ]
-  },
-  {
-    title: "HUMAN RESOURCE",
-    features: [
-      "Staff Directory", "Staff Attendence", "Staff Attendence Report", "Payroll", "Payroll Report"
-    ]
-  },
-  {
-    title: "EXAMINATION",
-    features: [
-      "Add Exam", "Exam", "Add Exam Type", "Exam Schedule", "Seat plan", "Exam routine",
-      "Marks Register", "Exam Attendence", "Marks Grade", "Send Marks by SMS", "Question Group",
-      "Question Bank", "Online Exam", "Date & time organization", "Schedule notice", "Instruction",
-      "Mark sheet & Report"
-    ]
-  },
-  {
-    title: "ACADEMICS",
-    features: [
-      "Dashboard", "Class Routine", "View Class Routine (Teacher)", "Assign Subject",
-      "Assign Class Teacher", "Subjects", "Class", "Sections", "Class Room", "CL/EX Time Setup",
-      "Subjective assign"
-    ]
-  },
-  {
-    title: "COMMUNICATE",
-    features: [
-      "Notice Board", "Send Massage", "Send Email/Sms", "Email/Sms", "Event notice", "Event Logs",
-      "Holiday notice"
-    ]
-  },
-  {
-    title: "LIBRARY",
-    features: [
-      "Add Book", "Book List", "Add Member", "Member listing & manage", "Book category/list",
-      "Issue/Return Book", "All Issued Book", "Card issuing"
-    ]
-  },
-  {
-    title: "INVENTORY",
-    features: [
-      "Item Category", "Item List", "Item Store", "Supplier", "Item Receive", "Item Receive List",
-      "Item Sell", "Item Issue"
-    ]
-  },
-  {
-    title: "HOMEWORK",
-    features: [
-      "Add Home Work", "Home Work List", "Home Work Evaluation Report"
-    ]
-  },
-  {
-    title: "TRANSPORT",
-    features: [
-      "Routes", "Vehicle", "Assign Vehicle", "Student Transport Report", "Schedule/Routine"
-    ]
-  },
-  {
-    title: "DORMITORY",
-    features: [
-      "Dormitory Rooms", "Dormitory", "Room Type", "Rooms monitoring", "Student Dormitory Report"
-    ]
-  },
-  {
-    title: "REPORTS",
-    features: [
-      "Student Report", "Guardian Report", "Student History", "Student Login Report", "Fees Statement",
-      "Balance Fees Report", "Transjection Report", "Class Report", "Class Routine Report",
-      "Exam Routine Report", "Teacher Class Routine", "Merit List Report", "Online Exam Report",
-      "Mark Sheet Report", "Tabulation Sheet Report", "Progress Card Report", "Student Fine Report",
-      "User Log", "Attendants Report (Teacher & Student both) and Many More…"
-    ]
-  },
-  {
-    title: "SYSTEM SETTINGS",
-    features: [
-      "General Settings", "Email Settings", "Payment Method Settings", "Role Permission", "Base Group",
-      "Base Setup", "Academic year", "Session", "Holiday", "SMS Settings", "Weekend", "Language Settings", "Backup"
-    ]
-  }
 ];
 
-const colorPalette = [
-  { gradient: "from-[#581C87] to-[#581C87]/80", dot1: "bg-gradient-to-r from-purple-600 to-orange-600", dot2: "bg-gradient-to-r from-purple-600 to-orange-600", iconText: "text-[#581C87]" },
-  { gradient: "from-orange-600 to-orange-600", dot1: "bg-[#581C87]", dot2: "bg-[#581C87]", iconText: "text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-orange-600" },
-  { gradient: "from-[#581C87] to-[#581C87]/80", dot1: "bg-gradient-to-r from-purple-600 to-orange-600", dot2: "bg-gradient-to-r from-purple-600 to-orange-600", iconText: "text-[#581C87]" },
-  { gradient: "from-orange-600 to-orange-600", dot1: "bg-[#581C87]", dot2: "bg-[#581C87]", iconText: "text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-orange-600" },
-];
+const BackgroundDecorations = () => (
+  <div className="absolute inset-0 overflow-hidden pointer-events-none -z-10">
+    <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-purple-100/30 rounded-full blur-[120px] -translate-y-1/2"></div>
+    <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-orange-100/30 rounded-full blur-[120px] translate-y-1/2"></div>
+    <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+  </div>
+);
 
 export default function FeaturesPage() {
+  const [activePanel, setActivePanel] = useState(panelFeatures[0].title);
+
   return (
-    <div className="bg-white">
+    <div className="bg-white min-h-screen selection:bg-purple-100 selection:text-purple-700">
       <PageHeader title="Features" />
 
-      {/* Hero Intro */}
+      {/* Hero Intro - KEPT SAME AS ORIGINAL */}
       <section className="py-12 lg:py-16 border-b border-gray-50 bg-white">
         <div className="w-full px-6 text-center">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-orange-600 font-bold tracking-widest uppercase text-xs mb-3 block">An Exhaustive list of Amazing Features</span>
@@ -202,140 +117,178 @@ export default function FeaturesPage() {
         </div>
       </section>
 
-      {/* 16 Main Modules Grid */}
-      <section className="py-12 lg:py-16">
-        <div className="w-full px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full">
-            {mainModules.map((mod, i) => {
-              const color = colorPalette[i % colorPalette.length];
-              return (
-                <div
-                  key={i}
-                  className={`group relative p-6 rounded-[32px] border transition-all duration-500 flex items-center gap-6 bg-white border-gray-50 hover:border-transparent hover:shadow-2xl hover:-translate-y-1 overflow-hidden`}
-                >
-                  {/* Active Hover Background Layer */}
-                  <div className={`absolute inset-0 bg-gradient-to-br ${color.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10`}></div>
-
-                  {/* Decorative Elements on hover */}
-                  <div className="absolute top-0 right-0 w-full h-full overflow-hidden rounded-[32px] pointer-events-none opacity-0 group-hover:opacity-30 transition-opacity">
-                    <div className="absolute -top-8 -right-8 w-32 h-32 bg-white/20 rounded-full blur-xl"></div>
-                  </div>
-
-                  {/* Circular Icon Container */}
-                  <div className="relative shrink-0 flex items-center justify-center">
-                    <div className={`absolute -top-0.5 -right-0.5 w-2 h-2 ${color.dot1} rounded-full border-2 border-white shadow-sm z-10 group-hover:scale-0 transition-transform`}></div>
-                    <div className={`absolute -bottom-0.5 -left-0.5 w-2 h-2 ${color.dot2} rounded-full border-2 border-white shadow-sm z-10 group-hover:scale-0 transition-transform`}></div>
-
-                    <div className={`h-20 w-20 rounded-full flex items-center justify-center bg-white border-[4px] border-gray-50 shadow-md relative overflow-hidden transition-all duration-500 group-hover:bg-white/10 group-hover:border-white/20 group-hover:backdrop-blur-md`}>
-                      <div className="absolute inset-0 border border-purple-500/5 rounded-full group-hover:opacity-0"></div>
-
-                      <div className={`p-3 rounded-full bg-gray-50 transition-all duration-500 group-hover:bg-transparent group-hover:scale-110 ${color.iconText} group-hover:text-white`}>
-                        <mod.icon className={`h-8 w-8`} />
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Text Content */}
-                  <div className="flex-1 space-y-1 z-10">
-                    <h3 className={`text-xl font-black font-display tracking-tight text-[#581C87] transition-colors duration-500 group-hover:text-white`}>
-                      {mod.title}
-                    </h3>
-                    <p className={`text-[13px] leading-relaxed font-medium text-[#581C87]/70 transition-colors duration-500 group-hover:text-white/80`}>
-                      {mod.desc}
-                    </p>
-                  </div>
-                </div>
-              );
-            })}
+      {/* Core Modules Grid (Modified to 4 columns, modern cards) */}
+      <section className="py-24 relative overflow-hidden">
+        <BackgroundDecorations />
+        <div className="w-full px-6 max-w-[1600px] mx-auto">
+          <div className="text-center mb-16 space-y-4">
+            <h2 className="text-3xl lg:text-4xl font-black text-[#581C87]">Core Product Modules</h2>
+            <p className="text-muted-foreground text-sm max-w-2xl mx-auto">Integrated solutions designed to handle every aspect of educational institution management with ease.</p>
           </div>
-        </div>
-      </section>
-
-      {/* Panel Features Detailed List */}
-      <section className="py-20 bg-white border-y border-gray-50">
-        <div className="w-full max-w-7xl mx-auto px-6">
-          <div className="flex flex-col gap-24">
-            {panelFeatures.map((panel, idx) => (
-              <div key={idx} className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-                <div className="w-full lg:w-5/12 space-y-6">
-                  <div className="flex items-center gap-4">
-                    <div className="h-14 w-14 rounded-full bg-gradient-to-r from-purple-600 to-orange-600/10 flex flex-shrink-0 items-center justify-center">
-                      <div className="h-5 w-5 rounded-sm bg-gradient-to-br from-orange-600 to-orange-600 rotate-45"></div>
-                    </div>
-                    <h3 className="text-2xl lg:text-3xl font-black text-[#581C87] uppercase tracking-tight">{panel.title}</h3>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {mainModules.map((mod, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="group relative bg-white border border-gray-100 p-8 rounded-[32px] hover:shadow-2xl hover:shadow-purple-500/10 transition-all duration-500 hover:-translate-y-2 overflow-hidden flex flex-col h-full"
+              >
+                {/* Glassmorphism Background Hover */}
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-50 via-white to-orange-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10" />
+                
+                <div className="mb-6 relative">
+                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#581C87]/5 to-[#581C87]/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                    <mod.icon className="w-7 h-7 text-[#581C87]" />
                   </div>
-                  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-6">
-                    {panel.features.map((f, i) => (
-                      <li key={i} className="flex items-start gap-3 text-[#581C87]/80 group">
-                        <div className="mt-1.5 h-1.5 w-1.5 rounded-full bg-gradient-to-r from-purple-600 to-orange-600 shrink-0"></div>
-                        <span className="text-sm font-semibold group-hover:text-[#581C87] transition-colors leading-snug">{f}</span>
-                      </li>
-                    ))}
-                  </ul>
+                  {/* Decorative dot */}
+                  <div className="absolute -top-1 -right-1 w-3 h-3 bg-orange-500 rounded-full border-4 border-white group-hover:scale-125 transition-transform" />
                 </div>
-                <div className="w-full lg:w-7/12">
-                  <img
-                    src={`/Eskooly/${idx % 4 === 0 ? "dashboard1.png" :
-                      idx % 4 === 1 ? "general_setting.png" :
-                        idx % 4 === 2 ? "student-transport-report.png" :
-                          "admission_query.png"
-                      }`}
-                    alt={`${panel.title} Preview`}
-                    className="w-full rounded-[2rem] shadow-2xl border border-gray-100 object-cover"
-                  />
+                
+                <h3 className="text-xl font-black text-[#581C87] mb-3 group-hover:text-purple-700 transition-colors">{mod.title}</h3>
+                <p className="text-sm text-[#581C87]/70 leading-relaxed mb-6 flex-grow">{mod.desc}</p>
+                
+                <div className="flex items-center text-[#581C87] text-xs font-bold uppercase tracking-wider opacity-0 group-hover:opacity-100 transition-all translate-y-2 group-hover:translate-y-0">
+                  Learn More 
+                  <ArrowRight className="ml-2 w-3 h-3" />
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Grid of 16 Additional Features */}
-      <section className="py-20 relative overflow-hidden bg-gray-50">
-        <div className="w-full max-w-7xl mx-auto px-6">
-          <div className="flex flex-col lg:flex-row gap-16 items-center lg:items-start">
+      {/* Platform Capabilities (Additional Features Matrix) */}
+      <section className="py-24 bg-slate-50/50 relative border-y border-gray-100">
+        <div className="w-full px-6 max-w-7xl mx-auto">
+          <div className="flex flex-col lg:flex-row justify-between items-end mb-16 gap-6">
+            <div className="space-y-3">
+              <span className="text-purple-600 font-bold tracking-widest text-[10px] uppercase bg-purple-50 px-3 py-1 rounded-full">Technical Excellence</span>
+              <h2 className="text-3xl lg:text-4xl font-black text-[#581C87]">Platform Capabilities</h2>
+              <p className="text-muted-foreground text-sm max-w-xl">Deep technical integrations and security standards that make eSkoolia the most reliable choice for institutions.</p>
+            </div>
+            <Link to="/contact" className="hidden lg:flex items-center gap-2 text-[#581C87] font-bold text-sm hover:underline">
+              View Technical Specs <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
 
-            {/* Left Decorative Image (Mimicking recharge.png) */}
-            <div className="hidden lg:block w-1/4 shrink-0 relative mt-10">
-              <img src="/Eskooly/admin_setup.png" alt="Features" className="w-full max-w-[280px] mx-auto drop-shadow-2xl object-cover rounded-3xl hover:-translate-y-2 transition-transform duration-500" />
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {additionalFeatures.map((f, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                whileHover={{ scale: 1.02 }}
+                className="bg-white p-5 rounded-2xl border border-gray-50 flex items-center gap-4 hover:shadow-lg transition-all group cursor-default"
+              >
+                <div className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 ${f.color} group-hover:rotate-12 transition-transform`}>
+                  <f.icon className="w-5 h-5" />
+                </div>
+                <h4 className="font-bold text-[#581C87] text-xs leading-tight">{f.title}</h4>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Panel Deep Features (Accordion + Visual Preview) */}
+      <section className="py-32 relative overflow-hidden bg-white">
+        <div className="w-full px-6 max-w-7xl mx-auto">
+          <div className="text-center mb-20 space-y-4">
+            <h2 className="text-3xl lg:text-4xl font-black text-[#581C87]">Deep Product Insights</h2>
+            <p className="text-muted-foreground text-sm max-w-2xl mx-auto">Take a closer look at the granular features that power each persona within your institution.</p>
+          </div>
+
+          <div className="flex flex-col lg:flex-row gap-16 items-center">
+            <div className="w-full lg:w-5/12">
+              <Accordion 
+                type="single" 
+                defaultValue={panelFeatures[0].title}
+                onValueChange={(val) => val && setActivePanel(val)}
+                className="w-full space-y-4"
+              >
+                {panelFeatures.map((panel, i) => (
+                  <AccordionItem 
+                    key={i} 
+                    value={panel.title} 
+                    className="border border-gray-100 rounded-3xl px-6 data-[state=open]:bg-purple-50/50 data-[state=open]:border-purple-200 transition-colors overflow-hidden"
+                  >
+                    <AccordionTrigger className="hover:no-underline py-6">
+                      <div className="flex items-center gap-4">
+                        <div className={`w-10 h-10 rounded-full flex items-center justify-center ${activePanel === panel.title ? 'bg-purple-600 text-white' : 'bg-gray-100 text-gray-500'}`}>
+                          {i === 0 ? <LayoutDashboard className="w-4 h-4" /> : <SmartphoneIcon className="w-4 h-4" />}
+                        </div>
+                        <span className="font-black text-left uppercase tracking-tight text-[#581C87]">{panel.title}</span>
+                      </div>
+                    </AccordionTrigger>
+                    <AccordionContent className="pb-8">
+                      <ul className="grid grid-cols-1 gap-3 ml-14">
+                        {panel.features.map((f, fi) => (
+                          <li key={fi} className="flex items-center gap-3 text-sm font-semibold text-[#581C87]/70">
+                            <div className="w-1.5 h-1.5 rounded-full bg-orange-500" />
+                            {f}
+                          </li>
+                        ))}
+                      </ul>
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
             </div>
 
-            {/* Right content */}
-            <div className="w-full lg:w-3/4">
-              <div className="mb-12 text-center lg:text-left">
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-orange-600 font-bold tracking-widest uppercase text-xs mb-3 block">AMAZING FEATURES</span>
-                <h2 className="font-display text-3xl lg:text-4xl font-black text-[#581C87] mb-4 uppercase tracking-tight">More Features Has eSkoolia PRO</h2>
-                <p className="text-[#581C87]/70 text-base max-w-2xl leading-relaxed font-medium mx-auto lg:mx-0">
-                  It's Vast! eSkoolia PRO Has More Additional Feature That Will Expect In A Complete Solution.
-                </p>
-              </div>
-
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-                {additionalFeatures.map((feature, i) => (
-                  <div key={i} className="flex flex-col items-center text-center gap-4 bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:border-orange-600 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
-                    <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-orange-50 to-orange-100 text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-orange-600 group-hover:scale-110 group-hover:from-orange-600 group-hover:to-orange-600 group-hover:text-white transition-all duration-300">
-                      <feature.icon className="h-7 w-7" />
-                    </div>
-                    <h4 className="font-bold text-[#581C87] text-sm leading-tight">{feature.title}</h4>
-                  </div>
-                ))}
+            <div className="w-full lg:w-7/12">
+              <div className="relative group">
+                {/* Decorative blobs for the image */}
+                <div className="absolute -inset-4 bg-gradient-to-tr from-purple-500 to-orange-500 rounded-[3rem] blur-2xl opacity-10 group-hover:opacity-20 transition-opacity" />
+                
+                <div className="relative bg-white p-2 rounded-[3.1rem] shadow-2xl border border-gray-100 overflow-hidden aspect-[16/10]">
+                  <AnimatePresence mode="wait">
+                    <motion.img
+                      key={activePanel}
+                      initial={{ opacity: 0, scale: 1.05 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      exit={{ opacity: 0, scale: 0.95 }}
+                      transition={{ duration: 0.4 }}
+                      src={panelFeatures.find(p => p.title === activePanel)?.image}
+                      alt="Feature Preview"
+                      className="w-full h-full object-cover rounded-[2.8rem]"
+                    />
+                  </AnimatePresence>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-[#581C87] relative overflow-hidden text-center text-white">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.1),transparent)]"></div>
+      {/* CTA Section - KEPT FUNCTIONALITY SAME */}
+      <section className="py-24 bg-[#581C87] relative overflow-hidden text-center text-white">
+        <motion.div 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.1),transparent)]" 
+        />
         <div className="w-full px-6 relative z-10">
-          <h2 className="font-display text-3xl md:text-4xl font-black mb-6 max-w-4xl mx-auto leading-tight uppercase tracking-tight">Take control of your school today with eSkoolia.</h2>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button size="lg" aria-label="Start your free trial" className="h-12 px-8 rounded-full bg-gradient-to-r from-purple-600 to-orange-600 hover:bg-gradient-to-r from-purple-600 to-orange-600 text-white font-black text-base border-none shadow-[0_10px_30px_rgba(88,28,135,0.3)]" asChild>
-              <Link to="/register">START FREE TRIAL</Link>
+          <h2 className="font-display text-4xl md:text-5xl font-black mb-8 max-w-4xl mx-auto leading-tight uppercase tracking-tight">
+            Ready to digitize your <span className="text-orange-400">entire campus?</span>
+          </h2>
+          <div className="flex flex-col sm:flex-row justify-center gap-6">
+            <Button 
+              size="lg" 
+              className="h-14 px-10 rounded-full bg-white text-[#581C87] hover:bg-orange-400 hover:text-white transition-all duration-300 font-black text-lg border-none hover:shadow-[0_10px_30px_rgba(251,146,60,0.4)]" 
+              asChild
+            >
+              <Link to="/register">GET STARTED FOR FREE</Link>
             </Button>
-            <Button size="lg" aria-label="Book a product demo" variant="outline" className="h-12 px-8 rounded-full border-2 border-white/30 bg-white/5 hover:bg-white hover:text-[#581C87] text-white font-black text-base backdrop-blur-sm shadow-xl" asChild>
-              <Link to="/contact">BOOK A DEMO</Link>
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="h-14 px-10 rounded-full border-2 border-white/30 bg-white/5 hover:bg-white/10 text-white font-black text-lg backdrop-blur-sm" 
+              asChild
+            >
+              <Link to="/contact">REQUEST A DEMO</Link>
             </Button>
           </div>
         </div>
@@ -343,3 +296,4 @@ export default function FeaturesPage() {
     </div>
   );
 }
+
