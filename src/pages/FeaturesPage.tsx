@@ -293,7 +293,7 @@ export default function FeaturesPage() {
               })}
             </motion.div>
           </div>
-        </section>
+        </section>  
 
         {/* 2. Additional Features (Icon Matrix) */}
         <section className="py-24 bg-slate-50 relative overflow-hidden">
