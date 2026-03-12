@@ -34,7 +34,7 @@ const queryClient = new QueryClient();
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
-      <div className="font-sans text-foreground antialiased w-full flex flex-col min-h-screen">
+      <div className="font-sans text-foreground antialiased w-full">
         <Toaster />
         <Sonner />
         <CustomCursor />

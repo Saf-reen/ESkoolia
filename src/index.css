@@ -155,7 +155,7 @@
 }
 
 /* Firefox */
-* {
+html {
   scrollbar-width: thin;
   scrollbar-color: #581C87 transparent;
 }
