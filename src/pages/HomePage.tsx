@@ -42,6 +42,7 @@ import {
 import { motion } from "framer-motion";
 import dashboardMockup from "@/assets/dashboard-mockup.png";
 import EskooliaSuiteSection from "@/components/EskooliaSuiteSection";
+import { SchoolSearchModal } from "@/components/SchoolSearchModal";
 
 
 const localAdvantages = [
@@ -231,6 +232,7 @@ export default function HomePage() {
                 <Button size="lg" aria-label="Book a free demo" className="rounded-full w-full sm:w-auto h-14 px-10 text-lg shadow-[0_15px_30px_rgba(88,28,135,0.2)] transition-all font-bold bg-gradient-to-r from-purple-600 to-orange-600 text-white hover:bg-[#581C87] border-none transform hover:-translate-y-1" asChild>
                   <a href="https://eskooly.pro/login" target="_blank" rel="noopener noreferrer">Book a Demo</a>
                 </Button>
+                <SchoolSearchModal />
                 <div
                   onClick={() => setShowVideo(true)}
                   className="flex items-center group cursor-pointer justify-center w-full sm:w-auto"
